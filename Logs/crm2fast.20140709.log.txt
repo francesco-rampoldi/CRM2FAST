@@ -1,0 +1,253 @@
+2014-07-09 14:53:39,838 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteInformationToLog()] ** ASSEMBLY INFORMATION **
+Name: CRM-FAST
+Version: 1.0.0.0
+Path: E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug
+Culture: it-IT
+Machine: PC64-FRANCESCO
+Domain: TOPGRAFSRL
+Username: francesco
+**************************
+2014-07-09 14:53:39,846 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteConfigurationToLog()] No parameters set in appSettings section of configuration file.
+2014-07-09 14:53:39,848 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteConfigurationToLog()] *** CONNECTIONSTRINGS ***
+[System.Data.SqlClient] LocalSqlServer = data source=.\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|aspnetdb.mdf;User Instance=true
+[System.Data.EntityClient] FASTEntities = metadata=res://*/FAST_OP.csdl|res://*/FAST_OP.ssdl|res://*/FAST_OP.msl;provider=System.Data.SqlClient;provider connection string="data source=10.51.43.72,59549;initial catalog=FAST;user id=topgraf;password=atreiu;MultipleActiveResultSets=True;App=EntityFramework"
+*************************
+2014-07-09 14:53:39,850 INFO  root - [CRM_FAST.Program.Main()] ****START**** CRM-FAST v. 1.0.0.0
+2014-07-09 14:53:39,850 INFO  root - [CRM_FAST.Program.Main()] Establishing connection to SalesForce...
+2014-07-09 14:54:11,243 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteInformationToLog()] ** ASSEMBLY INFORMATION **
+Name: CRM-FAST
+Version: 1.0.0.0
+Path: E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug
+Culture: it-IT
+Machine: PC64-FRANCESCO
+Domain: TOPGRAFSRL
+Username: francesco
+**************************
+2014-07-09 14:54:11,252 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteConfigurationToLog()] No parameters set in appSettings section of configuration file.
+2014-07-09 14:54:11,255 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteConfigurationToLog()] *** CONNECTIONSTRINGS ***
+[System.Data.SqlClient] LocalSqlServer = data source=.\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|aspnetdb.mdf;User Instance=true
+[System.Data.EntityClient] FASTEntities = metadata=res://*/FAST_OP.csdl|res://*/FAST_OP.ssdl|res://*/FAST_OP.msl;provider=System.Data.SqlClient;provider connection string="data source=10.51.43.72,59549;initial catalog=FAST;user id=topgraf;password=atreiu;MultipleActiveResultSets=True;App=EntityFramework"
+*************************
+2014-07-09 14:54:11,257 INFO  root - [CRM_FAST.Program.Main()] ****START**** CRM-FAST v. 1.0.0.0
+2014-07-09 14:54:11,259 INFO  root - [CRM_FAST.Program.Main()] Establishing connection to SalesForce...
+2014-07-09 14:55:06,231 INFO  root - [CRM_FAST.CRM_FAST.Run()] Session ID is: 00D110000007qHx!ASAAQNQUwP4GOCmsX6DNAN0A7_6knI4v4Nhla9vfWG1Lbw9trfDtbTwCjKee1uAc0GYniB9yMNkIKzwzscSyPFCRW5.mHYXK
+2014-07-09 14:55:08,842 INFO  root - [CRM_FAST.CRM_FAST.Run()] Opportunities Last updated on : 08/07/2014 06:32:50
+2014-07-09 14:55:08,844 INFO  root - [CRM_FAST.CRM_FAST.getOpportunity()] retrieving data from SFDC...
+2014-07-09 14:55:10,202 INFO  root - [CRM_FAST.CRM_FAST.getOpportunity()] 
+Number of opportunities found: 1
+2014-07-09 14:56:05,846 INFO  root - [CRM_FAST.CRM_FAST.Run()] 
+Updating  DB...
+
+2014-07-09 15:03:40,135 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteInformationToLog()] ** ASSEMBLY INFORMATION **
+Name: CRM-FAST
+Version: 1.0.0.0
+Path: E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug
+Culture: it-IT
+Machine: PC64-FRANCESCO
+Domain: TOPGRAFSRL
+Username: francesco
+**************************
+2014-07-09 15:03:40,144 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteConfigurationToLog()] No parameters set in appSettings section of configuration file.
+2014-07-09 15:03:40,146 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteConfigurationToLog()] *** CONNECTIONSTRINGS ***
+[System.Data.SqlClient] LocalSqlServer = data source=.\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|aspnetdb.mdf;User Instance=true
+[System.Data.EntityClient] FASTEntities = metadata=res://*/FAST_OP.csdl|res://*/FAST_OP.ssdl|res://*/FAST_OP.msl;provider=System.Data.SqlClient;provider connection string="data source=10.51.43.72,59549;initial catalog=FAST;user id=topgraf;password=atreiu;MultipleActiveResultSets=True;App=EntityFramework"
+*************************
+2014-07-09 15:03:40,148 INFO  root - [CRM_FAST.Program.Main()] ****START**** CRM-FAST v. 1.0.0.0
+2014-07-09 15:03:40,149 INFO  root - [CRM_FAST.Program.Main()] Establishing connection to SalesForce...
+2014-07-09 15:04:42,814 INFO  root - [CRM_FAST.CRM_FAST.Run()] Session ID is: 00D110000007qHx!ASAAQNQUwP4GOCmsX6DNAN0A7_6knI4v4Nhla9vfWG1Lbw9trfDtbTwCjKee1uAc0GYniB9yMNkIKzwzscSyPFCRW5.mHYXK
+2014-07-09 15:05:09,136 INFO  root - [CRM_FAST.CRM_FAST.Run()] Opportunities Last updated on : 08/07/2014 07:42:11
+2014-07-09 15:05:32,140 INFO  root - [CRM_FAST.CRM_FAST.getOpportunity()] retrieving data from SFDC...
+2014-07-09 15:05:40,951 INFO  root - [CRM_FAST.CRM_FAST.getOpportunity()] No records found.
+2014-07-09 15:07:46,295 INFO  root - [CRM_FAST.CRM_FAST.Run()] 
+Updating  DB...
+
+2014-07-09 15:07:51,757 INFO  root - [CRM_FAST.CRM_FAST.Run()] Updated 0 records in DAT_SF_OPPORTUNITIES
+2014-07-09 15:07:52,696 INFO  root - [CRM_FAST.CRM_FAST.Run()] Created 0 records in DAT_SF_OPPORTUNITIES
+2014-07-09 15:08:15,847 INFO  root - [CRM_FAST.Program.Main()] ****STOP**** CRM-FAST v. 1.0.0.0
+2014-07-09 15:18:43,556 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteInformationToLog()] ** ASSEMBLY INFORMATION **
+Name: CRM-FAST
+Version: 1.0.0.0
+Path: E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug
+Culture: it-IT
+Machine: PC64-FRANCESCO
+Domain: TOPGRAFSRL
+Username: francesco
+**************************
+2014-07-09 15:18:43,566 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteConfigurationToLog()] No parameters set in appSettings section of configuration file.
+2014-07-09 15:18:43,568 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteConfigurationToLog()] *** CONNECTIONSTRINGS ***
+[System.Data.SqlClient] LocalSqlServer = data source=.\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|aspnetdb.mdf;User Instance=true
+[System.Data.EntityClient] FASTEntities = metadata=res://*/FAST_OP.csdl|res://*/FAST_OP.ssdl|res://*/FAST_OP.msl;provider=System.Data.SqlClient;provider connection string="data source=10.51.43.72,59549;initial catalog=FAST;user id=topgraf;password=atreiu;MultipleActiveResultSets=True;App=EntityFramework"
+*************************
+2014-07-09 15:18:43,570 INFO  root - [CRM_FAST.Program.Main()] ****START**** CRM-FAST v. 1.0.0.0
+2014-07-09 15:18:43,571 INFO  root - [CRM_FAST.Program.Main()] Establishing connection to SalesForce...
+2014-07-09 15:21:11,491 INFO  root - [CRM_FAST.CRM_FAST.Run()] Session ID is: 00D110000007qHx!ASAAQIzwhf4TZDvsDrtO5UUPki5GGlDGglCDqp_RVfjn7Bzh79jLvTXFa0ns55OWo3E1cGtnRN5GOM0e.xzoKMous0sPsZHV
+2014-07-09 15:21:32,251 INFO  root - [CRM_FAST.CRM_FAST.Run()] Opportunities Last updated on : 08/07/2014 06:32:50
+2014-07-09 15:21:45,157 INFO  root - [CRM_FAST.CRM_FAST.getOpportunity()] retrieving data from SFDC...
+2014-07-09 15:21:51,412 INFO  root - [CRM_FAST.CRM_FAST.getOpportunity()] 
+Number of opportunities found: 1
+2014-07-09 15:25:22,416 INFO  root - [CRM_FAST.CRM_FAST.Run()] 
+Updating  DB...
+
+2014-07-09 15:37:50,693 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteInformationToLog()] ** ASSEMBLY INFORMATION **
+Name: CRM-FAST
+Version: 1.0.0.0
+Path: E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug
+Culture: it-IT
+Machine: PC64-FRANCESCO
+Domain: TOPGRAFSRL
+Username: francesco
+**************************
+2014-07-09 15:37:50,703 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteConfigurationToLog()] No parameters set in appSettings section of configuration file.
+2014-07-09 15:37:50,705 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteConfigurationToLog()] *** CONNECTIONSTRINGS ***
+[System.Data.SqlClient] LocalSqlServer = data source=.\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|aspnetdb.mdf;User Instance=true
+[System.Data.EntityClient] FASTEntities = metadata=res://*/FAST_OP.csdl|res://*/FAST_OP.ssdl|res://*/FAST_OP.msl;provider=System.Data.SqlClient;provider connection string="data source=10.51.43.72,59549;initial catalog=FAST;user id=topgraf;password=atreiu;MultipleActiveResultSets=True;App=EntityFramework"
+*************************
+2014-07-09 15:37:50,707 INFO  root - [CRM_FAST.Program.Main()] ****START**** CRM-FAST v. 1.0.0.0
+2014-07-09 15:37:50,708 INFO  root - [CRM_FAST.Program.Main()] Establishing connection to SalesForce...
+2014-07-09 15:38:17,855 INFO  root - [CRM_FAST.CRM_FAST.Run()] Session ID is: 00D110000007qHx!ASAAQIzwhf4TZDvsDrtO5UUPki5GGlDGglCDqp_RVfjn7Bzh79jLvTXFa0ns55OWo3E1cGtnRN5GOM0e.xzoKMous0sPsZHV
+2014-07-09 15:38:49,971 INFO  root - [CRM_FAST.CRM_FAST.Run()] Opportunities Last updated on : 08/07/2014 07:42:11
+2014-07-09 15:38:51,853 INFO  root - [CRM_FAST.CRM_FAST.getOpportunity()] retrieving data from SFDC...
+2014-07-09 15:39:09,906 INFO  root - [CRM_FAST.CRM_FAST.getOpportunity()] retrieving data from SFDC...
+2014-07-09 15:42:44,769 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteInformationToLog()] ** ASSEMBLY INFORMATION **
+Name: CRM-FAST
+Version: 1.0.0.0
+Path: E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug
+Culture: it-IT
+Machine: PC64-FRANCESCO
+Domain: TOPGRAFSRL
+Username: francesco
+**************************
+2014-07-09 15:42:44,779 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteConfigurationToLog()] No parameters set in appSettings section of configuration file.
+2014-07-09 15:42:44,781 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteConfigurationToLog()] *** CONNECTIONSTRINGS ***
+[System.Data.SqlClient] LocalSqlServer = data source=.\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|aspnetdb.mdf;User Instance=true
+[System.Data.EntityClient] FASTEntities = metadata=res://*/FAST_OP.csdl|res://*/FAST_OP.ssdl|res://*/FAST_OP.msl;provider=System.Data.SqlClient;provider connection string="data source=10.51.43.72,59549;initial catalog=FAST;user id=topgraf;password=atreiu;MultipleActiveResultSets=True;App=EntityFramework"
+*************************
+2014-07-09 15:42:44,783 INFO  root - [CRM_FAST.Program.Main()] ****START**** CRM-FAST v. 1.0.0.0
+2014-07-09 15:42:44,784 INFO  root - [CRM_FAST.Program.Main()] Establishing connection to SalesForce...
+2014-07-09 15:43:01,137 INFO  root - [CRM_FAST.CRM_FAST.Run()] Session ID is: 00D110000007qHx!ASAAQIzwhf4TZDvsDrtO5UUPki5GGlDGglCDqp_RVfjn7Bzh79jLvTXFa0ns55OWo3E1cGtnRN5GOM0e.xzoKMous0sPsZHV
+2014-07-09 15:43:07,287 INFO  root - [CRM_FAST.CRM_FAST.Run()] Opportunities Last updated on : 08/07/2014 07:42:11
+2014-07-09 15:43:07,289 INFO  root - [CRM_FAST.CRM_FAST.getOpportunity()] retrieving data from SFDC...
+2014-07-09 15:46:44,733 INFO  root - [CRM_FAST.CRM_FAST.getOpportunity()] 
+Number of opportunities found: 1
+2014-07-09 15:51:47,317 INFO  root - [CRM_FAST.CRM_FAST.getOpportunity()] retrieving data from SFDC...
+2014-07-09 15:52:55,987 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteInformationToLog()] ** ASSEMBLY INFORMATION **
+Name: CRM-FAST
+Version: 1.0.0.0
+Path: E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug
+Culture: it-IT
+Machine: PC64-FRANCESCO
+Domain: TOPGRAFSRL
+Username: francesco
+**************************
+2014-07-09 15:52:55,997 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteConfigurationToLog()] No parameters set in appSettings section of configuration file.
+2014-07-09 15:52:55,998 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteConfigurationToLog()] *** CONNECTIONSTRINGS ***
+[System.Data.SqlClient] LocalSqlServer = data source=.\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|aspnetdb.mdf;User Instance=true
+[System.Data.EntityClient] FASTEntities = metadata=res://*/FAST_OP.csdl|res://*/FAST_OP.ssdl|res://*/FAST_OP.msl;provider=System.Data.SqlClient;provider connection string="data source=10.51.43.72,59549;initial catalog=FAST;user id=topgraf;password=atreiu;MultipleActiveResultSets=True;App=EntityFramework"
+*************************
+2014-07-09 15:52:56,000 INFO  root - [CRM_FAST.Program.Main()] ****START**** CRM-FAST v. 1.0.0.0
+2014-07-09 15:52:56,001 INFO  root - [CRM_FAST.Program.Main()] Establishing connection to SalesForce...
+2014-07-09 15:53:18,774 INFO  root - [CRM_FAST.CRM_FAST.Run()] Session ID is: 00D110000007qHx!ASAAQIzwhf4TZDvsDrtO5UUPki5GGlDGglCDqp_RVfjn7Bzh79jLvTXFa0ns55OWo3E1cGtnRN5GOM0e.xzoKMous0sPsZHV
+2014-07-09 15:53:20,928 INFO  root - [CRM_FAST.CRM_FAST.Run()] Opportunities Last updated on : 08/07/2014 07:42:11
+2014-07-09 15:53:20,948 INFO  root - [CRM_FAST.CRM_FAST.getOpportunity()] retrieving data from SFDC...
+2014-07-09 15:53:39,231 INFO  root - [CRM_FAST.CRM_FAST.getOpportunity()] 
+Number of opportunities found: 1
+2014-07-09 16:16:20,904 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteInformationToLog()] ** ASSEMBLY INFORMATION **
+Name: CRM-FAST
+Version: 1.0.0.0
+Path: E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug
+Culture: it-IT
+Machine: PC64-FRANCESCO
+Domain: TOPGRAFSRL
+Username: francesco
+**************************
+2014-07-09 16:16:20,914 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteConfigurationToLog()] No parameters set in appSettings section of configuration file.
+2014-07-09 16:16:20,915 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteConfigurationToLog()] *** CONNECTIONSTRINGS ***
+[System.Data.SqlClient] LocalSqlServer = data source=.\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|aspnetdb.mdf;User Instance=true
+[System.Data.EntityClient] FASTEntities = metadata=res://*/FAST_OP.csdl|res://*/FAST_OP.ssdl|res://*/FAST_OP.msl;provider=System.Data.SqlClient;provider connection string="data source=10.51.43.72,59549;initial catalog=FAST;user id=topgraf;password=atreiu;MultipleActiveResultSets=True;App=EntityFramework"
+*************************
+2014-07-09 16:16:20,917 INFO  root - [CRM_FAST.Program.Main()] ****START**** CRM-FAST v. 1.0.0.0
+2014-07-09 16:16:20,918 INFO  root - [CRM_FAST.Program.Main()] Establishing connection to SalesForce...
+2014-07-09 16:19:40,848 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteInformationToLog()] ** ASSEMBLY INFORMATION **
+Name: CRM-FAST
+Version: 1.0.0.0
+Path: E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug
+Culture: it-IT
+Machine: PC64-FRANCESCO
+Domain: TOPGRAFSRL
+Username: francesco
+**************************
+2014-07-09 16:19:40,858 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteConfigurationToLog()] No parameters set in appSettings section of configuration file.
+2014-07-09 16:19:40,861 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteConfigurationToLog()] *** CONNECTIONSTRINGS ***
+[System.Data.SqlClient] LocalSqlServer = data source=.\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|aspnetdb.mdf;User Instance=true
+[System.Data.EntityClient] FASTEntities = metadata=res://*/FAST_OP.csdl|res://*/FAST_OP.ssdl|res://*/FAST_OP.msl;provider=System.Data.SqlClient;provider connection string="data source=10.51.43.72,59549;initial catalog=FAST;user id=topgraf;password=atreiu;MultipleActiveResultSets=True;App=EntityFramework"
+*************************
+2014-07-09 16:19:40,863 INFO  root - [CRM_FAST.Program.Main()] ****START**** CRM-FAST v. 1.0.0.0
+2014-07-09 16:19:40,864 INFO  root - [CRM_FAST.Program.Main()] Establishing connection to SalesForce...
+2014-07-09 16:20:03,911 INFO  root - [CRM_FAST.CRM_FAST.Run()] Session ID is: 00D110000007qHx!ASAAQIzwhf4TZDvsDrtO5UUPki5GGlDGglCDqp_RVfjn7Bzh79jLvTXFa0ns55OWo3E1cGtnRN5GOM0e.xzoKMous0sPsZHV
+2014-07-09 16:20:06,171 INFO  root - [CRM_FAST.CRM_FAST.Run()] Opportunities Last updated on : 08/07/2014 07:42:11
+2014-07-09 16:20:06,174 INFO  root - [CRM_FAST.CRM_FAST.getOpportunity()] retrieving data from SFDC...
+2014-07-09 16:20:18,963 INFO  root - [CRM_FAST.CRM_FAST.getOpportunity()] 
+Number of opportunities found: 1
+2014-07-09 16:20:34,707 INFO  root - [CRM_FAST.CRM_FAST.Run()] 
+Updating  DB...
+
+2014-07-09 18:08:09,895 INFO  root - [CRM_FAST.CRM_FAST.Run()] Updated 0 records in DAT_SF_OPPORTUNITIES
+2014-07-09 18:08:10,409 INFO  root - [CRM_FAST.CRM_FAST.Run()] Created 0 records in DAT_SF_OPPORTUNITIES
+2014-07-09 18:12:05,492 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteInformationToLog()] ** ASSEMBLY INFORMATION **
+Name: CRM-FAST
+Version: 1.0.0.0
+Path: E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug
+Culture: it-IT
+Machine: PC64-FRANCESCO
+Domain: TOPGRAFSRL
+Username: francesco
+**************************
+2014-07-09 18:12:05,502 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteConfigurationToLog()] No parameters set in appSettings section of configuration file.
+2014-07-09 18:12:05,503 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteConfigurationToLog()] *** CONNECTIONSTRINGS ***
+[System.Data.SqlClient] LocalSqlServer = data source=.\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|aspnetdb.mdf;User Instance=true
+[System.Data.EntityClient] FASTEntities = metadata=res://*/FAST_OP.csdl|res://*/FAST_OP.ssdl|res://*/FAST_OP.msl;provider=System.Data.SqlClient;provider connection string="data source=10.51.43.72,59549;initial catalog=FAST;user id=topgraf;password=atreiu;MultipleActiveResultSets=True;App=EntityFramework"
+*************************
+2014-07-09 18:12:05,505 INFO  root - [CRM_FAST.Program.Main()] ****START**** CRM-FAST v. 1.0.0.0
+2014-07-09 18:12:05,506 INFO  root - [CRM_FAST.Program.Main()] Establishing connection to SalesForce...
+2014-07-09 18:12:52,319 INFO  root - [CRM_FAST.CRM_FAST.Run()] Session ID is: 00D110000007qHx!ASAAQIzwhf4TZDvsDrtO5UUPki5GGlDGglCDqp_RVfjn7Bzh79jLvTXFa0ns55OWo3E1cGtnRN5GOM0e.xzoKMous0sPsZHV
+2014-07-09 18:12:55,072 INFO  root - [CRM_FAST.CRM_FAST.Run()] Opportunities Last updated on : 08/07/2014 06:32:50
+2014-07-09 18:12:55,074 INFO  root - [CRM_FAST.CRM_FAST.getOpportunity()] retrieving data from SFDC...
+2014-07-09 18:13:15,339 INFO  root - [CRM_FAST.CRM_FAST.getOpportunity()] retrieving data from SFDC...
+2014-07-09 18:13:52,155 INFO  root - [CRM_FAST.CRM_FAST.getOpportunity()] 
+Number of opportunities found: 1
+2014-07-09 18:14:12,956 INFO  root - [CRM_FAST.CRM_FAST.Run()] 
+Updating  DB...
+
+2014-07-09 18:17:05,328 FATAL root - [CRM_FAST.CRM_FAST.Run()] Fatal Error in main procedure, Aborting Execution.
+System.Data.Entity.Validation.DbEntityValidationException: Convalida non riuscita per una o più entità. Per ulteriori dettagli, vedere la proprietà 'EntityValidationErrors'.
+   in System.Data.Entity.Internal.InternalContext.SaveChanges()
+   in System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   in System.Data.Entity.DbContext.SaveChanges()
+   in CRM_FAST.CRM_FAST.Run()
+2014-07-09 18:17:10,326 INFO  root - [CRM_FAST.Program.Main()] ****STOP**** CRM-FAST v. 1.0.0.0
+2014-07-09 18:19:06,351 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteInformationToLog()] ** ASSEMBLY INFORMATION **
+Name: CRM-FAST
+Version: 1.0.0.0
+Path: E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug
+Culture: it-IT
+Machine: PC64-FRANCESCO
+Domain: TOPGRAFSRL
+Username: francesco
+**************************
+2014-07-09 18:19:06,360 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteConfigurationToLog()] No parameters set in appSettings section of configuration file.
+2014-07-09 18:19:06,363 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteConfigurationToLog()] *** CONNECTIONSTRINGS ***
+[System.Data.SqlClient] LocalSqlServer = data source=.\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|aspnetdb.mdf;User Instance=true
+[System.Data.EntityClient] FASTEntities = metadata=res://*/FAST_OP.csdl|res://*/FAST_OP.ssdl|res://*/FAST_OP.msl;provider=System.Data.SqlClient;provider connection string="data source=10.51.43.72,59549;initial catalog=FAST;user id=topgraf;password=atreiu;MultipleActiveResultSets=True;App=EntityFramework"
+*************************
+2014-07-09 18:19:06,365 INFO  root - [CRM_FAST.Program.Main()] ****START**** CRM-FAST v. 1.0.0.0
+2014-07-09 18:19:06,366 INFO  root - [CRM_FAST.Program.Main()] Establishing connection to SalesForce...
+2014-07-09 18:20:08,360 INFO  root - [CRM_FAST.CRM_FAST.Run()] Session ID is: 00D110000007qHx!ASAAQHfEn5aTwgwAgUH6K3zwoCGi5OWCEIr0Nn.jSzveKMuFttYyA5WsD0TPf1Kct1._Y6lIizuzI2dl1lpPEXKA2IzJFXRb
+2014-07-09 18:20:10,801 INFO  root - [CRM_FAST.CRM_FAST.Run()] Opportunities Last updated on : 08/07/2014 06:32:50
+2014-07-09 18:20:10,803 INFO  root - [CRM_FAST.CRM_FAST.getOpportunity()] retrieving data from SFDC...
+2014-07-09 18:23:46,771 INFO  root - [CRM_FAST.CRM_FAST.getOpportunity()] 
+Number of opportunities found: 1
+2014-07-09 18:23:59,164 INFO  root - [CRM_FAST.CRM_FAST.Run()] 
+Updating  DB...
+
+2014-07-09 18:24:45,129 INFO  root - [CRM_FAST.CRM_FAST.Run()] Updated 1 records in DAT_SF_OPPORTUNITIES
+2014-07-09 18:24:45,622 INFO  root - [CRM_FAST.CRM_FAST.Run()] Created 0 records in DAT_SF_OPPORTUNITIES

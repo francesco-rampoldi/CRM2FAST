@@ -1,0 +1,42 @@
+E:\Documents\Visual Studio 2013\Projects\CRM-FAST\CRM-FAST\bin\Debug\CRM-FAST.exe.config
+E:\Documents\Visual Studio 2013\Projects\CRM-FAST\CRM-FAST\bin\Debug\CRM-FAST.exe
+E:\Documents\Visual Studio 2013\Projects\CRM-FAST\CRM-FAST\bin\Debug\CRM-FAST.pdb
+E:\Documents\Visual Studio 2013\Projects\CRM-FAST\CRM-FAST\obj\Debug\CRM-FAST.csprojResolveAssemblyReference.cache
+E:\Documents\Visual Studio 2013\Projects\CRM-FAST\CRM-FAST\obj\Debug\CRM-FAST.exe
+E:\Documents\Visual Studio 2013\Projects\CRM-FAST\CRM-FAST\obj\Debug\CRM-FAST.pdb
+E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug\CRM-FAST.exe
+E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug\EntityFramework.dll
+E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug\EntityFramework.SqlServer.dll
+E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug\it\EntityFramework.resources.dll
+E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug\CRM-FAST.exe.config
+E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug\EntityFramework.xml
+E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug\EntityFramework.SqlServer.xml
+E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\CRM-FAST\CRM-FAST\CRM-FAST\obj\Debug\CRM-FAST.exe
+E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\CRM-FAST\CRM-FAST\CRM-FAST\obj\Debug\CRM-FAST.pdb
+E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug\CRM-FAST.pdb
+E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug\log4net.dll
+E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug\TopLibrary.dll
+E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug\log4net.xml
+E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug\TopLibrary.xml
+E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug\it\EntityFramework.SqlServer.resources.dll
+E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug\CRM-FAST.exe.CodeAnalysisLog.xml
+E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug\CRM-FAST.exe.lastcodeanalysissucceeded
+E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\CRM-FAST\CRM-FAST\CRM-FAST\obj\Debug\CRM-FAST.csprojResolveAssemblyReference.cache
+E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\3 sorgenti\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug\CRM-FAST.exe.config
+E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\3 sorgenti\CRM-FAST\CRM-FAST\CRM-FAST\obj\Debug\CRM-FAST.exe
+E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\3 sorgenti\CRM-FAST\CRM-FAST\CRM-FAST\obj\Debug\CRM-FAST.pdb
+E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\3 sorgenti\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug\CRM-FAST.exe
+E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\3 sorgenti\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug\CRM-FAST.pdb
+E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\3 sorgenti\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug\CRM-FAST.exe.CodeAnalysisLog.xml
+E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\3 sorgenti\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug\CRM-FAST.exe.lastcodeanalysissucceeded
+E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\3 sorgenti\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug\EntityFramework.dll
+E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\3 sorgenti\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug\EntityFramework.SqlServer.dll
+E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\3 sorgenti\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug\log4net.dll
+E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\3 sorgenti\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug\TopLibrary.dll
+E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\3 sorgenti\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug\EntityFramework.xml
+E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\3 sorgenti\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug\EntityFramework.SqlServer.xml
+E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\3 sorgenti\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug\log4net.xml
+E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\3 sorgenti\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug\TopLibrary.xml
+E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\3 sorgenti\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug\it\EntityFramework.resources.dll
+E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\3 sorgenti\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug\it\EntityFramework.SqlServer.resources.dll
+E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\3 sorgenti\CRM-FAST\CRM-FAST\CRM-FAST\obj\Debug\CRM-FAST.csprojResolveAssemblyReference.cache

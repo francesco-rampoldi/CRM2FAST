@@ -1,0 +1,26 @@
+2014-07-10 10:25:28,314 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteInformationToLog()] ** ASSEMBLY INFORMATION **
+Name: CRM-FAST
+Version: 1.0.0.0
+Path: E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug
+Culture: it-IT
+Machine: PC64-FRANCESCO
+Domain: TOPGRAFSRL
+Username: francesco
+**************************
+2014-07-10 10:25:28,324 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteConfigurationToLog()] No parameters set in appSettings section of configuration file.
+2014-07-10 10:25:28,327 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteConfigurationToLog()] *** CONNECTIONSTRINGS ***
+[System.Data.SqlClient] LocalSqlServer = data source=.\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|aspnetdb.mdf;User Instance=true
+[System.Data.EntityClient] FASTEntities = metadata=res://*/FAST_OP.csdl|res://*/FAST_OP.ssdl|res://*/FAST_OP.msl;provider=System.Data.SqlClient;provider connection string="data source=10.51.43.72,59549;initial catalog=FAST;user id=topgraf;password=atreiu;MultipleActiveResultSets=True;App=EntityFramework"
+*************************
+2014-07-10 10:25:28,329 INFO  root - [CRM_FAST.Program.Main()] ****START**** CRM-FAST v. 1.0.0.0
+2014-07-10 10:25:28,331 INFO  root - [CRM_FAST.Program.Main()] Establishing connection to SalesForce...
+2014-07-10 10:25:41,732 INFO  root - [CRM_FAST.CRM_FAST.Run()] Session ID is: 00D110000007qHx!ASAAQJZPbS9zHw.JYhlxDE6ClkHbJ18QPp7PfYBtulCtW4nfA.yv2RvRE5zx8vp9rnn5oWPIwwRrqIREaiiFMnSo7M6BMBLV
+2014-07-10 10:25:43,847 INFO  root - [CRM_FAST.CRM_FAST.Run()] Opportunities Last updated on : 08/07/2014 07:42:11
+2014-07-10 10:25:43,849 INFO  root - [CRM_FAST.CRM_FAST.getOpportunity()] retrieving data from SFDC...
+2014-07-10 10:26:26,016 INFO  root - [CRM_FAST.CRM_FAST.getOpportunity()] retrieving data from SFDC...
+2014-07-10 10:27:04,892 INFO  root - [CRM_FAST.CRM_FAST.getOpportunity()] retrieving data from SFDC...
+2014-07-10 10:27:16,840 INFO  root - [CRM_FAST.CRM_FAST.getOpportunity()] 
+Number of opportunities found: 1
+2014-07-10 10:41:35,302 INFO  root - [CRM_FAST.CRM_FAST.Run()] 
+Updating  DB...
+

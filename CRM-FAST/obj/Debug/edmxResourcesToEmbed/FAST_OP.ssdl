@@ -1,0 +1,2544 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FASTModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Aree">
+    <Key>
+      <PropertyRef Name="Area" />
+    </Key>
+    <Property Name="Area" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="VisibilitaDistretti" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="KAIResponsabile" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <!--Errori trovati durante la generazione:
+avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'FAST.dbo.AUTORIZZAZIONI'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+  <EntityType Name="AUTORIZZAZIONI">
+    <Key>
+      <PropertyRef Name="idOfferta" />
+      <PropertyRef Name="tipoRichiesta" />
+    </Key>
+    <Property Name="idOfferta" Type="int" Nullable="false" />
+    <Property Name="tipoRichiesta" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="richiestaA" Type="varchar" MaxLength="50" />
+    <Property Name="dataRichiesta" Type="datetime" />
+    <Property Name="AutorizzataDa" Type="varchar" MaxLength="8" />
+    <Property Name="dataEsito" Type="datetime" />
+    <Property Name="esito" Type="int" />
+    <Property Name="xmlDetails" Type="text" />
+  </EntityType>
+  <EntityType Name="Cars">
+    <Key>
+      <PropertyRef Name="IDCars" />
+    </Key>
+    <Property Name="IDCars" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Packet" Type="varchar" MaxLength="50" />
+    <Property Name="PacketVersion" Type="varchar" MaxLength="50" />
+    <Property Name="Process" Type="varchar" MaxLength="50" />
+    <Property Name="DutyLoad" Type="int" />
+    <Property Name="AccessNum" Type="smallint" />
+    <Property Name="DoorType" Type="varchar" MaxLength="50" />
+    <Property Name="LL" Type="int" />
+    <Property Name="BB" Type="int" />
+    <Property Name="DD" Type="int" />
+    <Property Name="WWmin" Type="int" />
+    <Property Name="WWmax" Type="int" />
+    <Property Name="Gmin" Type="int" />
+    <Property Name="Gmax" Type="int" />
+    <Property Name="WD" Type="int" />
+    <Property Name="WDmax" Type="int" />
+    <Property Name="CAR_CX" Type="int" />
+    <Property Name="CAR_CXmin" Type="int" />
+    <Property Name="CAR_CXmax" Type="int" />
+    <Property Name="Persons" Type="smallint" />
+    <Property Name="CTWSG" Type="smallint" Nullable="false" />
+    <Property Name="Speed" Type="varchar" MaxLength="50" />
+    <Property Name="CW" Type="int" />
+    <Property Name="CW1" Type="int" />
+  </EntityType>
+  <!--Errori trovati durante la generazione:
+avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'FAST.dbo.Cars_FURE'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+  <EntityType Name="Cars_FURE">
+    <Key>
+      <PropertyRef Name="idCars" />
+    </Key>
+    <Property Name="idCars" Type="int" Nullable="false" />
+    <Property Name="Packet" Type="nvarchar" MaxLength="50" />
+    <Property Name="PacketVersion" Type="nvarchar" MaxLength="50" />
+    <Property Name="Process" Type="nvarchar" MaxLength="50" />
+    <Property Name="Load" Type="int" />
+    <Property Name="Speed" Type="nvarchar" MaxLength="50" />
+    <Property Name="Entrance" Type="smallint" />
+    <Property Name="BB" Type="int" />
+    <Property Name="DD" Type="int" />
+    <Property Name="CTWSG" Type="nvarchar" MaxLength="50" />
+    <Property Name="Persons" Type="smallint" />
+    <Property Name="Door_Design" Type="nvarchar" MaxLength="50" />
+    <Property Name="Door_Model" Type="smallint" />
+    <Property Name="LL" Type="int" />
+    <Property Name="Gmin" Type="int" />
+    <Property Name="Gmax" Type="int" />
+    <Property Name="WWmin" Type="int" />
+    <Property Name="WWmax" Type="int" />
+    <Property Name="WDmin" Type="int" />
+    <Property Name="WDmax" Type="int" />
+    <Property Name="DO" Type="int" />
+    <Property Name="CXmin" Type="int" />
+    <Property Name="CXmax" Type="int" />
+    <Property Name="Machine_type" Type="nvarchar" MaxLength="50" />
+    <Property Name="Guiderails_type" Type="nvarchar" MaxLength="50" />
+    <Property Name="EN81_1" Type="nvarchar" MaxLength="50" />
+    <Property Name="EN81_70" Type="nvarchar" MaxLength="50" />
+    <Property Name="EN81_72" Type="nvarchar" MaxLength="50" />
+    <Property Name="Pubel_92" Type="nvarchar" MaxLength="50" />
+    <Property Name="EN81_71" Type="nvarchar" MaxLength="50" />
+    <Property Name="Pubel_2003" Type="nvarchar" MaxLength="50" />
+    <Property Name="CW" Type="int" />
+    <Property Name="CW1" Type="int" />
+    <Property Name="DoorType" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Errori trovati durante la generazione:
+avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'FAST.dbo.Cars_New'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+  <EntityType Name="Cars_New">
+    <Key>
+      <PropertyRef Name="idCars" />
+    </Key>
+    <Property Name="idCars" Type="int" Nullable="false" />
+    <Property Name="Packet" Type="varchar" MaxLength="50" />
+    <Property Name="PacketVersion" Type="varchar" MaxLength="50" />
+    <Property Name="Process" Type="varchar" MaxLength="50" />
+    <Property Name="Load" Type="int" />
+    <Property Name="Speed" Type="varchar" MaxLength="10" />
+    <Property Name="Entrance" Type="smallint" />
+    <Property Name="BB" Type="int" />
+    <Property Name="DD" Type="int" />
+    <Property Name="CTWSG" Type="varchar" MaxLength="50" />
+    <Property Name="Persons" Type="smallint" />
+    <Property Name="Door_Design" Type="varchar" MaxLength="50" />
+    <Property Name="Door_Model" Type="smallint" />
+    <Property Name="LL" Type="int" />
+    <Property Name="Gmin" Type="int" />
+    <Property Name="Gmax" Type="int" />
+    <Property Name="WWmin" Type="int" />
+    <Property Name="WWmax" Type="int" />
+    <Property Name="WDmin" Type="int" />
+    <Property Name="WDmax" Type="int" />
+    <Property Name="DO" Type="int" />
+    <Property Name="CXmin" Type="int" />
+    <Property Name="CXmax" Type="int" />
+    <Property Name="Machine_type" Type="varchar" MaxLength="10" />
+    <Property Name="Guiderails_type" Type="varchar" MaxLength="50" />
+    <Property Name="EN81_1" Type="varchar" MaxLength="50" />
+    <Property Name="EN81_70" Type="varchar" MaxLength="50" />
+    <Property Name="EN81_72" Type="varchar" MaxLength="50" />
+    <Property Name="Pubel_92" Type="varchar" MaxLength="50" />
+    <Property Name="EN81_71" Type="varchar" MaxLength="50" />
+    <Property Name="Pubel_2003" Type="varchar" MaxLength="50" />
+    <Property Name="CW" Type="int" />
+    <Property Name="CW1" Type="int" />
+    <Property Name="DoorType" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="CategorieLavori">
+    <Key>
+      <PropertyRef Name="famiglia" />
+    </Key>
+    <Property Name="famiglia" Type="nvarchar" MaxLength="32" Nullable="false" />
+    <Property Name="categoria" Type="nvarchar" MaxLength="64" />
+    <Property Name="categoriaSAP" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CategoryName" Type="nvarchar" MaxLength="64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CategoryLog">
+    <Key>
+      <PropertyRef Name="CategoryLogID" />
+    </Key>
+    <Property Name="CategoryLogID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CategoryID" Type="int" Nullable="false" />
+    <Property Name="LogID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CFG_AccessiCabina">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codice" Type="nvarchar" MaxLength="12" />
+    <Property Name="descrizione" Type="nvarchar" MaxLength="200" />
+    <Property Name="ordinamento" Type="int" />
+    <Property Name="abilitato" Type="bit" />
+    <Property Name="visibile" Type="bit" />
+    <Property Name="isDefault" Type="bit" />
+  </EntityType>
+  <EntityType Name="CFG_AccessoriSiNo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codice" Type="nvarchar" MaxLength="50" />
+    <Property Name="descrizione" Type="nvarchar" MaxLength="200" />
+    <Property Name="ordinamento" Type="int" />
+    <Property Name="abilitato" Type="bit" />
+    <Property Name="visibile" Type="bit" />
+    <Property Name="CFG_Azionamento" Type="nvarchar" MaxLength="50" />
+    <Property Name="CFG_Anello" Type="nvarchar" MaxLength="50" />
+    <Property Name="isDefault" Type="bit" />
+  </EntityType>
+  <EntityType Name="CFG_Anello">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codice" Type="nvarchar" MaxLength="12" />
+    <Property Name="descrizione" Type="nvarchar" MaxLength="200" />
+    <Property Name="ordinamento" Type="int" />
+    <Property Name="abilitato" Type="bit" />
+    <Property Name="visibile" Type="bit" />
+    <Property Name="CFG_Azionamento" Type="nvarchar" MaxLength="50" />
+    <Property Name="isDefault" Type="bit" />
+  </EntityType>
+  <EntityType Name="CFG_Azionamento">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codice" Type="nvarchar" MaxLength="12" />
+    <Property Name="descrizione" Type="nvarchar" MaxLength="200" />
+    <Property Name="ordinamento" Type="int" />
+    <Property Name="abilitato" Type="bit" />
+    <Property Name="visibile" Type="bit" />
+    <Property Name="isDefault" Type="bit" />
+    <Property Name="CFG_Quadro" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="CFG_Configuratori">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codice" Type="nvarchar" MaxLength="12" />
+    <Property Name="descrizione" Type="nvarchar" MaxLength="200" />
+    <Property Name="FAST_ListaCampi" Type="nvarchar" MaxLength="50" />
+    <Property Name="nomeFAST" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="CFG_Corrente">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codice" Type="nvarchar" MaxLength="12" />
+    <Property Name="descrizione" Type="nvarchar" MaxLength="200" />
+    <Property Name="ordinamento" Type="int" />
+    <Property Name="abilitato" Type="bit" />
+    <Property Name="visibile" Type="bit" />
+    <Property Name="isDefault" Type="bit" />
+  </EntityType>
+  <EntityType Name="CFG_Fermate">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codice" Type="nvarchar" MaxLength="12" />
+    <Property Name="descrizione" Type="nvarchar" MaxLength="200" />
+    <Property Name="ordinamento" Type="int" />
+    <Property Name="abilitato" Type="bit" />
+    <Property Name="visibile" Type="bit" />
+    <Property Name="isDefault" Type="bit" />
+  </EntityType>
+  <EntityType Name="CFG_Listino_Accessori">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codiceAccessorio" Type="nvarchar" MaxLength="50" />
+    <Property Name="codiceBase" Type="nvarchar" MaxLength="50" />
+    <Property Name="codicePerMetro" Type="nvarchar" MaxLength="50" />
+    <Property Name="codicePerServizio" Type="nvarchar" MaxLength="50" />
+    <Property Name="descrizione" Type="nvarchar" MaxLength="50" />
+    <Property Name="ordinamento" Type="int" />
+    <Property Name="abilitato" Type="bit" />
+    <Property Name="visibile" Type="bit" />
+    <Property Name="CFG_Quadro" Type="nvarchar" MaxLength="50" />
+    <Property Name="CFG_Azionamento" Type="nvarchar" MaxLength="50" />
+    <Property Name="CFG_Tensione" Type="nvarchar" MaxLength="50" />
+    <Property Name="CFG_Corrente" Type="nvarchar" MaxLength="50" />
+    <Property Name="CFG_Anello" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="CFG_Listino_BasiQuadroDrive">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codiceBase" Type="nvarchar" MaxLength="12" />
+    <Property Name="codice10mSupplyCable" Type="nvarchar" MaxLength="12" />
+    <Property Name="codice10mMotorCable" Type="nvarchar" MaxLength="12" />
+    <Property Name="descrizione" Type="nvarchar" MaxLength="200" />
+    <Property Name="ordinamento" Type="int" />
+    <Property Name="abilitato" Type="bit" />
+    <Property Name="visibile" Type="bit" />
+    <Property Name="CFG_Quadro" Type="nvarchar" MaxLength="50" />
+    <Property Name="CFG_Azionamento" Type="nvarchar" MaxLength="50" />
+    <Property Name="CFG_Tensione" Type="nvarchar" MaxLength="50" />
+    <Property Name="CFG_Anello" Type="nvarchar" MaxLength="50" />
+    <Property Name="CFG_Corrente" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="CFG_Listino_Prezzi">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codice" Type="nvarchar" MaxLength="50" />
+    <Property Name="prezzo" Type="real" />
+    <Property Name="versione" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="CFG_OffertaQuadro">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codice" Type="nvarchar" MaxLength="12" />
+    <Property Name="descrizione" Type="nvarchar" MaxLength="200" />
+    <Property Name="ordinamento" Type="int" />
+    <Property Name="abilitato" Type="bit" Nullable="false" />
+    <Property Name="visibile" Type="bit" Nullable="false" />
+    <Property Name="CFG_Quadro" Type="nvarchar" MaxLength="50" />
+    <Property Name="isDefault" Type="bit" />
+  </EntityType>
+  <EntityType Name="CFG_Portata">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codice" Type="nvarchar" MaxLength="12" />
+    <Property Name="descrizione" Type="nvarchar" MaxLength="200" />
+    <Property Name="ordinamento" Type="int" />
+    <Property Name="abilitato" Type="bit" />
+    <Property Name="visibile" Type="bit" />
+    <Property Name="isDefault" Type="bit" />
+  </EntityType>
+  <EntityType Name="CFG_Quadro">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codice" Type="nvarchar" MaxLength="12" />
+    <Property Name="descrizione" Type="nvarchar" MaxLength="200" />
+    <Property Name="ordinamento" Type="int" />
+    <Property Name="abilitato" Type="bit" />
+    <Property Name="visibile" Type="bit" />
+    <Property Name="isDefault" Type="bit" />
+  </EntityType>
+  <EntityType Name="CFG_RES40_ListaCampi">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codice" Type="nvarchar" MaxLength="50" />
+    <Property Name="descrizione" Type="nvarchar" MaxLength="200" />
+    <Property Name="ordinamento" Type="int" />
+    <Property Name="abilitato" Type="bit" />
+    <Property Name="visibile" Type="bit" />
+    <Property Name="scheda" Type="int" />
+    <Property Name="testoTitolo" Type="nvarchar" MaxLength="50" />
+    <Property Name="tipoCombo" Type="bit" />
+    <Property Name="tipoTesto" Type="bit" />
+    <Property Name="tipoCheckBox" Type="bit" />
+    <Property Name="isAccessorioSiNo" Type="bit" />
+    <Property Name="obbligatorio" Type="bit" />
+  </EntityType>
+  <EntityType Name="CFG_Schede">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codice" Type="nvarchar" MaxLength="50" />
+    <Property Name="descrizione" Type="nvarchar" MaxLength="200" />
+    <Property Name="ordinamento" Type="int" />
+    <Property Name="abilitato" Type="bit" />
+    <Property Name="visibile" Type="bit" />
+    <Property Name="scheda" Type="int" />
+    <Property Name="CFG_Quadro" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Errori trovati durante la generazione:
+avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'FAST.dbo.CFG_Servizi'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+  <EntityType Name="CFG_Servizi">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codice" Type="nvarchar" MaxLength="12" />
+    <Property Name="descrizione" Type="nvarchar" MaxLength="200" />
+    <Property Name="ordinamento" Type="int" />
+    <Property Name="abilitato" Type="bit" />
+    <Property Name="visibile" Type="bit" />
+    <Property Name="isDefault" Type="bit" />
+  </EntityType>
+  <EntityType Name="CFG_ServiziLatoC">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codice" Type="nvarchar" MaxLength="12" />
+    <Property Name="descrizione" Type="nvarchar" MaxLength="200" />
+    <Property Name="ordinamento" Type="int" />
+    <Property Name="abilitato" Type="bit" />
+    <Property Name="visibile" Type="bit" />
+    <Property Name="isDefault" Type="bit" />
+    <Property Name="CFG_AccessiCabina" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="CFG_Tensione">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codice" Type="nvarchar" MaxLength="12" />
+    <Property Name="descrizione" Type="nvarchar" MaxLength="200" />
+    <Property Name="ordinamento" Type="int" />
+    <Property Name="abilitato" Type="bit" />
+    <Property Name="visibile" Type="bit" />
+    <Property Name="isDefault" Type="bit" />
+  </EntityType>
+  <EntityType Name="CFG_TensioneFreno">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codice" Type="nvarchar" MaxLength="50" />
+    <Property Name="descrizione" Type="nvarchar" MaxLength="200" />
+    <Property Name="ordinamento" Type="int" />
+    <Property Name="abilitato" Type="bit" />
+    <Property Name="visibile" Type="bit" />
+    <Property Name="isDefault" Type="bit" />
+    <Property Name="CFG_Corrente_MAX" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="CFG_Velocita">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codice" Type="nvarchar" MaxLength="12" />
+    <Property Name="descrizione" Type="nvarchar" MaxLength="200" />
+    <Property Name="ordinamento" Type="int" />
+    <Property Name="abilitato" Type="bit" />
+    <Property Name="visibile" Type="bit" />
+    <Property Name="isDefault" Type="bit" />
+  </EntityType>
+  <!--Errori trovati durante la generazione:
+avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'FAST.dbo.CFG_Versioni'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+  <EntityType Name="CFG_Versioni">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="abilitato" />
+      <PropertyRef Name="visibile" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="codice" Type="nvarchar(max)" />
+    <Property Name="descrizione" Type="nvarchar(max)" />
+    <Property Name="ordinamento" Type="int" />
+    <Property Name="abilitato" Type="bit" Nullable="false" />
+    <Property Name="visibile" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Configuratori">
+    <Key>
+      <PropertyRef Name="IDConfiguratori" />
+    </Key>
+    <Property Name="IDConfiguratori" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NomePacchetto" Type="nvarchar" MaxLength="50" />
+    <Property Name="Template" Type="nvarchar" MaxLength="255" />
+    <Property Name="Note" Type="nvarchar" MaxLength="500" />
+    <Property Name="DataInizioValidita" Type="datetime" />
+    <Property Name="DataFineValidita" Type="datetime" />
+  </EntityType>
+  <EntityType Name="CostiTrasporto">
+    <Key>
+      <PropertyRef Name="Provincia" />
+    </Key>
+    <Property Name="Provincia" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="Costo" Type="decimal" Precision="18" Scale="3" />
+  </EntityType>
+  <!--Errori trovati durante la generazione:
+avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'FAST.dbo.DAT_SALES_GROUPS'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+  <EntityType Name="DAT_SALES_GROUPS">
+    <Key>
+      <PropertyRef Name="Sales_group_code" />
+    </Key>
+    <Property Name="Sales_group_code" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="Sales_group_desc" Type="varchar" MaxLength="50" />
+    <Property Name="Extr_date" Type="datetime" />
+    <Property Name="Dt_upd_tab" Type="datetime" />
+  </EntityType>
+  <!--Errori trovati durante la generazione:
+avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'FAST.dbo.DAT_SALES_OFFICE'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+  <EntityType Name="DAT_SALES_OFFICE">
+    <Key>
+      <PropertyRef Name="sales_office_code" />
+    </Key>
+    <Property Name="sales_office_code" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="sales_office_desc" Type="varchar" MaxLength="20" />
+    <Property Name="sales_office_area" Type="varchar" MaxLength="20" />
+    <Property Name="sales_office_translation" Type="varchar" MaxLength="30" />
+    <Property Name="sales_office_ubicazione" Type="varchar" MaxLength="4" />
+  </EntityType>
+  <!--Errori trovati durante la generazione:
+avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'FAST.dbo.DAT_SALES_ORGANIZATION'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+  <EntityType Name="DAT_SALES_ORGANIZATION">
+    <Key>
+      <PropertyRef Name="sales_off_code" />
+      <PropertyRef Name="sales_group_code" />
+    </Key>
+    <Property Name="sales_off_code" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="sales_group_code" Type="varchar" MaxLength="3" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DAT_SF_opportunities">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ACCOUNTID" Type="varchar" MaxLength="50" />
+    <Property Name="STAGENAME" Type="varchar" MaxLength="50" />
+    <Property Name="ISCLOSED" Type="varchar" MaxLength="1" />
+    <Property Name="ISWON" Type="varchar" MaxLength="1" />
+    <Property Name="BUSINESS_TYPE" Type="varchar" MaxLength="50" />
+    <Property Name="Opportunity_Category" Type="varchar" MaxLength="50" />
+    <Property Name="SALES_ORGANIZATION__CODE" Type="varchar" MaxLength="3" />
+    <Property Name="EsportatoSAP" Type="varchar" MaxLength="50" />
+    <Property Name="AMOUNT" Type="real" />
+    <Property Name="SF_OwnerID" Type="varchar" MaxLength="50" />
+    <Property Name="Opportunity_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Offerta_DataPrevistaChiusura" Type="varchar" MaxLength="50" />
+    <Property Name="Offerta_ProbabilitaAggiudicazione" Type="varchar" MaxLength="50" />
+    <Property Name="Party_RagioneSociale" Type="varchar" MaxLength="80" />
+    <Property Name="Party_Indirizzo" Type="varchar" MaxLength="80" />
+    <Property Name="Party_IDParty" Type="varchar" MaxLength="50" />
+    <Property Name="Party_CITY" Type="varchar" MaxLength="80" />
+    <Property Name="Party_POSTAL_CODE" Type="varchar" MaxLength="10" />
+    <Property Name="Party_REGION" Type="varchar" MaxLength="50" />
+    <Property Name="Party_PHONE" Type="varchar" MaxLength="50" />
+    <Property Name="Party_FAX" Type="varchar" MaxLength="50" />
+    <Property Name="Description" Type="varchar" MaxLength="255" />
+    <Property Name="UpdateDtime" Type="datetime" />
+    <Property Name="sold_to_Party_RagioneSociale" Type="varchar" MaxLength="80" />
+    <Property Name="sold_to_Party_Indirizzo" Type="varchar" MaxLength="80" />
+    <Property Name="sold_to_Party_IDParty" Type="varchar" MaxLength="50" />
+    <Property Name="sold_to_Party_CITY" Type="varchar" MaxLength="80" />
+    <Property Name="sold_to_Party_POSTAL_CODE" Type="varchar" MaxLength="10" />
+    <Property Name="sold_to_Party_REGION" Type="varchar" MaxLength="50" />
+    <Property Name="sold_to_Party_PHONE" Type="varchar" MaxLength="50" />
+    <Property Name="sold_to_Party_FAX" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DAT_SF_owners">
+    <Key>
+      <PropertyRef Name="SAP_OWNER" />
+    </Key>
+    <Property Name="SAP_OWNER" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EMAIL" Type="varchar" MaxLength="100" />
+    <Property Name="KAI" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <!--Errori trovati durante la generazione:
+avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'FAST.dbo.dbo_SAPCaratteristiche'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+  <EntityType Name="dbo_SAPCaratteristiche">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="NCSAP" Type="nvarchar" MaxLength="50" />
+    <Property Name="CODPACCHETTO" Type="nvarchar" MaxLength="32" />
+    <Property Name="XPATH" Type="ntext" />
+    <Property Name="TLOOKUPGROUP" Type="nvarchar" MaxLength="32" />
+    <Property Name="id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="dbRef_Dettaglio">
+    <Key>
+      <PropertyRef Name="IDContatore" />
+    </Key>
+    <Property Name="IDContatore" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDPrezzo" Type="varchar" MaxLength="50" />
+    <Property Name="Descrizione" Type="varchar" MaxLength="255" />
+    <Property Name="RiferimentoPadre" Type="int" />
+    <Property Name="Prezzo" Type="money" />
+    <Property Name="NoteTecniche" Type="varchar" MaxLength="8000" />
+    <Property Name="Famiglia" Type="int" />
+    <Property Name="FormulaExcel" Type="varchar" MaxLength="300" />
+    <Property Name="FormulaFast" Type="varchar" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="dbRef_Dettaglio_Storico">
+    <Key>
+      <PropertyRef Name="IdPubblicazione" />
+    </Key>
+    <Property Name="IdPubblicazione" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DataPubblicazione" Type="datetime" Nullable="false" />
+    <Property Name="KaiPubblicazione" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="IDContatore" Type="int" Nullable="false" />
+    <Property Name="IDPrezzo" Type="varchar" MaxLength="50" />
+    <Property Name="Descrizione" Type="varchar" MaxLength="255" />
+    <Property Name="RiferimentoPadre" Type="int" />
+    <Property Name="Prezzo" Type="money" />
+    <Property Name="NoteTecniche" Type="varchar" MaxLength="8000" />
+    <Property Name="Famiglia" Type="int" />
+  </EntityType>
+  <EntityType Name="dbRef_Listino">
+    <Key>
+      <PropertyRef Name="IDPrezzo" />
+    </Key>
+    <Property Name="IDPrezzo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDNamespace" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ExcelCella" Type="varchar" MaxLength="50" />
+    <Property Name="Valore" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="RefVarType" Type="varchar" MaxLength="50" />
+    <Property Name="Note" Type="varchar" MaxLength="8000" />
+    <Property Name="NoteTecniche" Type="varchar" MaxLength="8000" />
+    <Property Name="DataModifica" Type="datetime" />
+    <Property Name="Famiglia" Type="smallint" />
+    <Property Name="Operatore" Type="varchar" MaxLength="50" />
+    <Property Name="FormulaExcel" Type="varchar" MaxLength="300" />
+    <Property Name="FormulaFast" Type="varchar" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="dbRef_Listino_Storico">
+    <Key>
+      <PropertyRef Name="IdPubblicazione" />
+    </Key>
+    <Property Name="IdPubblicazione" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DataPubblicazione" Type="datetime" Nullable="false" />
+    <Property Name="KaiPubblicazione" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="IDPrezzo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDNamespace" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ExcelCella" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Valore" Type="float" />
+    <Property Name="Valore_vecchio" Type="real" />
+    <Property Name="RefVarType" Type="varchar" MaxLength="50" />
+    <Property Name="Note" Type="varchar" MaxLength="8000" />
+    <Property Name="NoteTecniche" Type="varchar" MaxLength="8000" />
+    <Property Name="DataModifica" Type="datetime" />
+    <Property Name="Famiglia" Type="smallint" />
+    <Property Name="Operatore" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errori trovati durante la generazione:
+avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'FAST.dbo.dbRef_lookup_FamigliaCosto'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+  <EntityType Name="dbRef_lookup_FamigliaCosto">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="Descrizione" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descrizione" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Depliants">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Codice" Type="varchar" MaxLength="10" />
+    <Property Name="Revisione" Type="varchar" MaxLength="25" />
+    <Property Name="Descrizione" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="Thumbnail" Type="varchar" MaxLength="50" />
+    <Property Name="Immagine" Type="varchar" MaxLength="50" />
+    <Property Name="Ordinamento" Type="int" />
+    <Property Name="FuoriCorso" Type="smallint" />
+  </EntityType>
+  <EntityType Name="Depliants_Trace">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Depliant_Id" Type="int" Nullable="false" />
+    <Property Name="Qta" Type="int" Nullable="false" />
+    <Property Name="dataRichiesta" Type="datetime" Nullable="false" />
+    <Property Name="qtaElargita" Type="int" />
+    <Property Name="status" Type="smallint" />
+    <Property Name="id_Richiesta" Type="int" />
+  </EntityType>
+  <EntityType Name="Depliants_Trace_Elenco">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="data" Type="datetime" Nullable="false" />
+    <Property Name="Richiedente_Kai" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="numeroRichiesta" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DepliantsStatusElenco">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descrizione" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DepliantsStatusRichieste">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descrizione" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DescrizioniLavori">
+    <Key>
+      <PropertyRef Name="idLavoro" />
+    </Key>
+    <Property Name="idLavoro" Type="int" Nullable="false" />
+    <Property Name="Descrizione" Type="varchar" MaxLength="4000" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Documenti">
+    <Key>
+      <PropertyRef Name="Classe" />
+      <PropertyRef Name="CodiceFAST" />
+    </Key>
+    <Property Name="Classe" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="CodiceFAST" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="PathName" Type="varchar" MaxLength="64" />
+    <Property Name="Titolo" Type="varchar" MaxLength="128" />
+  </EntityType>
+  <!--Errori trovati durante la generazione:
+avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'FAST.dbo.dtproperties'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+  <EntityType Name="dtproperties">
+    <Key>
+      <PropertyRef Name="property" />
+      <PropertyRef Name="version" />
+    </Key>
+    <Property Name="objectid" Type="int" />
+    <Property Name="property" Type="varchar" MaxLength="64" Nullable="false" />
+    <Property Name="value" Type="varchar" MaxLength="255" />
+    <Property Name="uvalue" Type="nvarchar" MaxLength="255" />
+    <Property Name="lvalue" Type="image" />
+    <Property Name="version" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DTSEBTasks">
+    <Key>
+      <PropertyRef Name="idTask" />
+    </Key>
+    <Property Name="idTask" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idLavoro" Type="int" Nullable="false" />
+    <Property Name="idOfferta" Type="int" Nullable="false" />
+    <Property Name="equipment_number" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="kai_richiedente" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="nome_richiedente" Type="varchar" MaxLength="32" />
+    <Property Name="descrizione" Type="varchar" MaxLength="64" />
+    <Property Name="data_richiesta" Type="datetime" Nullable="false" />
+    <Property Name="data_completamento" Type="datetime" />
+    <Property Name="kai_esecutore" Type="varchar" MaxLength="255" />
+    <Property Name="nome_esecutore" Type="varchar" MaxLength="32" />
+    <Property Name="annullato" Type="smallint" />
+    <Property Name="commenti" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="EDMSData">
+    <Key>
+      <PropertyRef Name="D:doc" />
+    </Key>
+    <Property Name="D:doc" Type="char" MaxLength="16" Nullable="false" />
+    <Property Name="D:owner_org" Type="varchar" MaxLength="8" />
+    <Property Name="D:current_state" Type="varchar" MaxLength="16" />
+    <Property Name="D:create_time" Type="datetime" />
+    <Property Name="D:create_user" Type="varchar" MaxLength="16" />
+    <Property Name="D:attr_mod_user" Type="varchar" MaxLength="16" />
+    <Property Name="D:current_versions" Type="varchar" MaxLength="16" />
+    <Property Name="DV:version" Type="varchar" MaxLength="16" />
+    <Property Name="DV:current_state" Type="varchar" MaxLength="16" />
+    <Property Name="DV:elev_id" Type="varchar" MaxLength="16" />
+    <Property Name="DV:elev_sap" Type="char" MaxLength="8" />
+    <Property Name="DV:elev_custname" Type="varchar" MaxLength="50" />
+    <Property Name="DV:elev_custref" Type="varchar" MaxLength="50" />
+    <Property Name="DV:elev_city" Type="varchar" MaxLength="50" />
+    <Property Name="DV:elev_street" Type="varchar" MaxLength="50" />
+    <Property Name="DV:elev_building" Type="varchar" MaxLength="50" />
+    <Property Name="DV:fl_branch" Type="char" MaxLength="4" />
+    <Property Name="DV:report_date" Type="datetime" />
+    <Property Name="DV:handled_by" Type="varchar" MaxLength="50" />
+    <Property Name="DV:serv_comp" Type="varchar" MaxLength="2" />
+    <Property Name="DV:man_name" Type="varchar" MaxLength="50" />
+    <Property Name="DV:man_year" Type="smallint" />
+    <Property Name="DV:stops_nb" Type="smallint" />
+    <Property Name="DV:landing_doors" Type="tinyint" />
+    <Property Name="DV:car_load" Type="smallint" />
+    <Property Name="DV:speed" Type="decimal" Precision="4" Scale="0" />
+    <Property Name="DV:travhei" Type="float" />
+    <Property Name="DV:subcategory" Type="char" MaxLength="2" />
+    <Property Name="DV:persons_nb" Type="smallint" />
+    <Property Name="DV:scenic" Type="tinyint" />
+    <Property Name="DV:group_size" Type="tinyint" />
+    <Property Name="DV:ropediam" Type="float" />
+    <Property Name="DV:ropepcs" Type="smallint" />
+    <Property Name="DV:ropelen" Type="float" />
+    <Property Name="DV:capacity" Type="float" />
+    <Property Name="DV:current" Type="float" />
+    <Property Name="DV:supply_v" Type="smallint" />
+    <Property Name="DV:ropsusp" Type="tinyint" />
+    <Property Name="DV:buildseg" Type="char" MaxLength="2" />
+    <Property Name="DV:macmodel" Type="varchar" MaxLength="32" />
+    <Property Name="DV:macmodyear" Type="varchar" MaxLength="255" />
+    <Property Name="DV:macrope" Type="char" MaxLength="2" />
+    <Property Name="DV:macdefcon" Type="varchar" MaxLength="255" />
+    <Property Name="DV:piston_diameter" Type="float" />
+    <Property Name="DV:pipe_size" Type="float" />
+    <Property Name="DV:def_con" Type="varchar" MaxLength="255" />
+    <Property Name="DV:conmodel" Type="varchar" MaxLength="32" />
+    <Property Name="DV:conmodyear" Type="smallint" />
+    <Property Name="DV:contype" Type="varchar" MaxLength="255" />
+    <Property Name="DV:drimodel" Type="varchar" MaxLength="255" />
+    <Property Name="DV:condefcon" Type="varchar" MaxLength="255" />
+    <Property Name="DV:ldomodel" Type="varchar" MaxLength="255" />
+    <Property Name="DV:ldomodyear" Type="varchar" MaxLength="255" />
+    <Property Name="DV:ldolocktype" Type="varchar" MaxLength="255" />
+    <Property Name="DV:dootype" Type="varchar" MaxLength="255" />
+    <Property Name="DV:dooclosys" Type="varchar" MaxLength="255" />
+    <Property Name="DV:ldodefcon" Type="varchar" MaxLength="255" />
+    <Property Name="DV:cdomodel" Type="varchar" MaxLength="255" />
+    <Property Name="DV:cdomodyear" Type="varchar" MaxLength="255" />
+    <Property Name="DV:cdotype" Type="varchar" MaxLength="255" />
+    <Property Name="DV:cdodefcon" Type="varchar" MaxLength="255" />
+    <Property Name="DV:lsibuttype" Type="varchar" MaxLength="255" />
+    <Property Name="DV:lsidefcon" Type="varchar" MaxLength="255" />
+    <Property Name="DV:csibuttype" Type="varchar" MaxLength="255" />
+    <Property Name="DV:csidefcon" Type="varchar" MaxLength="255" />
+    <Property Name="DV:cc_type" Type="varchar" MaxLength="255" />
+    <Property Name="DV:acc_ldosigreq" Type="varchar" MaxLength="255" />
+    <Property Name="DV:acc_carsigreq" Type="varchar" MaxLength="255" />
+    <Property Name="DV:acc_handrail" Type="varchar" MaxLength="255" />
+    <Property Name="DV:acc_mirror" Type="varchar" MaxLength="255" />
+    <Property Name="DV:shaft_ww" Type="varchar" MaxLength="255" />
+    <Property Name="DV:shaft_wd" Type="varchar" MaxLength="255" />
+    <Property Name="DV:acc_carwidth" Type="varchar" MaxLength="255" />
+    <Property Name="DV:acc_cardepth" Type="varchar" MaxLength="255" />
+    <Property Name="DV:acc_doorpos" Type="varchar" MaxLength="255" />
+    <Property Name="DV:acc_doorwidtha" Type="varchar" MaxLength="255" />
+    <Property Name="DV:acc_doorwidthb" Type="varchar" MaxLength="255" />
+    <Property Name="DV:acc_doorwidthc" Type="varchar" MaxLength="255" />
+    <Property Name="DV:acc_doorwidthd" Type="varchar" MaxLength="255" />
+    <Property Name="DV:shaft_lphmm" Type="varchar" MaxLength="255" />
+    <Property Name="DV:shaft_lshmm" Type="varchar" MaxLength="255" />
+    <Property Name="DV:svc_concd" Type="varchar" MaxLength="255" />
+    <Property Name="DV:svc_concf" Type="varchar" MaxLength="255" />
+    <Property Name="DV:svc_concw" Type="varchar" MaxLength="255" />
+    <Property Name="DV:svc_conldm" Type="varchar" MaxLength="255" />
+    <Property Name="DV:svc_conldo" Type="varchar" MaxLength="255" />
+    <Property Name="DV:svc_conill" Type="varchar" MaxLength="255" />
+    <Property Name="DV:cc_type_1" Type="varchar" MaxLength="255" />
+    <Property Name="DV:r1" Type="tinyint" />
+    <Property Name="DV:r19" Type="tinyint" />
+    <Property Name="DV:r20" Type="tinyint" />
+    <Property Name="DV:r21" Type="tinyint" />
+    <Property Name="DV:r22" Type="tinyint" />
+    <Property Name="DV:r23" Type="tinyint" />
+    <Property Name="DV:r24a" Type="tinyint" />
+    <Property Name="DV:r47" Type="tinyint" />
+    <Property Name="DV:r48" Type="tinyint" />
+    <Property Name="DV:r49" Type="tinyint" />
+    <Property Name="DV:r53a" Type="tinyint" />
+    <Property Name="DV:r53b" Type="tinyint" />
+    <Property Name="DV:r60a" Type="tinyint" />
+    <Property Name="DV:r62" Type="tinyint" />
+    <Property Name="DV:r64" Type="tinyint" />
+    <Property Name="DV:r66a" Type="tinyint" />
+    <Property Name="DV:r67" Type="tinyint" />
+    <Property Name="DV:r68" Type="tinyint" />
+    <Property Name="DV:r69" Type="tinyint" />
+    <Property Name="DV:r72" Type="tinyint" />
+    <Property Name="DV:r74" Type="tinyint" />
+    <Property Name="DV:r60b" Type="tinyint" />
+    <Property Name="DV:r61" Type="tinyint" />
+    <Property Name="DV:r65a" Type="tinyint" />
+    <Property Name="DV:r65b" Type="tinyint" />
+    <Property Name="DV:r2" Type="tinyint" />
+    <Property Name="DV:r3" Type="tinyint" />
+    <Property Name="DV:r4" Type="tinyint" />
+    <Property Name="DV:r5" Type="tinyint" />
+    <Property Name="DV:r30a" Type="tinyint" />
+    <Property Name="DV:r30b" Type="tinyint" />
+    <Property Name="DV:r38" Type="tinyint" />
+    <Property Name="DV:r39" Type="tinyint" />
+    <Property Name="DV:r40" Type="tinyint" />
+    <Property Name="DV:r44" Type="tinyint" />
+    <Property Name="DV:r45" Type="tinyint" />
+    <Property Name="DV:r46" Type="tinyint" />
+    <Property Name="DV:r59" Type="tinyint" />
+    <Property Name="DV:r71" Type="tinyint" />
+    <Property Name="DV:r73" Type="tinyint" />
+    <Property Name="DV:r41" Type="tinyint" />
+    <Property Name="DV:r42" Type="tinyint" />
+    <Property Name="DV:r43" Type="tinyint" />
+    <Property Name="DV:r50a" Type="tinyint" />
+    <Property Name="DV:r50b" Type="tinyint" />
+    <Property Name="DV:r52" Type="tinyint" />
+    <Property Name="DV:r57" Type="tinyint" />
+    <Property Name="DV:r63" Type="tinyint" />
+    <Property Name="DV:r70a" Type="tinyint" />
+    <Property Name="DV:r70b" Type="tinyint" />
+    <Property Name="DV:r54a" Type="tinyint" />
+    <Property Name="DV:r54b" Type="tinyint" />
+    <Property Name="DV:r8" Type="tinyint" />
+    <Property Name="DV:r9" Type="tinyint" />
+    <Property Name="DV:r25" Type="tinyint" />
+    <Property Name="DV:r26" Type="tinyint" />
+    <Property Name="DV:r27" Type="tinyint" />
+    <Property Name="DV:r28" Type="tinyint" />
+    <Property Name="DV:r29" Type="tinyint" />
+    <Property Name="DV:r31" Type="tinyint" />
+    <Property Name="DV:r32" Type="tinyint" />
+    <Property Name="DV:r33" Type="tinyint" />
+    <Property Name="DV:r34" Type="tinyint" />
+    <Property Name="DV:r35" Type="tinyint" />
+    <Property Name="DV:r36" Type="tinyint" />
+    <Property Name="DV:r37" Type="tinyint" />
+    <Property Name="DV:r66b" Type="tinyint" />
+    <Property Name="DV:r6" Type="tinyint" />
+    <Property Name="DV:r7" Type="tinyint" />
+    <Property Name="DV:r10" Type="tinyint" />
+    <Property Name="DV:r11" Type="tinyint" />
+    <Property Name="DV:r12" Type="tinyint" />
+    <Property Name="DV:r13" Type="tinyint" />
+    <Property Name="DV:r14" Type="tinyint" />
+    <Property Name="DV:r15" Type="tinyint" />
+    <Property Name="DV:r16" Type="tinyint" />
+    <Property Name="DV:r17" Type="tinyint" />
+    <Property Name="DV:r18" Type="tinyint" />
+    <Property Name="DV:r24b" Type="tinyint" />
+    <Property Name="DV:r51" Type="tinyint" />
+    <Property Name="DV:r55" Type="tinyint" />
+    <Property Name="DV:r56" Type="tinyint" />
+    <Property Name="DV:r58" Type="tinyint" />
+  </EntityType>
+  <EntityType Name="extractKIT">
+    <Key>
+      <PropertyRef Name="D:doc" />
+    </Key>
+    <Property Name="D:doc" Type="char" MaxLength="16" Nullable="false" />
+    <Property Name="D:owner_org" Type="varchar" MaxLength="8" />
+    <Property Name="D:current_state" Type="varchar" MaxLength="16" />
+    <Property Name="D:create_time" Type="bigint" />
+    <Property Name="D_create_time" Type="datetime" />
+    <Property Name="D:create_user" Type="varchar" MaxLength="16" />
+    <Property Name="D:attr_mod_user" Type="varchar" MaxLength="16" />
+    <Property Name="D:current_versions" Type="varchar" MaxLength="16" />
+    <Property Name="DV:version" Type="varchar" MaxLength="16" />
+    <Property Name="DV:current_state" Type="varchar" MaxLength="16" />
+    <Property Name="DV:elev_id" Type="varchar" MaxLength="16" />
+    <Property Name="DV:elev_sap" Type="char" MaxLength="8" />
+    <Property Name="DV:elev_custname" Type="varchar" MaxLength="50" />
+    <Property Name="DV:elev_custref" Type="varchar" MaxLength="50" />
+    <Property Name="DV:elev_city" Type="varchar" MaxLength="50" />
+    <Property Name="DV:elev_street" Type="varchar" MaxLength="50" />
+    <Property Name="DV:elev_building" Type="varchar" MaxLength="50" />
+    <Property Name="DV:fl_branch" Type="char" MaxLength="4" />
+    <Property Name="DV:report_date" Type="bigint" />
+    <Property Name="DV_report_date" Type="datetime" />
+    <Property Name="DV:handled_by" Type="varchar" MaxLength="50" />
+    <Property Name="DV:serv_comp" Type="varchar" MaxLength="2" />
+    <Property Name="DV:man_name" Type="varchar" MaxLength="50" />
+    <Property Name="DV:man_year" Type="smallint" />
+    <Property Name="DV:stops_nb" Type="smallint" />
+    <Property Name="DV:landing_doors" Type="tinyint" />
+    <Property Name="DV:car_load" Type="smallint" />
+    <Property Name="DV:speed" Type="decimal" Precision="4" Scale="0" />
+    <Property Name="DV:travhei" Type="float" />
+    <Property Name="DV:subcategory" Type="char" MaxLength="2" />
+    <Property Name="DV:persons_nb" Type="smallint" />
+    <Property Name="DV:scenic" Type="tinyint" />
+    <Property Name="DV:group_size" Type="tinyint" />
+    <Property Name="DV:ropediam" Type="float" />
+    <Property Name="DV:ropepcs" Type="smallint" />
+    <Property Name="DV:ropelen" Type="float" />
+    <Property Name="DV:capacity" Type="float" />
+    <Property Name="DV:current" Type="float" />
+    <Property Name="DV:supply_v" Type="smallint" />
+    <Property Name="DV:ropsusp" Type="tinyint" />
+    <Property Name="DV:buildseg" Type="char" MaxLength="2" />
+    <Property Name="DV:macmodel" Type="varchar" MaxLength="32" />
+    <Property Name="DV:macmodyear" Type="varchar" MaxLength="255" />
+    <Property Name="DV:macrope" Type="char" MaxLength="2" />
+    <Property Name="DV:macdefcon" Type="varchar" MaxLength="255" />
+    <Property Name="DV:piston_diameter" Type="float" />
+    <Property Name="DV:pipe_size" Type="float" />
+    <Property Name="DV:def_con" Type="varchar" MaxLength="255" />
+    <Property Name="DV:conmodel" Type="varchar" MaxLength="32" />
+    <Property Name="DV:conmodyear" Type="smallint" />
+    <Property Name="DV:contype" Type="varchar" MaxLength="255" />
+    <Property Name="DV:drimodel" Type="varchar" MaxLength="255" />
+    <Property Name="DV:condefcon" Type="varchar" MaxLength="255" />
+    <Property Name="DV:ldomodel" Type="varchar" MaxLength="255" />
+    <Property Name="DV:ldomodyear" Type="varchar" MaxLength="255" />
+    <Property Name="DV:ldolocktype" Type="varchar" MaxLength="255" />
+    <Property Name="DV:dootype" Type="varchar" MaxLength="255" />
+    <Property Name="DV:dooclosys" Type="varchar" MaxLength="255" />
+    <Property Name="DV:ldodefcon" Type="varchar" MaxLength="255" />
+    <Property Name="DV:cdomodel" Type="varchar" MaxLength="255" />
+    <Property Name="DV:cdomodyear" Type="varchar" MaxLength="255" />
+    <Property Name="DV:cdotype" Type="varchar" MaxLength="255" />
+    <Property Name="DV:cdodefcon" Type="varchar" MaxLength="255" />
+    <Property Name="DV:lsibuttype" Type="varchar" MaxLength="255" />
+    <Property Name="DV:lsidefcon" Type="varchar" MaxLength="255" />
+    <Property Name="DV:csibuttype" Type="varchar" MaxLength="255" />
+    <Property Name="DV:csidefcon" Type="varchar" MaxLength="255" />
+    <Property Name="DV:cc_type" Type="varchar" MaxLength="255" />
+    <Property Name="DV:acc_ldosigreq" Type="varchar" MaxLength="255" />
+    <Property Name="DV:acc_carsigreq" Type="varchar" MaxLength="255" />
+    <Property Name="DV:acc_handrail" Type="varchar" MaxLength="255" />
+    <Property Name="DV:acc_mirror" Type="varchar" MaxLength="255" />
+    <Property Name="DV:shaft_ww" Type="varchar" MaxLength="255" />
+    <Property Name="DV:shaft_wd" Type="varchar" MaxLength="255" />
+    <Property Name="DV:acc_carwidth" Type="varchar" MaxLength="255" />
+    <Property Name="DV:acc_cardepth" Type="varchar" MaxLength="255" />
+    <Property Name="DV:acc_doorpos" Type="varchar" MaxLength="255" />
+    <Property Name="DV:acc_doorwidtha" Type="varchar" MaxLength="255" />
+    <Property Name="DV:acc_doorwidthb" Type="varchar" MaxLength="255" />
+    <Property Name="DV:acc_doorwidthc" Type="varchar" MaxLength="255" />
+    <Property Name="DV:acc_doorwidthd" Type="varchar" MaxLength="255" />
+    <Property Name="DV:shaft_lphmm" Type="varchar" MaxLength="255" />
+    <Property Name="DV:shaft_lshmm" Type="varchar" MaxLength="255" />
+    <Property Name="DV:svc_concd" Type="varchar" MaxLength="255" />
+    <Property Name="DV:svc_concf" Type="varchar" MaxLength="255" />
+    <Property Name="DV:svc_concw" Type="varchar" MaxLength="255" />
+    <Property Name="DV:svc_conldm" Type="varchar" MaxLength="255" />
+    <Property Name="DV:svc_conldo" Type="varchar" MaxLength="255" />
+    <Property Name="DV:svc_conill" Type="varchar" MaxLength="255" />
+    <Property Name="DV:cc_type_1" Type="varchar" MaxLength="255" />
+    <Property Name="DV:r1" Type="tinyint" />
+    <Property Name="DV:r19" Type="tinyint" />
+    <Property Name="DV:r20" Type="tinyint" />
+    <Property Name="DV:r21" Type="tinyint" />
+    <Property Name="DV:r22" Type="tinyint" />
+    <Property Name="DV:r23" Type="tinyint" />
+    <Property Name="DV:r24a" Type="tinyint" />
+    <Property Name="DV:r47" Type="tinyint" />
+    <Property Name="DV:r48" Type="tinyint" />
+    <Property Name="DV:r49" Type="tinyint" />
+    <Property Name="DV:r53a" Type="tinyint" />
+    <Property Name="DV:r53b" Type="tinyint" />
+    <Property Name="DV:r60a" Type="tinyint" />
+    <Property Name="DV:r62" Type="tinyint" />
+    <Property Name="DV:r64" Type="tinyint" />
+    <Property Name="DV:r66a" Type="tinyint" />
+    <Property Name="DV:r67" Type="tinyint" />
+    <Property Name="DV:r68" Type="tinyint" />
+    <Property Name="DV:r69" Type="tinyint" />
+    <Property Name="DV:r72" Type="tinyint" />
+    <Property Name="DV:r74" Type="tinyint" />
+    <Property Name="DV:r60b" Type="tinyint" />
+    <Property Name="DV:r61" Type="tinyint" />
+    <Property Name="DV:r65a" Type="tinyint" />
+    <Property Name="DV:r65b" Type="tinyint" />
+    <Property Name="DV:r2" Type="tinyint" />
+    <Property Name="DV:r3" Type="tinyint" />
+    <Property Name="DV:r4" Type="tinyint" />
+    <Property Name="DV:r5" Type="tinyint" />
+    <Property Name="DV:r30a" Type="tinyint" />
+    <Property Name="DV:r30b" Type="tinyint" />
+    <Property Name="DV:r38" Type="tinyint" />
+    <Property Name="DV:r39" Type="tinyint" />
+    <Property Name="DV:r40" Type="tinyint" />
+    <Property Name="DV:r44" Type="tinyint" />
+    <Property Name="DV:r45" Type="tinyint" />
+    <Property Name="DV:r46" Type="tinyint" />
+    <Property Name="DV:r59" Type="tinyint" />
+    <Property Name="DV:r71" Type="tinyint" />
+    <Property Name="DV:r73" Type="tinyint" />
+    <Property Name="DV:r41" Type="tinyint" />
+    <Property Name="DV:r42" Type="tinyint" />
+    <Property Name="DV:r43" Type="tinyint" />
+    <Property Name="DV:r50a" Type="tinyint" />
+    <Property Name="DV:r50b" Type="tinyint" />
+    <Property Name="DV:r52" Type="tinyint" />
+    <Property Name="DV:r57" Type="tinyint" />
+    <Property Name="DV:r63" Type="tinyint" />
+    <Property Name="DV:r70a" Type="tinyint" />
+    <Property Name="DV:r70b" Type="tinyint" />
+    <Property Name="DV:r54a" Type="tinyint" />
+    <Property Name="DV:r54b" Type="tinyint" />
+    <Property Name="DV:r8" Type="tinyint" />
+    <Property Name="DV:r9" Type="tinyint" />
+    <Property Name="DV:r25" Type="tinyint" />
+    <Property Name="DV:r26" Type="tinyint" />
+    <Property Name="DV:r27" Type="tinyint" />
+    <Property Name="DV:r28" Type="tinyint" />
+    <Property Name="DV:r29" Type="tinyint" />
+    <Property Name="DV:r31" Type="tinyint" />
+    <Property Name="DV:r32" Type="tinyint" />
+    <Property Name="DV:r33" Type="tinyint" />
+    <Property Name="DV:r34" Type="tinyint" />
+    <Property Name="DV:r35" Type="tinyint" />
+    <Property Name="DV:r36" Type="tinyint" />
+    <Property Name="DV:r37" Type="tinyint" />
+    <Property Name="DV:r66b" Type="tinyint" />
+    <Property Name="DV:r6" Type="tinyint" />
+    <Property Name="DV:r7" Type="tinyint" />
+    <Property Name="DV:r10" Type="tinyint" />
+    <Property Name="DV:r11" Type="tinyint" />
+    <Property Name="DV:r12" Type="tinyint" />
+    <Property Name="DV:r13" Type="tinyint" />
+    <Property Name="DV:r14" Type="tinyint" />
+    <Property Name="DV:r15" Type="tinyint" />
+    <Property Name="DV:r16" Type="tinyint" />
+    <Property Name="DV:r17" Type="tinyint" />
+    <Property Name="DV:r18" Type="tinyint" />
+    <Property Name="DV:r24b" Type="tinyint" />
+    <Property Name="DV:r51" Type="tinyint" />
+    <Property Name="DV:r55" Type="tinyint" />
+    <Property Name="DV:r56" Type="tinyint" />
+    <Property Name="DV:r58" Type="tinyint" />
+    <Property Name="Col172" Type="varchar" MaxLength="16" />
+  </EntityType>
+  <EntityType Name="fastLog">
+    <Key>
+      <PropertyRef Name="logID" />
+    </Key>
+    <Property Name="logID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="logtTime" Type="datetime" Nullable="false" />
+    <Property Name="action" Type="varchar" MaxLength="256" />
+    <Property Name="details" Type="text" />
+  </EntityType>
+  <!--Errori trovati durante la generazione:
+avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'FAST.dbo.FastPorte_Lavori'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+  <EntityType Name="FastPorte_Lavori">
+    <Key>
+      <PropertyRef Name="CodiceFAST" />
+    </Key>
+    <Property Name="CodiceFAST" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Titolo" Type="varchar" MaxLength="255" />
+    <Property Name="Descrizione" Type="varchar" MaxLength="4000" />
+    <Property Name="CodiceSAP" Type="varchar" MaxLength="20" />
+    <Property Name="DataFineValidita" Type="datetime" />
+    <Property Name="L1" Type="varchar" MaxLength="50" />
+    <Property Name="L2" Type="varchar" MaxLength="50" />
+    <Property Name="L3" Type="varchar" MaxLength="50" />
+    <Property Name="L4" Type="varchar" MaxLength="50" />
+    <Property Name="materiali" Type="float" />
+    <Property Name="ore" Type="float" />
+    <Property Name="Documento" Type="varchar" MaxLength="100" />
+    <Property Name="visibileDa" Type="nvarchar" MaxLength="300" />
+    <Property Name="categoria" Type="char" MaxLength="3" />
+  </EntityType>
+  <!--Errori trovati durante la generazione:
+avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'FAST.dbo.FastScaleTappeti_Lavori'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+  <EntityType Name="FastScaleTappeti_Lavori">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="CodiceFAST" />
+      <PropertyRef Name="Descrizione" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="CodiceFAST" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Titolo" Type="varchar" MaxLength="255" />
+    <Property Name="Descrizione" Type="varchar" MaxLength="4000" Nullable="false" />
+    <Property Name="CodiceSAP" Type="varchar" MaxLength="20" />
+    <Property Name="DataFineValidita" Type="datetime" />
+    <Property Name="L1" Type="varchar" MaxLength="100" />
+    <Property Name="L2" Type="varchar" MaxLength="100" />
+    <Property Name="L3" Type="varchar" MaxLength="100" />
+    <Property Name="L4" Type="varchar" MaxLength="100" />
+    <Property Name="materiali" Type="float" />
+    <Property Name="ore" Type="float" />
+    <Property Name="Documento" Type="varchar" MaxLength="100" />
+    <Property Name="visibileDa" Type="nvarchar" MaxLength="300" />
+    <Property Name="categoria" Type="char" MaxLength="3" />
+    <Property Name="unitaDiMisura" Type="char" MaxLength="3" />
+  </EntityType>
+  <EntityType Name="idGenerator">
+    <Key>
+      <PropertyRef Name="idGen" />
+    </Key>
+    <Property Name="idGen" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="pfx" Type="varchar" MaxLength="3" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Impianti">
+    <Key>
+      <PropertyRef Name="EQUIPMENT_NUMBER" />
+    </Key>
+    <Property Name="EQUIPMENT_NUMBER" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="NumImpianto" Type="varchar" MaxLength="10" />
+    <Property Name="Tipo" Type="varchar" MaxLength="16" />
+    <Property Name="PrefissoIndirizzo" Type="varchar" MaxLength="16" />
+    <Property Name="Indirizzo" Type="varchar" MaxLength="35" />
+    <Property Name="Civico" Type="varchar" MaxLength="10" />
+    <Property Name="CAP" Type="varchar" MaxLength="10" />
+    <Property Name="Localita" Type="varchar" MaxLength="35" />
+    <Property Name="Paese" Type="varchar" MaxLength="3" />
+    <Property Name="Provincia" Type="varchar" MaxLength="4" />
+    <Property Name="Corsa" Type="real" />
+    <Property Name="Fermate" Type="int" />
+    <Property Name="Portata" Type="int" />
+    <Property Name="Azionamento" Type="varchar" MaxLength="2" />
+    <Property Name="Manovra" Type="varchar" MaxLength="2" />
+    <Property Name="xmlDetails" Type="text" />
+    <Property Name="IDParty" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="IDVenditore" Type="varchar" MaxLength="3" />
+    <Property Name="Distretto" Type="varchar" MaxLength="4" />
+    <Property Name="DataRichiestaAllineamento" Type="datetime" />
+    <Property Name="DataAllineamento" Type="datetime" />
+    <Property Name="AccessiCabina" Type="smallint" />
+    <Property Name="Velocita" Type="float" />
+    <Property Name="Sollevamento" Type="varchar" MaxLength="2" />
+    <Property Name="Molteplicita" Type="int" />
+    <Property Name="TipoPortePiano" Type="varchar" MaxLength="2" />
+    <Property Name="Esecuzione" Type="varchar" MaxLength="2" />
+    <Property Name="GuideCTP" Type="varchar" MaxLength="2" />
+    <Property Name="DataCollaudo" Type="datetime" />
+    <Property Name="DataRichiestaCreazioneSAP" Type="datetime" />
+    <Property Name="DataCreazioneSAP" Type="datetime" />
+    <Property Name="CreatoSAPDa" Type="varchar" MaxLength="10" />
+    <Property Name="DataLastUpd" Type="datetime" />
+  </EntityType>
+  <EntityType Name="ImpiantiInOfferte">
+    <Key>
+      <PropertyRef Name="IDOfferta" />
+      <PropertyRef Name="equipment_number" />
+    </Key>
+    <Property Name="IDOfferta" Type="int" Nullable="false" />
+    <Property Name="equipment_number" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="detLocalizzazione" Type="varchar" MaxLength="64" />
+    <Property Name="note" Type="nvarchar" MaxLength="1000" />
+    <Property Name="ubicazioneSpecifica" Type="nvarchar" MaxLength="1000" />
+    <Property Name="totRspDaJobFile" Type="real" />
+  </EntityType>
+  <EntityType Name="LavoriACaricoCliente">
+    <Key>
+      <PropertyRef Name="CodiceFast" />
+    </Key>
+    <Property Name="CodiceFast" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Titolo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Descrizione" Type="varchar" MaxLength="4000" Nullable="false" />
+    <Property Name="ApplyToCat" Type="varchar" MaxLength="8" />
+    <Property Name="ApplyToSubCat" Type="varchar" MaxLength="32" />
+    <Property Name="Inventore" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <!--Errori trovati durante la generazione:
+avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'FAST.dbo.LavoriCodificati'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+  <EntityType Name="LavoriCodificati">
+    <Key>
+      <PropertyRef Name="CodiceFAST" />
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="CodiceFAST" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Titolo" Type="varchar" MaxLength="128" />
+    <Property Name="CostoMateriali" Type="money" />
+    <Property Name="Ore" Type="real" />
+    <Property Name="Efficienza" Type="real" />
+    <Property Name="CodiceM2" Type="varchar" MaxLength="32" />
+    <Property Name="Documento" Type="varchar" MaxLength="32" />
+    <Property Name="ApplyToCat" Type="varchar" MaxLength="8" />
+    <Property Name="ApplyToSubCat" Type="varchar" MaxLength="32" />
+    <Property Name="leadTime" Type="int" />
+    <Property Name="CodiceSAP" Type="varchar" MaxLength="20" />
+    <Property Name="L1" Type="varchar" MaxLength="64" Nullable="false" />
+    <Property Name="L2" Type="varchar" MaxLength="64" Nullable="false" />
+    <Property Name="L3" Type="varchar" MaxLength="64" Nullable="false" />
+    <Property Name="L4" Type="varchar" MaxLength="64" Nullable="false" />
+    <Property Name="categoria" Type="char" MaxLength="3" />
+    <Property Name="processo" Type="char" MaxLength="1" />
+    <Property Name="cm2" Type="real" />
+    <Property Name="revisione" Type="int" />
+    <Property Name="dataFuoriCorso" Type="datetime" />
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errori trovati durante la generazione:
+avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'FAST.dbo.LavoriCodificati2006'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+  <EntityType Name="LavoriCodificati2006">
+    <Key>
+      <PropertyRef Name="CodiceFAST" />
+    </Key>
+    <Property Name="CodiceFAST" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Titolo" Type="varchar" MaxLength="128" />
+    <Property Name="CostoMateriali" Type="money" />
+    <Property Name="Ore" Type="real" />
+    <Property Name="Efficienza" Type="real" />
+    <Property Name="CodiceM2" Type="varchar" MaxLength="32" />
+    <Property Name="Documento" Type="varchar" MaxLength="32" />
+    <Property Name="ApplyToCat" Type="varchar" MaxLength="8" />
+    <Property Name="ApplyToSubCat" Type="varchar" MaxLength="32" />
+    <Property Name="leadTime" Type="int" />
+    <Property Name="CodiceSAP" Type="varchar" MaxLength="10" />
+    <Property Name="L1" Type="varchar" MaxLength="64" />
+    <Property Name="L2" Type="varchar" MaxLength="64" />
+    <Property Name="L3" Type="varchar" MaxLength="64" />
+    <Property Name="L4" Type="varchar" MaxLength="64" />
+    <Property Name="categoria" Type="char" MaxLength="3" />
+    <Property Name="processo" Type="char" MaxLength="1" />
+    <Property Name="cm2" Type="real" />
+    <Property Name="revisione" Type="int" />
+    <Property Name="dataFuoriCorso" Type="datetime" />
+  </EntityType>
+  <!--Errori trovati durante la generazione:
+avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'FAST.dbo.LavoriCodificati2012'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+  <EntityType Name="LavoriCodificati2012">
+    <Key>
+      <PropertyRef Name="CodiceFAST" />
+    </Key>
+    <Property Name="CodiceFAST" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Titolo" Type="varchar" MaxLength="128" />
+    <Property Name="CostoMateriali" Type="money" />
+    <Property Name="Ore" Type="real" />
+    <Property Name="Efficienza" Type="real" />
+    <Property Name="CodiceM2" Type="varchar" MaxLength="32" />
+    <Property Name="Documento" Type="varchar" MaxLength="32" />
+    <Property Name="ApplyToCat" Type="varchar" MaxLength="8" />
+    <Property Name="ApplyToSubCat" Type="varchar" MaxLength="32" />
+    <Property Name="leadTime" Type="int" />
+    <Property Name="CodiceSAP" Type="varchar" MaxLength="20" />
+    <Property Name="L1" Type="varchar" MaxLength="64" />
+    <Property Name="L2" Type="varchar" MaxLength="64" />
+    <Property Name="L3" Type="varchar" MaxLength="64" />
+    <Property Name="L4" Type="varchar" MaxLength="64" />
+    <Property Name="categoria" Type="char" MaxLength="3" />
+    <Property Name="processo" Type="char" MaxLength="1" />
+    <Property Name="cm2" Type="real" />
+    <Property Name="revisione" Type="int" />
+    <Property Name="dataFuoriCorso" Type="datetime" />
+  </EntityType>
+  <!--Errori trovati durante la generazione:
+avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'FAST.dbo.LavoriCodificatiPrezzoLibero'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+  <EntityType Name="LavoriCodificatiPrezzoLibero">
+    <Key>
+      <PropertyRef Name="CodiceFast" />
+      <PropertyRef Name="Titolo" />
+      <PropertyRef Name="Descrizione" />
+      <PropertyRef Name="CodiceSAP" />
+      <PropertyRef Name="categoria" />
+      <PropertyRef Name="processo" />
+      <PropertyRef Name="leadTime" />
+      <PropertyRef Name="DescrizioneModificabile" />
+    </Key>
+    <Property Name="CodiceFast" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Titolo" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Descrizione" Type="varchar" MaxLength="4000" Nullable="false" />
+    <Property Name="CodiceSAP" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="categoria" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="processo" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="leadTime" Type="int" Nullable="false" />
+    <Property Name="DescrizioneModificabile" Type="smallint" Nullable="false" />
+    <Property Name="Tipologia" Type="varchar" MaxLength="5" />
+    <Property Name="DataFineValidita" Type="datetime" />
+  </EntityType>
+  <EntityType Name="LavoriInOfferte">
+    <Key>
+      <PropertyRef Name="idLavoro" />
+    </Key>
+    <Property Name="idLavoro" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDOfferta" Type="int" Nullable="false" />
+    <Property Name="equipment_number" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="tpLavoro" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="CodiceFast" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CostoMaterialiInterCompany" Type="money" Nullable="false" />
+    <Property Name="CostoMaterialiIntraCompany" Type="money" Nullable="false" />
+    <Property Name="CostoMaterialiEsterni" Type="money" Nullable="false" />
+    <Property Name="OreManodopera" Type="real" Nullable="false" />
+    <Property Name="OreManovalanza" Type="real" Nullable="false" />
+    <Property Name="xmlDetails" Type="text" />
+    <Property Name="Prezzo" Type="real" Nullable="false" />
+    <Property Name="Quantita" Type="real" />
+    <Property Name="DataRichiestaQuotazione" Type="datetime" />
+    <Property Name="DataQuotazione" Type="datetime" />
+    <Property Name="CodiceSAP" Type="varchar" MaxLength="20" />
+    <Property Name="flgVariante" Type="int" />
+    <Property Name="LeadTime" Type="int" />
+    <Property Name="ExtraCosti" Type="float" />
+    <Property Name="ExtraOre" Type="float" />
+    <Property Name="categoria" Type="char" MaxLength="3" />
+    <Property Name="processo" Type="char" MaxLength="1" />
+    <Property Name="cm2" Type="real" />
+    <Property Name="flgACaricoKone" Type="int" />
+    <Property Name="PrezzoLibero" Type="int" />
+    <Property Name="revisione" Type="int" />
+    <Property Name="Descrizione" Type="varchar" MaxLength="255" />
+    <Property Name="fhr" Type="real" />
+    <Property Name="CM2DiPartenza" Type="real" />
+    <Property Name="PrezzoAcq" Type="real" />
+    <Property Name="cm2Acq" Type="real" />
+    <Property Name="IDOrdine" Type="varchar" MaxLength="15" />
+    <Property Name="PrezzoMateriali" Type="real" />
+  </EntityType>
+  <EntityType Name="LavoriNonCOdificati">
+    <Key>
+      <PropertyRef Name="CodiceFast" />
+    </Key>
+    <Property Name="CodiceFast" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Titolo" Type="varchar" MaxLength="64" Nullable="false" />
+    <Property Name="Descrizione" Type="text" />
+    <Property Name="OreManovalanza" Type="real" />
+    <Property Name="OreManodopera" Type="real" />
+    <Property Name="CostoMaterialiInterCompany" Type="real" />
+    <Property Name="CostoMaterialiIntraCompany" Type="real" />
+    <Property Name="CostoMaterialiExtraCompany" Type="real" />
+    <Property Name="ApplyToCat" Type="varchar" MaxLength="8" />
+    <Property Name="ApplyToSubCat" Type="varchar" MaxLength="32" />
+    <Property Name="Inventore" Type="varchar" MaxLength="10" />
+    <Property Name="categoria" Type="char" MaxLength="3" />
+    <Property Name="LeadTime" Type="int" />
+    <Property Name="VerificaStraordinaria" Type="int" />
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Log">
+    <Key>
+      <PropertyRef Name="LogID" />
+    </Key>
+    <Property Name="LogID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EventID" Type="int" />
+    <Property Name="Priority" Type="int" Nullable="false" />
+    <Property Name="Severity" Type="nvarchar" MaxLength="32" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="Timestamp" Type="datetime" Nullable="false" />
+    <Property Name="MachineName" Type="nvarchar" MaxLength="32" Nullable="false" />
+    <Property Name="AppDomainName" Type="nvarchar" MaxLength="512" Nullable="false" />
+    <Property Name="ProcessID" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="ProcessName" Type="nvarchar" MaxLength="512" Nullable="false" />
+    <Property Name="ThreadName" Type="nvarchar" MaxLength="512" />
+    <Property Name="Win32ThreadId" Type="nvarchar" MaxLength="128" />
+    <Property Name="Message" Type="nvarchar" MaxLength="1500" />
+    <Property Name="FormattedMessage" Type="ntext" />
+  </EntityType>
+  <EntityType Name="LookupTables">
+    <Key>
+      <PropertyRef Name="tLookupGroup" />
+      <PropertyRef Name="tLookupSeed" />
+    </Key>
+    <Property Name="tLookupGroup" Type="nvarchar" MaxLength="32" Nullable="false" />
+    <Property Name="tLookupSeed" Type="nvarchar" MaxLength="64" Nullable="false" />
+    <Property Name="tLookupResult" Type="nvarchar" MaxLength="128" />
+    <Property Name="sortKey" Type="smallint" />
+  </EntityType>
+  <EntityType Name="Mail">
+    <Key>
+      <PropertyRef Name="idMail" />
+    </Key>
+    <Property Name="idMail" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idOfferta" Type="int" Nullable="false" />
+    <Property Name="tipoMail" Type="nvarchar" MaxLength="50" />
+    <Property Name="inviataA" Type="nvarchar" MaxLength="50" />
+    <Property Name="dataInvio" Type="datetime" />
+    <Property Name="inviataDa" Type="nvarchar" MaxLength="50" />
+    <Property Name="mailTo" Type="nvarchar" MaxLength="200" />
+    <Property Name="mailCC" Type="nvarchar" MaxLength="1000" />
+    <Property Name="mailBCC" Type="nvarchar" MaxLength="1000" />
+    <Property Name="mailSubject" Type="nvarchar" MaxLength="1000" />
+    <Property Name="mailBody" Type="nvarchar" MaxLength="1000" />
+    <Property Name="ricevutaIl" Type="datetime" />
+    <Property Name="note" Type="nvarchar" MaxLength="1000" />
+    <Property Name="revisione" Type="int" />
+    <Property Name="kaiUtente" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="MilestonePianoFatt">
+    <Key>
+      <PropertyRef Name="CodicePianoFatturazione" />
+      <PropertyRef Name="CodiceMilestone" />
+    </Key>
+    <Property Name="CodicePianoFatturazione" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="CodiceMilestone" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Percentuale" Type="int" Nullable="false" />
+    <Property Name="ModPag" Type="char" MaxLength="4" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ModificaOrdine">
+    <Key>
+      <PropertyRef Name="IDModifica" />
+    </Key>
+    <Property Name="IDModifica" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idOfferta" Type="int" Nullable="false" />
+    <Property Name="Motivazione" Type="nvarchar" MaxLength="255" />
+    <Property Name="DataInizioModifica" Type="datetime" Nullable="false" />
+    <Property Name="IniziataDa" Type="varchar" MaxLength="16" />
+    <Property Name="RSPPrecedente" Type="float" />
+    <Property Name="CM2Precedente" Type="float" />
+    <Property Name="MaterialiPrecedente" Type="float" />
+    <Property Name="OrePrecedente" Type="float" />
+    <Property Name="DataFineModifica" Type="datetime" />
+    <Property Name="FinitaDa" Type="varchar" MaxLength="16" />
+    <Property Name="RSPModifica" Type="float" />
+    <Property Name="RSPAttuale" Type="float" />
+    <Property Name="CM2Attuale" Type="float" />
+    <Property Name="MaterialiAttuale" Type="float" />
+    <Property Name="OreAttuale" Type="float" />
+  </EntityType>
+  <EntityType Name="News">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="data" Type="datetime" Nullable="false" />
+    <Property Name="titolo" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="News" Type="varchar" MaxLength="8000" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Offerte">
+    <Key>
+      <PropertyRef Name="IDOfferta" />
+    </Key>
+    <Property Name="IDOfferta" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NumeroOfferta" Type="char" MaxLength="18" Nullable="false" />
+    <Property Name="PartyID" Type="varchar" MaxLength="10" />
+    <Property Name="BillTo_Party" Type="varchar" MaxLength="10" />
+    <Property Name="ShipTo_Party" Type="varchar" MaxLength="10" />
+    <Property Name="Payer_Party" Type="varchar" MaxLength="10" />
+    <Property Name="DataCreazione" Type="datetime" />
+    <Property Name="Validita" Type="int" Nullable="false" />
+    <Property Name="DataPrevistaChiusura" Type="datetime" />
+    <Property Name="RSPValore" Type="money" />
+    <Property Name="CM2Percento" Type="real" />
+    <Property Name="StatusCorrente" Type="char" MaxLength="2" />
+    <Property Name="CategoriaPrevalente" Type="char" MaxLength="3" />
+    <Property Name="ProbabilitaAggiudicazione" Type="real" />
+    <Property Name="DataEsitazione" Type="datetime" />
+    <Property Name="AcquisitaDa" Type="varchar" MaxLength="50" />
+    <Property Name="ValoreAcquisizione" Type="money" />
+    <Property Name="CM2PercentoAcquisizione" Type="real" />
+    <Property Name="CodiceTerminiFatturazione" Type="char" MaxLength="4" />
+    <Property Name="PenalePercento" Type="real" />
+    <Property Name="RitenutaGaranziaPercento" Type="real" />
+    <Property Name="FidejussionePercento" Type="real" />
+    <Property Name="AliquotaIva" Type="varchar" MaxLength="2" />
+    <Property Name="IDEnte" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="IDVenditore" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="progressivo" Type="int" Nullable="false" />
+    <Property Name="Revisione" Type="int" />
+    <Property Name="xmlDetails" Type="text" />
+    <Property Name="DataRichiestaQuotazione" Type="datetime" />
+    <Property Name="DataQuotazione" Type="datetime" />
+    <Property Name="DataEmissioneOfferta" Type="datetime" />
+    <Property Name="DataEsportazione" Type="datetime" />
+    <Property Name="DataEmissioneCO" Type="datetime" />
+    <Property Name="NumeroOrdineSAP" Type="varchar" MaxLength="64" />
+    <Property Name="ModalitaPagamento" Type="varchar" MaxLength="4" />
+    <Property Name="gara" Type="int" />
+    <Property Name="entepubblico" Type="int" />
+    <Property Name="CausaleEmissione" Type="char" MaxLength="2" />
+    <Property Name="CausaleAnnullamento" Type="char" MaxLength="2" />
+    <Property Name="listinoCliente" Type="int" />
+    <Property Name="Opportunity" Type="varchar" MaxLength="32" />
+    <Property Name="DataAggPartyDaOpp" Type="datetime" />
+    <Property Name="Location_Party" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="OneriCompresiEsclusi">
+    <Key>
+      <PropertyRef Name="idOnere" />
+    </Key>
+    <Property Name="idOnere" Type="int" Nullable="false" />
+    <Property Name="Descrizione" Type="varchar" MaxLength="64" Nullable="false" />
+    <Property Name="defaultCOmpreso" Type="int" Nullable="false" />
+    <Property Name="visualizzaInOfferta" Type="int" Nullable="false" />
+    <Property Name="Categoria" Type="char" MaxLength="3" />
+    <Property Name="Sequence" Type="smallint" Nullable="false" />
+    <Property Name="codiceSAP" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="OneriOfferte">
+    <Key>
+      <PropertyRef Name="IDOfferta" />
+      <PropertyRef Name="IDOnere" />
+    </Key>
+    <Property Name="IDOfferta" Type="int" Nullable="false" />
+    <Property Name="IDOnere" Type="int" Nullable="false" />
+    <Property Name="flgCompreso" Type="smallint" Nullable="false" />
+    <Property Name="MaterialiIntraCompany" Type="float" />
+    <Property Name="MaterialiExtraCompany" Type="float" />
+    <Property Name="MaterialiInterCOmpany" Type="float" />
+    <Property Name="OreManovalanza" Type="float" />
+    <Property Name="OreManodopera" Type="float" />
+    <Property Name="flgMostraInOfferta" Type="smallint" />
+    <Property Name="Titolo" Type="varchar" MaxLength="64" />
+    <Property Name="Descrizione" Type="text" />
+  </EntityType>
+  <EntityType Name="Pacchetti">
+    <Key>
+      <PropertyRef Name="CodiceFAST" />
+    </Key>
+    <Property Name="CodiceFAST" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Descrizione" Type="varchar" MaxLength="128" />
+    <Property Name="leadTime" Type="int" />
+    <Property Name="flgPacchettoLocale" Type="int" />
+    <Property Name="applyToCat" Type="varchar" MaxLength="8" />
+    <Property Name="applyToSubCat" Type="varchar" MaxLength="32" />
+    <Property Name="flgVerificaStraordinaria" Type="int" />
+    <Property Name="extraMaterialiIntraCompany" Type="real" />
+    <Property Name="extraMaterialiExtraCompany" Type="real" />
+    <Property Name="extraMaterialiInterCompany" Type="real" />
+    <Property Name="extraOreManodopera" Type="real" />
+    <Property Name="moltiplicatoreMateriali" Type="real" />
+    <Property Name="categoria" Type="char" MaxLength="3" />
+    <Property Name="processo" Type="char" MaxLength="1" />
+    <Property Name="cm2" Type="real" />
+    <Property Name="revisione" Type="int" />
+    <Property Name="dataFuoriCorso" Type="datetime" />
+    <Property Name="tipologia" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Parametri">
+    <Key>
+      <PropertyRef Name="paramName" />
+    </Key>
+    <Property Name="paramName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="paramType" Type="varchar" MaxLength="16" Nullable="false" />
+    <Property Name="paramValue" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="descrizione" Type="varchar" MaxLength="128" />
+  </EntityType>
+  <!--Errori trovati durante la generazione:
+avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'FAST.dbo.PARERI'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+  <EntityType Name="PARERI">
+    <Key>
+      <PropertyRef Name="idOfferta" />
+      <PropertyRef Name="tipoRichiesta" />
+    </Key>
+    <Property Name="idOfferta" Type="int" Nullable="false" />
+    <Property Name="tipoRichiesta" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="richiestaA" Type="varchar" MaxLength="50" />
+    <Property Name="dataRichiesta" Type="datetime" />
+    <Property Name="InseritoDa" Type="varchar" MaxLength="8" />
+    <Property Name="dataEsito" Type="datetime" />
+    <Property Name="esito" Type="int" />
+    <Property Name="Note" Type="varchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="Parties">
+    <Key>
+      <PropertyRef Name="IDParty" />
+    </Key>
+    <Property Name="IDParty" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="RagioneSociale" Type="varchar" MaxLength="70" Nullable="false" />
+    <Property Name="PrefissoIndirizzo" Type="varchar" MaxLength="16" />
+    <Property Name="Indirizzo" Type="varchar" MaxLength="35" />
+    <Property Name="Civico" Type="varchar" MaxLength="7" />
+    <Property Name="CAP" Type="varchar" MaxLength="5" />
+    <Property Name="Localita" Type="varchar" MaxLength="40" />
+    <Property Name="Paese" Type="varchar" MaxLength="3" />
+    <Property Name="Provincia" Type="varchar" MaxLength="2" />
+    <Property Name="Telefono" Type="varchar" MaxLength="16" />
+    <Property Name="Fax" Type="varchar" MaxLength="16" />
+    <Property Name="Contatto" Type="varchar" MaxLength="64" />
+    <Property Name="Email" Type="varchar" MaxLength="64" />
+    <Property Name="PartitaIVA" Type="varchar" MaxLength="11" />
+    <Property Name="CodiceFiscale" Type="varchar" MaxLength="16" />
+    <Property Name="ABI" Type="varchar" MaxLength="5" />
+    <Property Name="CAB" Type="varchar" MaxLength="5" />
+    <Property Name="numeroCC" Type="varchar" MaxLength="16" />
+    <Property Name="Classe" Type="varchar" MaxLength="2" />
+    <Property Name="Categoria" Type="varchar" MaxLength="2" />
+    <Property Name="xmlDetails" Type="text" />
+    <Property Name="IDVenditore" Type="varchar" MaxLength="3" />
+    <Property Name="Distretto" Type="varchar" MaxLength="4" />
+    <Property Name="DataRichiestaAllineamento" Type="datetime" />
+    <Property Name="DataAllineamento" Type="datetime" />
+    <Property Name="GruppoCliente" Type="char" MaxLength="2" />
+    <Property Name="modalitaFatturazione" Type="nvarchar" MaxLength="10" />
+    <Property Name="modalitaPagamento" Type="nvarchar" MaxLength="10" />
+    <Property Name="ivaPagamento" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="PianoFatturazione">
+    <Key>
+      <PropertyRef Name="idMilestone" />
+    </Key>
+    <Property Name="idOfferta" Type="int" Nullable="false" />
+    <Property Name="milestone" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="progressivo" Type="int" Nullable="false" />
+    <Property Name="data" Type="datetime" />
+    <Property Name="percentuale" Type="real" />
+    <Property Name="valore" Type="float" />
+    <Property Name="termine" Type="char" MaxLength="4" Nullable="false" />
+    <Property Name="idMilestone" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Price">
+    <Key>
+      <PropertyRef Name="IDPrice" />
+    </Key>
+    <Property Name="IDPrice" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDConfiguratore" Type="int" Nullable="false" />
+    <Property Name="IDPriceGroup" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="300" />
+    <Property Name="Descr" Type="nvarchar" MaxLength="2000" />
+    <Property Name="ApplyTo" Type="nvarchar" MaxLength="2000" />
+    <Property Name="Debug" Type="nvarchar" MaxLength="50" />
+    <Property Name="Enabled" Type="bit" />
+    <Property Name="DefaultTag" Type="text" />
+  </EntityType>
+  <EntityType Name="PriceGroup">
+    <Key>
+      <PropertyRef Name="IDPriceGroup" />
+    </Key>
+    <Property Name="IDPriceGroup" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDConfiguratore" Type="int" Nullable="false" />
+    <Property Name="Enabled" Type="bit" />
+    <Property Name="Descr" Type="nvarchar" MaxLength="300" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="PriceItem">
+    <Key>
+      <PropertyRef Name="IDPriceItem" />
+    </Key>
+    <Property Name="IDPriceItem" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDConfiguratore" Type="int" Nullable="false" />
+    <Property Name="IDPriceGroup" Type="int" Nullable="false" />
+    <Property Name="IDPrice" Type="int" Nullable="false" />
+    <Property Name="Enabled" Type="bit" />
+    <Property Name="Type" Type="nvarchar" MaxLength="50" />
+    <Property Name="Kctref" Type="nvarchar" MaxLength="200" />
+    <Property Name="Tupla" Type="text" />
+    <Property Name="Formula" Type="text" />
+    <Property Name="VersioneTupla" Type="int" />
+    <Property Name="FoglioListino" Type="nvarchar" MaxLength="50" />
+    <Property Name="CellaListino" Type="char" MaxLength="10" />
+    <Property Name="NomeListino" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Provvigioni">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="sconto_min" Type="decimal" Precision="18" Scale="3" />
+    <Property Name="sconto_MAX" Type="decimal" Precision="18" Scale="3" />
+    <Property Name="provvigione" Type="decimal" Precision="18" Scale="3" />
+  </EntityType>
+  <!--Errori trovati durante la generazione:
+avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'FAST.dbo.QUOTAZIONI'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+  <EntityType Name="QUOTAZIONI">
+    <Key>
+      <PropertyRef Name="idOfferta" />
+      <PropertyRef Name="EQUIPMENT_NUMBER" />
+    </Key>
+    <Property Name="idOfferta" Type="int" Nullable="false" />
+    <Property Name="EQUIPMENT_NUMBER" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="richiestaA" Type="varchar" MaxLength="50" />
+    <Property Name="dataRichiesta" Type="datetime" />
+    <Property Name="QuotataDa" Type="varchar" MaxLength="8" />
+    <Property Name="dataQuotazione" Type="datetime" />
+    <Property Name="esito" Type="int" />
+    <Property Name="xmlDetails" Type="text" />
+  </EntityType>
+  <EntityType Name="Referenze">
+    <Key>
+      <PropertyRef Name="IDReferenza" />
+    </Key>
+    <Property Name="IDReferenza" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Template" Type="varchar" MaxLength="16" />
+    <Property Name="categoria" Type="char" MaxLength="3" />
+    <Property Name="MainPicture" Type="varchar" MaxLength="64" />
+    <Property Name="TRPicture" Type="varchar" MaxLength="64" />
+    <Property Name="BRPicture" Type="varchar" MaxLength="64" />
+    <Property Name="Titolo" Type="nvarchar" MaxLength="255" />
+    <Property Name="R1Sottotitolo" Type="nvarchar" MaxLength="255" />
+    <Property Name="R2Sottotitolo" Type="nvarchar" MaxLength="255" />
+    <Property Name="B1Titolo" Type="nvarchar" MaxLength="64" />
+    <Property Name="B1R1C1" Type="nvarchar" MaxLength="64" />
+    <Property Name="B1R1C2" Type="nvarchar" MaxLength="64" />
+    <Property Name="B1R2C1" Type="nvarchar" MaxLength="64" />
+    <Property Name="B1R2C2" Type="nvarchar" MaxLength="64" />
+    <Property Name="B1R3C1" Type="nvarchar" MaxLength="64" />
+    <Property Name="B1R3C2" Type="nvarchar" MaxLength="64" />
+    <Property Name="B1R4C1" Type="nvarchar" MaxLength="64" />
+    <Property Name="B1R4C2" Type="nvarchar" MaxLength="64" />
+    <Property Name="B1R5C1" Type="nvarchar" MaxLength="64" />
+    <Property Name="B1R5C2" Type="nvarchar" MaxLength="64" />
+    <Property Name="B1R6C1" Type="nvarchar" MaxLength="64" />
+    <Property Name="B1R6C2" Type="nvarchar" MaxLength="64" />
+    <Property Name="B2Titolo" Type="nvarchar" MaxLength="64" />
+    <Property Name="B2R1C1" Type="nvarchar" MaxLength="64" />
+    <Property Name="B2R1C2" Type="nvarchar" MaxLength="64" />
+    <Property Name="B2R2C1" Type="nvarchar" MaxLength="64" />
+    <Property Name="B2R2C2" Type="nvarchar" MaxLength="64" />
+    <Property Name="B2R3C1" Type="nvarchar" MaxLength="64" />
+    <Property Name="B2R3C2" Type="nvarchar" MaxLength="64" />
+    <Property Name="B2R4C1" Type="nvarchar" MaxLength="64" />
+    <Property Name="B2R4C2" Type="nvarchar" MaxLength="64" />
+    <Property Name="B2R5C1" Type="nvarchar" MaxLength="64" />
+    <Property Name="B2R5C2" Type="nvarchar" MaxLength="64" />
+    <Property Name="B2R6C1" Type="nvarchar" MaxLength="64" />
+    <Property Name="B2R6C2" Type="nvarchar" MaxLength="64" />
+    <Property Name="B3Titolo" Type="nvarchar" MaxLength="64" />
+    <Property Name="B3R1C1" Type="nvarchar" MaxLength="64" />
+    <Property Name="B3R1C2" Type="nvarchar" MaxLength="64" />
+    <Property Name="B3R2C1" Type="nvarchar" MaxLength="64" />
+    <Property Name="B3R2C2" Type="nvarchar" MaxLength="64" />
+    <Property Name="B3R3C1" Type="nvarchar" MaxLength="64" />
+    <Property Name="B3R3C2" Type="nvarchar" MaxLength="64" />
+    <Property Name="B3R4C1" Type="nvarchar" MaxLength="64" />
+    <Property Name="B3R4C2" Type="nvarchar" MaxLength="64" />
+    <Property Name="B3R5C1" Type="nvarchar" MaxLength="64" />
+    <Property Name="B3R5C2" Type="nvarchar" MaxLength="64" />
+    <Property Name="B3R6C1" Type="nvarchar" MaxLength="64" />
+    <Property Name="B3R6C2" Type="nvarchar" MaxLength="64" />
+  </EntityType>
+  <EntityType Name="ReportFinanziari">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NomeReport" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Livello" Type="smallint" Nullable="false" />
+    <Property Name="Area" Type="varchar" MaxLength="50" />
+    <Property Name="Distretto" Type="char" MaxLength="4" />
+    <Property Name="Venditori" Type="varchar" MaxLength="20" />
+    <Property Name="Mese" Type="smallint" Nullable="false" />
+    <Property Name="Anno" Type="smallint" Nullable="false" />
+  </EntityType>
+  <!--Errori trovati durante la generazione:
+avviso 6002: Nessuna chiave primaria definita per la tabella/visualizzazione 'FAST.dbo.rpt_offerte_Manutenzione'. La chiave è stata dedotta e la definizione è stata creata come tabella/visualizzazione di sola lettura.-->
+  <EntityType Name="rpt_offerte_Manutenzione">
+    <Key>
+      <PropertyRef Name="IDOfferta" />
+      <PropertyRef Name="NumeroOfferta" />
+    </Key>
+    <Property Name="IDOfferta" Type="int" Nullable="false" />
+    <Property Name="IDlavoro" Type="int" />
+    <Property Name="IdEnte" Type="nvarchar" MaxLength="8" />
+    <Property Name="IdVenditore" Type="nvarchar" MaxLength="8" />
+    <Property Name="venditore" Type="nvarchar" MaxLength="50" />
+    <Property Name="NumeroOfferta" Type="nvarchar" MaxLength="18" Nullable="false" />
+    <Property Name="SoldTo_Party_code" Type="nvarchar" MaxLength="10" />
+    <Property Name="SoldTo_Party_RagSoc" Type="nvarchar" MaxLength="70" />
+    <Property Name="SoldTo_Party_ind" Type="nvarchar" MaxLength="70" />
+    <Property Name="SoldTo_Party_CAP" Type="nvarchar" MaxLength="5" />
+    <Property Name="SoldTo_Party_loc" Type="nvarchar" MaxLength="40" />
+    <Property Name="SoldTo_Party_prov" Type="nvarchar" MaxLength="2" />
+    <Property Name="BillTo_Party_code" Type="nvarchar" MaxLength="10" />
+    <Property Name="BillTo_Party_RagSoc" Type="nvarchar" MaxLength="70" />
+    <Property Name="BillTo_Party_ind" Type="nvarchar" MaxLength="70" />
+    <Property Name="BillTo_Party_CAP" Type="nvarchar" MaxLength="5" />
+    <Property Name="BillTo_Party_loc" Type="nvarchar" MaxLength="40" />
+    <Property Name="BillTo_Party_prov" Type="nvarchar" MaxLength="2" />
+    <Property Name="NumImpianti" Type="int" />
+    <Property Name="Impianto_ind" Type="nvarchar" MaxLength="70" />
+    <Property Name="Impianto_CAP" Type="nvarchar" MaxLength="5" />
+    <Property Name="Impianto_loc" Type="nvarchar" MaxLength="40" />
+    <Property Name="StatusCorrente" Type="nvarchar" MaxLength="50" />
+    <Property Name="causale" Type="nvarchar" MaxLength="35" />
+    <Property Name="opportunity" Type="nvarchar" MaxLength="32" />
+    <Property Name="TipoEdificio_Traffico" Type="nvarchar" MaxLength="50" />
+    <Property Name="TipoEdificio_Segmento" Type="nvarchar" MaxLength="50" />
+    <Property Name="DurataContratto" Type="nvarchar" MaxLength="50" />
+    <Property Name="ServSupp" Type="nvarchar" MaxLength="50" />
+    <Property Name="Pagamento_Tipo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Pagamento_modo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Pagamento_Dilazione" Type="nvarchar" MaxLength="50" />
+    <Property Name="Canone_Offerto" Type="money" />
+    <Property Name="Canone_venduto" Type="money" />
+    <Property Name="Canone_Liv1" Type="money" />
+    <Property Name="Sconto_offerto" Type="real" />
+    <Property Name="Sconto_venduto" Type="real" />
+    <Property Name="TipoContratto" Type="nvarchar" MaxLength="50" />
+    <Property Name="AOC" Type="bit" />
+    <Property Name="PiRep" Type="bit" />
+    <Property Name="RipRep" Type="bit" />
+    <Property Name="KRMS" Type="bit" />
+    <Property Name="SIMCARD" Type="bit" />
+    <Property Name="EOPT" Type="bit" />
+    <Property Name="DataCreazione" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SAPCaratteristiche">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="NCSAP" Type="nvarchar" MaxLength="50" />
+    <Property Name="CODPACCHETTO" Type="nvarchar" MaxLength="32" />
+    <Property Name="XPATH" Type="nvarchar" MaxLength="300" />
+    <Property Name="TLOOKUPGROUP" Type="nvarchar" MaxLength="32" />
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TerminiDiPagamento">
+    <Key>
+      <PropertyRef Name="CodiceTerminiPagamento" />
+    </Key>
+    <Property Name="CodiceTerminiPagamento" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="DescrizioneTerminiPagamento" Type="nvarchar" MaxLength="64" />
+    <Property Name="TestoTerminiPagamento" Type="ntext" />
+    <Property Name="Abbuono" Type="real" />
+  </EntityType>
+  <EntityType Name="Variabili">
+    <Key>
+      <PropertyRef Name="IDVariabili" />
+    </Key>
+    <Property Name="IDVariabili" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="XPath" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="IDConfiguratore" Type="int" />
+    <Property Name="NomeVariabile" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Quote" Type="nvarchar" MaxLength="5" />
+    <Property Name="Rinominata" Type="bit" />
+    <Property Name="NomeVecchio" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="VariabiliPrice">
+    <Key>
+      <PropertyRef Name="IDVariabili" />
+      <PropertyRef Name="IDPrice" />
+    </Key>
+    <Property Name="IDVariabiliPrice" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDVariabili" Type="int" Nullable="false" />
+    <Property Name="IDPrice" Type="int" Nullable="false" />
+    <Property Name="Note" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Venditori">
+    <Key>
+      <PropertyRef Name="KAI" />
+    </Key>
+    <Property Name="KAI" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="SALES_GROUP_CODE" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="SALES_OFFICE_CODE" Type="varchar" MaxLength="20" />
+    <Property Name="Sigla" Type="varchar" MaxLength="8" />
+    <Property Name="KAIAmm" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="KAIAmm2" Type="varchar" MaxLength="255" />
+    <Property Name="KAICV" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="KAISV" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="CodiceSV" Type="varchar" MaxLength="10" />
+    <Property Name="KAISV2" Type="varchar" MaxLength="255" />
+    <Property Name="CodiceSV2" Type="varchar" MaxLength="10" />
+    <Property Name="KAICD" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="KAIDIR" Type="varchar" MaxLength="255" />
+    <Property Name="FileFirma" Type="varchar" MaxLength="64" />
+    <Property Name="Telefono" Type="varchar" MaxLength="64" />
+    <Property Name="Fax" Type="varchar" MaxLength="64" />
+    <Property Name="Ufficio" Type="varchar" MaxLength="255" />
+    <Property Name="Indirizzo" Type="varchar" MaxLength="255" />
+    <Property Name="CAP" Type="varchar" MaxLength="5" />
+    <Property Name="Citta" Type="varchar" MaxLength="50" />
+    <Property Name="SogliaSconto" Type="float" />
+    <Property Name="SogliaValore" Type="float" />
+    <Property Name="persona" Type="varchar" MaxLength="64" />
+    <Property Name="email" Type="varchar" MaxLength="64" />
+    <Property Name="VisibilitaVenditori" Type="varchar" MaxLength="64" />
+    <Property Name="VisibilitaDistretti" Type="varchar" MaxLength="64" />
+    <Property Name="Cellulare" Type="varchar" MaxLength="64" />
+    <Property Name="ListinoClienti" Type="int" />
+    <Property Name="IsAdmin" Type="smallint" Nullable="false" />
+    <Property Name="IsDSAM" Type="smallint" Nullable="false" />
+    <Property Name="IsStandard" Type="smallint" />
+    <Property Name="IsMKT" Type="smallint" />
+    <Property Name="IsManager" Type="smallint" Nullable="false" />
+    <Property Name="IsSupervisoreVB" Type="smallint" Nullable="false" />
+    <Property Name="IsVenditore" Type="smallint" Nullable="false" />
+    <Property Name="IsSupervisore" Type="smallint" Nullable="false" />
+    <Property Name="Ruolo" Type="char" MaxLength="2" />
+    <Property Name="AbilitatoMTZElev" Type="smallint" Nullable="false" />
+    <Property Name="AbilitatoMTZ" Type="smallint" Nullable="false" />
+    <Property Name="AbilitatoDOOR" Type="smallint" Nullable="false" />
+    <Property Name="SAP_OWNER" Type="varchar" MaxLength="50" />
+    <Property Name="KAISV_TRB" Type="varchar" MaxLength="255" />
+    <Property Name="KAISV_FRB" Type="varchar" MaxLength="255" />
+    <Property Name="KAISV_LAVORI" Type="varchar" MaxLength="255" />
+    <Property Name="KAIAMM_SEB" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <Association Name="FK_AUTORIZZAZIONI_Offerte">
+    <End Role="Offerte" Type="Self.Offerte" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AUTORIZZAZIONI" Type="Self.AUTORIZZAZIONI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Offerte">
+        <PropertyRef Name="IDOfferta" />
+      </Principal>
+      <Dependent Role="AUTORIZZAZIONI">
+        <PropertyRef Name="idOfferta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CategoryLog_Category">
+    <End Role="Category" Type="Self.Category" Multiplicity="1" />
+    <End Role="CategoryLog" Type="Self.CategoryLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="CategoryID" />
+      </Principal>
+      <Dependent Role="CategoryLog">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CategoryLog_Log">
+    <End Role="Log" Type="Self.Log" Multiplicity="1" />
+    <End Role="CategoryLog" Type="Self.CategoryLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Log">
+        <PropertyRef Name="LogID" />
+      </Principal>
+      <Dependent Role="CategoryLog">
+        <PropertyRef Name="LogID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Impianti_Parties">
+    <End Role="Parties" Type="Self.Parties" Multiplicity="1" />
+    <End Role="Impianti" Type="Self.Impianti" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Parties">
+        <PropertyRef Name="IDParty" />
+      </Principal>
+      <Dependent Role="Impianti">
+        <PropertyRef Name="IDParty" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ImpiantiInOfferte_Impianti">
+    <End Role="Impianti" Type="Self.Impianti" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ImpiantiInOfferte" Type="Self.ImpiantiInOfferte" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Impianti">
+        <PropertyRef Name="EQUIPMENT_NUMBER" />
+      </Principal>
+      <Dependent Role="ImpiantiInOfferte">
+        <PropertyRef Name="equipment_number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ImpiantiInOfferte_Offerte">
+    <End Role="Offerte" Type="Self.Offerte" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ImpiantiInOfferte" Type="Self.ImpiantiInOfferte" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Offerte">
+        <PropertyRef Name="IDOfferta" />
+      </Principal>
+      <Dependent Role="ImpiantiInOfferte">
+        <PropertyRef Name="IDOfferta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LavoriInOfferte_ImpiantiInOfferte">
+    <End Role="ImpiantiInOfferte" Type="Self.ImpiantiInOfferte" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="LavoriInOfferte" Type="Self.LavoriInOfferte" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ImpiantiInOfferte">
+        <PropertyRef Name="IDOfferta" />
+        <PropertyRef Name="equipment_number" />
+      </Principal>
+      <Dependent Role="LavoriInOfferte">
+        <PropertyRef Name="IDOfferta" />
+        <PropertyRef Name="equipment_number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OneriOfferte_Offerte">
+    <End Role="Offerte" Type="Self.Offerte" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="OneriOfferte" Type="Self.OneriOfferte" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Offerte">
+        <PropertyRef Name="IDOfferta" />
+      </Principal>
+      <Dependent Role="OneriOfferte">
+        <PropertyRef Name="IDOfferta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PARERI_Offerte">
+    <End Role="Offerte" Type="Self.Offerte" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PARERI" Type="Self.PARERI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Offerte">
+        <PropertyRef Name="IDOfferta" />
+      </Principal>
+      <Dependent Role="PARERI">
+        <PropertyRef Name="idOfferta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PianoFatturazione_Offerte">
+    <End Role="Offerte" Type="Self.Offerte" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PianoFatturazione" Type="Self.PianoFatturazione" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Offerte">
+        <PropertyRef Name="IDOfferta" />
+      </Principal>
+      <Dependent Role="PianoFatturazione">
+        <PropertyRef Name="idOfferta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_QUOTAZIONI_impianti">
+    <End Role="Impianti" Type="Self.Impianti" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="QUOTAZIONI" Type="Self.QUOTAZIONI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Impianti">
+        <PropertyRef Name="EQUIPMENT_NUMBER" />
+      </Principal>
+      <Dependent Role="QUOTAZIONI">
+        <PropertyRef Name="EQUIPMENT_NUMBER" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_QUOTAZIONI_Offerte">
+    <End Role="Offerte" Type="Self.Offerte" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="QUOTAZIONI" Type="Self.QUOTAZIONI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Offerte">
+        <PropertyRef Name="IDOfferta" />
+      </Principal>
+      <Dependent Role="QUOTAZIONI">
+        <PropertyRef Name="idOfferta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="FASTModelStoreContainer">
+    <EntitySet Name="Aree" EntityType="Self.Aree" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cars" EntityType="Self.Cars" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CategorieLavori" EntityType="Self.CategorieLavori" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CategoryLog" EntityType="Self.CategoryLog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CFG_AccessiCabina" EntityType="Self.CFG_AccessiCabina" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CFG_AccessoriSiNo" EntityType="Self.CFG_AccessoriSiNo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CFG_Anello" EntityType="Self.CFG_Anello" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CFG_Azionamento" EntityType="Self.CFG_Azionamento" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CFG_Configuratori" EntityType="Self.CFG_Configuratori" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CFG_Corrente" EntityType="Self.CFG_Corrente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CFG_Fermate" EntityType="Self.CFG_Fermate" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CFG_Listino_Accessori" EntityType="Self.CFG_Listino_Accessori" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CFG_Listino_BasiQuadroDrive" EntityType="Self.CFG_Listino_BasiQuadroDrive" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CFG_Listino_Prezzi" EntityType="Self.CFG_Listino_Prezzi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CFG_OffertaQuadro" EntityType="Self.CFG_OffertaQuadro" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CFG_Portata" EntityType="Self.CFG_Portata" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CFG_Quadro" EntityType="Self.CFG_Quadro" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CFG_RES40_ListaCampi" EntityType="Self.CFG_RES40_ListaCampi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CFG_Schede" EntityType="Self.CFG_Schede" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CFG_ServiziLatoC" EntityType="Self.CFG_ServiziLatoC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CFG_Tensione" EntityType="Self.CFG_Tensione" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CFG_TensioneFreno" EntityType="Self.CFG_TensioneFreno" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CFG_Velocita" EntityType="Self.CFG_Velocita" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Configuratori" EntityType="Self.Configuratori" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CostiTrasporto" EntityType="Self.CostiTrasporto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DAT_SF_opportunities" EntityType="Self.DAT_SF_opportunities" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DAT_SF_owners" EntityType="Self.DAT_SF_owners" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="dbRef_Dettaglio" EntityType="Self.dbRef_Dettaglio" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="dbRef_Dettaglio_Storico" EntityType="Self.dbRef_Dettaglio_Storico" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="dbRef_Listino" EntityType="Self.dbRef_Listino" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="dbRef_Listino_Storico" EntityType="Self.dbRef_Listino_Storico" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Depliants" EntityType="Self.Depliants" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Depliants_Trace" EntityType="Self.Depliants_Trace" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Depliants_Trace_Elenco" EntityType="Self.Depliants_Trace_Elenco" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DepliantsStatusElenco" EntityType="Self.DepliantsStatusElenco" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DepliantsStatusRichieste" EntityType="Self.DepliantsStatusRichieste" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DescrizioniLavori" EntityType="Self.DescrizioniLavori" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Documenti" EntityType="Self.Documenti" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DTSEBTasks" EntityType="Self.DTSEBTasks" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EDMSData" EntityType="Self.EDMSData" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="extractKIT" EntityType="Self.extractKIT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="fastLog" EntityType="Self.fastLog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="idGenerator" EntityType="Self.idGenerator" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Impianti" EntityType="Self.Impianti" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ImpiantiInOfferte" EntityType="Self.ImpiantiInOfferte" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LavoriACaricoCliente" EntityType="Self.LavoriACaricoCliente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LavoriInOfferte" EntityType="Self.LavoriInOfferte" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LavoriNonCOdificati" EntityType="Self.LavoriNonCOdificati" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Log" EntityType="Self.Log" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LookupTables" EntityType="Self.LookupTables" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Mail" EntityType="Self.Mail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MilestonePianoFatt" EntityType="Self.MilestonePianoFatt" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ModificaOrdine" EntityType="Self.ModificaOrdine" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="News" EntityType="Self.News" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Offerte" EntityType="Self.Offerte" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OneriCompresiEsclusi" EntityType="Self.OneriCompresiEsclusi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OneriOfferte" EntityType="Self.OneriOfferte" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pacchetti" EntityType="Self.Pacchetti" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Parametri" EntityType="Self.Parametri" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Parties" EntityType="Self.Parties" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PianoFatturazione" EntityType="Self.PianoFatturazione" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Price" EntityType="Self.Price" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PriceGroup" EntityType="Self.PriceGroup" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PriceItem" EntityType="Self.PriceItem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Provvigioni" EntityType="Self.Provvigioni" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Referenze" EntityType="Self.Referenze" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ReportFinanziari" EntityType="Self.ReportFinanziari" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SAPCaratteristiche" EntityType="Self.SAPCaratteristiche" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TerminiDiPagamento" EntityType="Self.TerminiDiPagamento" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Variabili" EntityType="Self.Variabili" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VariabiliPrice" EntityType="Self.VariabiliPrice" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Venditori" EntityType="Self.Venditori" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AUTORIZZAZIONI" EntityType="Self.AUTORIZZAZIONI" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [AUTORIZZAZIONI].[idOfferta] AS [idOfferta], 
+    [AUTORIZZAZIONI].[tipoRichiesta] AS [tipoRichiesta], 
+    [AUTORIZZAZIONI].[richiestaA] AS [richiestaA], 
+    [AUTORIZZAZIONI].[dataRichiesta] AS [dataRichiesta], 
+    [AUTORIZZAZIONI].[AutorizzataDa] AS [AutorizzataDa], 
+    [AUTORIZZAZIONI].[dataEsito] AS [dataEsito], 
+    [AUTORIZZAZIONI].[esito] AS [esito], 
+    [AUTORIZZAZIONI].[xmlDetails] AS [xmlDetails]
+    FROM [dbo].[AUTORIZZAZIONI] AS [AUTORIZZAZIONI]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Cars_FURE" EntityType="Self.Cars_FURE" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Cars_FURE].[idCars] AS [idCars], 
+    [Cars_FURE].[Packet] AS [Packet], 
+    [Cars_FURE].[PacketVersion] AS [PacketVersion], 
+    [Cars_FURE].[Process] AS [Process], 
+    [Cars_FURE].[Load] AS [Load], 
+    [Cars_FURE].[Speed] AS [Speed], 
+    [Cars_FURE].[Entrance] AS [Entrance], 
+    [Cars_FURE].[BB] AS [BB], 
+    [Cars_FURE].[DD] AS [DD], 
+    [Cars_FURE].[CTWSG] AS [CTWSG], 
+    [Cars_FURE].[Persons] AS [Persons], 
+    [Cars_FURE].[Door_Design] AS [Door_Design], 
+    [Cars_FURE].[Door_Model] AS [Door_Model], 
+    [Cars_FURE].[LL] AS [LL], 
+    [Cars_FURE].[Gmin] AS [Gmin], 
+    [Cars_FURE].[Gmax] AS [Gmax], 
+    [Cars_FURE].[WWmin] AS [WWmin], 
+    [Cars_FURE].[WWmax] AS [WWmax], 
+    [Cars_FURE].[WDmin] AS [WDmin], 
+    [Cars_FURE].[WDmax] AS [WDmax], 
+    [Cars_FURE].[DO] AS [DO], 
+    [Cars_FURE].[CXmin] AS [CXmin], 
+    [Cars_FURE].[CXmax] AS [CXmax], 
+    [Cars_FURE].[Machine_type] AS [Machine_type], 
+    [Cars_FURE].[Guiderails_type] AS [Guiderails_type], 
+    [Cars_FURE].[EN81_1] AS [EN81_1], 
+    [Cars_FURE].[EN81_70] AS [EN81_70], 
+    [Cars_FURE].[EN81_72] AS [EN81_72], 
+    [Cars_FURE].[Pubel_92] AS [Pubel_92], 
+    [Cars_FURE].[EN81_71] AS [EN81_71], 
+    [Cars_FURE].[Pubel_2003] AS [Pubel_2003], 
+    [Cars_FURE].[CW] AS [CW], 
+    [Cars_FURE].[CW1] AS [CW1], 
+    [Cars_FURE].[DoorType] AS [DoorType]
+    FROM [dbo].[Cars_FURE] AS [Cars_FURE]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Cars_New" EntityType="Self.Cars_New" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Cars_New].[idCars] AS [idCars], 
+    [Cars_New].[Packet] AS [Packet], 
+    [Cars_New].[PacketVersion] AS [PacketVersion], 
+    [Cars_New].[Process] AS [Process], 
+    [Cars_New].[Load] AS [Load], 
+    [Cars_New].[Speed] AS [Speed], 
+    [Cars_New].[Entrance] AS [Entrance], 
+    [Cars_New].[BB] AS [BB], 
+    [Cars_New].[DD] AS [DD], 
+    [Cars_New].[CTWSG] AS [CTWSG], 
+    [Cars_New].[Persons] AS [Persons], 
+    [Cars_New].[Door_Design] AS [Door_Design], 
+    [Cars_New].[Door_Model] AS [Door_Model], 
+    [Cars_New].[LL] AS [LL], 
+    [Cars_New].[Gmin] AS [Gmin], 
+    [Cars_New].[Gmax] AS [Gmax], 
+    [Cars_New].[WWmin] AS [WWmin], 
+    [Cars_New].[WWmax] AS [WWmax], 
+    [Cars_New].[WDmin] AS [WDmin], 
+    [Cars_New].[WDmax] AS [WDmax], 
+    [Cars_New].[DO] AS [DO], 
+    [Cars_New].[CXmin] AS [CXmin], 
+    [Cars_New].[CXmax] AS [CXmax], 
+    [Cars_New].[Machine_type] AS [Machine_type], 
+    [Cars_New].[Guiderails_type] AS [Guiderails_type], 
+    [Cars_New].[EN81_1] AS [EN81_1], 
+    [Cars_New].[EN81_70] AS [EN81_70], 
+    [Cars_New].[EN81_72] AS [EN81_72], 
+    [Cars_New].[Pubel_92] AS [Pubel_92], 
+    [Cars_New].[EN81_71] AS [EN81_71], 
+    [Cars_New].[Pubel_2003] AS [Pubel_2003], 
+    [Cars_New].[CW] AS [CW], 
+    [Cars_New].[CW1] AS [CW1], 
+    [Cars_New].[DoorType] AS [DoorType]
+    FROM [dbo].[Cars_New] AS [Cars_New]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="CFG_Servizi" EntityType="Self.CFG_Servizi" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [CFG_Servizi].[id] AS [id], 
+    [CFG_Servizi].[codice] AS [codice], 
+    [CFG_Servizi].[descrizione] AS [descrizione], 
+    [CFG_Servizi].[ordinamento] AS [ordinamento], 
+    [CFG_Servizi].[abilitato] AS [abilitato], 
+    [CFG_Servizi].[visibile] AS [visibile], 
+    [CFG_Servizi].[isDefault] AS [isDefault]
+    FROM [dbo].[CFG_Servizi] AS [CFG_Servizi]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="CFG_Versioni" EntityType="Self.CFG_Versioni" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [CFG_Versioni].[id] AS [id], 
+    [CFG_Versioni].[codice] AS [codice], 
+    [CFG_Versioni].[descrizione] AS [descrizione], 
+    [CFG_Versioni].[ordinamento] AS [ordinamento], 
+    [CFG_Versioni].[abilitato] AS [abilitato], 
+    [CFG_Versioni].[visibile] AS [visibile]
+    FROM [dbo].[CFG_Versioni] AS [CFG_Versioni]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="DAT_SALES_GROUPS" EntityType="Self.DAT_SALES_GROUPS" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [DAT_SALES_GROUPS].[Sales_group_code] AS [Sales_group_code], 
+    [DAT_SALES_GROUPS].[Sales_group_desc] AS [Sales_group_desc], 
+    [DAT_SALES_GROUPS].[Extr_date] AS [Extr_date], 
+    [DAT_SALES_GROUPS].[Dt_upd_tab] AS [Dt_upd_tab]
+    FROM [dbo].[DAT_SALES_GROUPS] AS [DAT_SALES_GROUPS]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="DAT_SALES_OFFICE" EntityType="Self.DAT_SALES_OFFICE" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [DAT_SALES_OFFICE].[sales_office_code] AS [sales_office_code], 
+    [DAT_SALES_OFFICE].[sales_office_desc] AS [sales_office_desc], 
+    [DAT_SALES_OFFICE].[sales_office_area] AS [sales_office_area], 
+    [DAT_SALES_OFFICE].[sales_office_translation] AS [sales_office_translation], 
+    [DAT_SALES_OFFICE].[sales_office_ubicazione] AS [sales_office_ubicazione]
+    FROM [dbo].[DAT_SALES_OFFICE] AS [DAT_SALES_OFFICE]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="DAT_SALES_ORGANIZATION" EntityType="Self.DAT_SALES_ORGANIZATION" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [DAT_SALES_ORGANIZATION].[sales_off_code] AS [sales_off_code], 
+    [DAT_SALES_ORGANIZATION].[sales_group_code] AS [sales_group_code]
+    FROM [dbo].[DAT_SALES_ORGANIZATION] AS [DAT_SALES_ORGANIZATION]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="dbo_SAPCaratteristiche" EntityType="Self.dbo_SAPCaratteristiche" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [dbo_SAPCaratteristiche].[NCSAP] AS [NCSAP], 
+    [dbo_SAPCaratteristiche].[CODPACCHETTO] AS [CODPACCHETTO], 
+    [dbo_SAPCaratteristiche].[XPATH] AS [XPATH], 
+    [dbo_SAPCaratteristiche].[TLOOKUPGROUP] AS [TLOOKUPGROUP], 
+    [dbo_SAPCaratteristiche].[id] AS [id]
+    FROM [dbo].[dbo_SAPCaratteristiche] AS [dbo_SAPCaratteristiche]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="dbRef_lookup_FamigliaCosto" EntityType="Self.dbRef_lookup_FamigliaCosto" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [dbRef_lookup_FamigliaCosto].[id] AS [id], 
+    [dbRef_lookup_FamigliaCosto].[Descrizione] AS [Descrizione]
+    FROM [dbo].[dbRef_lookup_FamigliaCosto] AS [dbRef_lookup_FamigliaCosto]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="dtproperties" EntityType="Self.dtproperties" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [dtproperties].[objectid] AS [objectid], 
+    [dtproperties].[property] AS [property], 
+    [dtproperties].[value] AS [value], 
+    [dtproperties].[uvalue] AS [uvalue], 
+    [dtproperties].[lvalue] AS [lvalue], 
+    [dtproperties].[version] AS [version]
+    FROM [dbo].[dtproperties] AS [dtproperties]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="FastPorte_Lavori" EntityType="Self.FastPorte_Lavori" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [FastPorte_Lavori].[CodiceFAST] AS [CodiceFAST], 
+    [FastPorte_Lavori].[Titolo] AS [Titolo], 
+    [FastPorte_Lavori].[Descrizione] AS [Descrizione], 
+    [FastPorte_Lavori].[CodiceSAP] AS [CodiceSAP], 
+    [FastPorte_Lavori].[DataFineValidita] AS [DataFineValidita], 
+    [FastPorte_Lavori].[L1] AS [L1], 
+    [FastPorte_Lavori].[L2] AS [L2], 
+    [FastPorte_Lavori].[L3] AS [L3], 
+    [FastPorte_Lavori].[L4] AS [L4], 
+    [FastPorte_Lavori].[materiali] AS [materiali], 
+    [FastPorte_Lavori].[ore] AS [ore], 
+    [FastPorte_Lavori].[Documento] AS [Documento], 
+    [FastPorte_Lavori].[visibileDa] AS [visibileDa], 
+    [FastPorte_Lavori].[categoria] AS [categoria]
+    FROM [dbo].[FastPorte_Lavori] AS [FastPorte_Lavori]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="FastScaleTappeti_Lavori" EntityType="Self.FastScaleTappeti_Lavori" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [FastScaleTappeti_Lavori].[id] AS [id], 
+    [FastScaleTappeti_Lavori].[CodiceFAST] AS [CodiceFAST], 
+    [FastScaleTappeti_Lavori].[Titolo] AS [Titolo], 
+    [FastScaleTappeti_Lavori].[Descrizione] AS [Descrizione], 
+    [FastScaleTappeti_Lavori].[CodiceSAP] AS [CodiceSAP], 
+    [FastScaleTappeti_Lavori].[DataFineValidita] AS [DataFineValidita], 
+    [FastScaleTappeti_Lavori].[L1] AS [L1], 
+    [FastScaleTappeti_Lavori].[L2] AS [L2], 
+    [FastScaleTappeti_Lavori].[L3] AS [L3], 
+    [FastScaleTappeti_Lavori].[L4] AS [L4], 
+    [FastScaleTappeti_Lavori].[materiali] AS [materiali], 
+    [FastScaleTappeti_Lavori].[ore] AS [ore], 
+    [FastScaleTappeti_Lavori].[Documento] AS [Documento], 
+    [FastScaleTappeti_Lavori].[visibileDa] AS [visibileDa], 
+    [FastScaleTappeti_Lavori].[categoria] AS [categoria], 
+    [FastScaleTappeti_Lavori].[unitaDiMisura] AS [unitaDiMisura]
+    FROM [dbo].[FastScaleTappeti_Lavori] AS [FastScaleTappeti_Lavori]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="LavoriCodificati" EntityType="Self.LavoriCodificati" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [LavoriCodificati].[CodiceFAST] AS [CodiceFAST], 
+    [LavoriCodificati].[Titolo] AS [Titolo], 
+    [LavoriCodificati].[CostoMateriali] AS [CostoMateriali], 
+    [LavoriCodificati].[Ore] AS [Ore], 
+    [LavoriCodificati].[Efficienza] AS [Efficienza], 
+    [LavoriCodificati].[CodiceM2] AS [CodiceM2], 
+    [LavoriCodificati].[Documento] AS [Documento], 
+    [LavoriCodificati].[ApplyToCat] AS [ApplyToCat], 
+    [LavoriCodificati].[ApplyToSubCat] AS [ApplyToSubCat], 
+    [LavoriCodificati].[leadTime] AS [leadTime], 
+    [LavoriCodificati].[CodiceSAP] AS [CodiceSAP], 
+    [LavoriCodificati].[L1] AS [L1], 
+    [LavoriCodificati].[L2] AS [L2], 
+    [LavoriCodificati].[L3] AS [L3], 
+    [LavoriCodificati].[L4] AS [L4], 
+    [LavoriCodificati].[categoria] AS [categoria], 
+    [LavoriCodificati].[processo] AS [processo], 
+    [LavoriCodificati].[cm2] AS [cm2], 
+    [LavoriCodificati].[revisione] AS [revisione], 
+    [LavoriCodificati].[dataFuoriCorso] AS [dataFuoriCorso], 
+    [LavoriCodificati].[id] AS [id]
+    FROM [dbo].[LavoriCodificati] AS [LavoriCodificati]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="LavoriCodificati2006" EntityType="Self.LavoriCodificati2006" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [LavoriCodificati2006].[CodiceFAST] AS [CodiceFAST], 
+    [LavoriCodificati2006].[Titolo] AS [Titolo], 
+    [LavoriCodificati2006].[CostoMateriali] AS [CostoMateriali], 
+    [LavoriCodificati2006].[Ore] AS [Ore], 
+    [LavoriCodificati2006].[Efficienza] AS [Efficienza], 
+    [LavoriCodificati2006].[CodiceM2] AS [CodiceM2], 
+    [LavoriCodificati2006].[Documento] AS [Documento], 
+    [LavoriCodificati2006].[ApplyToCat] AS [ApplyToCat], 
+    [LavoriCodificati2006].[ApplyToSubCat] AS [ApplyToSubCat], 
+    [LavoriCodificati2006].[leadTime] AS [leadTime], 
+    [LavoriCodificati2006].[CodiceSAP] AS [CodiceSAP], 
+    [LavoriCodificati2006].[L1] AS [L1], 
+    [LavoriCodificati2006].[L2] AS [L2], 
+    [LavoriCodificati2006].[L3] AS [L3], 
+    [LavoriCodificati2006].[L4] AS [L4], 
+    [LavoriCodificati2006].[categoria] AS [categoria], 
+    [LavoriCodificati2006].[processo] AS [processo], 
+    [LavoriCodificati2006].[cm2] AS [cm2], 
+    [LavoriCodificati2006].[revisione] AS [revisione], 
+    [LavoriCodificati2006].[dataFuoriCorso] AS [dataFuoriCorso]
+    FROM [dbo].[LavoriCodificati2006] AS [LavoriCodificati2006]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="LavoriCodificati2012" EntityType="Self.LavoriCodificati2012" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [LavoriCodificati2012].[CodiceFAST] AS [CodiceFAST], 
+    [LavoriCodificati2012].[Titolo] AS [Titolo], 
+    [LavoriCodificati2012].[CostoMateriali] AS [CostoMateriali], 
+    [LavoriCodificati2012].[Ore] AS [Ore], 
+    [LavoriCodificati2012].[Efficienza] AS [Efficienza], 
+    [LavoriCodificati2012].[CodiceM2] AS [CodiceM2], 
+    [LavoriCodificati2012].[Documento] AS [Documento], 
+    [LavoriCodificati2012].[ApplyToCat] AS [ApplyToCat], 
+    [LavoriCodificati2012].[ApplyToSubCat] AS [ApplyToSubCat], 
+    [LavoriCodificati2012].[leadTime] AS [leadTime], 
+    [LavoriCodificati2012].[CodiceSAP] AS [CodiceSAP], 
+    [LavoriCodificati2012].[L1] AS [L1], 
+    [LavoriCodificati2012].[L2] AS [L2], 
+    [LavoriCodificati2012].[L3] AS [L3], 
+    [LavoriCodificati2012].[L4] AS [L4], 
+    [LavoriCodificati2012].[categoria] AS [categoria], 
+    [LavoriCodificati2012].[processo] AS [processo], 
+    [LavoriCodificati2012].[cm2] AS [cm2], 
+    [LavoriCodificati2012].[revisione] AS [revisione], 
+    [LavoriCodificati2012].[dataFuoriCorso] AS [dataFuoriCorso]
+    FROM [dbo].[LavoriCodificati2012] AS [LavoriCodificati2012]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="LavoriCodificatiPrezzoLibero" EntityType="Self.LavoriCodificatiPrezzoLibero" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [LavoriCodificatiPrezzoLibero].[CodiceFast] AS [CodiceFast], 
+    [LavoriCodificatiPrezzoLibero].[Titolo] AS [Titolo], 
+    [LavoriCodificatiPrezzoLibero].[Descrizione] AS [Descrizione], 
+    [LavoriCodificatiPrezzoLibero].[CodiceSAP] AS [CodiceSAP], 
+    [LavoriCodificatiPrezzoLibero].[categoria] AS [categoria], 
+    [LavoriCodificatiPrezzoLibero].[processo] AS [processo], 
+    [LavoriCodificatiPrezzoLibero].[leadTime] AS [leadTime], 
+    [LavoriCodificatiPrezzoLibero].[DescrizioneModificabile] AS [DescrizioneModificabile], 
+    [LavoriCodificatiPrezzoLibero].[Tipologia] AS [Tipologia], 
+    [LavoriCodificatiPrezzoLibero].[DataFineValidita] AS [DataFineValidita]
+    FROM [dbo].[LavoriCodificatiPrezzoLibero] AS [LavoriCodificatiPrezzoLibero]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PARERI" EntityType="Self.PARERI" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PARERI].[idOfferta] AS [idOfferta], 
+    [PARERI].[tipoRichiesta] AS [tipoRichiesta], 
+    [PARERI].[richiestaA] AS [richiestaA], 
+    [PARERI].[dataRichiesta] AS [dataRichiesta], 
+    [PARERI].[InseritoDa] AS [InseritoDa], 
+    [PARERI].[dataEsito] AS [dataEsito], 
+    [PARERI].[esito] AS [esito], 
+    [PARERI].[Note] AS [Note]
+    FROM [dbo].[PARERI] AS [PARERI]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="QUOTAZIONI" EntityType="Self.QUOTAZIONI" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [QUOTAZIONI].[idOfferta] AS [idOfferta], 
+    [QUOTAZIONI].[EQUIPMENT_NUMBER] AS [EQUIPMENT_NUMBER], 
+    [QUOTAZIONI].[richiestaA] AS [richiestaA], 
+    [QUOTAZIONI].[dataRichiesta] AS [dataRichiesta], 
+    [QUOTAZIONI].[QuotataDa] AS [QuotataDa], 
+    [QUOTAZIONI].[dataQuotazione] AS [dataQuotazione], 
+    [QUOTAZIONI].[esito] AS [esito], 
+    [QUOTAZIONI].[xmlDetails] AS [xmlDetails]
+    FROM [dbo].[QUOTAZIONI] AS [QUOTAZIONI]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="rpt_offerte_Manutenzione" EntityType="Self.rpt_offerte_Manutenzione" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [rpt_offerte_Manutenzione].[IDOfferta] AS [IDOfferta], 
+    [rpt_offerte_Manutenzione].[IDlavoro] AS [IDlavoro], 
+    [rpt_offerte_Manutenzione].[IdEnte] AS [IdEnte], 
+    [rpt_offerte_Manutenzione].[IdVenditore] AS [IdVenditore], 
+    [rpt_offerte_Manutenzione].[venditore] AS [venditore], 
+    [rpt_offerte_Manutenzione].[NumeroOfferta] AS [NumeroOfferta], 
+    [rpt_offerte_Manutenzione].[SoldTo_Party_code] AS [SoldTo_Party_code], 
+    [rpt_offerte_Manutenzione].[SoldTo_Party_RagSoc] AS [SoldTo_Party_RagSoc], 
+    [rpt_offerte_Manutenzione].[SoldTo_Party_ind] AS [SoldTo_Party_ind], 
+    [rpt_offerte_Manutenzione].[SoldTo_Party_CAP] AS [SoldTo_Party_CAP], 
+    [rpt_offerte_Manutenzione].[SoldTo_Party_loc] AS [SoldTo_Party_loc], 
+    [rpt_offerte_Manutenzione].[SoldTo_Party_prov] AS [SoldTo_Party_prov], 
+    [rpt_offerte_Manutenzione].[BillTo_Party_code] AS [BillTo_Party_code], 
+    [rpt_offerte_Manutenzione].[BillTo_Party_RagSoc] AS [BillTo_Party_RagSoc], 
+    [rpt_offerte_Manutenzione].[BillTo_Party_ind] AS [BillTo_Party_ind], 
+    [rpt_offerte_Manutenzione].[BillTo_Party_CAP] AS [BillTo_Party_CAP], 
+    [rpt_offerte_Manutenzione].[BillTo_Party_loc] AS [BillTo_Party_loc], 
+    [rpt_offerte_Manutenzione].[BillTo_Party_prov] AS [BillTo_Party_prov], 
+    [rpt_offerte_Manutenzione].[NumImpianti] AS [NumImpianti], 
+    [rpt_offerte_Manutenzione].[Impianto_ind] AS [Impianto_ind], 
+    [rpt_offerte_Manutenzione].[Impianto_CAP] AS [Impianto_CAP], 
+    [rpt_offerte_Manutenzione].[Impianto_loc] AS [Impianto_loc], 
+    [rpt_offerte_Manutenzione].[StatusCorrente] AS [StatusCorrente], 
+    [rpt_offerte_Manutenzione].[causale] AS [causale], 
+    [rpt_offerte_Manutenzione].[opportunity] AS [opportunity], 
+    [rpt_offerte_Manutenzione].[TipoEdificio_Traffico] AS [TipoEdificio_Traffico], 
+    [rpt_offerte_Manutenzione].[TipoEdificio_Segmento] AS [TipoEdificio_Segmento], 
+    [rpt_offerte_Manutenzione].[DurataContratto] AS [DurataContratto], 
+    [rpt_offerte_Manutenzione].[ServSupp] AS [ServSupp], 
+    [rpt_offerte_Manutenzione].[Pagamento_Tipo] AS [Pagamento_Tipo], 
+    [rpt_offerte_Manutenzione].[Pagamento_modo] AS [Pagamento_modo], 
+    [rpt_offerte_Manutenzione].[Pagamento_Dilazione] AS [Pagamento_Dilazione], 
+    [rpt_offerte_Manutenzione].[Canone_Offerto] AS [Canone_Offerto], 
+    [rpt_offerte_Manutenzione].[Canone_venduto] AS [Canone_venduto], 
+    [rpt_offerte_Manutenzione].[Canone_Liv1] AS [Canone_Liv1], 
+    [rpt_offerte_Manutenzione].[Sconto_offerto] AS [Sconto_offerto], 
+    [rpt_offerte_Manutenzione].[Sconto_venduto] AS [Sconto_venduto], 
+    [rpt_offerte_Manutenzione].[TipoContratto] AS [TipoContratto], 
+    [rpt_offerte_Manutenzione].[AOC] AS [AOC], 
+    [rpt_offerte_Manutenzione].[PiRep] AS [PiRep], 
+    [rpt_offerte_Manutenzione].[RipRep] AS [RipRep], 
+    [rpt_offerte_Manutenzione].[KRMS] AS [KRMS], 
+    [rpt_offerte_Manutenzione].[SIMCARD] AS [SIMCARD], 
+    [rpt_offerte_Manutenzione].[EOPT] AS [EOPT], 
+    [rpt_offerte_Manutenzione].[DataCreazione] AS [DataCreazione]
+    FROM [dbo].[rpt_offerte_Manutenzione] AS [rpt_offerte_Manutenzione]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_AUTORIZZAZIONI_Offerte" Association="Self.FK_AUTORIZZAZIONI_Offerte">
+      <End Role="Offerte" EntitySet="Offerte" />
+      <End Role="AUTORIZZAZIONI" EntitySet="AUTORIZZAZIONI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CategoryLog_Category" Association="Self.FK_CategoryLog_Category">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="CategoryLog" EntitySet="CategoryLog" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CategoryLog_Log" Association="Self.FK_CategoryLog_Log">
+      <End Role="Log" EntitySet="Log" />
+      <End Role="CategoryLog" EntitySet="CategoryLog" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Impianti_Parties" Association="Self.FK_Impianti_Parties">
+      <End Role="Parties" EntitySet="Parties" />
+      <End Role="Impianti" EntitySet="Impianti" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ImpiantiInOfferte_Impianti" Association="Self.FK_ImpiantiInOfferte_Impianti">
+      <End Role="Impianti" EntitySet="Impianti" />
+      <End Role="ImpiantiInOfferte" EntitySet="ImpiantiInOfferte" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ImpiantiInOfferte_Offerte" Association="Self.FK_ImpiantiInOfferte_Offerte">
+      <End Role="Offerte" EntitySet="Offerte" />
+      <End Role="ImpiantiInOfferte" EntitySet="ImpiantiInOfferte" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LavoriInOfferte_ImpiantiInOfferte" Association="Self.FK_LavoriInOfferte_ImpiantiInOfferte">
+      <End Role="ImpiantiInOfferte" EntitySet="ImpiantiInOfferte" />
+      <End Role="LavoriInOfferte" EntitySet="LavoriInOfferte" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OneriOfferte_Offerte" Association="Self.FK_OneriOfferte_Offerte">
+      <End Role="Offerte" EntitySet="Offerte" />
+      <End Role="OneriOfferte" EntitySet="OneriOfferte" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PARERI_Offerte" Association="Self.FK_PARERI_Offerte">
+      <End Role="Offerte" EntitySet="Offerte" />
+      <End Role="PARERI" EntitySet="PARERI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PianoFatturazione_Offerte" Association="Self.FK_PianoFatturazione_Offerte">
+      <End Role="Offerte" EntitySet="Offerte" />
+      <End Role="PianoFatturazione" EntitySet="PianoFatturazione" />
+    </AssociationSet>
+    <AssociationSet Name="FK_QUOTAZIONI_impianti" Association="Self.FK_QUOTAZIONI_impianti">
+      <End Role="Impianti" EntitySet="Impianti" />
+      <End Role="QUOTAZIONI" EntitySet="QUOTAZIONI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_QUOTAZIONI_Offerte" Association="Self.FK_QUOTAZIONI_Offerte">
+      <End Role="Offerte" EntitySet="Offerte" />
+      <End Role="QUOTAZIONI" EntitySet="QUOTAZIONI" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 12.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="12.0">
+ <Targets>
+  <Target Name="E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\3 sorgenti\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug\CRM-FAST.exe">
+   <Modules>
+    <Module Name="crm-fast.exe">
+     <Namespaces>
+      <Namespace Name="CRM_FAST">
+       <Types>
+        <Type Name="Category" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2016-03-02 16:54:22Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="e:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\3 sorgenti\CRM-FAST\CRM-FAST\CRM-FAST" File="Category.cs" Line="17">'Category.Category()' contiene una catena di chiamate che provoca una chiamata a un metodo virtuale definito dalla classe. Rivedere il seguente stack di chiamate per verificare la possibilità di conseguenze indesiderate: &#xD;&#xA;&#xD;&#xA;Category..ctor()&#xD;&#xA;Category.set_CategoryLog(ICollection&lt;CategoryLog&gt;):Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Impianti" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2016-03-02 16:54:22Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="e:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\3 sorgenti\CRM-FAST\CRM-FAST\CRM-FAST" File="Impianti.cs" Line="17">'Impianti.Impianti()' contiene una catena di chiamate che provoca una chiamata a un metodo virtuale definito dalla classe. Rivedere il seguente stack di chiamate per verificare la possibilità di conseguenze indesiderate: &#xD;&#xA;&#xD;&#xA;Impianti..ctor()&#xD;&#xA;Impianti.set_ImpiantiInOfferte(ICollection&lt;ImpiantiInOfferte&gt;):Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="e:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\3 sorgenti\CRM-FAST\CRM-FAST\CRM-FAST" File="Impianti.cs" Line="17">'Impianti.Impianti()' contiene una catena di chiamate che provoca una chiamata a un metodo virtuale definito dalla classe. Rivedere il seguente stack di chiamate per verificare la possibilità di conseguenze indesiderate: &#xD;&#xA;&#xD;&#xA;Impianti..ctor()&#xD;&#xA;Impianti.set_QUOTAZIONI(ICollection&lt;QUOTAZIONI&gt;):Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ImpiantiInOfferte" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2016-03-02 16:54:22Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="e:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\3 sorgenti\CRM-FAST\CRM-FAST\CRM-FAST" File="ImpiantiInOfferte.cs" Line="17">'ImpiantiInOfferte.ImpiantiInOfferte()' contiene una catena di chiamate che provoca una chiamata a un metodo virtuale definito dalla classe. Rivedere il seguente stack di chiamate per verificare la possibilità di conseguenze indesiderate: &#xD;&#xA;&#xD;&#xA;ImpiantiInOfferte..ctor()&#xD;&#xA;ImpiantiInOfferte.set_LavoriInOfferte(ICollection&lt;LavoriInOfferte&gt;):Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Log" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2016-03-02 16:54:22Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="e:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\3 sorgenti\CRM-FAST\CRM-FAST\CRM-FAST" File="Log.cs" Line="17">'Log.Log()' contiene una catena di chiamate che provoca una chiamata a un metodo virtuale definito dalla classe. Rivedere il seguente stack di chiamate per verificare la possibilità di conseguenze indesiderate: &#xD;&#xA;&#xD;&#xA;Log..ctor()&#xD;&#xA;Log.set_CategoryLog(ICollection&lt;CategoryLog&gt;):Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Offerte" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2016-03-02 16:54:22Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="e:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\3 sorgenti\CRM-FAST\CRM-FAST\CRM-FAST" File="Offerte.cs" Line="17">'Offerte.Offerte()' contiene una catena di chiamate che provoca una chiamata a un metodo virtuale definito dalla classe. Rivedere il seguente stack di chiamate per verificare la possibilità di conseguenze indesiderate: &#xD;&#xA;&#xD;&#xA;Offerte..ctor()&#xD;&#xA;Offerte.set_AUTORIZZAZIONI(ICollection&lt;AUTORIZZAZIONI&gt;):Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="e:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\3 sorgenti\CRM-FAST\CRM-FAST\CRM-FAST" File="Offerte.cs" Line="17">'Offerte.Offerte()' contiene una catena di chiamate che provoca una chiamata a un metodo virtuale definito dalla classe. Rivedere il seguente stack di chiamate per verificare la possibilità di conseguenze indesiderate: &#xD;&#xA;&#xD;&#xA;Offerte..ctor()&#xD;&#xA;Offerte.set_ImpiantiInOfferte(ICollection&lt;ImpiantiInOfferte&gt;):Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="e:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\3 sorgenti\CRM-FAST\CRM-FAST\CRM-FAST" File="Offerte.cs" Line="17">'Offerte.Offerte()' contiene una catena di chiamate che provoca una chiamata a un metodo virtuale definito dalla classe. Rivedere il seguente stack di chiamate per verificare la possibilità di conseguenze indesiderate: &#xD;&#xA;&#xD;&#xA;Offerte..ctor()&#xD;&#xA;Offerte.set_OneriOfferte(ICollection&lt;OneriOfferte&gt;):Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="e:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\3 sorgenti\CRM-FAST\CRM-FAST\CRM-FAST" File="Offerte.cs" Line="17">'Offerte.Offerte()' contiene una catena di chiamate che provoca una chiamata a un metodo virtuale definito dalla classe. Rivedere il seguente stack di chiamate per verificare la possibilità di conseguenze indesiderate: &#xD;&#xA;&#xD;&#xA;Offerte..ctor()&#xD;&#xA;Offerte.set_PARERI(ICollection&lt;PARERI&gt;):Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="e:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\3 sorgenti\CRM-FAST\CRM-FAST\CRM-FAST" File="Offerte.cs" Line="17">'Offerte.Offerte()' contiene una catena di chiamate che provoca una chiamata a un metodo virtuale definito dalla classe. Rivedere il seguente stack di chiamate per verificare la possibilità di conseguenze indesiderate: &#xD;&#xA;&#xD;&#xA;Offerte..ctor()&#xD;&#xA;Offerte.set_PianoFatturazione(ICollection&lt;PianoFatturazione&gt;):Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="e:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\3 sorgenti\CRM-FAST\CRM-FAST\CRM-FAST" File="Offerte.cs" Line="17">'Offerte.Offerte()' contiene una catena di chiamate che provoca una chiamata a un metodo virtuale definito dalla classe. Rivedere il seguente stack di chiamate per verificare la possibilità di conseguenze indesiderate: &#xD;&#xA;&#xD;&#xA;Offerte..ctor()&#xD;&#xA;Offerte.set_QUOTAZIONI(ICollection&lt;QUOTAZIONI&gt;):Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Parties" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2016-03-02 16:54:22Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="e:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\3 sorgenti\CRM-FAST\CRM-FAST\CRM-FAST" File="Parties.cs" Line="17">'Parties.Parties()' contiene una catena di chiamate che provoca una chiamata a un metodo virtuale definito dalla classe. Rivedere il seguente stack di chiamate per verificare la possibilità di conseguenze indesiderate: &#xD;&#xA;&#xD;&#xA;Parties..ctor()&#xD;&#xA;Parties.set_Impianti(ICollection&lt;Impianti&gt;):Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="e:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\3 sorgenti\CRM-FAST\CRM-FAST\CRM-FAST" File="Parties.cs" Line="17">'Parties.Parties()' contiene una catena di chiamate che provoca una chiamata a un metodo virtuale definito dalla classe. Rivedere il seguente stack di chiamate per verificare la possibilità di conseguenze indesiderate: &#xD;&#xA;&#xD;&#xA;Parties..ctor()&#xD;&#xA;Parties.set_Offerte(ICollection&lt;Offerte&gt;):Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214">
+   <Name>Non chiamare metodi sottoponibili a override nei costruttori</Name>
+   <Description>I metodi virtuali definiti nella classe non devono essere chiamati dai costruttori. Se una classe derivata ha eseguito l'override del metodo, verrà chiamata la versione della classe derivata prima del costruttore della classe derivata.</Description>
+   <Resolution Name="Default">{0} contiene una catena di chiamate che provoca una chiamata a un metodo virtuale definito dalla classe. Rivedere il seguente stack di chiamate per verificare la possibilità di conseguenze indesiderate: {1}</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182331.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalWarning</MessageLevel>
+   <File Name="usagerules.dll" Version="12.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Categoria</String>
+  <String Key="Certainty">Attendibilità</String>
+  <String Key="CollapseAll">Comprimi tutto</String>
+  <String Key="CheckId">ID controllo</String>
+  <String Key="Error">Errore</String>
+  <String Key="Errors">errori</String>
+  <String Key="ExpandAll">Espandi tutto</String>
+  <String Key="Help">Guida</String>
+  <String Key="Line">Riga</String>
+  <String Key="Messages">messaggi</String>
+  <String Key="LocationNotStoredInPdb">[Percorso non archiviato nel PDB]</String>
+  <String Key="Project">Progetto</String>
+  <String Key="Resolution">Risoluzione</String>
+  <String Key="Rule">Regola</String>
+  <String Key="RuleFile">File delle regole</String>
+  <String Key="RuleDescription">Descrizione regola</String>
+  <String Key="Source">Origine</String>
+  <String Key="Status">Stato</String>
+  <String Key="Target">Destinazione</String>
+  <String Key="Warning">Avviso</String>
+  <String Key="Warnings">avvisi</String>
+  <String Key="ReportTitle">Report di analisi codice</String>
+ </Localized>
+</FxCopReport>

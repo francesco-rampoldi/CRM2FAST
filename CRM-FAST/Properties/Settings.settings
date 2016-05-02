@@ -1,0 +1,33 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CRM_FAST.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SFDC_API_WS_Pwd" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Lo@3Mkl0</Value>
+    </Setting>
+    <Setting Name="fatalfailuresRpt_Email" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">francesco.rampoldi@topgraf.it</Value>
+    </Setting>
+    <Setting Name="sender_email" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">test.CRM2FASTinterface@kone.com</Value>
+    </Setting>
+    <Setting Name="sender_name" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CRM2FASTinterface - TEST </Value>
+    </Setting>
+    <Setting Name="smtp_server" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">10.32.32.32</Value>
+    </Setting>
+    <Setting Name="Opp_clean_import_start_date" Type="System.DateTime" Scope="Application">
+      <Value Profile="(Default)">2014-01-01</Value>
+    </Setting>
+    <Setting Name="CRM_FAST_API_SforceService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://test.salesforce.com/services/Soap/c/30.0/00Dm000000028uq</Value>
+    </Setting>
+    <Setting Name="SFDC_API_WS_Login" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">fast.interface@kone.com.full</Value>
+    </Setting>
+    <Setting Name="Opp_getOpportunities_select_query" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT id, name, OwnerId, Owner.EmployeeNumber ,Owner.FirstName , Owner.LastName, Owner.Email ,Owner.Alias, Owner.Sales_Office__c, Owner.UserName, Owner.Branch_Office__c, Owner.Camos_User__c, Business_Type__c, Opportunity_Category__c, Site_Country__c, KONE_Opportunity_Number__c, StageName, description, IsWon, IsClosed, Sales_Organization__c, Amount, CloseDate, Probability, Site_Street_Address__c, Site_City__c, Site_State_Province__c, Account.Fax, Account.Phone, AccountId, Account.Name, Account.NameLocal , Account.AccountNumber, Account.BillingCity, Account.BillingStreet, Account.BillingPostalCode, Account.BillingState, Account.BillingCountry, Account.Kone_Country__c, Account.Kone_City__c,  LastModifiedDate, (SELECT Partner__r.Fax, Partner__r.Phone, Partner__r.Name, Partner__r.NameLocal , Partner__r.AccountNumber, Partner__r.BillingCity, Partner__r.BillingStreet, Partner__r.BillingPostalCode, Partner__r.BillingState, Partner__r.BillingCountry, Partner__r.Kone_Country__c, Partner__r.Kone_City__c  FROM Partners__r WHERE Partner_role__c in ('Sold-to Party'))  FROM Opportunity  WHERE LastModifiedDate &gt; {0} AND LastModifiedDate &lt; {1} AND Site_Country__c = 'Italy'  ORDER BY LastModifiedDate ASC</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

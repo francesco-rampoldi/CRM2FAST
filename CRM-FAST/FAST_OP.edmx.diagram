@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="18dee955e32e48f0bae704da03b9d815" Name="Diagram1" ZoomLevel="55">
+        <EntityTypeShape EntityType="FASTModel.DAT_SF_owners" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FASTModel.DAT_SF_opportunities" Width="1.5" PointX="2.375" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FASTModel.Venditori" Width="2.25" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FASTModel.Aree" Width="1.5" PointX="8.75" PointY="0.75" />
+        <EntityTypeShape EntityType="FASTModel.Cars" Width="1.5" PointX="15.75" PointY="0.75" />
+        <EntityTypeShape EntityType="FASTModel.CategorieLavori" Width="1.5" PointX="10.75" PointY="0.75" />
+        <EntityTypeShape EntityType="FASTModel.Category" Width="1.5" PointX="0.75" PointY="9.125" />
+        <EntityTypeShape EntityType="FASTModel.CategoryLog" Width="1.5" PointX="3" PointY="13" />
+        <EntityTypeShape EntityType="FASTModel.CFG_AccessiCabina" Width="1.5" PointX="2.75" PointY="15.75" />
+        <EntityTypeShape EntityType="FASTModel.CFG_AccessoriSiNo" Width="1.5" PointX="15.75" PointY="7.75" />
+        <EntityTypeShape EntityType="FASTModel.CFG_Anello" Width="1.5" PointX="17.75" PointY="0.75" />
+        <EntityTypeShape EntityType="FASTModel.CFG_Azionamento" Width="1.5" PointX="17.75" PointY="4.75" />
+        <EntityTypeShape EntityType="FASTModel.CFG_Configuratori" Width="1.5" PointX="12.75" PointY="0.75" />
+        <EntityTypeShape EntityType="FASTModel.CFG_Corrente" Width="1.5" PointX="4.75" PointY="17.75" />
+        <EntityTypeShape EntityType="FASTModel.CFG_Fermate" Width="1.5" PointX="17.75" PointY="8.75" />
+        <EntityTypeShape EntityType="FASTModel.CFG_Listino_Accessori" Width="1.5" PointX="19.75" PointY="0.75" />
+        <EntityTypeShape EntityType="FASTModel.CFG_Listino_BasiQuadroDrive" Width="1.5" PointX="0.75" PointY="19.75" />
+        <EntityTypeShape EntityType="FASTModel.CFG_Listino_Prezzi" Width="1.5" PointX="19.75" PointY="5.75" />
+        <EntityTypeShape EntityType="FASTModel.CFG_OffertaQuadro" Width="1.5" PointX="6.75" PointY="19.75" />
+        <EntityTypeShape EntityType="FASTModel.CFG_Portata" Width="1.5" PointX="19.75" PointY="8.75" />
+        <EntityTypeShape EntityType="FASTModel.CFG_Quadro" Width="1.5" PointX="20.75" PointY="12.75" />
+        <EntityTypeShape EntityType="FASTModel.CFG_RES40_ListaCampi" Width="1.5" PointX="20.75" PointY="16.75" />
+        <EntityTypeShape EntityType="FASTModel.CFG_Schede" Width="1.5" PointX="21.75" PointY="0.75" />
+        <EntityTypeShape EntityType="FASTModel.CFG_ServiziLatoC" Width="1.5" PointX="2.75" PointY="21.75" />
+        <EntityTypeShape EntityType="FASTModel.CFG_Tensione" Width="1.5" PointX="21.75" PointY="4.75" />
+        <EntityTypeShape EntityType="FASTModel.CFG_TensioneFreno" Width="1.5" PointX="21.75" PointY="8.75" />
+        <EntityTypeShape EntityType="FASTModel.CFG_Velocita" Width="1.5" PointX="18.75" PointY="21.75" />
+        <EntityTypeShape EntityType="FASTModel.Configuratori" Width="1.5" PointX="20.75" PointY="21.75" />
+        <EntityTypeShape EntityType="FASTModel.CostiTrasporto" Width="1.5" PointX="22.75" PointY="12.75" />
+        <EntityTypeShape EntityType="FASTModel.dbRef_Dettaglio" Width="1.5" PointX="13.75" PointY="22.75" />
+        <EntityTypeShape EntityType="FASTModel.dbRef_Dettaglio_Storico" Width="1.5" PointX="22.75" PointY="15.75" />
+        <EntityTypeShape EntityType="FASTModel.dbRef_Listino" Width="1.5" PointX="15.75" PointY="22.75" />
+        <EntityTypeShape EntityType="FASTModel.dbRef_Listino_Storico" Width="1.5" PointX="22.75" PointY="19.75" />
+        <EntityTypeShape EntityType="FASTModel.Depliants" Width="1.5" PointX="23.75" PointY="0.75" />
+        <EntityTypeShape EntityType="FASTModel.Depliants_Trace" Width="1.5" PointX="23.75" PointY="4.75" />
+        <EntityTypeShape EntityType="FASTModel.Depliants_Trace_Elenco" Width="1.5" PointX="4.75" PointY="23.75" />
+        <EntityTypeShape EntityType="FASTModel.DepliantsStatusElenco" Width="1.5" PointX="6.75" PointY="23.75" />
+        <EntityTypeShape EntityType="FASTModel.DepliantsStatusRichieste" Width="1.5" PointX="23.75" PointY="8.75" />
+        <EntityTypeShape EntityType="FASTModel.DescrizioniLavori" Width="1.5" PointX="24.75" PointY="11.75" />
+        <EntityTypeShape EntityType="FASTModel.Documenti" Width="1.5" PointX="24.75" PointY="14.75" />
+        <EntityTypeShape EntityType="FASTModel.DTSEBTasks" Width="1.5" PointX="24.75" PointY="17.75" />
+        <EntityTypeShape EntityType="FASTModel.EDMSData" Width="1.5" PointX="20.75" PointY="24.75" />
+        <EntityTypeShape EntityType="FASTModel.extractKIT" Width="1.5" PointX="24.75" PointY="22.75" />
+        <EntityTypeShape EntityType="FASTModel.fastLog" Width="1.5" PointX="25.75" PointY="0.75" />
+        <EntityTypeShape EntityType="FASTModel.idGenerator" Width="1.5" PointX="0.75" PointY="25.75" />
+        <EntityTypeShape EntityType="FASTModel.Impianti" Width="1.5" PointX="11" PointY="18.375" />
+        <EntityTypeShape EntityType="FASTModel.ImpiantiInOfferte" Width="1.5" PointX="16.25" PointY="14.375" />
+        <EntityTypeShape EntityType="FASTModel.LavoriACaricoCliente" Width="1.5" PointX="25.75" PointY="3.75" />
+        <EntityTypeShape EntityType="FASTModel.LavoriInOfferte" Width="1.5" PointX="18.5" PointY="12.125" />
+        <EntityTypeShape EntityType="FASTModel.LavoriNonCOdificati" Width="1.5" PointX="25.75" PointY="6.75" />
+        <EntityTypeShape EntityType="FASTModel.Log" Width="1.5" PointX="0.75" PointY="12" />
+        <EntityTypeShape EntityType="FASTModel.LookupTables" Width="1.5" PointX="17.75" PointY="25.75" />
+        <EntityTypeShape EntityType="FASTModel.Mail" Width="1.5" PointX="2.75" PointY="26.75" />
+        <EntityTypeShape EntityType="FASTModel.MilestonePianoFatt" Width="1.5" PointX="4.75" PointY="26.75" />
+        <EntityTypeShape EntityType="FASTModel.ModificaOrdine" Width="1.5" PointX="6.75" PointY="26.75" />
+        <EntityTypeShape EntityType="FASTModel.News" Width="1.5" PointX="26.75" PointY="11.75" />
+        <EntityTypeShape EntityType="FASTModel.Offerte" Width="1.5" PointX="11" PointY="5.5" />
+        <EntityTypeShape EntityType="FASTModel.OneriCompresiEsclusi" Width="1.5" PointX="26.75" PointY="14.75" />
+        <EntityTypeShape EntityType="FASTModel.OneriOfferte" Width="1.5" PointX="13.25" PointY="3.75" />
+        <EntityTypeShape EntityType="FASTModel.Pacchetti" Width="1.5" PointX="26.75" PointY="18.75" />
+        <EntityTypeShape EntityType="FASTModel.Parametri" Width="1.5" PointX="26.75" PointY="24.75" />
+        <EntityTypeShape EntityType="FASTModel.Parties" Width="1.5" PointX="8.75" PointY="11.375" />
+        <EntityTypeShape EntityType="FASTModel.PianoFatturazione" Width="1.5" PointX="13.25" PointY="14.875" />
+        <EntityTypeShape EntityType="FASTModel.Price" Width="1.5" PointX="27.75" PointY="0.75" />
+        <EntityTypeShape EntityType="FASTModel.PriceGroup" Width="1.5" PointX="27.75" PointY="4.75" />
+        <EntityTypeShape EntityType="FASTModel.PriceItem" Width="1.5" PointX="8.75" PointY="27.75" />
+        <EntityTypeShape EntityType="FASTModel.Provvigioni" Width="1.5" PointX="27.75" PointY="7.75" />
+        <EntityTypeShape EntityType="FASTModel.Referenze" Width="1.5" PointX="10.75" PointY="27.75" />
+        <EntityTypeShape EntityType="FASTModel.ReportFinanziari" Width="1.5" PointX="12.75" PointY="27.75" />
+        <EntityTypeShape EntityType="FASTModel.SAPCaratteristiche" Width="1.5" PointX="14.75" PointY="27.75" />
+        <EntityTypeShape EntityType="FASTModel.TerminiDiPagamento" Width="1.5" PointX="26.75" PointY="27.75" />
+        <EntityTypeShape EntityType="FASTModel.Variabili" Width="1.5" PointX="28.75" PointY="10.75" />
+        <EntityTypeShape EntityType="FASTModel.VariabiliPrice" Width="1.5" PointX="28.75" PointY="14.75" />
+        <EntityTypeShape EntityType="FASTModel.AUTORIZZAZIONI" Width="1.5" PointX="13.25" PointY="7.875" />
+        <EntityTypeShape EntityType="FASTModel.Cars_FURE" Width="1.5" PointX="29.75" PointY="0.75" />
+        <EntityTypeShape EntityType="FASTModel.Cars_New" Width="1.5" PointX="30.75" PointY="9.75" />
+        <EntityTypeShape EntityType="FASTModel.CFG_Servizi" Width="1.5" PointX="30.75" PointY="18.75" />
+        <EntityTypeShape EntityType="FASTModel.CFG_Versioni" Width="1.5" PointX="30.75" PointY="22.75" />
+        <EntityTypeShape EntityType="FASTModel.DAT_SALES_GROUPS" Width="1.5" PointX="30.75" PointY="25.75" />
+        <EntityTypeShape EntityType="FASTModel.DAT_SALES_OFFICE" Width="1.5" PointX="30.75" PointY="28.75" />
+        <EntityTypeShape EntityType="FASTModel.DAT_SALES_ORGANIZATION" Width="1.5" PointX="31.75" PointY="0.75" />
+        <EntityTypeShape EntityType="FASTModel.dbo_SAPCaratteristiche" Width="1.5" PointX="0.75" PointY="31.75" />
+        <EntityTypeShape EntityType="FASTModel.dbRef_lookup_FamigliaCosto" Width="1.5" PointX="2.75" PointY="31.75" />
+        <EntityTypeShape EntityType="FASTModel.dtproperties" Width="1.5" PointX="31.75" PointY="3.75" />
+        <EntityTypeShape EntityType="FASTModel.FastPorte_Lavori" Width="1.5" PointX="4.75" PointY="31.75" />
+        <EntityTypeShape EntityType="FASTModel.FastScaleTappeti_Lavori" Width="1.5" PointX="12.75" PointY="31.75" />
+        <EntityTypeShape EntityType="FASTModel.LavoriCodificati" Width="1.5" PointX="30.75" PointY="31.75" />
+        <EntityTypeShape EntityType="FASTModel.LavoriCodificati2006" Width="1.5" PointX="32.75" PointY="6.75" />
+        <EntityTypeShape EntityType="FASTModel.LavoriCodificati2012" Width="1.5" PointX="6.75" PointY="32.75" />
+        <EntityTypeShape EntityType="FASTModel.LavoriCodificatiPrezzoLibero" Width="1.5" PointX="32.75" PointY="12.75" />
+        <EntityTypeShape EntityType="FASTModel.PARERI" Width="1.5" PointX="13.25" PointY="11.375" />
+        <EntityTypeShape EntityType="FASTModel.QUOTAZIONI" Width="1.5" PointX="16.25" PointY="18.25" />
+        <EntityTypeShape EntityType="FASTModel.rpt_offerte_Manutenzione" Width="1.5" PointX="32.75" PointY="28.75" />
+        <AssociationConnector Association="FASTModel.FK_CategoryLog_Category" />
+        <AssociationConnector Association="FASTModel.FK_CategoryLog_Log" />
+        <AssociationConnector Association="FASTModel.FK_Impianti_Parties" />
+        <AssociationConnector Association="FASTModel.FK_ImpiantiInOfferte_Impianti" />
+        <AssociationConnector Association="FASTModel.FK_QUOTAZIONI_impianti" />
+        <AssociationConnector Association="FASTModel.FK_ImpiantiInOfferte_Offerte" />
+        <AssociationConnector Association="FASTModel.FK_LavoriInOfferte_ImpiantiInOfferte" />
+        <AssociationConnector Association="FASTModel.FK_AUTORIZZAZIONI_Offerte" />
+        <AssociationConnector Association="FASTModel.FK_Offerte_Parties" />
+        <AssociationConnector Association="FASTModel.FK_OneriOfferte_Offerte" />
+        <AssociationConnector Association="FASTModel.FK_PARERI_Offerte" />
+        <AssociationConnector Association="FASTModel.FK_PianoFatturazione_Offerte" />
+        <AssociationConnector Association="FASTModel.FK_QUOTAZIONI_Offerte" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

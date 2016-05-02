@@ -1,0 +1,1932 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FASTModelStoreContainer" CdmEntityContainer="FASTEntities">
+    <EntitySetMapping Name="DAT_SF_owners">
+      <EntityTypeMapping TypeName="FASTModel.DAT_SF_owners">
+        <MappingFragment StoreEntitySet="DAT_SF_owners">
+          <ScalarProperty Name="SAP_OWNER" ColumnName="SAP_OWNER" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="KAI" ColumnName="KAI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DAT_SF_opportunities">
+      <EntityTypeMapping TypeName="FASTModel.DAT_SF_opportunities">
+        <MappingFragment StoreEntitySet="DAT_SF_opportunities">
+          <ScalarProperty Name="sold_to_Party_FAX" ColumnName="sold_to_Party_FAX" />
+          <ScalarProperty Name="sold_to_Party_PHONE" ColumnName="sold_to_Party_PHONE" />
+          <ScalarProperty Name="sold_to_Party_REGION" ColumnName="sold_to_Party_REGION" />
+          <ScalarProperty Name="sold_to_Party_POSTAL_CODE" ColumnName="sold_to_Party_POSTAL_CODE" />
+          <ScalarProperty Name="sold_to_Party_CITY" ColumnName="sold_to_Party_CITY" />
+          <ScalarProperty Name="sold_to_Party_IDParty" ColumnName="sold_to_Party_IDParty" />
+          <ScalarProperty Name="sold_to_Party_Indirizzo" ColumnName="sold_to_Party_Indirizzo" />
+          <ScalarProperty Name="sold_to_Party_RagioneSociale" ColumnName="sold_to_Party_RagioneSociale" />
+          <ScalarProperty Name="Opportunity_Category" ColumnName="Opportunity_Category" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ACCOUNTID" ColumnName="ACCOUNTID" />
+          <ScalarProperty Name="STAGENAME" ColumnName="STAGENAME" />
+          <ScalarProperty Name="ISCLOSED" ColumnName="ISCLOSED" />
+          <ScalarProperty Name="ISWON" ColumnName="ISWON" />
+          <ScalarProperty Name="BUSINESS_TYPE" ColumnName="BUSINESS_TYPE" />
+          <ScalarProperty Name="SALES_ORGANIZATION__CODE" ColumnName="SALES_ORGANIZATION__CODE" />
+          <ScalarProperty Name="EsportatoSAP" ColumnName="EsportatoSAP" />
+          <ScalarProperty Name="AMOUNT" ColumnName="AMOUNT" />
+          <ScalarProperty Name="SF_OwnerID" ColumnName="SF_OwnerID" />
+          <ScalarProperty Name="Opportunity_Code" ColumnName="Opportunity_Code" />
+          <ScalarProperty Name="Offerta_DataPrevistaChiusura" ColumnName="Offerta_DataPrevistaChiusura" />
+          <ScalarProperty Name="Offerta_ProbabilitaAggiudicazione" ColumnName="Offerta_ProbabilitaAggiudicazione" />
+          <ScalarProperty Name="Party_RagioneSociale" ColumnName="Party_RagioneSociale" />
+          <ScalarProperty Name="Party_Indirizzo" ColumnName="Party_Indirizzo" />
+          <ScalarProperty Name="Party_IDParty" ColumnName="Party_IDParty" />
+          <ScalarProperty Name="Party_CITY" ColumnName="Party_CITY" />
+          <ScalarProperty Name="Party_POSTAL_CODE" ColumnName="Party_POSTAL_CODE" />
+          <ScalarProperty Name="Party_REGION" ColumnName="Party_REGION" />
+          <ScalarProperty Name="Party_PHONE" ColumnName="Party_PHONE" />
+          <ScalarProperty Name="Party_FAX" ColumnName="Party_FAX" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="UpdateDtime" ColumnName="UpdateDtime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Venditori">
+      <EntityTypeMapping TypeName="FASTModel.Venditori">
+        <MappingFragment StoreEntitySet="Venditori">
+          <ScalarProperty Name="KAI" ColumnName="KAI" />
+          <ScalarProperty Name="SALES_GROUP_CODE" ColumnName="SALES_GROUP_CODE" />
+          <ScalarProperty Name="SALES_OFFICE_CODE" ColumnName="SALES_OFFICE_CODE" />
+          <ScalarProperty Name="Sigla" ColumnName="Sigla" />
+          <ScalarProperty Name="KAIAmm" ColumnName="KAIAmm" />
+          <ScalarProperty Name="KAIAmm2" ColumnName="KAIAmm2" />
+          <ScalarProperty Name="KAICV" ColumnName="KAICV" />
+          <ScalarProperty Name="KAISV" ColumnName="KAISV" />
+          <ScalarProperty Name="CodiceSV" ColumnName="CodiceSV" />
+          <ScalarProperty Name="KAISV2" ColumnName="KAISV2" />
+          <ScalarProperty Name="CodiceSV2" ColumnName="CodiceSV2" />
+          <ScalarProperty Name="KAICD" ColumnName="KAICD" />
+          <ScalarProperty Name="KAIDIR" ColumnName="KAIDIR" />
+          <ScalarProperty Name="FileFirma" ColumnName="FileFirma" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Ufficio" ColumnName="Ufficio" />
+          <ScalarProperty Name="Indirizzo" ColumnName="Indirizzo" />
+          <ScalarProperty Name="CAP" ColumnName="CAP" />
+          <ScalarProperty Name="Citta" ColumnName="Citta" />
+          <ScalarProperty Name="SogliaSconto" ColumnName="SogliaSconto" />
+          <ScalarProperty Name="SogliaValore" ColumnName="SogliaValore" />
+          <ScalarProperty Name="persona" ColumnName="persona" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="VisibilitaVenditori" ColumnName="VisibilitaVenditori" />
+          <ScalarProperty Name="VisibilitaDistretti" ColumnName="VisibilitaDistretti" />
+          <ScalarProperty Name="Cellulare" ColumnName="Cellulare" />
+          <ScalarProperty Name="ListinoClienti" ColumnName="ListinoClienti" />
+          <ScalarProperty Name="IsAdmin" ColumnName="IsAdmin" />
+          <ScalarProperty Name="IsDSAM" ColumnName="IsDSAM" />
+          <ScalarProperty Name="IsStandard" ColumnName="IsStandard" />
+          <ScalarProperty Name="IsMKT" ColumnName="IsMKT" />
+          <ScalarProperty Name="IsManager" ColumnName="IsManager" />
+          <ScalarProperty Name="IsSupervisoreVB" ColumnName="IsSupervisoreVB" />
+          <ScalarProperty Name="IsVenditore" ColumnName="IsVenditore" />
+          <ScalarProperty Name="IsSupervisore" ColumnName="IsSupervisore" />
+          <ScalarProperty Name="Ruolo" ColumnName="Ruolo" />
+          <ScalarProperty Name="AbilitatoMTZElev" ColumnName="AbilitatoMTZElev" />
+          <ScalarProperty Name="AbilitatoMTZ" ColumnName="AbilitatoMTZ" />
+          <ScalarProperty Name="AbilitatoDOOR" ColumnName="AbilitatoDOOR" />
+          <ScalarProperty Name="SAP_OWNER" ColumnName="SAP_OWNER" />
+          <ScalarProperty Name="KAISV_TRB" ColumnName="KAISV_TRB" />
+          <ScalarProperty Name="KAISV_FRB" ColumnName="KAISV_FRB" />
+          <ScalarProperty Name="KAISV_LAVORI" ColumnName="KAISV_LAVORI" />
+          <ScalarProperty Name="KAIAMM_SEB" ColumnName="KAIAMM_SEB" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Aree">
+      <EntityTypeMapping TypeName="FASTModel.Aree">
+        <MappingFragment StoreEntitySet="Aree">
+          <ScalarProperty Name="KAIResponsabile" ColumnName="KAIResponsabile" />
+          <ScalarProperty Name="VisibilitaDistretti" ColumnName="VisibilitaDistretti" />
+          <ScalarProperty Name="Area" ColumnName="Area" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cars">
+      <EntityTypeMapping TypeName="FASTModel.Cars">
+        <MappingFragment StoreEntitySet="Cars">
+          <ScalarProperty Name="CW1" ColumnName="CW1" />
+          <ScalarProperty Name="CW" ColumnName="CW" />
+          <ScalarProperty Name="Speed" ColumnName="Speed" />
+          <ScalarProperty Name="CTWSG" ColumnName="CTWSG" />
+          <ScalarProperty Name="Persons" ColumnName="Persons" />
+          <ScalarProperty Name="CAR_CXmax" ColumnName="CAR_CXmax" />
+          <ScalarProperty Name="CAR_CXmin" ColumnName="CAR_CXmin" />
+          <ScalarProperty Name="CAR_CX" ColumnName="CAR_CX" />
+          <ScalarProperty Name="WDmax" ColumnName="WDmax" />
+          <ScalarProperty Name="WD" ColumnName="WD" />
+          <ScalarProperty Name="Gmax" ColumnName="Gmax" />
+          <ScalarProperty Name="Gmin" ColumnName="Gmin" />
+          <ScalarProperty Name="WWmax" ColumnName="WWmax" />
+          <ScalarProperty Name="WWmin" ColumnName="WWmin" />
+          <ScalarProperty Name="DD" ColumnName="DD" />
+          <ScalarProperty Name="BB" ColumnName="BB" />
+          <ScalarProperty Name="LL" ColumnName="LL" />
+          <ScalarProperty Name="DoorType" ColumnName="DoorType" />
+          <ScalarProperty Name="AccessNum" ColumnName="AccessNum" />
+          <ScalarProperty Name="DutyLoad" ColumnName="DutyLoad" />
+          <ScalarProperty Name="Process" ColumnName="Process" />
+          <ScalarProperty Name="PacketVersion" ColumnName="PacketVersion" />
+          <ScalarProperty Name="Packet" ColumnName="Packet" />
+          <ScalarProperty Name="IDCars" ColumnName="IDCars" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CategorieLavori">
+      <EntityTypeMapping TypeName="FASTModel.CategorieLavori">
+        <MappingFragment StoreEntitySet="CategorieLavori">
+          <ScalarProperty Name="categoriaSAP" ColumnName="categoriaSAP" />
+          <ScalarProperty Name="categoria" ColumnName="categoria" />
+          <ScalarProperty Name="famiglia" ColumnName="famiglia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Category">
+      <EntityTypeMapping TypeName="FASTModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CategoryLog">
+      <EntityTypeMapping TypeName="FASTModel.CategoryLog">
+        <MappingFragment StoreEntitySet="CategoryLog">
+          <ScalarProperty Name="LogID" ColumnName="LogID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="CategoryLogID" ColumnName="CategoryLogID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CFG_AccessiCabina">
+      <EntityTypeMapping TypeName="FASTModel.CFG_AccessiCabina">
+        <MappingFragment StoreEntitySet="CFG_AccessiCabina">
+          <ScalarProperty Name="isDefault" ColumnName="isDefault" />
+          <ScalarProperty Name="visibile" ColumnName="visibile" />
+          <ScalarProperty Name="abilitato" ColumnName="abilitato" />
+          <ScalarProperty Name="ordinamento" ColumnName="ordinamento" />
+          <ScalarProperty Name="descrizione" ColumnName="descrizione" />
+          <ScalarProperty Name="codice" ColumnName="codice" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CFG_AccessoriSiNo">
+      <EntityTypeMapping TypeName="FASTModel.CFG_AccessoriSiNo">
+        <MappingFragment StoreEntitySet="CFG_AccessoriSiNo">
+          <ScalarProperty Name="isDefault" ColumnName="isDefault" />
+          <ScalarProperty Name="CFG_Anello" ColumnName="CFG_Anello" />
+          <ScalarProperty Name="CFG_Azionamento" ColumnName="CFG_Azionamento" />
+          <ScalarProperty Name="visibile" ColumnName="visibile" />
+          <ScalarProperty Name="abilitato" ColumnName="abilitato" />
+          <ScalarProperty Name="ordinamento" ColumnName="ordinamento" />
+          <ScalarProperty Name="descrizione" ColumnName="descrizione" />
+          <ScalarProperty Name="codice" ColumnName="codice" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CFG_Anello">
+      <EntityTypeMapping TypeName="FASTModel.CFG_Anello">
+        <MappingFragment StoreEntitySet="CFG_Anello">
+          <ScalarProperty Name="isDefault" ColumnName="isDefault" />
+          <ScalarProperty Name="CFG_Azionamento" ColumnName="CFG_Azionamento" />
+          <ScalarProperty Name="visibile" ColumnName="visibile" />
+          <ScalarProperty Name="abilitato" ColumnName="abilitato" />
+          <ScalarProperty Name="ordinamento" ColumnName="ordinamento" />
+          <ScalarProperty Name="descrizione" ColumnName="descrizione" />
+          <ScalarProperty Name="codice" ColumnName="codice" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CFG_Azionamento">
+      <EntityTypeMapping TypeName="FASTModel.CFG_Azionamento">
+        <MappingFragment StoreEntitySet="CFG_Azionamento">
+          <ScalarProperty Name="CFG_Quadro" ColumnName="CFG_Quadro" />
+          <ScalarProperty Name="isDefault" ColumnName="isDefault" />
+          <ScalarProperty Name="visibile" ColumnName="visibile" />
+          <ScalarProperty Name="abilitato" ColumnName="abilitato" />
+          <ScalarProperty Name="ordinamento" ColumnName="ordinamento" />
+          <ScalarProperty Name="descrizione" ColumnName="descrizione" />
+          <ScalarProperty Name="codice" ColumnName="codice" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CFG_Configuratori">
+      <EntityTypeMapping TypeName="FASTModel.CFG_Configuratori">
+        <MappingFragment StoreEntitySet="CFG_Configuratori">
+          <ScalarProperty Name="nomeFAST" ColumnName="nomeFAST" />
+          <ScalarProperty Name="FAST_ListaCampi" ColumnName="FAST_ListaCampi" />
+          <ScalarProperty Name="descrizione" ColumnName="descrizione" />
+          <ScalarProperty Name="codice" ColumnName="codice" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CFG_Corrente">
+      <EntityTypeMapping TypeName="FASTModel.CFG_Corrente">
+        <MappingFragment StoreEntitySet="CFG_Corrente">
+          <ScalarProperty Name="isDefault" ColumnName="isDefault" />
+          <ScalarProperty Name="visibile" ColumnName="visibile" />
+          <ScalarProperty Name="abilitato" ColumnName="abilitato" />
+          <ScalarProperty Name="ordinamento" ColumnName="ordinamento" />
+          <ScalarProperty Name="descrizione" ColumnName="descrizione" />
+          <ScalarProperty Name="codice" ColumnName="codice" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CFG_Fermate">
+      <EntityTypeMapping TypeName="FASTModel.CFG_Fermate">
+        <MappingFragment StoreEntitySet="CFG_Fermate">
+          <ScalarProperty Name="isDefault" ColumnName="isDefault" />
+          <ScalarProperty Name="visibile" ColumnName="visibile" />
+          <ScalarProperty Name="abilitato" ColumnName="abilitato" />
+          <ScalarProperty Name="ordinamento" ColumnName="ordinamento" />
+          <ScalarProperty Name="descrizione" ColumnName="descrizione" />
+          <ScalarProperty Name="codice" ColumnName="codice" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CFG_Listino_Accessori">
+      <EntityTypeMapping TypeName="FASTModel.CFG_Listino_Accessori">
+        <MappingFragment StoreEntitySet="CFG_Listino_Accessori">
+          <ScalarProperty Name="CFG_Anello" ColumnName="CFG_Anello" />
+          <ScalarProperty Name="CFG_Corrente" ColumnName="CFG_Corrente" />
+          <ScalarProperty Name="CFG_Tensione" ColumnName="CFG_Tensione" />
+          <ScalarProperty Name="CFG_Azionamento" ColumnName="CFG_Azionamento" />
+          <ScalarProperty Name="CFG_Quadro" ColumnName="CFG_Quadro" />
+          <ScalarProperty Name="visibile" ColumnName="visibile" />
+          <ScalarProperty Name="abilitato" ColumnName="abilitato" />
+          <ScalarProperty Name="ordinamento" ColumnName="ordinamento" />
+          <ScalarProperty Name="descrizione" ColumnName="descrizione" />
+          <ScalarProperty Name="codicePerServizio" ColumnName="codicePerServizio" />
+          <ScalarProperty Name="codicePerMetro" ColumnName="codicePerMetro" />
+          <ScalarProperty Name="codiceBase" ColumnName="codiceBase" />
+          <ScalarProperty Name="codiceAccessorio" ColumnName="codiceAccessorio" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CFG_Listino_BasiQuadroDrive">
+      <EntityTypeMapping TypeName="FASTModel.CFG_Listino_BasiQuadroDrive">
+        <MappingFragment StoreEntitySet="CFG_Listino_BasiQuadroDrive">
+          <ScalarProperty Name="CFG_Corrente" ColumnName="CFG_Corrente" />
+          <ScalarProperty Name="CFG_Anello" ColumnName="CFG_Anello" />
+          <ScalarProperty Name="CFG_Tensione" ColumnName="CFG_Tensione" />
+          <ScalarProperty Name="CFG_Azionamento" ColumnName="CFG_Azionamento" />
+          <ScalarProperty Name="CFG_Quadro" ColumnName="CFG_Quadro" />
+          <ScalarProperty Name="visibile" ColumnName="visibile" />
+          <ScalarProperty Name="abilitato" ColumnName="abilitato" />
+          <ScalarProperty Name="ordinamento" ColumnName="ordinamento" />
+          <ScalarProperty Name="descrizione" ColumnName="descrizione" />
+          <ScalarProperty Name="codice10mMotorCable" ColumnName="codice10mMotorCable" />
+          <ScalarProperty Name="codice10mSupplyCable" ColumnName="codice10mSupplyCable" />
+          <ScalarProperty Name="codiceBase" ColumnName="codiceBase" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CFG_Listino_Prezzi">
+      <EntityTypeMapping TypeName="FASTModel.CFG_Listino_Prezzi">
+        <MappingFragment StoreEntitySet="CFG_Listino_Prezzi">
+          <ScalarProperty Name="versione" ColumnName="versione" />
+          <ScalarProperty Name="prezzo" ColumnName="prezzo" />
+          <ScalarProperty Name="codice" ColumnName="codice" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CFG_OffertaQuadro">
+      <EntityTypeMapping TypeName="FASTModel.CFG_OffertaQuadro">
+        <MappingFragment StoreEntitySet="CFG_OffertaQuadro">
+          <ScalarProperty Name="isDefault" ColumnName="isDefault" />
+          <ScalarProperty Name="CFG_Quadro" ColumnName="CFG_Quadro" />
+          <ScalarProperty Name="visibile" ColumnName="visibile" />
+          <ScalarProperty Name="abilitato" ColumnName="abilitato" />
+          <ScalarProperty Name="ordinamento" ColumnName="ordinamento" />
+          <ScalarProperty Name="descrizione" ColumnName="descrizione" />
+          <ScalarProperty Name="codice" ColumnName="codice" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CFG_Portata">
+      <EntityTypeMapping TypeName="FASTModel.CFG_Portata">
+        <MappingFragment StoreEntitySet="CFG_Portata">
+          <ScalarProperty Name="isDefault" ColumnName="isDefault" />
+          <ScalarProperty Name="visibile" ColumnName="visibile" />
+          <ScalarProperty Name="abilitato" ColumnName="abilitato" />
+          <ScalarProperty Name="ordinamento" ColumnName="ordinamento" />
+          <ScalarProperty Name="descrizione" ColumnName="descrizione" />
+          <ScalarProperty Name="codice" ColumnName="codice" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CFG_Quadro">
+      <EntityTypeMapping TypeName="FASTModel.CFG_Quadro">
+        <MappingFragment StoreEntitySet="CFG_Quadro">
+          <ScalarProperty Name="isDefault" ColumnName="isDefault" />
+          <ScalarProperty Name="visibile" ColumnName="visibile" />
+          <ScalarProperty Name="abilitato" ColumnName="abilitato" />
+          <ScalarProperty Name="ordinamento" ColumnName="ordinamento" />
+          <ScalarProperty Name="descrizione" ColumnName="descrizione" />
+          <ScalarProperty Name="codice" ColumnName="codice" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CFG_RES40_ListaCampi">
+      <EntityTypeMapping TypeName="FASTModel.CFG_RES40_ListaCampi">
+        <MappingFragment StoreEntitySet="CFG_RES40_ListaCampi">
+          <ScalarProperty Name="obbligatorio" ColumnName="obbligatorio" />
+          <ScalarProperty Name="isAccessorioSiNo" ColumnName="isAccessorioSiNo" />
+          <ScalarProperty Name="tipoCheckBox" ColumnName="tipoCheckBox" />
+          <ScalarProperty Name="tipoTesto" ColumnName="tipoTesto" />
+          <ScalarProperty Name="tipoCombo" ColumnName="tipoCombo" />
+          <ScalarProperty Name="testoTitolo" ColumnName="testoTitolo" />
+          <ScalarProperty Name="scheda" ColumnName="scheda" />
+          <ScalarProperty Name="visibile" ColumnName="visibile" />
+          <ScalarProperty Name="abilitato" ColumnName="abilitato" />
+          <ScalarProperty Name="ordinamento" ColumnName="ordinamento" />
+          <ScalarProperty Name="descrizione" ColumnName="descrizione" />
+          <ScalarProperty Name="codice" ColumnName="codice" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CFG_Schede">
+      <EntityTypeMapping TypeName="FASTModel.CFG_Schede">
+        <MappingFragment StoreEntitySet="CFG_Schede">
+          <ScalarProperty Name="CFG_Quadro" ColumnName="CFG_Quadro" />
+          <ScalarProperty Name="scheda" ColumnName="scheda" />
+          <ScalarProperty Name="visibile" ColumnName="visibile" />
+          <ScalarProperty Name="abilitato" ColumnName="abilitato" />
+          <ScalarProperty Name="ordinamento" ColumnName="ordinamento" />
+          <ScalarProperty Name="descrizione" ColumnName="descrizione" />
+          <ScalarProperty Name="codice" ColumnName="codice" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CFG_ServiziLatoC">
+      <EntityTypeMapping TypeName="FASTModel.CFG_ServiziLatoC">
+        <MappingFragment StoreEntitySet="CFG_ServiziLatoC">
+          <ScalarProperty Name="CFG_AccessiCabina" ColumnName="CFG_AccessiCabina" />
+          <ScalarProperty Name="isDefault" ColumnName="isDefault" />
+          <ScalarProperty Name="visibile" ColumnName="visibile" />
+          <ScalarProperty Name="abilitato" ColumnName="abilitato" />
+          <ScalarProperty Name="ordinamento" ColumnName="ordinamento" />
+          <ScalarProperty Name="descrizione" ColumnName="descrizione" />
+          <ScalarProperty Name="codice" ColumnName="codice" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CFG_Tensione">
+      <EntityTypeMapping TypeName="FASTModel.CFG_Tensione">
+        <MappingFragment StoreEntitySet="CFG_Tensione">
+          <ScalarProperty Name="isDefault" ColumnName="isDefault" />
+          <ScalarProperty Name="visibile" ColumnName="visibile" />
+          <ScalarProperty Name="abilitato" ColumnName="abilitato" />
+          <ScalarProperty Name="ordinamento" ColumnName="ordinamento" />
+          <ScalarProperty Name="descrizione" ColumnName="descrizione" />
+          <ScalarProperty Name="codice" ColumnName="codice" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CFG_TensioneFreno">
+      <EntityTypeMapping TypeName="FASTModel.CFG_TensioneFreno">
+        <MappingFragment StoreEntitySet="CFG_TensioneFreno">
+          <ScalarProperty Name="CFG_Corrente_MAX" ColumnName="CFG_Corrente_MAX" />
+          <ScalarProperty Name="isDefault" ColumnName="isDefault" />
+          <ScalarProperty Name="visibile" ColumnName="visibile" />
+          <ScalarProperty Name="abilitato" ColumnName="abilitato" />
+          <ScalarProperty Name="ordinamento" ColumnName="ordinamento" />
+          <ScalarProperty Name="descrizione" ColumnName="descrizione" />
+          <ScalarProperty Name="codice" ColumnName="codice" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CFG_Velocita">
+      <EntityTypeMapping TypeName="FASTModel.CFG_Velocita">
+        <MappingFragment StoreEntitySet="CFG_Velocita">
+          <ScalarProperty Name="isDefault" ColumnName="isDefault" />
+          <ScalarProperty Name="visibile" ColumnName="visibile" />
+          <ScalarProperty Name="abilitato" ColumnName="abilitato" />
+          <ScalarProperty Name="ordinamento" ColumnName="ordinamento" />
+          <ScalarProperty Name="descrizione" ColumnName="descrizione" />
+          <ScalarProperty Name="codice" ColumnName="codice" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Configuratori">
+      <EntityTypeMapping TypeName="FASTModel.Configuratori">
+        <MappingFragment StoreEntitySet="Configuratori">
+          <ScalarProperty Name="DataFineValidita" ColumnName="DataFineValidita" />
+          <ScalarProperty Name="DataInizioValidita" ColumnName="DataInizioValidita" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Template" ColumnName="Template" />
+          <ScalarProperty Name="NomePacchetto" ColumnName="NomePacchetto" />
+          <ScalarProperty Name="IDConfiguratori" ColumnName="IDConfiguratori" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CostiTrasporto">
+      <EntityTypeMapping TypeName="FASTModel.CostiTrasporto">
+        <MappingFragment StoreEntitySet="CostiTrasporto">
+          <ScalarProperty Name="Costo" ColumnName="Costo" />
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dbRef_Dettaglio">
+      <EntityTypeMapping TypeName="FASTModel.dbRef_Dettaglio">
+        <MappingFragment StoreEntitySet="dbRef_Dettaglio">
+          <ScalarProperty Name="FormulaFast" ColumnName="FormulaFast" />
+          <ScalarProperty Name="FormulaExcel" ColumnName="FormulaExcel" />
+          <ScalarProperty Name="Famiglia" ColumnName="Famiglia" />
+          <ScalarProperty Name="NoteTecniche" ColumnName="NoteTecniche" />
+          <ScalarProperty Name="Prezzo" ColumnName="Prezzo" />
+          <ScalarProperty Name="RiferimentoPadre" ColumnName="RiferimentoPadre" />
+          <ScalarProperty Name="Descrizione" ColumnName="Descrizione" />
+          <ScalarProperty Name="IDPrezzo" ColumnName="IDPrezzo" />
+          <ScalarProperty Name="IDContatore" ColumnName="IDContatore" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dbRef_Dettaglio_Storico">
+      <EntityTypeMapping TypeName="FASTModel.dbRef_Dettaglio_Storico">
+        <MappingFragment StoreEntitySet="dbRef_Dettaglio_Storico">
+          <ScalarProperty Name="Famiglia" ColumnName="Famiglia" />
+          <ScalarProperty Name="NoteTecniche" ColumnName="NoteTecniche" />
+          <ScalarProperty Name="Prezzo" ColumnName="Prezzo" />
+          <ScalarProperty Name="RiferimentoPadre" ColumnName="RiferimentoPadre" />
+          <ScalarProperty Name="Descrizione" ColumnName="Descrizione" />
+          <ScalarProperty Name="IDPrezzo" ColumnName="IDPrezzo" />
+          <ScalarProperty Name="IDContatore" ColumnName="IDContatore" />
+          <ScalarProperty Name="KaiPubblicazione" ColumnName="KaiPubblicazione" />
+          <ScalarProperty Name="DataPubblicazione" ColumnName="DataPubblicazione" />
+          <ScalarProperty Name="IdPubblicazione" ColumnName="IdPubblicazione" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dbRef_Listino">
+      <EntityTypeMapping TypeName="FASTModel.dbRef_Listino">
+        <MappingFragment StoreEntitySet="dbRef_Listino">
+          <ScalarProperty Name="FormulaFast" ColumnName="FormulaFast" />
+          <ScalarProperty Name="FormulaExcel" ColumnName="FormulaExcel" />
+          <ScalarProperty Name="Operatore" ColumnName="Operatore" />
+          <ScalarProperty Name="Famiglia" ColumnName="Famiglia" />
+          <ScalarProperty Name="DataModifica" ColumnName="DataModifica" />
+          <ScalarProperty Name="NoteTecniche" ColumnName="NoteTecniche" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="RefVarType" ColumnName="RefVarType" />
+          <ScalarProperty Name="Valore" ColumnName="Valore" />
+          <ScalarProperty Name="ExcelCella" ColumnName="ExcelCella" />
+          <ScalarProperty Name="IDNamespace" ColumnName="IDNamespace" />
+          <ScalarProperty Name="IDPrezzo" ColumnName="IDPrezzo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dbRef_Listino_Storico">
+      <EntityTypeMapping TypeName="FASTModel.dbRef_Listino_Storico">
+        <MappingFragment StoreEntitySet="dbRef_Listino_Storico">
+          <ScalarProperty Name="Operatore" ColumnName="Operatore" />
+          <ScalarProperty Name="Famiglia" ColumnName="Famiglia" />
+          <ScalarProperty Name="DataModifica" ColumnName="DataModifica" />
+          <ScalarProperty Name="NoteTecniche" ColumnName="NoteTecniche" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="RefVarType" ColumnName="RefVarType" />
+          <ScalarProperty Name="Valore_vecchio" ColumnName="Valore_vecchio" />
+          <ScalarProperty Name="Valore" ColumnName="Valore" />
+          <ScalarProperty Name="ExcelCella" ColumnName="ExcelCella" />
+          <ScalarProperty Name="IDNamespace" ColumnName="IDNamespace" />
+          <ScalarProperty Name="IDPrezzo" ColumnName="IDPrezzo" />
+          <ScalarProperty Name="KaiPubblicazione" ColumnName="KaiPubblicazione" />
+          <ScalarProperty Name="DataPubblicazione" ColumnName="DataPubblicazione" />
+          <ScalarProperty Name="IdPubblicazione" ColumnName="IdPubblicazione" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Depliants">
+      <EntityTypeMapping TypeName="FASTModel.Depliants">
+        <MappingFragment StoreEntitySet="Depliants">
+          <ScalarProperty Name="FuoriCorso" ColumnName="FuoriCorso" />
+          <ScalarProperty Name="Ordinamento" ColumnName="Ordinamento" />
+          <ScalarProperty Name="Immagine" ColumnName="Immagine" />
+          <ScalarProperty Name="Thumbnail" ColumnName="Thumbnail" />
+          <ScalarProperty Name="Descrizione" ColumnName="Descrizione" />
+          <ScalarProperty Name="Revisione" ColumnName="Revisione" />
+          <ScalarProperty Name="Codice" ColumnName="Codice" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Depliants_Trace">
+      <EntityTypeMapping TypeName="FASTModel.Depliants_Trace">
+        <MappingFragment StoreEntitySet="Depliants_Trace">
+          <ScalarProperty Name="id_Richiesta" ColumnName="id_Richiesta" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="qtaElargita" ColumnName="qtaElargita" />
+          <ScalarProperty Name="dataRichiesta" ColumnName="dataRichiesta" />
+          <ScalarProperty Name="Qta" ColumnName="Qta" />
+          <ScalarProperty Name="Depliant_Id" ColumnName="Depliant_Id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Depliants_Trace_Elenco">
+      <EntityTypeMapping TypeName="FASTModel.Depliants_Trace_Elenco">
+        <MappingFragment StoreEntitySet="Depliants_Trace_Elenco">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="numeroRichiesta" ColumnName="numeroRichiesta" />
+          <ScalarProperty Name="Richiedente_Kai" ColumnName="Richiedente_Kai" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DepliantsStatusElenco">
+      <EntityTypeMapping TypeName="FASTModel.DepliantsStatusElenco">
+        <MappingFragment StoreEntitySet="DepliantsStatusElenco">
+          <ScalarProperty Name="Descrizione" ColumnName="Descrizione" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DepliantsStatusRichieste">
+      <EntityTypeMapping TypeName="FASTModel.DepliantsStatusRichieste">
+        <MappingFragment StoreEntitySet="DepliantsStatusRichieste">
+          <ScalarProperty Name="Descrizione" ColumnName="Descrizione" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DescrizioniLavori">
+      <EntityTypeMapping TypeName="FASTModel.DescrizioniLavori">
+        <MappingFragment StoreEntitySet="DescrizioniLavori">
+          <ScalarProperty Name="Descrizione" ColumnName="Descrizione" />
+          <ScalarProperty Name="idLavoro" ColumnName="idLavoro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Documenti">
+      <EntityTypeMapping TypeName="FASTModel.Documenti">
+        <MappingFragment StoreEntitySet="Documenti">
+          <ScalarProperty Name="Titolo" ColumnName="Titolo" />
+          <ScalarProperty Name="PathName" ColumnName="PathName" />
+          <ScalarProperty Name="CodiceFAST" ColumnName="CodiceFAST" />
+          <ScalarProperty Name="Classe" ColumnName="Classe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DTSEBTasks">
+      <EntityTypeMapping TypeName="FASTModel.DTSEBTasks">
+        <MappingFragment StoreEntitySet="DTSEBTasks">
+          <ScalarProperty Name="commenti" ColumnName="commenti" />
+          <ScalarProperty Name="annullato" ColumnName="annullato" />
+          <ScalarProperty Name="nome_esecutore" ColumnName="nome_esecutore" />
+          <ScalarProperty Name="kai_esecutore" ColumnName="kai_esecutore" />
+          <ScalarProperty Name="data_completamento" ColumnName="data_completamento" />
+          <ScalarProperty Name="data_richiesta" ColumnName="data_richiesta" />
+          <ScalarProperty Name="descrizione" ColumnName="descrizione" />
+          <ScalarProperty Name="nome_richiedente" ColumnName="nome_richiedente" />
+          <ScalarProperty Name="kai_richiedente" ColumnName="kai_richiedente" />
+          <ScalarProperty Name="equipment_number" ColumnName="equipment_number" />
+          <ScalarProperty Name="idOfferta" ColumnName="idOfferta" />
+          <ScalarProperty Name="idLavoro" ColumnName="idLavoro" />
+          <ScalarProperty Name="idTask" ColumnName="idTask" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EDMSData">
+      <EntityTypeMapping TypeName="FASTModel.EDMSData">
+        <MappingFragment StoreEntitySet="EDMSData">
+          <ScalarProperty Name="DV_r58" ColumnName="DV:r58" />
+          <ScalarProperty Name="DV_r56" ColumnName="DV:r56" />
+          <ScalarProperty Name="DV_r55" ColumnName="DV:r55" />
+          <ScalarProperty Name="DV_r51" ColumnName="DV:r51" />
+          <ScalarProperty Name="DV_r24b" ColumnName="DV:r24b" />
+          <ScalarProperty Name="DV_r18" ColumnName="DV:r18" />
+          <ScalarProperty Name="DV_r17" ColumnName="DV:r17" />
+          <ScalarProperty Name="DV_r16" ColumnName="DV:r16" />
+          <ScalarProperty Name="DV_r15" ColumnName="DV:r15" />
+          <ScalarProperty Name="DV_r14" ColumnName="DV:r14" />
+          <ScalarProperty Name="DV_r13" ColumnName="DV:r13" />
+          <ScalarProperty Name="DV_r12" ColumnName="DV:r12" />
+          <ScalarProperty Name="DV_r11" ColumnName="DV:r11" />
+          <ScalarProperty Name="DV_r10" ColumnName="DV:r10" />
+          <ScalarProperty Name="DV_r7" ColumnName="DV:r7" />
+          <ScalarProperty Name="DV_r6" ColumnName="DV:r6" />
+          <ScalarProperty Name="DV_r66b" ColumnName="DV:r66b" />
+          <ScalarProperty Name="DV_r37" ColumnName="DV:r37" />
+          <ScalarProperty Name="DV_r36" ColumnName="DV:r36" />
+          <ScalarProperty Name="DV_r35" ColumnName="DV:r35" />
+          <ScalarProperty Name="DV_r34" ColumnName="DV:r34" />
+          <ScalarProperty Name="DV_r33" ColumnName="DV:r33" />
+          <ScalarProperty Name="DV_r32" ColumnName="DV:r32" />
+          <ScalarProperty Name="DV_r31" ColumnName="DV:r31" />
+          <ScalarProperty Name="DV_r29" ColumnName="DV:r29" />
+          <ScalarProperty Name="DV_r28" ColumnName="DV:r28" />
+          <ScalarProperty Name="DV_r27" ColumnName="DV:r27" />
+          <ScalarProperty Name="DV_r26" ColumnName="DV:r26" />
+          <ScalarProperty Name="DV_r25" ColumnName="DV:r25" />
+          <ScalarProperty Name="DV_r9" ColumnName="DV:r9" />
+          <ScalarProperty Name="DV_r8" ColumnName="DV:r8" />
+          <ScalarProperty Name="DV_r54b" ColumnName="DV:r54b" />
+          <ScalarProperty Name="DV_r54a" ColumnName="DV:r54a" />
+          <ScalarProperty Name="DV_r70b" ColumnName="DV:r70b" />
+          <ScalarProperty Name="DV_r70a" ColumnName="DV:r70a" />
+          <ScalarProperty Name="DV_r63" ColumnName="DV:r63" />
+          <ScalarProperty Name="DV_r57" ColumnName="DV:r57" />
+          <ScalarProperty Name="DV_r52" ColumnName="DV:r52" />
+          <ScalarProperty Name="DV_r50b" ColumnName="DV:r50b" />
+          <ScalarProperty Name="DV_r50a" ColumnName="DV:r50a" />
+          <ScalarProperty Name="DV_r43" ColumnName="DV:r43" />
+          <ScalarProperty Name="DV_r42" ColumnName="DV:r42" />
+          <ScalarProperty Name="DV_r41" ColumnName="DV:r41" />
+          <ScalarProperty Name="DV_r73" ColumnName="DV:r73" />
+          <ScalarProperty Name="DV_r71" ColumnName="DV:r71" />
+          <ScalarProperty Name="DV_r59" ColumnName="DV:r59" />
+          <ScalarProperty Name="DV_r46" ColumnName="DV:r46" />
+          <ScalarProperty Name="DV_r45" ColumnName="DV:r45" />
+          <ScalarProperty Name="DV_r44" ColumnName="DV:r44" />
+          <ScalarProperty Name="DV_r40" ColumnName="DV:r40" />
+          <ScalarProperty Name="DV_r39" ColumnName="DV:r39" />
+          <ScalarProperty Name="DV_r38" ColumnName="DV:r38" />
+          <ScalarProperty Name="DV_r30b" ColumnName="DV:r30b" />
+          <ScalarProperty Name="DV_r30a" ColumnName="DV:r30a" />
+          <ScalarProperty Name="DV_r5" ColumnName="DV:r5" />
+          <ScalarProperty Name="DV_r4" ColumnName="DV:r4" />
+          <ScalarProperty Name="DV_r3" ColumnName="DV:r3" />
+          <ScalarProperty Name="DV_r2" ColumnName="DV:r2" />
+          <ScalarProperty Name="DV_r65b" ColumnName="DV:r65b" />
+          <ScalarProperty Name="DV_r65a" ColumnName="DV:r65a" />
+          <ScalarProperty Name="DV_r61" ColumnName="DV:r61" />
+          <ScalarProperty Name="DV_r60b" ColumnName="DV:r60b" />
+          <ScalarProperty Name="DV_r74" ColumnName="DV:r74" />
+          <ScalarProperty Name="DV_r72" ColumnName="DV:r72" />
+          <ScalarProperty Name="DV_r69" ColumnName="DV:r69" />
+          <ScalarProperty Name="DV_r68" ColumnName="DV:r68" />
+          <ScalarProperty Name="DV_r67" ColumnName="DV:r67" />
+          <ScalarProperty Name="DV_r66a" ColumnName="DV:r66a" />
+          <ScalarProperty Name="DV_r64" ColumnName="DV:r64" />
+          <ScalarProperty Name="DV_r62" ColumnName="DV:r62" />
+          <ScalarProperty Name="DV_r60a" ColumnName="DV:r60a" />
+          <ScalarProperty Name="DV_r53b" ColumnName="DV:r53b" />
+          <ScalarProperty Name="DV_r53a" ColumnName="DV:r53a" />
+          <ScalarProperty Name="DV_r49" ColumnName="DV:r49" />
+          <ScalarProperty Name="DV_r48" ColumnName="DV:r48" />
+          <ScalarProperty Name="DV_r47" ColumnName="DV:r47" />
+          <ScalarProperty Name="DV_r24a" ColumnName="DV:r24a" />
+          <ScalarProperty Name="DV_r23" ColumnName="DV:r23" />
+          <ScalarProperty Name="DV_r22" ColumnName="DV:r22" />
+          <ScalarProperty Name="DV_r21" ColumnName="DV:r21" />
+          <ScalarProperty Name="DV_r20" ColumnName="DV:r20" />
+          <ScalarProperty Name="DV_r19" ColumnName="DV:r19" />
+          <ScalarProperty Name="DV_r1" ColumnName="DV:r1" />
+          <ScalarProperty Name="DV_cc_type_1" ColumnName="DV:cc_type_1" />
+          <ScalarProperty Name="DV_svc_conill" ColumnName="DV:svc_conill" />
+          <ScalarProperty Name="DV_svc_conldo" ColumnName="DV:svc_conldo" />
+          <ScalarProperty Name="DV_svc_conldm" ColumnName="DV:svc_conldm" />
+          <ScalarProperty Name="DV_svc_concw" ColumnName="DV:svc_concw" />
+          <ScalarProperty Name="DV_svc_concf" ColumnName="DV:svc_concf" />
+          <ScalarProperty Name="DV_svc_concd" ColumnName="DV:svc_concd" />
+          <ScalarProperty Name="DV_shaft_lshmm" ColumnName="DV:shaft_lshmm" />
+          <ScalarProperty Name="DV_shaft_lphmm" ColumnName="DV:shaft_lphmm" />
+          <ScalarProperty Name="DV_acc_doorwidthd" ColumnName="DV:acc_doorwidthd" />
+          <ScalarProperty Name="DV_acc_doorwidthc" ColumnName="DV:acc_doorwidthc" />
+          <ScalarProperty Name="DV_acc_doorwidthb" ColumnName="DV:acc_doorwidthb" />
+          <ScalarProperty Name="DV_acc_doorwidtha" ColumnName="DV:acc_doorwidtha" />
+          <ScalarProperty Name="DV_acc_doorpos" ColumnName="DV:acc_doorpos" />
+          <ScalarProperty Name="DV_acc_cardepth" ColumnName="DV:acc_cardepth" />
+          <ScalarProperty Name="DV_acc_carwidth" ColumnName="DV:acc_carwidth" />
+          <ScalarProperty Name="DV_shaft_wd" ColumnName="DV:shaft_wd" />
+          <ScalarProperty Name="DV_shaft_ww" ColumnName="DV:shaft_ww" />
+          <ScalarProperty Name="DV_acc_mirror" ColumnName="DV:acc_mirror" />
+          <ScalarProperty Name="DV_acc_handrail" ColumnName="DV:acc_handrail" />
+          <ScalarProperty Name="DV_acc_carsigreq" ColumnName="DV:acc_carsigreq" />
+          <ScalarProperty Name="DV_acc_ldosigreq" ColumnName="DV:acc_ldosigreq" />
+          <ScalarProperty Name="DV_cc_type" ColumnName="DV:cc_type" />
+          <ScalarProperty Name="DV_csidefcon" ColumnName="DV:csidefcon" />
+          <ScalarProperty Name="DV_csibuttype" ColumnName="DV:csibuttype" />
+          <ScalarProperty Name="DV_lsidefcon" ColumnName="DV:lsidefcon" />
+          <ScalarProperty Name="DV_lsibuttype" ColumnName="DV:lsibuttype" />
+          <ScalarProperty Name="DV_cdodefcon" ColumnName="DV:cdodefcon" />
+          <ScalarProperty Name="DV_cdotype" ColumnName="DV:cdotype" />
+          <ScalarProperty Name="DV_cdomodyear" ColumnName="DV:cdomodyear" />
+          <ScalarProperty Name="DV_cdomodel" ColumnName="DV:cdomodel" />
+          <ScalarProperty Name="DV_ldodefcon" ColumnName="DV:ldodefcon" />
+          <ScalarProperty Name="DV_dooclosys" ColumnName="DV:dooclosys" />
+          <ScalarProperty Name="DV_dootype" ColumnName="DV:dootype" />
+          <ScalarProperty Name="DV_ldolocktype" ColumnName="DV:ldolocktype" />
+          <ScalarProperty Name="DV_ldomodyear" ColumnName="DV:ldomodyear" />
+          <ScalarProperty Name="DV_ldomodel" ColumnName="DV:ldomodel" />
+          <ScalarProperty Name="DV_condefcon" ColumnName="DV:condefcon" />
+          <ScalarProperty Name="DV_drimodel" ColumnName="DV:drimodel" />
+          <ScalarProperty Name="DV_contype" ColumnName="DV:contype" />
+          <ScalarProperty Name="DV_conmodyear" ColumnName="DV:conmodyear" />
+          <ScalarProperty Name="DV_conmodel" ColumnName="DV:conmodel" />
+          <ScalarProperty Name="DV_def_con" ColumnName="DV:def_con" />
+          <ScalarProperty Name="DV_pipe_size" ColumnName="DV:pipe_size" />
+          <ScalarProperty Name="DV_piston_diameter" ColumnName="DV:piston_diameter" />
+          <ScalarProperty Name="DV_macdefcon" ColumnName="DV:macdefcon" />
+          <ScalarProperty Name="DV_macrope" ColumnName="DV:macrope" />
+          <ScalarProperty Name="DV_macmodyear" ColumnName="DV:macmodyear" />
+          <ScalarProperty Name="DV_macmodel" ColumnName="DV:macmodel" />
+          <ScalarProperty Name="DV_buildseg" ColumnName="DV:buildseg" />
+          <ScalarProperty Name="DV_ropsusp" ColumnName="DV:ropsusp" />
+          <ScalarProperty Name="DV_supply_v" ColumnName="DV:supply_v" />
+          <ScalarProperty Name="DV_current" ColumnName="DV:current" />
+          <ScalarProperty Name="DV_capacity" ColumnName="DV:capacity" />
+          <ScalarProperty Name="DV_ropelen" ColumnName="DV:ropelen" />
+          <ScalarProperty Name="DV_ropepcs" ColumnName="DV:ropepcs" />
+          <ScalarProperty Name="DV_ropediam" ColumnName="DV:ropediam" />
+          <ScalarProperty Name="DV_group_size" ColumnName="DV:group_size" />
+          <ScalarProperty Name="DV_scenic" ColumnName="DV:scenic" />
+          <ScalarProperty Name="DV_persons_nb" ColumnName="DV:persons_nb" />
+          <ScalarProperty Name="DV_subcategory" ColumnName="DV:subcategory" />
+          <ScalarProperty Name="DV_travhei" ColumnName="DV:travhei" />
+          <ScalarProperty Name="DV_speed" ColumnName="DV:speed" />
+          <ScalarProperty Name="DV_car_load" ColumnName="DV:car_load" />
+          <ScalarProperty Name="DV_landing_doors" ColumnName="DV:landing_doors" />
+          <ScalarProperty Name="DV_stops_nb" ColumnName="DV:stops_nb" />
+          <ScalarProperty Name="DV_man_year" ColumnName="DV:man_year" />
+          <ScalarProperty Name="DV_man_name" ColumnName="DV:man_name" />
+          <ScalarProperty Name="DV_serv_comp" ColumnName="DV:serv_comp" />
+          <ScalarProperty Name="DV_handled_by" ColumnName="DV:handled_by" />
+          <ScalarProperty Name="DV_report_date" ColumnName="DV:report_date" />
+          <ScalarProperty Name="DV_fl_branch" ColumnName="DV:fl_branch" />
+          <ScalarProperty Name="DV_elev_building" ColumnName="DV:elev_building" />
+          <ScalarProperty Name="DV_elev_street" ColumnName="DV:elev_street" />
+          <ScalarProperty Name="DV_elev_city" ColumnName="DV:elev_city" />
+          <ScalarProperty Name="DV_elev_custref" ColumnName="DV:elev_custref" />
+          <ScalarProperty Name="DV_elev_custname" ColumnName="DV:elev_custname" />
+          <ScalarProperty Name="DV_elev_sap" ColumnName="DV:elev_sap" />
+          <ScalarProperty Name="DV_elev_id" ColumnName="DV:elev_id" />
+          <ScalarProperty Name="DV_current_state" ColumnName="DV:current_state" />
+          <ScalarProperty Name="DV_version" ColumnName="DV:version" />
+          <ScalarProperty Name="D_current_versions" ColumnName="D:current_versions" />
+          <ScalarProperty Name="D_attr_mod_user" ColumnName="D:attr_mod_user" />
+          <ScalarProperty Name="D_create_user" ColumnName="D:create_user" />
+          <ScalarProperty Name="D_create_time" ColumnName="D:create_time" />
+          <ScalarProperty Name="D_current_state" ColumnName="D:current_state" />
+          <ScalarProperty Name="D_owner_org" ColumnName="D:owner_org" />
+          <ScalarProperty Name="D_doc" ColumnName="D:doc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="extractKIT">
+      <EntityTypeMapping TypeName="FASTModel.extractKIT">
+        <MappingFragment StoreEntitySet="extractKIT">
+          <ScalarProperty Name="Col172" ColumnName="Col172" />
+          <ScalarProperty Name="DV_r58" ColumnName="DV:r58" />
+          <ScalarProperty Name="DV_r56" ColumnName="DV:r56" />
+          <ScalarProperty Name="DV_r55" ColumnName="DV:r55" />
+          <ScalarProperty Name="DV_r51" ColumnName="DV:r51" />
+          <ScalarProperty Name="DV_r24b" ColumnName="DV:r24b" />
+          <ScalarProperty Name="DV_r18" ColumnName="DV:r18" />
+          <ScalarProperty Name="DV_r17" ColumnName="DV:r17" />
+          <ScalarProperty Name="DV_r16" ColumnName="DV:r16" />
+          <ScalarProperty Name="DV_r15" ColumnName="DV:r15" />
+          <ScalarProperty Name="DV_r14" ColumnName="DV:r14" />
+          <ScalarProperty Name="DV_r13" ColumnName="DV:r13" />
+          <ScalarProperty Name="DV_r12" ColumnName="DV:r12" />
+          <ScalarProperty Name="DV_r11" ColumnName="DV:r11" />
+          <ScalarProperty Name="DV_r10" ColumnName="DV:r10" />
+          <ScalarProperty Name="DV_r7" ColumnName="DV:r7" />
+          <ScalarProperty Name="DV_r6" ColumnName="DV:r6" />
+          <ScalarProperty Name="DV_r66b" ColumnName="DV:r66b" />
+          <ScalarProperty Name="DV_r37" ColumnName="DV:r37" />
+          <ScalarProperty Name="DV_r36" ColumnName="DV:r36" />
+          <ScalarProperty Name="DV_r35" ColumnName="DV:r35" />
+          <ScalarProperty Name="DV_r34" ColumnName="DV:r34" />
+          <ScalarProperty Name="DV_r33" ColumnName="DV:r33" />
+          <ScalarProperty Name="DV_r32" ColumnName="DV:r32" />
+          <ScalarProperty Name="DV_r31" ColumnName="DV:r31" />
+          <ScalarProperty Name="DV_r29" ColumnName="DV:r29" />
+          <ScalarProperty Name="DV_r28" ColumnName="DV:r28" />
+          <ScalarProperty Name="DV_r27" ColumnName="DV:r27" />
+          <ScalarProperty Name="DV_r26" ColumnName="DV:r26" />
+          <ScalarProperty Name="DV_r25" ColumnName="DV:r25" />
+          <ScalarProperty Name="DV_r9" ColumnName="DV:r9" />
+          <ScalarProperty Name="DV_r8" ColumnName="DV:r8" />
+          <ScalarProperty Name="DV_r54b" ColumnName="DV:r54b" />
+          <ScalarProperty Name="DV_r54a" ColumnName="DV:r54a" />
+          <ScalarProperty Name="DV_r70b" ColumnName="DV:r70b" />
+          <ScalarProperty Name="DV_r70a" ColumnName="DV:r70a" />
+          <ScalarProperty Name="DV_r63" ColumnName="DV:r63" />
+          <ScalarProperty Name="DV_r57" ColumnName="DV:r57" />
+          <ScalarProperty Name="DV_r52" ColumnName="DV:r52" />
+          <ScalarProperty Name="DV_r50b" ColumnName="DV:r50b" />
+          <ScalarProperty Name="DV_r50a" ColumnName="DV:r50a" />
+          <ScalarProperty Name="DV_r43" ColumnName="DV:r43" />
+          <ScalarProperty Name="DV_r42" ColumnName="DV:r42" />
+          <ScalarProperty Name="DV_r41" ColumnName="DV:r41" />
+          <ScalarProperty Name="DV_r73" ColumnName="DV:r73" />
+          <ScalarProperty Name="DV_r71" ColumnName="DV:r71" />
+          <ScalarProperty Name="DV_r59" ColumnName="DV:r59" />
+          <ScalarProperty Name="DV_r46" ColumnName="DV:r46" />
+          <ScalarProperty Name="DV_r45" ColumnName="DV:r45" />
+          <ScalarProperty Name="DV_r44" ColumnName="DV:r44" />
+          <ScalarProperty Name="DV_r40" ColumnName="DV:r40" />
+          <ScalarProperty Name="DV_r39" ColumnName="DV:r39" />
+          <ScalarProperty Name="DV_r38" ColumnName="DV:r38" />
+          <ScalarProperty Name="DV_r30b" ColumnName="DV:r30b" />
+          <ScalarProperty Name="DV_r30a" ColumnName="DV:r30a" />
+          <ScalarProperty Name="DV_r5" ColumnName="DV:r5" />
+          <ScalarProperty Name="DV_r4" ColumnName="DV:r4" />
+          <ScalarProperty Name="DV_r3" ColumnName="DV:r3" />
+          <ScalarProperty Name="DV_r2" ColumnName="DV:r2" />
+          <ScalarProperty Name="DV_r65b" ColumnName="DV:r65b" />
+          <ScalarProperty Name="DV_r65a" ColumnName="DV:r65a" />
+          <ScalarProperty Name="DV_r61" ColumnName="DV:r61" />
+          <ScalarProperty Name="DV_r60b" ColumnName="DV:r60b" />
+          <ScalarProperty Name="DV_r74" ColumnName="DV:r74" />
+          <ScalarProperty Name="DV_r72" ColumnName="DV:r72" />
+          <ScalarProperty Name="DV_r69" ColumnName="DV:r69" />
+          <ScalarProperty Name="DV_r68" ColumnName="DV:r68" />
+          <ScalarProperty Name="DV_r67" ColumnName="DV:r67" />
+          <ScalarProperty Name="DV_r66a" ColumnName="DV:r66a" />
+          <ScalarProperty Name="DV_r64" ColumnName="DV:r64" />
+          <ScalarProperty Name="DV_r62" ColumnName="DV:r62" />
+          <ScalarProperty Name="DV_r60a" ColumnName="DV:r60a" />
+          <ScalarProperty Name="DV_r53b" ColumnName="DV:r53b" />
+          <ScalarProperty Name="DV_r53a" ColumnName="DV:r53a" />
+          <ScalarProperty Name="DV_r49" ColumnName="DV:r49" />
+          <ScalarProperty Name="DV_r48" ColumnName="DV:r48" />
+          <ScalarProperty Name="DV_r47" ColumnName="DV:r47" />
+          <ScalarProperty Name="DV_r24a" ColumnName="DV:r24a" />
+          <ScalarProperty Name="DV_r23" ColumnName="DV:r23" />
+          <ScalarProperty Name="DV_r22" ColumnName="DV:r22" />
+          <ScalarProperty Name="DV_r21" ColumnName="DV:r21" />
+          <ScalarProperty Name="DV_r20" ColumnName="DV:r20" />
+          <ScalarProperty Name="DV_r19" ColumnName="DV:r19" />
+          <ScalarProperty Name="DV_r1" ColumnName="DV:r1" />
+          <ScalarProperty Name="DV_cc_type_1" ColumnName="DV:cc_type_1" />
+          <ScalarProperty Name="DV_svc_conill" ColumnName="DV:svc_conill" />
+          <ScalarProperty Name="DV_svc_conldo" ColumnName="DV:svc_conldo" />
+          <ScalarProperty Name="DV_svc_conldm" ColumnName="DV:svc_conldm" />
+          <ScalarProperty Name="DV_svc_concw" ColumnName="DV:svc_concw" />
+          <ScalarProperty Name="DV_svc_concf" ColumnName="DV:svc_concf" />
+          <ScalarProperty Name="DV_svc_concd" ColumnName="DV:svc_concd" />
+          <ScalarProperty Name="DV_shaft_lshmm" ColumnName="DV:shaft_lshmm" />
+          <ScalarProperty Name="DV_shaft_lphmm" ColumnName="DV:shaft_lphmm" />
+          <ScalarProperty Name="DV_acc_doorwidthd" ColumnName="DV:acc_doorwidthd" />
+          <ScalarProperty Name="DV_acc_doorwidthc" ColumnName="DV:acc_doorwidthc" />
+          <ScalarProperty Name="DV_acc_doorwidthb" ColumnName="DV:acc_doorwidthb" />
+          <ScalarProperty Name="DV_acc_doorwidtha" ColumnName="DV:acc_doorwidtha" />
+          <ScalarProperty Name="DV_acc_doorpos" ColumnName="DV:acc_doorpos" />
+          <ScalarProperty Name="DV_acc_cardepth" ColumnName="DV:acc_cardepth" />
+          <ScalarProperty Name="DV_acc_carwidth" ColumnName="DV:acc_carwidth" />
+          <ScalarProperty Name="DV_shaft_wd" ColumnName="DV:shaft_wd" />
+          <ScalarProperty Name="DV_shaft_ww" ColumnName="DV:shaft_ww" />
+          <ScalarProperty Name="DV_acc_mirror" ColumnName="DV:acc_mirror" />
+          <ScalarProperty Name="DV_acc_handrail" ColumnName="DV:acc_handrail" />
+          <ScalarProperty Name="DV_acc_carsigreq" ColumnName="DV:acc_carsigreq" />
+          <ScalarProperty Name="DV_acc_ldosigreq" ColumnName="DV:acc_ldosigreq" />
+          <ScalarProperty Name="DV_cc_type" ColumnName="DV:cc_type" />
+          <ScalarProperty Name="DV_csidefcon" ColumnName="DV:csidefcon" />
+          <ScalarProperty Name="DV_csibuttype" ColumnName="DV:csibuttype" />
+          <ScalarProperty Name="DV_lsidefcon" ColumnName="DV:lsidefcon" />
+          <ScalarProperty Name="DV_lsibuttype" ColumnName="DV:lsibuttype" />
+          <ScalarProperty Name="DV_cdodefcon" ColumnName="DV:cdodefcon" />
+          <ScalarProperty Name="DV_cdotype" ColumnName="DV:cdotype" />
+          <ScalarProperty Name="DV_cdomodyear" ColumnName="DV:cdomodyear" />
+          <ScalarProperty Name="DV_cdomodel" ColumnName="DV:cdomodel" />
+          <ScalarProperty Name="DV_ldodefcon" ColumnName="DV:ldodefcon" />
+          <ScalarProperty Name="DV_dooclosys" ColumnName="DV:dooclosys" />
+          <ScalarProperty Name="DV_dootype" ColumnName="DV:dootype" />
+          <ScalarProperty Name="DV_ldolocktype" ColumnName="DV:ldolocktype" />
+          <ScalarProperty Name="DV_ldomodyear" ColumnName="DV:ldomodyear" />
+          <ScalarProperty Name="DV_ldomodel" ColumnName="DV:ldomodel" />
+          <ScalarProperty Name="DV_condefcon" ColumnName="DV:condefcon" />
+          <ScalarProperty Name="DV_drimodel" ColumnName="DV:drimodel" />
+          <ScalarProperty Name="DV_contype" ColumnName="DV:contype" />
+          <ScalarProperty Name="DV_conmodyear" ColumnName="DV:conmodyear" />
+          <ScalarProperty Name="DV_conmodel" ColumnName="DV:conmodel" />
+          <ScalarProperty Name="DV_def_con" ColumnName="DV:def_con" />
+          <ScalarProperty Name="DV_pipe_size" ColumnName="DV:pipe_size" />
+          <ScalarProperty Name="DV_piston_diameter" ColumnName="DV:piston_diameter" />
+          <ScalarProperty Name="DV_macdefcon" ColumnName="DV:macdefcon" />
+          <ScalarProperty Name="DV_macrope" ColumnName="DV:macrope" />
+          <ScalarProperty Name="DV_macmodyear" ColumnName="DV:macmodyear" />
+          <ScalarProperty Name="DV_macmodel" ColumnName="DV:macmodel" />
+          <ScalarProperty Name="DV_buildseg" ColumnName="DV:buildseg" />
+          <ScalarProperty Name="DV_ropsusp" ColumnName="DV:ropsusp" />
+          <ScalarProperty Name="DV_supply_v" ColumnName="DV:supply_v" />
+          <ScalarProperty Name="DV_current" ColumnName="DV:current" />
+          <ScalarProperty Name="DV_capacity" ColumnName="DV:capacity" />
+          <ScalarProperty Name="DV_ropelen" ColumnName="DV:ropelen" />
+          <ScalarProperty Name="DV_ropepcs" ColumnName="DV:ropepcs" />
+          <ScalarProperty Name="DV_ropediam" ColumnName="DV:ropediam" />
+          <ScalarProperty Name="DV_group_size" ColumnName="DV:group_size" />
+          <ScalarProperty Name="DV_scenic" ColumnName="DV:scenic" />
+          <ScalarProperty Name="DV_persons_nb" ColumnName="DV:persons_nb" />
+          <ScalarProperty Name="DV_subcategory" ColumnName="DV:subcategory" />
+          <ScalarProperty Name="DV_travhei" ColumnName="DV:travhei" />
+          <ScalarProperty Name="DV_speed" ColumnName="DV:speed" />
+          <ScalarProperty Name="DV_car_load" ColumnName="DV:car_load" />
+          <ScalarProperty Name="DV_landing_doors" ColumnName="DV:landing_doors" />
+          <ScalarProperty Name="DV_stops_nb" ColumnName="DV:stops_nb" />
+          <ScalarProperty Name="DV_man_year" ColumnName="DV:man_year" />
+          <ScalarProperty Name="DV_man_name" ColumnName="DV:man_name" />
+          <ScalarProperty Name="DV_serv_comp" ColumnName="DV:serv_comp" />
+          <ScalarProperty Name="DV_handled_by" ColumnName="DV:handled_by" />
+          <ScalarProperty Name="DV_report_date1" ColumnName="DV_report_date" />
+          <ScalarProperty Name="DV_report_date" ColumnName="DV:report_date" />
+          <ScalarProperty Name="DV_fl_branch" ColumnName="DV:fl_branch" />
+          <ScalarProperty Name="DV_elev_building" ColumnName="DV:elev_building" />
+          <ScalarProperty Name="DV_elev_street" ColumnName="DV:elev_street" />
+          <ScalarProperty Name="DV_elev_city" ColumnName="DV:elev_city" />
+          <ScalarProperty Name="DV_elev_custref" ColumnName="DV:elev_custref" />
+          <ScalarProperty Name="DV_elev_custname" ColumnName="DV:elev_custname" />
+          <ScalarProperty Name="DV_elev_sap" ColumnName="DV:elev_sap" />
+          <ScalarProperty Name="DV_elev_id" ColumnName="DV:elev_id" />
+          <ScalarProperty Name="DV_current_state" ColumnName="DV:current_state" />
+          <ScalarProperty Name="DV_version" ColumnName="DV:version" />
+          <ScalarProperty Name="D_current_versions" ColumnName="D:current_versions" />
+          <ScalarProperty Name="D_attr_mod_user" ColumnName="D:attr_mod_user" />
+          <ScalarProperty Name="D_create_user" ColumnName="D:create_user" />
+          <ScalarProperty Name="D_create_time1" ColumnName="D_create_time" />
+          <ScalarProperty Name="D_create_time" ColumnName="D:create_time" />
+          <ScalarProperty Name="D_current_state" ColumnName="D:current_state" />
+          <ScalarProperty Name="D_owner_org" ColumnName="D:owner_org" />
+          <ScalarProperty Name="D_doc" ColumnName="D:doc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="fastLog">
+      <EntityTypeMapping TypeName="FASTModel.fastLog">
+        <MappingFragment StoreEntitySet="fastLog">
+          <ScalarProperty Name="details" ColumnName="details" />
+          <ScalarProperty Name="action" ColumnName="action" />
+          <ScalarProperty Name="logtTime" ColumnName="logtTime" />
+          <ScalarProperty Name="logID" ColumnName="logID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="idGenerator">
+      <EntityTypeMapping TypeName="FASTModel.idGenerator">
+        <MappingFragment StoreEntitySet="idGenerator">
+          <ScalarProperty Name="pfx" ColumnName="pfx" />
+          <ScalarProperty Name="idGen" ColumnName="idGen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Impianti">
+      <EntityTypeMapping TypeName="FASTModel.Impianti">
+        <MappingFragment StoreEntitySet="Impianti">
+          <ScalarProperty Name="DataLastUpd" ColumnName="DataLastUpd" />
+          <ScalarProperty Name="CreatoSAPDa" ColumnName="CreatoSAPDa" />
+          <ScalarProperty Name="DataCreazioneSAP" ColumnName="DataCreazioneSAP" />
+          <ScalarProperty Name="DataRichiestaCreazioneSAP" ColumnName="DataRichiestaCreazioneSAP" />
+          <ScalarProperty Name="DataCollaudo" ColumnName="DataCollaudo" />
+          <ScalarProperty Name="GuideCTP" ColumnName="GuideCTP" />
+          <ScalarProperty Name="Esecuzione" ColumnName="Esecuzione" />
+          <ScalarProperty Name="TipoPortePiano" ColumnName="TipoPortePiano" />
+          <ScalarProperty Name="Molteplicita" ColumnName="Molteplicita" />
+          <ScalarProperty Name="Sollevamento" ColumnName="Sollevamento" />
+          <ScalarProperty Name="Velocita" ColumnName="Velocita" />
+          <ScalarProperty Name="AccessiCabina" ColumnName="AccessiCabina" />
+          <ScalarProperty Name="DataAllineamento" ColumnName="DataAllineamento" />
+          <ScalarProperty Name="DataRichiestaAllineamento" ColumnName="DataRichiestaAllineamento" />
+          <ScalarProperty Name="Distretto" ColumnName="Distretto" />
+          <ScalarProperty Name="IDVenditore" ColumnName="IDVenditore" />
+          <ScalarProperty Name="IDParty" ColumnName="IDParty" />
+          <ScalarProperty Name="xmlDetails" ColumnName="xmlDetails" />
+          <ScalarProperty Name="Manovra" ColumnName="Manovra" />
+          <ScalarProperty Name="Azionamento" ColumnName="Azionamento" />
+          <ScalarProperty Name="Portata" ColumnName="Portata" />
+          <ScalarProperty Name="Fermate" ColumnName="Fermate" />
+          <ScalarProperty Name="Corsa" ColumnName="Corsa" />
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+          <ScalarProperty Name="Paese" ColumnName="Paese" />
+          <ScalarProperty Name="Localita" ColumnName="Localita" />
+          <ScalarProperty Name="CAP" ColumnName="CAP" />
+          <ScalarProperty Name="Civico" ColumnName="Civico" />
+          <ScalarProperty Name="Indirizzo" ColumnName="Indirizzo" />
+          <ScalarProperty Name="PrefissoIndirizzo" ColumnName="PrefissoIndirizzo" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="NumImpianto" ColumnName="NumImpianto" />
+          <ScalarProperty Name="EQUIPMENT_NUMBER" ColumnName="EQUIPMENT_NUMBER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ImpiantiInOfferte">
+      <EntityTypeMapping TypeName="FASTModel.ImpiantiInOfferte">
+        <MappingFragment StoreEntitySet="ImpiantiInOfferte">
+          <ScalarProperty Name="totRspDaJobFile" ColumnName="totRspDaJobFile" />
+          <ScalarProperty Name="ubicazioneSpecifica" ColumnName="ubicazioneSpecifica" />
+          <ScalarProperty Name="note" ColumnName="note" />
+          <ScalarProperty Name="detLocalizzazione" ColumnName="detLocalizzazione" />
+          <ScalarProperty Name="equipment_number" ColumnName="equipment_number" />
+          <ScalarProperty Name="IDOfferta" ColumnName="IDOfferta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LavoriACaricoCliente">
+      <EntityTypeMapping TypeName="FASTModel.LavoriACaricoCliente">
+        <MappingFragment StoreEntitySet="LavoriACaricoCliente">
+          <ScalarProperty Name="Inventore" ColumnName="Inventore" />
+          <ScalarProperty Name="ApplyToSubCat" ColumnName="ApplyToSubCat" />
+          <ScalarProperty Name="ApplyToCat" ColumnName="ApplyToCat" />
+          <ScalarProperty Name="Descrizione" ColumnName="Descrizione" />
+          <ScalarProperty Name="Titolo" ColumnName="Titolo" />
+          <ScalarProperty Name="CodiceFast" ColumnName="CodiceFast" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LavoriInOfferte">
+      <EntityTypeMapping TypeName="FASTModel.LavoriInOfferte">
+        <MappingFragment StoreEntitySet="LavoriInOfferte">
+          <ScalarProperty Name="PrezzoMateriali" ColumnName="PrezzoMateriali" />
+          <ScalarProperty Name="IDOrdine" ColumnName="IDOrdine" />
+          <ScalarProperty Name="cm2Acq" ColumnName="cm2Acq" />
+          <ScalarProperty Name="PrezzoAcq" ColumnName="PrezzoAcq" />
+          <ScalarProperty Name="CM2DiPartenza" ColumnName="CM2DiPartenza" />
+          <ScalarProperty Name="fhr" ColumnName="fhr" />
+          <ScalarProperty Name="Descrizione" ColumnName="Descrizione" />
+          <ScalarProperty Name="revisione" ColumnName="revisione" />
+          <ScalarProperty Name="PrezzoLibero" ColumnName="PrezzoLibero" />
+          <ScalarProperty Name="flgACaricoKone" ColumnName="flgACaricoKone" />
+          <ScalarProperty Name="cm2" ColumnName="cm2" />
+          <ScalarProperty Name="processo" ColumnName="processo" />
+          <ScalarProperty Name="categoria" ColumnName="categoria" />
+          <ScalarProperty Name="ExtraOre" ColumnName="ExtraOre" />
+          <ScalarProperty Name="ExtraCosti" ColumnName="ExtraCosti" />
+          <ScalarProperty Name="LeadTime" ColumnName="LeadTime" />
+          <ScalarProperty Name="flgVariante" ColumnName="flgVariante" />
+          <ScalarProperty Name="CodiceSAP" ColumnName="CodiceSAP" />
+          <ScalarProperty Name="DataQuotazione" ColumnName="DataQuotazione" />
+          <ScalarProperty Name="DataRichiestaQuotazione" ColumnName="DataRichiestaQuotazione" />
+          <ScalarProperty Name="Quantita" ColumnName="Quantita" />
+          <ScalarProperty Name="Prezzo" ColumnName="Prezzo" />
+          <ScalarProperty Name="xmlDetails" ColumnName="xmlDetails" />
+          <ScalarProperty Name="OreManovalanza" ColumnName="OreManovalanza" />
+          <ScalarProperty Name="OreManodopera" ColumnName="OreManodopera" />
+          <ScalarProperty Name="CostoMaterialiEsterni" ColumnName="CostoMaterialiEsterni" />
+          <ScalarProperty Name="CostoMaterialiIntraCompany" ColumnName="CostoMaterialiIntraCompany" />
+          <ScalarProperty Name="CostoMaterialiInterCompany" ColumnName="CostoMaterialiInterCompany" />
+          <ScalarProperty Name="CodiceFast" ColumnName="CodiceFast" />
+          <ScalarProperty Name="tpLavoro" ColumnName="tpLavoro" />
+          <ScalarProperty Name="equipment_number" ColumnName="equipment_number" />
+          <ScalarProperty Name="IDOfferta" ColumnName="IDOfferta" />
+          <ScalarProperty Name="idLavoro" ColumnName="idLavoro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LavoriNonCOdificati">
+      <EntityTypeMapping TypeName="FASTModel.LavoriNonCOdificati">
+        <MappingFragment StoreEntitySet="LavoriNonCOdificati">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="VerificaStraordinaria" ColumnName="VerificaStraordinaria" />
+          <ScalarProperty Name="LeadTime" ColumnName="LeadTime" />
+          <ScalarProperty Name="categoria" ColumnName="categoria" />
+          <ScalarProperty Name="Inventore" ColumnName="Inventore" />
+          <ScalarProperty Name="ApplyToSubCat" ColumnName="ApplyToSubCat" />
+          <ScalarProperty Name="ApplyToCat" ColumnName="ApplyToCat" />
+          <ScalarProperty Name="CostoMaterialiExtraCompany" ColumnName="CostoMaterialiExtraCompany" />
+          <ScalarProperty Name="CostoMaterialiIntraCompany" ColumnName="CostoMaterialiIntraCompany" />
+          <ScalarProperty Name="CostoMaterialiInterCompany" ColumnName="CostoMaterialiInterCompany" />
+          <ScalarProperty Name="OreManodopera" ColumnName="OreManodopera" />
+          <ScalarProperty Name="OreManovalanza" ColumnName="OreManovalanza" />
+          <ScalarProperty Name="Descrizione" ColumnName="Descrizione" />
+          <ScalarProperty Name="Titolo" ColumnName="Titolo" />
+          <ScalarProperty Name="CodiceFast" ColumnName="CodiceFast" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Log">
+      <EntityTypeMapping TypeName="FASTModel.Log">
+        <MappingFragment StoreEntitySet="Log">
+          <ScalarProperty Name="FormattedMessage" ColumnName="FormattedMessage" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Win32ThreadId" ColumnName="Win32ThreadId" />
+          <ScalarProperty Name="ThreadName" ColumnName="ThreadName" />
+          <ScalarProperty Name="ProcessName" ColumnName="ProcessName" />
+          <ScalarProperty Name="ProcessID" ColumnName="ProcessID" />
+          <ScalarProperty Name="AppDomainName" ColumnName="AppDomainName" />
+          <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Severity" ColumnName="Severity" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="EventID" ColumnName="EventID" />
+          <ScalarProperty Name="LogID" ColumnName="LogID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LookupTables">
+      <EntityTypeMapping TypeName="FASTModel.LookupTables">
+        <MappingFragment StoreEntitySet="LookupTables">
+          <ScalarProperty Name="sortKey" ColumnName="sortKey" />
+          <ScalarProperty Name="tLookupResult" ColumnName="tLookupResult" />
+          <ScalarProperty Name="tLookupSeed" ColumnName="tLookupSeed" />
+          <ScalarProperty Name="tLookupGroup" ColumnName="tLookupGroup" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Mail">
+      <EntityTypeMapping TypeName="FASTModel.Mail">
+        <MappingFragment StoreEntitySet="Mail">
+          <ScalarProperty Name="kaiUtente" ColumnName="kaiUtente" />
+          <ScalarProperty Name="revisione" ColumnName="revisione" />
+          <ScalarProperty Name="note" ColumnName="note" />
+          <ScalarProperty Name="ricevutaIl" ColumnName="ricevutaIl" />
+          <ScalarProperty Name="mailBody" ColumnName="mailBody" />
+          <ScalarProperty Name="mailSubject" ColumnName="mailSubject" />
+          <ScalarProperty Name="mailBCC" ColumnName="mailBCC" />
+          <ScalarProperty Name="mailCC" ColumnName="mailCC" />
+          <ScalarProperty Name="mailTo" ColumnName="mailTo" />
+          <ScalarProperty Name="inviataDa" ColumnName="inviataDa" />
+          <ScalarProperty Name="dataInvio" ColumnName="dataInvio" />
+          <ScalarProperty Name="inviataA" ColumnName="inviataA" />
+          <ScalarProperty Name="tipoMail" ColumnName="tipoMail" />
+          <ScalarProperty Name="idOfferta" ColumnName="idOfferta" />
+          <ScalarProperty Name="idMail" ColumnName="idMail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MilestonePianoFatt">
+      <EntityTypeMapping TypeName="FASTModel.MilestonePianoFatt">
+        <MappingFragment StoreEntitySet="MilestonePianoFatt">
+          <ScalarProperty Name="ModPag" ColumnName="ModPag" />
+          <ScalarProperty Name="Percentuale" ColumnName="Percentuale" />
+          <ScalarProperty Name="CodiceMilestone" ColumnName="CodiceMilestone" />
+          <ScalarProperty Name="CodicePianoFatturazione" ColumnName="CodicePianoFatturazione" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ModificaOrdine">
+      <EntityTypeMapping TypeName="FASTModel.ModificaOrdine">
+        <MappingFragment StoreEntitySet="ModificaOrdine">
+          <ScalarProperty Name="OreAttuale" ColumnName="OreAttuale" />
+          <ScalarProperty Name="MaterialiAttuale" ColumnName="MaterialiAttuale" />
+          <ScalarProperty Name="CM2Attuale" ColumnName="CM2Attuale" />
+          <ScalarProperty Name="RSPAttuale" ColumnName="RSPAttuale" />
+          <ScalarProperty Name="RSPModifica" ColumnName="RSPModifica" />
+          <ScalarProperty Name="FinitaDa" ColumnName="FinitaDa" />
+          <ScalarProperty Name="DataFineModifica" ColumnName="DataFineModifica" />
+          <ScalarProperty Name="OrePrecedente" ColumnName="OrePrecedente" />
+          <ScalarProperty Name="MaterialiPrecedente" ColumnName="MaterialiPrecedente" />
+          <ScalarProperty Name="CM2Precedente" ColumnName="CM2Precedente" />
+          <ScalarProperty Name="RSPPrecedente" ColumnName="RSPPrecedente" />
+          <ScalarProperty Name="IniziataDa" ColumnName="IniziataDa" />
+          <ScalarProperty Name="DataInizioModifica" ColumnName="DataInizioModifica" />
+          <ScalarProperty Name="Motivazione" ColumnName="Motivazione" />
+          <ScalarProperty Name="idOfferta" ColumnName="idOfferta" />
+          <ScalarProperty Name="IDModifica" ColumnName="IDModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="News">
+      <EntityTypeMapping TypeName="FASTModel.News">
+        <MappingFragment StoreEntitySet="News">
+          <ScalarProperty Name="News1" ColumnName="News" />
+          <ScalarProperty Name="titolo" ColumnName="titolo" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Offerte">
+      <EntityTypeMapping TypeName="FASTModel.Offerte">
+        <MappingFragment StoreEntitySet="Offerte">
+          <ScalarProperty Name="Location_Party" ColumnName="Location_Party" />
+          <ScalarProperty Name="DataAggPartyDaOpp" ColumnName="DataAggPartyDaOpp" />
+          <ScalarProperty Name="Opportunity" ColumnName="Opportunity" />
+          <ScalarProperty Name="listinoCliente" ColumnName="listinoCliente" />
+          <ScalarProperty Name="CausaleAnnullamento" ColumnName="CausaleAnnullamento" />
+          <ScalarProperty Name="CausaleEmissione" ColumnName="CausaleEmissione" />
+          <ScalarProperty Name="entepubblico" ColumnName="entepubblico" />
+          <ScalarProperty Name="gara" ColumnName="gara" />
+          <ScalarProperty Name="ModalitaPagamento" ColumnName="ModalitaPagamento" />
+          <ScalarProperty Name="NumeroOrdineSAP" ColumnName="NumeroOrdineSAP" />
+          <ScalarProperty Name="DataEmissioneCO" ColumnName="DataEmissioneCO" />
+          <ScalarProperty Name="DataEsportazione" ColumnName="DataEsportazione" />
+          <ScalarProperty Name="DataEmissioneOfferta" ColumnName="DataEmissioneOfferta" />
+          <ScalarProperty Name="DataQuotazione" ColumnName="DataQuotazione" />
+          <ScalarProperty Name="DataRichiestaQuotazione" ColumnName="DataRichiestaQuotazione" />
+          <ScalarProperty Name="xmlDetails" ColumnName="xmlDetails" />
+          <ScalarProperty Name="Revisione" ColumnName="Revisione" />
+          <ScalarProperty Name="progressivo" ColumnName="progressivo" />
+          <ScalarProperty Name="IDVenditore" ColumnName="IDVenditore" />
+          <ScalarProperty Name="IDEnte" ColumnName="IDEnte" />
+          <ScalarProperty Name="AliquotaIva" ColumnName="AliquotaIva" />
+          <ScalarProperty Name="FidejussionePercento" ColumnName="FidejussionePercento" />
+          <ScalarProperty Name="RitenutaGaranziaPercento" ColumnName="RitenutaGaranziaPercento" />
+          <ScalarProperty Name="PenalePercento" ColumnName="PenalePercento" />
+          <ScalarProperty Name="CodiceTerminiFatturazione" ColumnName="CodiceTerminiFatturazione" />
+          <ScalarProperty Name="CM2PercentoAcquisizione" ColumnName="CM2PercentoAcquisizione" />
+          <ScalarProperty Name="ValoreAcquisizione" ColumnName="ValoreAcquisizione" />
+          <ScalarProperty Name="AcquisitaDa" ColumnName="AcquisitaDa" />
+          <ScalarProperty Name="DataEsitazione" ColumnName="DataEsitazione" />
+          <ScalarProperty Name="ProbabilitaAggiudicazione" ColumnName="ProbabilitaAggiudicazione" />
+          <ScalarProperty Name="CategoriaPrevalente" ColumnName="CategoriaPrevalente" />
+          <ScalarProperty Name="StatusCorrente" ColumnName="StatusCorrente" />
+          <ScalarProperty Name="CM2Percento" ColumnName="CM2Percento" />
+          <ScalarProperty Name="RSPValore" ColumnName="RSPValore" />
+          <ScalarProperty Name="DataPrevistaChiusura" ColumnName="DataPrevistaChiusura" />
+          <ScalarProperty Name="Validita" ColumnName="Validita" />
+          <ScalarProperty Name="DataCreazione" ColumnName="DataCreazione" />
+          <ScalarProperty Name="Payer_Party" ColumnName="Payer_Party" />
+          <ScalarProperty Name="ShipTo_Party" ColumnName="ShipTo_Party" />
+          <ScalarProperty Name="BillTo_Party" ColumnName="BillTo_Party" />
+          <ScalarProperty Name="PartyID" ColumnName="PartyID" />
+          <ScalarProperty Name="NumeroOfferta" ColumnName="NumeroOfferta" />
+          <ScalarProperty Name="IDOfferta" ColumnName="IDOfferta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OneriCompresiEsclusi">
+      <EntityTypeMapping TypeName="FASTModel.OneriCompresiEsclusi">
+        <MappingFragment StoreEntitySet="OneriCompresiEsclusi">
+          <ScalarProperty Name="codiceSAP" ColumnName="codiceSAP" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="Categoria" ColumnName="Categoria" />
+          <ScalarProperty Name="visualizzaInOfferta" ColumnName="visualizzaInOfferta" />
+          <ScalarProperty Name="defaultCOmpreso" ColumnName="defaultCOmpreso" />
+          <ScalarProperty Name="Descrizione" ColumnName="Descrizione" />
+          <ScalarProperty Name="idOnere" ColumnName="idOnere" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OneriOfferte">
+      <EntityTypeMapping TypeName="FASTModel.OneriOfferte">
+        <MappingFragment StoreEntitySet="OneriOfferte">
+          <ScalarProperty Name="Descrizione" ColumnName="Descrizione" />
+          <ScalarProperty Name="Titolo" ColumnName="Titolo" />
+          <ScalarProperty Name="flgMostraInOfferta" ColumnName="flgMostraInOfferta" />
+          <ScalarProperty Name="OreManodopera" ColumnName="OreManodopera" />
+          <ScalarProperty Name="OreManovalanza" ColumnName="OreManovalanza" />
+          <ScalarProperty Name="MaterialiInterCOmpany" ColumnName="MaterialiInterCOmpany" />
+          <ScalarProperty Name="MaterialiExtraCompany" ColumnName="MaterialiExtraCompany" />
+          <ScalarProperty Name="MaterialiIntraCompany" ColumnName="MaterialiIntraCompany" />
+          <ScalarProperty Name="flgCompreso" ColumnName="flgCompreso" />
+          <ScalarProperty Name="IDOnere" ColumnName="IDOnere" />
+          <ScalarProperty Name="IDOfferta" ColumnName="IDOfferta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pacchetti">
+      <EntityTypeMapping TypeName="FASTModel.Pacchetti">
+        <MappingFragment StoreEntitySet="Pacchetti">
+          <ScalarProperty Name="tipologia" ColumnName="tipologia" />
+          <ScalarProperty Name="dataFuoriCorso" ColumnName="dataFuoriCorso" />
+          <ScalarProperty Name="revisione" ColumnName="revisione" />
+          <ScalarProperty Name="cm2" ColumnName="cm2" />
+          <ScalarProperty Name="processo" ColumnName="processo" />
+          <ScalarProperty Name="categoria" ColumnName="categoria" />
+          <ScalarProperty Name="moltiplicatoreMateriali" ColumnName="moltiplicatoreMateriali" />
+          <ScalarProperty Name="extraOreManodopera" ColumnName="extraOreManodopera" />
+          <ScalarProperty Name="extraMaterialiInterCompany" ColumnName="extraMaterialiInterCompany" />
+          <ScalarProperty Name="extraMaterialiExtraCompany" ColumnName="extraMaterialiExtraCompany" />
+          <ScalarProperty Name="extraMaterialiIntraCompany" ColumnName="extraMaterialiIntraCompany" />
+          <ScalarProperty Name="flgVerificaStraordinaria" ColumnName="flgVerificaStraordinaria" />
+          <ScalarProperty Name="applyToSubCat" ColumnName="applyToSubCat" />
+          <ScalarProperty Name="applyToCat" ColumnName="applyToCat" />
+          <ScalarProperty Name="flgPacchettoLocale" ColumnName="flgPacchettoLocale" />
+          <ScalarProperty Name="leadTime" ColumnName="leadTime" />
+          <ScalarProperty Name="Descrizione" ColumnName="Descrizione" />
+          <ScalarProperty Name="CodiceFAST" ColumnName="CodiceFAST" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Parametri">
+      <EntityTypeMapping TypeName="FASTModel.Parametri">
+        <MappingFragment StoreEntitySet="Parametri">
+          <ScalarProperty Name="descrizione" ColumnName="descrizione" />
+          <ScalarProperty Name="paramValue" ColumnName="paramValue" />
+          <ScalarProperty Name="paramType" ColumnName="paramType" />
+          <ScalarProperty Name="paramName" ColumnName="paramName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Parties">
+      <EntityTypeMapping TypeName="FASTModel.Parties">
+        <MappingFragment StoreEntitySet="Parties">
+          <ScalarProperty Name="ivaPagamento" ColumnName="ivaPagamento" />
+          <ScalarProperty Name="modalitaPagamento" ColumnName="modalitaPagamento" />
+          <ScalarProperty Name="modalitaFatturazione" ColumnName="modalitaFatturazione" />
+          <ScalarProperty Name="GruppoCliente" ColumnName="GruppoCliente" />
+          <ScalarProperty Name="DataAllineamento" ColumnName="DataAllineamento" />
+          <ScalarProperty Name="DataRichiestaAllineamento" ColumnName="DataRichiestaAllineamento" />
+          <ScalarProperty Name="Distretto" ColumnName="Distretto" />
+          <ScalarProperty Name="IDVenditore" ColumnName="IDVenditore" />
+          <ScalarProperty Name="xmlDetails" ColumnName="xmlDetails" />
+          <ScalarProperty Name="Categoria" ColumnName="Categoria" />
+          <ScalarProperty Name="Classe" ColumnName="Classe" />
+          <ScalarProperty Name="numeroCC" ColumnName="numeroCC" />
+          <ScalarProperty Name="CAB" ColumnName="CAB" />
+          <ScalarProperty Name="ABI" ColumnName="ABI" />
+          <ScalarProperty Name="CodiceFiscale" ColumnName="CodiceFiscale" />
+          <ScalarProperty Name="PartitaIVA" ColumnName="PartitaIVA" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Contatto" ColumnName="Contatto" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+          <ScalarProperty Name="Paese" ColumnName="Paese" />
+          <ScalarProperty Name="Localita" ColumnName="Localita" />
+          <ScalarProperty Name="CAP" ColumnName="CAP" />
+          <ScalarProperty Name="Civico" ColumnName="Civico" />
+          <ScalarProperty Name="Indirizzo" ColumnName="Indirizzo" />
+          <ScalarProperty Name="PrefissoIndirizzo" ColumnName="PrefissoIndirizzo" />
+          <ScalarProperty Name="RagioneSociale" ColumnName="RagioneSociale" />
+          <ScalarProperty Name="IDParty" ColumnName="IDParty" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PianoFatturazione">
+      <EntityTypeMapping TypeName="FASTModel.PianoFatturazione">
+        <MappingFragment StoreEntitySet="PianoFatturazione">
+          <ScalarProperty Name="idMilestone" ColumnName="idMilestone" />
+          <ScalarProperty Name="termine" ColumnName="termine" />
+          <ScalarProperty Name="valore" ColumnName="valore" />
+          <ScalarProperty Name="percentuale" ColumnName="percentuale" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="progressivo" ColumnName="progressivo" />
+          <ScalarProperty Name="milestone" ColumnName="milestone" />
+          <ScalarProperty Name="idOfferta" ColumnName="idOfferta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Price">
+      <EntityTypeMapping TypeName="FASTModel.Price">
+        <MappingFragment StoreEntitySet="Price">
+          <ScalarProperty Name="DefaultTag" ColumnName="DefaultTag" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="Debug" ColumnName="Debug" />
+          <ScalarProperty Name="ApplyTo" ColumnName="ApplyTo" />
+          <ScalarProperty Name="Descr" ColumnName="Descr" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IDPriceGroup" ColumnName="IDPriceGroup" />
+          <ScalarProperty Name="IDConfiguratore" ColumnName="IDConfiguratore" />
+          <ScalarProperty Name="IDPrice" ColumnName="IDPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PriceGroup">
+      <EntityTypeMapping TypeName="FASTModel.PriceGroup">
+        <MappingFragment StoreEntitySet="PriceGroup">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Descr" ColumnName="Descr" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="IDConfiguratore" ColumnName="IDConfiguratore" />
+          <ScalarProperty Name="IDPriceGroup" ColumnName="IDPriceGroup" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PriceItem">
+      <EntityTypeMapping TypeName="FASTModel.PriceItem">
+        <MappingFragment StoreEntitySet="PriceItem">
+          <ScalarProperty Name="NomeListino" ColumnName="NomeListino" />
+          <ScalarProperty Name="CellaListino" ColumnName="CellaListino" />
+          <ScalarProperty Name="FoglioListino" ColumnName="FoglioListino" />
+          <ScalarProperty Name="VersioneTupla" ColumnName="VersioneTupla" />
+          <ScalarProperty Name="Formula" ColumnName="Formula" />
+          <ScalarProperty Name="Tupla" ColumnName="Tupla" />
+          <ScalarProperty Name="Kctref" ColumnName="Kctref" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="IDPrice" ColumnName="IDPrice" />
+          <ScalarProperty Name="IDPriceGroup" ColumnName="IDPriceGroup" />
+          <ScalarProperty Name="IDConfiguratore" ColumnName="IDConfiguratore" />
+          <ScalarProperty Name="IDPriceItem" ColumnName="IDPriceItem" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Provvigioni">
+      <EntityTypeMapping TypeName="FASTModel.Provvigioni">
+        <MappingFragment StoreEntitySet="Provvigioni">
+          <ScalarProperty Name="provvigione" ColumnName="provvigione" />
+          <ScalarProperty Name="sconto_MAX" ColumnName="sconto_MAX" />
+          <ScalarProperty Name="sconto_min" ColumnName="sconto_min" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Referenze">
+      <EntityTypeMapping TypeName="FASTModel.Referenze">
+        <MappingFragment StoreEntitySet="Referenze">
+          <ScalarProperty Name="B3R6C2" ColumnName="B3R6C2" />
+          <ScalarProperty Name="B3R6C1" ColumnName="B3R6C1" />
+          <ScalarProperty Name="B3R5C2" ColumnName="B3R5C2" />
+          <ScalarProperty Name="B3R5C1" ColumnName="B3R5C1" />
+          <ScalarProperty Name="B3R4C2" ColumnName="B3R4C2" />
+          <ScalarProperty Name="B3R4C1" ColumnName="B3R4C1" />
+          <ScalarProperty Name="B3R3C2" ColumnName="B3R3C2" />
+          <ScalarProperty Name="B3R3C1" ColumnName="B3R3C1" />
+          <ScalarProperty Name="B3R2C2" ColumnName="B3R2C2" />
+          <ScalarProperty Name="B3R2C1" ColumnName="B3R2C1" />
+          <ScalarProperty Name="B3R1C2" ColumnName="B3R1C2" />
+          <ScalarProperty Name="B3R1C1" ColumnName="B3R1C1" />
+          <ScalarProperty Name="B3Titolo" ColumnName="B3Titolo" />
+          <ScalarProperty Name="B2R6C2" ColumnName="B2R6C2" />
+          <ScalarProperty Name="B2R6C1" ColumnName="B2R6C1" />
+          <ScalarProperty Name="B2R5C2" ColumnName="B2R5C2" />
+          <ScalarProperty Name="B2R5C1" ColumnName="B2R5C1" />
+          <ScalarProperty Name="B2R4C2" ColumnName="B2R4C2" />
+          <ScalarProperty Name="B2R4C1" ColumnName="B2R4C1" />
+          <ScalarProperty Name="B2R3C2" ColumnName="B2R3C2" />
+          <ScalarProperty Name="B2R3C1" ColumnName="B2R3C1" />
+          <ScalarProperty Name="B2R2C2" ColumnName="B2R2C2" />
+          <ScalarProperty Name="B2R2C1" ColumnName="B2R2C1" />
+          <ScalarProperty Name="B2R1C2" ColumnName="B2R1C2" />
+          <ScalarProperty Name="B2R1C1" ColumnName="B2R1C1" />
+          <ScalarProperty Name="B2Titolo" ColumnName="B2Titolo" />
+          <ScalarProperty Name="B1R6C2" ColumnName="B1R6C2" />
+          <ScalarProperty Name="B1R6C1" ColumnName="B1R6C1" />
+          <ScalarProperty Name="B1R5C2" ColumnName="B1R5C2" />
+          <ScalarProperty Name="B1R5C1" ColumnName="B1R5C1" />
+          <ScalarProperty Name="B1R4C2" ColumnName="B1R4C2" />
+          <ScalarProperty Name="B1R4C1" ColumnName="B1R4C1" />
+          <ScalarProperty Name="B1R3C2" ColumnName="B1R3C2" />
+          <ScalarProperty Name="B1R3C1" ColumnName="B1R3C1" />
+          <ScalarProperty Name="B1R2C2" ColumnName="B1R2C2" />
+          <ScalarProperty Name="B1R2C1" ColumnName="B1R2C1" />
+          <ScalarProperty Name="B1R1C2" ColumnName="B1R1C2" />
+          <ScalarProperty Name="B1R1C1" ColumnName="B1R1C1" />
+          <ScalarProperty Name="B1Titolo" ColumnName="B1Titolo" />
+          <ScalarProperty Name="R2Sottotitolo" ColumnName="R2Sottotitolo" />
+          <ScalarProperty Name="R1Sottotitolo" ColumnName="R1Sottotitolo" />
+          <ScalarProperty Name="Titolo" ColumnName="Titolo" />
+          <ScalarProperty Name="BRPicture" ColumnName="BRPicture" />
+          <ScalarProperty Name="TRPicture" ColumnName="TRPicture" />
+          <ScalarProperty Name="MainPicture" ColumnName="MainPicture" />
+          <ScalarProperty Name="categoria" ColumnName="categoria" />
+          <ScalarProperty Name="Template" ColumnName="Template" />
+          <ScalarProperty Name="IDReferenza" ColumnName="IDReferenza" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReportFinanziari">
+      <EntityTypeMapping TypeName="FASTModel.ReportFinanziari">
+        <MappingFragment StoreEntitySet="ReportFinanziari">
+          <ScalarProperty Name="Anno" ColumnName="Anno" />
+          <ScalarProperty Name="Mese" ColumnName="Mese" />
+          <ScalarProperty Name="Venditori" ColumnName="Venditori" />
+          <ScalarProperty Name="Distretto" ColumnName="Distretto" />
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="Livello" ColumnName="Livello" />
+          <ScalarProperty Name="NomeReport" ColumnName="NomeReport" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SAPCaratteristiche">
+      <EntityTypeMapping TypeName="FASTModel.SAPCaratteristiche">
+        <MappingFragment StoreEntitySet="SAPCaratteristiche">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="TLOOKUPGROUP" ColumnName="TLOOKUPGROUP" />
+          <ScalarProperty Name="XPATH" ColumnName="XPATH" />
+          <ScalarProperty Name="CODPACCHETTO" ColumnName="CODPACCHETTO" />
+          <ScalarProperty Name="NCSAP" ColumnName="NCSAP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TerminiDiPagamento">
+      <EntityTypeMapping TypeName="FASTModel.TerminiDiPagamento">
+        <MappingFragment StoreEntitySet="TerminiDiPagamento">
+          <ScalarProperty Name="Abbuono" ColumnName="Abbuono" />
+          <ScalarProperty Name="TestoTerminiPagamento" ColumnName="TestoTerminiPagamento" />
+          <ScalarProperty Name="DescrizioneTerminiPagamento" ColumnName="DescrizioneTerminiPagamento" />
+          <ScalarProperty Name="CodiceTerminiPagamento" ColumnName="CodiceTerminiPagamento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Variabili">
+      <EntityTypeMapping TypeName="FASTModel.Variabili">
+        <MappingFragment StoreEntitySet="Variabili">
+          <ScalarProperty Name="NomeVecchio" ColumnName="NomeVecchio" />
+          <ScalarProperty Name="Rinominata" ColumnName="Rinominata" />
+          <ScalarProperty Name="Quote" ColumnName="Quote" />
+          <ScalarProperty Name="NomeVariabile" ColumnName="NomeVariabile" />
+          <ScalarProperty Name="IDConfiguratore" ColumnName="IDConfiguratore" />
+          <ScalarProperty Name="XPath" ColumnName="XPath" />
+          <ScalarProperty Name="IDVariabili" ColumnName="IDVariabili" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VariabiliPrice">
+      <EntityTypeMapping TypeName="FASTModel.VariabiliPrice">
+        <MappingFragment StoreEntitySet="VariabiliPrice">
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="IDPrice" ColumnName="IDPrice" />
+          <ScalarProperty Name="IDVariabili" ColumnName="IDVariabili" />
+          <ScalarProperty Name="IDVariabiliPrice" ColumnName="IDVariabiliPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUTORIZZAZIONI">
+      <EntityTypeMapping TypeName="FASTModel.AUTORIZZAZIONI">
+        <MappingFragment StoreEntitySet="AUTORIZZAZIONI">
+          <ScalarProperty Name="xmlDetails" ColumnName="xmlDetails" />
+          <ScalarProperty Name="esito" ColumnName="esito" />
+          <ScalarProperty Name="dataEsito" ColumnName="dataEsito" />
+          <ScalarProperty Name="AutorizzataDa" ColumnName="AutorizzataDa" />
+          <ScalarProperty Name="dataRichiesta" ColumnName="dataRichiesta" />
+          <ScalarProperty Name="richiestaA" ColumnName="richiestaA" />
+          <ScalarProperty Name="tipoRichiesta" ColumnName="tipoRichiesta" />
+          <ScalarProperty Name="idOfferta" ColumnName="idOfferta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cars_FURE">
+      <EntityTypeMapping TypeName="FASTModel.Cars_FURE">
+        <MappingFragment StoreEntitySet="Cars_FURE">
+          <ScalarProperty Name="DoorType" ColumnName="DoorType" />
+          <ScalarProperty Name="CW1" ColumnName="CW1" />
+          <ScalarProperty Name="CW" ColumnName="CW" />
+          <ScalarProperty Name="Pubel_2003" ColumnName="Pubel_2003" />
+          <ScalarProperty Name="EN81_71" ColumnName="EN81_71" />
+          <ScalarProperty Name="Pubel_92" ColumnName="Pubel_92" />
+          <ScalarProperty Name="EN81_72" ColumnName="EN81_72" />
+          <ScalarProperty Name="EN81_70" ColumnName="EN81_70" />
+          <ScalarProperty Name="EN81_1" ColumnName="EN81_1" />
+          <ScalarProperty Name="Guiderails_type" ColumnName="Guiderails_type" />
+          <ScalarProperty Name="Machine_type" ColumnName="Machine_type" />
+          <ScalarProperty Name="CXmax" ColumnName="CXmax" />
+          <ScalarProperty Name="CXmin" ColumnName="CXmin" />
+          <ScalarProperty Name="DO" ColumnName="DO" />
+          <ScalarProperty Name="WDmax" ColumnName="WDmax" />
+          <ScalarProperty Name="WDmin" ColumnName="WDmin" />
+          <ScalarProperty Name="WWmax" ColumnName="WWmax" />
+          <ScalarProperty Name="WWmin" ColumnName="WWmin" />
+          <ScalarProperty Name="Gmax" ColumnName="Gmax" />
+          <ScalarProperty Name="Gmin" ColumnName="Gmin" />
+          <ScalarProperty Name="LL" ColumnName="LL" />
+          <ScalarProperty Name="Door_Model" ColumnName="Door_Model" />
+          <ScalarProperty Name="Door_Design" ColumnName="Door_Design" />
+          <ScalarProperty Name="Persons" ColumnName="Persons" />
+          <ScalarProperty Name="CTWSG" ColumnName="CTWSG" />
+          <ScalarProperty Name="DD" ColumnName="DD" />
+          <ScalarProperty Name="BB" ColumnName="BB" />
+          <ScalarProperty Name="Entrance" ColumnName="Entrance" />
+          <ScalarProperty Name="Speed" ColumnName="Speed" />
+          <ScalarProperty Name="Load" ColumnName="Load" />
+          <ScalarProperty Name="Process" ColumnName="Process" />
+          <ScalarProperty Name="PacketVersion" ColumnName="PacketVersion" />
+          <ScalarProperty Name="Packet" ColumnName="Packet" />
+          <ScalarProperty Name="idCars" ColumnName="idCars" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cars_New">
+      <EntityTypeMapping TypeName="FASTModel.Cars_New">
+        <MappingFragment StoreEntitySet="Cars_New">
+          <ScalarProperty Name="DoorType" ColumnName="DoorType" />
+          <ScalarProperty Name="CW1" ColumnName="CW1" />
+          <ScalarProperty Name="CW" ColumnName="CW" />
+          <ScalarProperty Name="Pubel_2003" ColumnName="Pubel_2003" />
+          <ScalarProperty Name="EN81_71" ColumnName="EN81_71" />
+          <ScalarProperty Name="Pubel_92" ColumnName="Pubel_92" />
+          <ScalarProperty Name="EN81_72" ColumnName="EN81_72" />
+          <ScalarProperty Name="EN81_70" ColumnName="EN81_70" />
+          <ScalarProperty Name="EN81_1" ColumnName="EN81_1" />
+          <ScalarProperty Name="Guiderails_type" ColumnName="Guiderails_type" />
+          <ScalarProperty Name="Machine_type" ColumnName="Machine_type" />
+          <ScalarProperty Name="CXmax" ColumnName="CXmax" />
+          <ScalarProperty Name="CXmin" ColumnName="CXmin" />
+          <ScalarProperty Name="DO" ColumnName="DO" />
+          <ScalarProperty Name="WDmax" ColumnName="WDmax" />
+          <ScalarProperty Name="WDmin" ColumnName="WDmin" />
+          <ScalarProperty Name="WWmax" ColumnName="WWmax" />
+          <ScalarProperty Name="WWmin" ColumnName="WWmin" />
+          <ScalarProperty Name="Gmax" ColumnName="Gmax" />
+          <ScalarProperty Name="Gmin" ColumnName="Gmin" />
+          <ScalarProperty Name="LL" ColumnName="LL" />
+          <ScalarProperty Name="Door_Model" ColumnName="Door_Model" />
+          <ScalarProperty Name="Door_Design" ColumnName="Door_Design" />
+          <ScalarProperty Name="Persons" ColumnName="Persons" />
+          <ScalarProperty Name="CTWSG" ColumnName="CTWSG" />
+          <ScalarProperty Name="DD" ColumnName="DD" />
+          <ScalarProperty Name="BB" ColumnName="BB" />
+          <ScalarProperty Name="Entrance" ColumnName="Entrance" />
+          <ScalarProperty Name="Speed" ColumnName="Speed" />
+          <ScalarProperty Name="Load" ColumnName="Load" />
+          <ScalarProperty Name="Process" ColumnName="Process" />
+          <ScalarProperty Name="PacketVersion" ColumnName="PacketVersion" />
+          <ScalarProperty Name="Packet" ColumnName="Packet" />
+          <ScalarProperty Name="idCars" ColumnName="idCars" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CFG_Servizi">
+      <EntityTypeMapping TypeName="FASTModel.CFG_Servizi">
+        <MappingFragment StoreEntitySet="CFG_Servizi">
+          <ScalarProperty Name="isDefault" ColumnName="isDefault" />
+          <ScalarProperty Name="visibile" ColumnName="visibile" />
+          <ScalarProperty Name="abilitato" ColumnName="abilitato" />
+          <ScalarProperty Name="ordinamento" ColumnName="ordinamento" />
+          <ScalarProperty Name="descrizione" ColumnName="descrizione" />
+          <ScalarProperty Name="codice" ColumnName="codice" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CFG_Versioni">
+      <EntityTypeMapping TypeName="FASTModel.CFG_Versioni">
+        <MappingFragment StoreEntitySet="CFG_Versioni">
+          <ScalarProperty Name="visibile" ColumnName="visibile" />
+          <ScalarProperty Name="abilitato" ColumnName="abilitato" />
+          <ScalarProperty Name="ordinamento" ColumnName="ordinamento" />
+          <ScalarProperty Name="descrizione" ColumnName="descrizione" />
+          <ScalarProperty Name="codice" ColumnName="codice" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DAT_SALES_GROUPS">
+      <EntityTypeMapping TypeName="FASTModel.DAT_SALES_GROUPS">
+        <MappingFragment StoreEntitySet="DAT_SALES_GROUPS">
+          <ScalarProperty Name="Dt_upd_tab" ColumnName="Dt_upd_tab" />
+          <ScalarProperty Name="Extr_date" ColumnName="Extr_date" />
+          <ScalarProperty Name="Sales_group_desc" ColumnName="Sales_group_desc" />
+          <ScalarProperty Name="Sales_group_code" ColumnName="Sales_group_code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DAT_SALES_OFFICE">
+      <EntityTypeMapping TypeName="FASTModel.DAT_SALES_OFFICE">
+        <MappingFragment StoreEntitySet="DAT_SALES_OFFICE">
+          <ScalarProperty Name="sales_office_ubicazione" ColumnName="sales_office_ubicazione" />
+          <ScalarProperty Name="sales_office_translation" ColumnName="sales_office_translation" />
+          <ScalarProperty Name="sales_office_area" ColumnName="sales_office_area" />
+          <ScalarProperty Name="sales_office_desc" ColumnName="sales_office_desc" />
+          <ScalarProperty Name="sales_office_code" ColumnName="sales_office_code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DAT_SALES_ORGANIZATION">
+      <EntityTypeMapping TypeName="FASTModel.DAT_SALES_ORGANIZATION">
+        <MappingFragment StoreEntitySet="DAT_SALES_ORGANIZATION">
+          <ScalarProperty Name="sales_group_code" ColumnName="sales_group_code" />
+          <ScalarProperty Name="sales_off_code" ColumnName="sales_off_code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dbo_SAPCaratteristiche">
+      <EntityTypeMapping TypeName="FASTModel.dbo_SAPCaratteristiche">
+        <MappingFragment StoreEntitySet="dbo_SAPCaratteristiche">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="TLOOKUPGROUP" ColumnName="TLOOKUPGROUP" />
+          <ScalarProperty Name="XPATH" ColumnName="XPATH" />
+          <ScalarProperty Name="CODPACCHETTO" ColumnName="CODPACCHETTO" />
+          <ScalarProperty Name="NCSAP" ColumnName="NCSAP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dbRef_lookup_FamigliaCosto">
+      <EntityTypeMapping TypeName="FASTModel.dbRef_lookup_FamigliaCosto">
+        <MappingFragment StoreEntitySet="dbRef_lookup_FamigliaCosto">
+          <ScalarProperty Name="Descrizione" ColumnName="Descrizione" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dtproperties">
+      <EntityTypeMapping TypeName="FASTModel.dtproperties">
+        <MappingFragment StoreEntitySet="dtproperties">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="lvalue" ColumnName="lvalue" />
+          <ScalarProperty Name="uvalue" ColumnName="uvalue" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="property" ColumnName="property" />
+          <ScalarProperty Name="objectid" ColumnName="objectid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FastPorte_Lavori">
+      <EntityTypeMapping TypeName="FASTModel.FastPorte_Lavori">
+        <MappingFragment StoreEntitySet="FastPorte_Lavori">
+          <ScalarProperty Name="categoria" ColumnName="categoria" />
+          <ScalarProperty Name="visibileDa" ColumnName="visibileDa" />
+          <ScalarProperty Name="Documento" ColumnName="Documento" />
+          <ScalarProperty Name="ore" ColumnName="ore" />
+          <ScalarProperty Name="materiali" ColumnName="materiali" />
+          <ScalarProperty Name="L4" ColumnName="L4" />
+          <ScalarProperty Name="L3" ColumnName="L3" />
+          <ScalarProperty Name="L2" ColumnName="L2" />
+          <ScalarProperty Name="L1" ColumnName="L1" />
+          <ScalarProperty Name="DataFineValidita" ColumnName="DataFineValidita" />
+          <ScalarProperty Name="CodiceSAP" ColumnName="CodiceSAP" />
+          <ScalarProperty Name="Descrizione" ColumnName="Descrizione" />
+          <ScalarProperty Name="Titolo" ColumnName="Titolo" />
+          <ScalarProperty Name="CodiceFAST" ColumnName="CodiceFAST" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FastScaleTappeti_Lavori">
+      <EntityTypeMapping TypeName="FASTModel.FastScaleTappeti_Lavori">
+        <MappingFragment StoreEntitySet="FastScaleTappeti_Lavori">
+          <ScalarProperty Name="unitaDiMisura" ColumnName="unitaDiMisura" />
+          <ScalarProperty Name="categoria" ColumnName="categoria" />
+          <ScalarProperty Name="visibileDa" ColumnName="visibileDa" />
+          <ScalarProperty Name="Documento" ColumnName="Documento" />
+          <ScalarProperty Name="ore" ColumnName="ore" />
+          <ScalarProperty Name="materiali" ColumnName="materiali" />
+          <ScalarProperty Name="L4" ColumnName="L4" />
+          <ScalarProperty Name="L3" ColumnName="L3" />
+          <ScalarProperty Name="L2" ColumnName="L2" />
+          <ScalarProperty Name="L1" ColumnName="L1" />
+          <ScalarProperty Name="DataFineValidita" ColumnName="DataFineValidita" />
+          <ScalarProperty Name="CodiceSAP" ColumnName="CodiceSAP" />
+          <ScalarProperty Name="Descrizione" ColumnName="Descrizione" />
+          <ScalarProperty Name="Titolo" ColumnName="Titolo" />
+          <ScalarProperty Name="CodiceFAST" ColumnName="CodiceFAST" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LavoriCodificati">
+      <EntityTypeMapping TypeName="FASTModel.LavoriCodificati">
+        <MappingFragment StoreEntitySet="LavoriCodificati">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="dataFuoriCorso" ColumnName="dataFuoriCorso" />
+          <ScalarProperty Name="revisione" ColumnName="revisione" />
+          <ScalarProperty Name="cm2" ColumnName="cm2" />
+          <ScalarProperty Name="processo" ColumnName="processo" />
+          <ScalarProperty Name="categoria" ColumnName="categoria" />
+          <ScalarProperty Name="L4" ColumnName="L4" />
+          <ScalarProperty Name="L3" ColumnName="L3" />
+          <ScalarProperty Name="L2" ColumnName="L2" />
+          <ScalarProperty Name="L1" ColumnName="L1" />
+          <ScalarProperty Name="CodiceSAP" ColumnName="CodiceSAP" />
+          <ScalarProperty Name="leadTime" ColumnName="leadTime" />
+          <ScalarProperty Name="ApplyToSubCat" ColumnName="ApplyToSubCat" />
+          <ScalarProperty Name="ApplyToCat" ColumnName="ApplyToCat" />
+          <ScalarProperty Name="Documento" ColumnName="Documento" />
+          <ScalarProperty Name="CodiceM2" ColumnName="CodiceM2" />
+          <ScalarProperty Name="Efficienza" ColumnName="Efficienza" />
+          <ScalarProperty Name="Ore" ColumnName="Ore" />
+          <ScalarProperty Name="CostoMateriali" ColumnName="CostoMateriali" />
+          <ScalarProperty Name="Titolo" ColumnName="Titolo" />
+          <ScalarProperty Name="CodiceFAST" ColumnName="CodiceFAST" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LavoriCodificati2006">
+      <EntityTypeMapping TypeName="FASTModel.LavoriCodificati2006">
+        <MappingFragment StoreEntitySet="LavoriCodificati2006">
+          <ScalarProperty Name="dataFuoriCorso" ColumnName="dataFuoriCorso" />
+          <ScalarProperty Name="revisione" ColumnName="revisione" />
+          <ScalarProperty Name="cm2" ColumnName="cm2" />
+          <ScalarProperty Name="processo" ColumnName="processo" />
+          <ScalarProperty Name="categoria" ColumnName="categoria" />
+          <ScalarProperty Name="L4" ColumnName="L4" />
+          <ScalarProperty Name="L3" ColumnName="L3" />
+          <ScalarProperty Name="L2" ColumnName="L2" />
+          <ScalarProperty Name="L1" ColumnName="L1" />
+          <ScalarProperty Name="CodiceSAP" ColumnName="CodiceSAP" />
+          <ScalarProperty Name="leadTime" ColumnName="leadTime" />
+          <ScalarProperty Name="ApplyToSubCat" ColumnName="ApplyToSubCat" />
+          <ScalarProperty Name="ApplyToCat" ColumnName="ApplyToCat" />
+          <ScalarProperty Name="Documento" ColumnName="Documento" />
+          <ScalarProperty Name="CodiceM2" ColumnName="CodiceM2" />
+          <ScalarProperty Name="Efficienza" ColumnName="Efficienza" />
+          <ScalarProperty Name="Ore" ColumnName="Ore" />
+          <ScalarProperty Name="CostoMateriali" ColumnName="CostoMateriali" />
+          <ScalarProperty Name="Titolo" ColumnName="Titolo" />
+          <ScalarProperty Name="CodiceFAST" ColumnName="CodiceFAST" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LavoriCodificati2012">
+      <EntityTypeMapping TypeName="FASTModel.LavoriCodificati2012">
+        <MappingFragment StoreEntitySet="LavoriCodificati2012">
+          <ScalarProperty Name="dataFuoriCorso" ColumnName="dataFuoriCorso" />
+          <ScalarProperty Name="revisione" ColumnName="revisione" />
+          <ScalarProperty Name="cm2" ColumnName="cm2" />
+          <ScalarProperty Name="processo" ColumnName="processo" />
+          <ScalarProperty Name="categoria" ColumnName="categoria" />
+          <ScalarProperty Name="L4" ColumnName="L4" />
+          <ScalarProperty Name="L3" ColumnName="L3" />
+          <ScalarProperty Name="L2" ColumnName="L2" />
+          <ScalarProperty Name="L1" ColumnName="L1" />
+          <ScalarProperty Name="CodiceSAP" ColumnName="CodiceSAP" />
+          <ScalarProperty Name="leadTime" ColumnName="leadTime" />
+          <ScalarProperty Name="ApplyToSubCat" ColumnName="ApplyToSubCat" />
+          <ScalarProperty Name="ApplyToCat" ColumnName="ApplyToCat" />
+          <ScalarProperty Name="Documento" ColumnName="Documento" />
+          <ScalarProperty Name="CodiceM2" ColumnName="CodiceM2" />
+          <ScalarProperty Name="Efficienza" ColumnName="Efficienza" />
+          <ScalarProperty Name="Ore" ColumnName="Ore" />
+          <ScalarProperty Name="CostoMateriali" ColumnName="CostoMateriali" />
+          <ScalarProperty Name="Titolo" ColumnName="Titolo" />
+          <ScalarProperty Name="CodiceFAST" ColumnName="CodiceFAST" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LavoriCodificatiPrezzoLibero">
+      <EntityTypeMapping TypeName="FASTModel.LavoriCodificatiPrezzoLibero">
+        <MappingFragment StoreEntitySet="LavoriCodificatiPrezzoLibero">
+          <ScalarProperty Name="DataFineValidita" ColumnName="DataFineValidita" />
+          <ScalarProperty Name="Tipologia" ColumnName="Tipologia" />
+          <ScalarProperty Name="DescrizioneModificabile" ColumnName="DescrizioneModificabile" />
+          <ScalarProperty Name="leadTime" ColumnName="leadTime" />
+          <ScalarProperty Name="processo" ColumnName="processo" />
+          <ScalarProperty Name="categoria" ColumnName="categoria" />
+          <ScalarProperty Name="CodiceSAP" ColumnName="CodiceSAP" />
+          <ScalarProperty Name="Descrizione" ColumnName="Descrizione" />
+          <ScalarProperty Name="Titolo" ColumnName="Titolo" />
+          <ScalarProperty Name="CodiceFast" ColumnName="CodiceFast" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PARERI">
+      <EntityTypeMapping TypeName="FASTModel.PARERI">
+        <MappingFragment StoreEntitySet="PARERI">
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="esito" ColumnName="esito" />
+          <ScalarProperty Name="dataEsito" ColumnName="dataEsito" />
+          <ScalarProperty Name="InseritoDa" ColumnName="InseritoDa" />
+          <ScalarProperty Name="dataRichiesta" ColumnName="dataRichiesta" />
+          <ScalarProperty Name="richiestaA" ColumnName="richiestaA" />
+          <ScalarProperty Name="tipoRichiesta" ColumnName="tipoRichiesta" />
+          <ScalarProperty Name="idOfferta" ColumnName="idOfferta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QUOTAZIONI">
+      <EntityTypeMapping TypeName="FASTModel.QUOTAZIONI">
+        <MappingFragment StoreEntitySet="QUOTAZIONI">
+          <ScalarProperty Name="xmlDetails" ColumnName="xmlDetails" />
+          <ScalarProperty Name="esito" ColumnName="esito" />
+          <ScalarProperty Name="dataQuotazione" ColumnName="dataQuotazione" />
+          <ScalarProperty Name="QuotataDa" ColumnName="QuotataDa" />
+          <ScalarProperty Name="dataRichiesta" ColumnName="dataRichiesta" />
+          <ScalarProperty Name="richiestaA" ColumnName="richiestaA" />
+          <ScalarProperty Name="EQUIPMENT_NUMBER" ColumnName="EQUIPMENT_NUMBER" />
+          <ScalarProperty Name="idOfferta" ColumnName="idOfferta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="rpt_offerte_Manutenzione">
+      <EntityTypeMapping TypeName="FASTModel.rpt_offerte_Manutenzione">
+        <MappingFragment StoreEntitySet="rpt_offerte_Manutenzione">
+          <ScalarProperty Name="DataCreazione" ColumnName="DataCreazione" />
+          <ScalarProperty Name="EOPT" ColumnName="EOPT" />
+          <ScalarProperty Name="SIMCARD" ColumnName="SIMCARD" />
+          <ScalarProperty Name="KRMS" ColumnName="KRMS" />
+          <ScalarProperty Name="RipRep" ColumnName="RipRep" />
+          <ScalarProperty Name="PiRep" ColumnName="PiRep" />
+          <ScalarProperty Name="AOC" ColumnName="AOC" />
+          <ScalarProperty Name="TipoContratto" ColumnName="TipoContratto" />
+          <ScalarProperty Name="Sconto_venduto" ColumnName="Sconto_venduto" />
+          <ScalarProperty Name="Sconto_offerto" ColumnName="Sconto_offerto" />
+          <ScalarProperty Name="Canone_Liv1" ColumnName="Canone_Liv1" />
+          <ScalarProperty Name="Canone_venduto" ColumnName="Canone_venduto" />
+          <ScalarProperty Name="Canone_Offerto" ColumnName="Canone_Offerto" />
+          <ScalarProperty Name="Pagamento_Dilazione" ColumnName="Pagamento_Dilazione" />
+          <ScalarProperty Name="Pagamento_modo" ColumnName="Pagamento_modo" />
+          <ScalarProperty Name="Pagamento_Tipo" ColumnName="Pagamento_Tipo" />
+          <ScalarProperty Name="ServSupp" ColumnName="ServSupp" />
+          <ScalarProperty Name="DurataContratto" ColumnName="DurataContratto" />
+          <ScalarProperty Name="TipoEdificio_Segmento" ColumnName="TipoEdificio_Segmento" />
+          <ScalarProperty Name="TipoEdificio_Traffico" ColumnName="TipoEdificio_Traffico" />
+          <ScalarProperty Name="opportunity" ColumnName="opportunity" />
+          <ScalarProperty Name="causale" ColumnName="causale" />
+          <ScalarProperty Name="StatusCorrente" ColumnName="StatusCorrente" />
+          <ScalarProperty Name="Impianto_loc" ColumnName="Impianto_loc" />
+          <ScalarProperty Name="Impianto_CAP" ColumnName="Impianto_CAP" />
+          <ScalarProperty Name="Impianto_ind" ColumnName="Impianto_ind" />
+          <ScalarProperty Name="NumImpianti" ColumnName="NumImpianti" />
+          <ScalarProperty Name="BillTo_Party_prov" ColumnName="BillTo_Party_prov" />
+          <ScalarProperty Name="BillTo_Party_loc" ColumnName="BillTo_Party_loc" />
+          <ScalarProperty Name="BillTo_Party_CAP" ColumnName="BillTo_Party_CAP" />
+          <ScalarProperty Name="BillTo_Party_ind" ColumnName="BillTo_Party_ind" />
+          <ScalarProperty Name="BillTo_Party_RagSoc" ColumnName="BillTo_Party_RagSoc" />
+          <ScalarProperty Name="BillTo_Party_code" ColumnName="BillTo_Party_code" />
+          <ScalarProperty Name="SoldTo_Party_prov" ColumnName="SoldTo_Party_prov" />
+          <ScalarProperty Name="SoldTo_Party_loc" ColumnName="SoldTo_Party_loc" />
+          <ScalarProperty Name="SoldTo_Party_CAP" ColumnName="SoldTo_Party_CAP" />
+          <ScalarProperty Name="SoldTo_Party_ind" ColumnName="SoldTo_Party_ind" />
+          <ScalarProperty Name="SoldTo_Party_RagSoc" ColumnName="SoldTo_Party_RagSoc" />
+          <ScalarProperty Name="SoldTo_Party_code" ColumnName="SoldTo_Party_code" />
+          <ScalarProperty Name="NumeroOfferta" ColumnName="NumeroOfferta" />
+          <ScalarProperty Name="venditore" ColumnName="venditore" />
+          <ScalarProperty Name="IdVenditore" ColumnName="IdVenditore" />
+          <ScalarProperty Name="IdEnte" ColumnName="IdEnte" />
+          <ScalarProperty Name="IDlavoro" ColumnName="IDlavoro" />
+          <ScalarProperty Name="IDOfferta" ColumnName="IDOfferta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

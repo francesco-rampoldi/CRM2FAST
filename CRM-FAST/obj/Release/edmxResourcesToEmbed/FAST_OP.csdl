@@ -1,0 +1,2211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FASTModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="DAT_SF_owners">
+    <Key>
+      <PropertyRef Name="SAP_OWNER" />
+    </Key>
+    <Property Name="SAP_OWNER" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="KAI" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="DAT_SF_opportunities">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ACCOUNTID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="STAGENAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ISCLOSED" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="ISWON" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="BUSINESS_TYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SALES_ORGANIZATION__CODE" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="EsportatoSAP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AMOUNT" Type="Single" />
+    <Property Name="SF_OwnerID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Opportunity_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Offerta_DataPrevistaChiusura" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Offerta_ProbabilitaAggiudicazione" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Party_RagioneSociale" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="Party_Indirizzo" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="Party_IDParty" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Party_CITY" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="Party_POSTAL_CODE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Party_REGION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Party_PHONE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Party_FAX" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="UpdateDtime" Type="DateTime" Precision="3" />
+    <Property Name="Opportunity_Category" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="sold_to_Party_RagioneSociale" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="sold_to_Party_Indirizzo" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="sold_to_Party_IDParty" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="sold_to_Party_CITY" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="sold_to_Party_POSTAL_CODE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="sold_to_Party_REGION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="sold_to_Party_PHONE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="sold_to_Party_FAX" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Venditori">
+    <Key>
+      <PropertyRef Name="KAI" />
+    </Key>
+    <Property Name="KAI" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SALES_GROUP_CODE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SALES_OFFICE_CODE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Sigla" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="KAIAmm" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="KAIAmm2" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="KAICV" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="KAISV" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CodiceSV" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="KAISV2" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="CodiceSV2" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="KAICD" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="KAIDIR" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="FileFirma" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="Fax" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="Ufficio" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Indirizzo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="CAP" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="Citta" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SogliaSconto" Type="Double" />
+    <Property Name="SogliaValore" Type="Double" />
+    <Property Name="persona" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="email" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="VisibilitaVenditori" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="VisibilitaDistretti" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="Cellulare" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="ListinoClienti" Type="Int32" />
+    <Property Name="IsAdmin" Type="Int16" Nullable="false" />
+    <Property Name="IsDSAM" Type="Int16" Nullable="false" />
+    <Property Name="IsStandard" Type="Int16" />
+    <Property Name="IsMKT" Type="Int16" />
+    <Property Name="IsManager" Type="Int16" Nullable="false" />
+    <Property Name="IsSupervisoreVB" Type="Int16" Nullable="false" />
+    <Property Name="IsVenditore" Type="Int16" Nullable="false" />
+    <Property Name="IsSupervisore" Type="Int16" Nullable="false" />
+    <Property Name="Ruolo" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="AbilitatoMTZElev" Type="Int16" Nullable="false" />
+    <Property Name="AbilitatoMTZ" Type="Int16" Nullable="false" />
+    <Property Name="AbilitatoDOOR" Type="Int16" Nullable="false" />
+    <Property Name="SAP_OWNER" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="KAISV_TRB" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="KAISV_FRB" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="KAISV_LAVORI" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="KAIAMM_SEB" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="FASTEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="DAT_SF_owners" EntityType="Self.DAT_SF_owners" />
+    <EntitySet Name="DAT_SF_opportunities" EntityType="Self.DAT_SF_opportunities" />
+    <EntitySet Name="Venditori" EntityType="Self.Venditori" />
+    <EntitySet Name="Aree" EntityType="FASTModel.Aree" />
+    <EntitySet Name="Cars" EntityType="FASTModel.Cars" />
+    <EntitySet Name="CategorieLavori" EntityType="FASTModel.CategorieLavori" />
+    <EntitySet Name="Category" EntityType="FASTModel.Category" />
+    <EntitySet Name="CategoryLog" EntityType="FASTModel.CategoryLog" />
+    <EntitySet Name="CFG_AccessiCabina" EntityType="FASTModel.CFG_AccessiCabina" />
+    <EntitySet Name="CFG_AccessoriSiNo" EntityType="FASTModel.CFG_AccessoriSiNo" />
+    <EntitySet Name="CFG_Anello" EntityType="FASTModel.CFG_Anello" />
+    <EntitySet Name="CFG_Azionamento" EntityType="FASTModel.CFG_Azionamento" />
+    <EntitySet Name="CFG_Configuratori" EntityType="FASTModel.CFG_Configuratori" />
+    <EntitySet Name="CFG_Corrente" EntityType="FASTModel.CFG_Corrente" />
+    <EntitySet Name="CFG_Fermate" EntityType="FASTModel.CFG_Fermate" />
+    <EntitySet Name="CFG_Listino_Accessori" EntityType="FASTModel.CFG_Listino_Accessori" />
+    <EntitySet Name="CFG_Listino_BasiQuadroDrive" EntityType="FASTModel.CFG_Listino_BasiQuadroDrive" />
+    <EntitySet Name="CFG_Listino_Prezzi" EntityType="FASTModel.CFG_Listino_Prezzi" />
+    <EntitySet Name="CFG_OffertaQuadro" EntityType="FASTModel.CFG_OffertaQuadro" />
+    <EntitySet Name="CFG_Portata" EntityType="FASTModel.CFG_Portata" />
+    <EntitySet Name="CFG_Quadro" EntityType="FASTModel.CFG_Quadro" />
+    <EntitySet Name="CFG_RES40_ListaCampi" EntityType="FASTModel.CFG_RES40_ListaCampi" />
+    <EntitySet Name="CFG_Schede" EntityType="FASTModel.CFG_Schede" />
+    <EntitySet Name="CFG_ServiziLatoC" EntityType="FASTModel.CFG_ServiziLatoC" />
+    <EntitySet Name="CFG_Tensione" EntityType="FASTModel.CFG_Tensione" />
+    <EntitySet Name="CFG_TensioneFreno" EntityType="FASTModel.CFG_TensioneFreno" />
+    <EntitySet Name="CFG_Velocita" EntityType="FASTModel.CFG_Velocita" />
+    <EntitySet Name="Configuratori" EntityType="FASTModel.Configuratori" />
+    <EntitySet Name="CostiTrasporto" EntityType="FASTModel.CostiTrasporto" />
+    <EntitySet Name="dbRef_Dettaglio" EntityType="FASTModel.dbRef_Dettaglio" />
+    <EntitySet Name="dbRef_Dettaglio_Storico" EntityType="FASTModel.dbRef_Dettaglio_Storico" />
+    <EntitySet Name="dbRef_Listino" EntityType="FASTModel.dbRef_Listino" />
+    <EntitySet Name="dbRef_Listino_Storico" EntityType="FASTModel.dbRef_Listino_Storico" />
+    <EntitySet Name="Depliants" EntityType="FASTModel.Depliants" />
+    <EntitySet Name="Depliants_Trace" EntityType="FASTModel.Depliants_Trace" />
+    <EntitySet Name="Depliants_Trace_Elenco" EntityType="FASTModel.Depliants_Trace_Elenco" />
+    <EntitySet Name="DepliantsStatusElenco" EntityType="FASTModel.DepliantsStatusElenco" />
+    <EntitySet Name="DepliantsStatusRichieste" EntityType="FASTModel.DepliantsStatusRichieste" />
+    <EntitySet Name="DescrizioniLavori" EntityType="FASTModel.DescrizioniLavori" />
+    <EntitySet Name="Documenti" EntityType="FASTModel.Documenti" />
+    <EntitySet Name="DTSEBTasks" EntityType="FASTModel.DTSEBTasks" />
+    <EntitySet Name="EDMSData" EntityType="FASTModel.EDMSData" />
+    <EntitySet Name="extractKIT" EntityType="FASTModel.extractKIT" />
+    <EntitySet Name="fastLog" EntityType="FASTModel.fastLog" />
+    <EntitySet Name="idGenerator" EntityType="FASTModel.idGenerator" />
+    <EntitySet Name="Impianti" EntityType="FASTModel.Impianti" />
+    <EntitySet Name="ImpiantiInOfferte" EntityType="FASTModel.ImpiantiInOfferte" />
+    <EntitySet Name="LavoriACaricoCliente" EntityType="FASTModel.LavoriACaricoCliente" />
+    <EntitySet Name="LavoriInOfferte" EntityType="FASTModel.LavoriInOfferte" />
+    <EntitySet Name="LavoriNonCOdificati" EntityType="FASTModel.LavoriNonCOdificati" />
+    <EntitySet Name="Log" EntityType="FASTModel.Log" />
+    <EntitySet Name="LookupTables" EntityType="FASTModel.LookupTables" />
+    <EntitySet Name="Mail" EntityType="FASTModel.Mail" />
+    <EntitySet Name="MilestonePianoFatt" EntityType="FASTModel.MilestonePianoFatt" />
+    <EntitySet Name="ModificaOrdine" EntityType="FASTModel.ModificaOrdine" />
+    <EntitySet Name="News" EntityType="FASTModel.News" />
+    <EntitySet Name="Offerte" EntityType="FASTModel.Offerte" />
+    <EntitySet Name="OneriCompresiEsclusi" EntityType="FASTModel.OneriCompresiEsclusi" />
+    <EntitySet Name="OneriOfferte" EntityType="FASTModel.OneriOfferte" />
+    <EntitySet Name="Pacchetti" EntityType="FASTModel.Pacchetti" />
+    <EntitySet Name="Parametri" EntityType="FASTModel.Parametri" />
+    <EntitySet Name="Parties" EntityType="FASTModel.Parties" />
+    <EntitySet Name="PianoFatturazione" EntityType="FASTModel.PianoFatturazione" />
+    <EntitySet Name="Price" EntityType="FASTModel.Price" />
+    <EntitySet Name="PriceGroup" EntityType="FASTModel.PriceGroup" />
+    <EntitySet Name="PriceItem" EntityType="FASTModel.PriceItem" />
+    <EntitySet Name="Provvigioni" EntityType="FASTModel.Provvigioni" />
+    <EntitySet Name="Referenze" EntityType="FASTModel.Referenze" />
+    <EntitySet Name="ReportFinanziari" EntityType="FASTModel.ReportFinanziari" />
+    <EntitySet Name="SAPCaratteristiche" EntityType="FASTModel.SAPCaratteristiche" />
+    <EntitySet Name="TerminiDiPagamento" EntityType="FASTModel.TerminiDiPagamento" />
+    <EntitySet Name="Variabili" EntityType="FASTModel.Variabili" />
+    <EntitySet Name="VariabiliPrice" EntityType="FASTModel.VariabiliPrice" />
+    <EntitySet Name="AUTORIZZAZIONI" EntityType="FASTModel.AUTORIZZAZIONI" />
+    <EntitySet Name="Cars_FURE" EntityType="FASTModel.Cars_FURE" />
+    <EntitySet Name="Cars_New" EntityType="FASTModel.Cars_New" />
+    <EntitySet Name="CFG_Servizi" EntityType="FASTModel.CFG_Servizi" />
+    <EntitySet Name="CFG_Versioni" EntityType="FASTModel.CFG_Versioni" />
+    <EntitySet Name="DAT_SALES_GROUPS" EntityType="FASTModel.DAT_SALES_GROUPS" />
+    <EntitySet Name="DAT_SALES_OFFICE" EntityType="FASTModel.DAT_SALES_OFFICE" />
+    <EntitySet Name="DAT_SALES_ORGANIZATION" EntityType="FASTModel.DAT_SALES_ORGANIZATION" />
+    <EntitySet Name="dbo_SAPCaratteristiche" EntityType="FASTModel.dbo_SAPCaratteristiche" />
+    <EntitySet Name="dbRef_lookup_FamigliaCosto" EntityType="FASTModel.dbRef_lookup_FamigliaCosto" />
+    <EntitySet Name="dtproperties" EntityType="FASTModel.dtproperties" />
+    <EntitySet Name="FastPorte_Lavori" EntityType="FASTModel.FastPorte_Lavori" />
+    <EntitySet Name="FastScaleTappeti_Lavori" EntityType="FASTModel.FastScaleTappeti_Lavori" />
+    <EntitySet Name="LavoriCodificati" EntityType="FASTModel.LavoriCodificati" />
+    <EntitySet Name="LavoriCodificati2006" EntityType="FASTModel.LavoriCodificati2006" />
+    <EntitySet Name="LavoriCodificati2012" EntityType="FASTModel.LavoriCodificati2012" />
+    <EntitySet Name="LavoriCodificatiPrezzoLibero" EntityType="FASTModel.LavoriCodificatiPrezzoLibero" />
+    <EntitySet Name="PARERI" EntityType="FASTModel.PARERI" />
+    <EntitySet Name="QUOTAZIONI" EntityType="FASTModel.QUOTAZIONI" />
+    <EntitySet Name="rpt_offerte_Manutenzione" EntityType="FASTModel.rpt_offerte_Manutenzione" />
+    <AssociationSet Name="FK_CategoryLog_Category" Association="FASTModel.FK_CategoryLog_Category">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="CategoryLog" EntitySet="CategoryLog" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CategoryLog_Log" Association="FASTModel.FK_CategoryLog_Log">
+      <End Role="Log" EntitySet="Log" />
+      <End Role="CategoryLog" EntitySet="CategoryLog" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Impianti_Parties" Association="FASTModel.FK_Impianti_Parties">
+      <End Role="Parties" EntitySet="Parties" />
+      <End Role="Impianti" EntitySet="Impianti" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ImpiantiInOfferte_Impianti" Association="FASTModel.FK_ImpiantiInOfferte_Impianti">
+      <End Role="Impianti" EntitySet="Impianti" />
+      <End Role="ImpiantiInOfferte" EntitySet="ImpiantiInOfferte" />
+    </AssociationSet>
+    <AssociationSet Name="FK_QUOTAZIONI_impianti" Association="FASTModel.FK_QUOTAZIONI_impianti">
+      <End Role="Impianti" EntitySet="Impianti" />
+      <End Role="QUOTAZIONI" EntitySet="QUOTAZIONI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ImpiantiInOfferte_Offerte" Association="FASTModel.FK_ImpiantiInOfferte_Offerte">
+      <End Role="Offerte" EntitySet="Offerte" />
+      <End Role="ImpiantiInOfferte" EntitySet="ImpiantiInOfferte" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LavoriInOfferte_ImpiantiInOfferte" Association="FASTModel.FK_LavoriInOfferte_ImpiantiInOfferte">
+      <End Role="ImpiantiInOfferte" EntitySet="ImpiantiInOfferte" />
+      <End Role="LavoriInOfferte" EntitySet="LavoriInOfferte" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AUTORIZZAZIONI_Offerte" Association="FASTModel.FK_AUTORIZZAZIONI_Offerte">
+      <End Role="Offerte" EntitySet="Offerte" />
+      <End Role="AUTORIZZAZIONI" EntitySet="AUTORIZZAZIONI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Offerte_Parties" Association="FASTModel.FK_Offerte_Parties">
+      <End Role="Parties" EntitySet="Parties" />
+      <End Role="Offerte" EntitySet="Offerte" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OneriOfferte_Offerte" Association="FASTModel.FK_OneriOfferte_Offerte">
+      <End Role="Offerte" EntitySet="Offerte" />
+      <End Role="OneriOfferte" EntitySet="OneriOfferte" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PARERI_Offerte" Association="FASTModel.FK_PARERI_Offerte">
+      <End Role="Offerte" EntitySet="Offerte" />
+      <End Role="PARERI" EntitySet="PARERI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PianoFatturazione_Offerte" Association="FASTModel.FK_PianoFatturazione_Offerte">
+      <End Role="Offerte" EntitySet="Offerte" />
+      <End Role="PianoFatturazione" EntitySet="PianoFatturazione" />
+    </AssociationSet>
+    <AssociationSet Name="FK_QUOTAZIONI_Offerte" Association="FASTModel.FK_QUOTAZIONI_Offerte">
+      <End Role="Offerte" EntitySet="Offerte" />
+      <End Role="QUOTAZIONI" EntitySet="QUOTAZIONI" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Aree">
+    <Key>
+      <PropertyRef Name="Area" />
+    </Key>
+    <Property Name="Area" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="VisibilitaDistretti" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="KAIResponsabile" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Cars">
+    <Key>
+      <PropertyRef Name="IDCars" />
+    </Key>
+    <Property Name="IDCars" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Packet" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PacketVersion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Process" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DutyLoad" Type="Int32" />
+    <Property Name="AccessNum" Type="Int16" />
+    <Property Name="DoorType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LL" Type="Int32" />
+    <Property Name="BB" Type="Int32" />
+    <Property Name="DD" Type="Int32" />
+    <Property Name="WWmin" Type="Int32" />
+    <Property Name="WWmax" Type="Int32" />
+    <Property Name="Gmin" Type="Int32" />
+    <Property Name="Gmax" Type="Int32" />
+    <Property Name="WD" Type="Int32" />
+    <Property Name="WDmax" Type="Int32" />
+    <Property Name="CAR_CX" Type="Int32" />
+    <Property Name="CAR_CXmin" Type="Int32" />
+    <Property Name="CAR_CXmax" Type="Int32" />
+    <Property Name="Persons" Type="Int16" />
+    <Property Name="CTWSG" Type="Int16" Nullable="false" />
+    <Property Name="Speed" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CW" Type="Int32" />
+    <Property Name="CW1" Type="Int32" />
+  </EntityType>
+  <EntityType Name="CategorieLavori">
+    <Key>
+      <PropertyRef Name="famiglia" />
+    </Key>
+    <Property Name="famiglia" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="categoria" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="categoriaSAP" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryName" Type="String" Nullable="false" MaxLength="64" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="CategoryLog" Relationship="FASTModel.FK_CategoryLog_Category" FromRole="Category" ToRole="CategoryLog" />
+  </EntityType>
+  <EntityType Name="CategoryLog">
+    <Key>
+      <PropertyRef Name="CategoryLogID" />
+    </Key>
+    <Property Name="CategoryLogID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryID" Type="Int32" Nullable="false" />
+    <Property Name="LogID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Category" Relationship="FASTModel.FK_CategoryLog_Category" FromRole="CategoryLog" ToRole="Category" />
+    <NavigationProperty Name="Log" Relationship="FASTModel.FK_CategoryLog_Log" FromRole="CategoryLog" ToRole="Log" />
+  </EntityType>
+  <EntityType Name="CFG_AccessiCabina">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codice" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="descrizione" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ordinamento" Type="Int32" />
+    <Property Name="abilitato" Type="Boolean" />
+    <Property Name="visibile" Type="Boolean" />
+    <Property Name="isDefault" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="CFG_AccessoriSiNo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codice" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="descrizione" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ordinamento" Type="Int32" />
+    <Property Name="abilitato" Type="Boolean" />
+    <Property Name="visibile" Type="Boolean" />
+    <Property Name="CFG_Azionamento" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CFG_Anello" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="isDefault" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="CFG_Anello">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codice" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="descrizione" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ordinamento" Type="Int32" />
+    <Property Name="abilitato" Type="Boolean" />
+    <Property Name="visibile" Type="Boolean" />
+    <Property Name="CFG_Azionamento" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="isDefault" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="CFG_Azionamento">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codice" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="descrizione" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ordinamento" Type="Int32" />
+    <Property Name="abilitato" Type="Boolean" />
+    <Property Name="visibile" Type="Boolean" />
+    <Property Name="isDefault" Type="Boolean" />
+    <Property Name="CFG_Quadro" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="CFG_Configuratori">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codice" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="descrizione" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="FAST_ListaCampi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="nomeFAST" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="CFG_Corrente">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codice" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="descrizione" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ordinamento" Type="Int32" />
+    <Property Name="abilitato" Type="Boolean" />
+    <Property Name="visibile" Type="Boolean" />
+    <Property Name="isDefault" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="CFG_Fermate">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codice" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="descrizione" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ordinamento" Type="Int32" />
+    <Property Name="abilitato" Type="Boolean" />
+    <Property Name="visibile" Type="Boolean" />
+    <Property Name="isDefault" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="CFG_Listino_Accessori">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codiceAccessorio" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="codiceBase" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="codicePerMetro" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="codicePerServizio" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="descrizione" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ordinamento" Type="Int32" />
+    <Property Name="abilitato" Type="Boolean" />
+    <Property Name="visibile" Type="Boolean" />
+    <Property Name="CFG_Quadro" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CFG_Azionamento" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CFG_Tensione" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CFG_Corrente" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CFG_Anello" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="CFG_Listino_BasiQuadroDrive">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codiceBase" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="codice10mSupplyCable" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="codice10mMotorCable" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="descrizione" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ordinamento" Type="Int32" />
+    <Property Name="abilitato" Type="Boolean" />
+    <Property Name="visibile" Type="Boolean" />
+    <Property Name="CFG_Quadro" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CFG_Azionamento" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CFG_Tensione" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CFG_Anello" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CFG_Corrente" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="CFG_Listino_Prezzi">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codice" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="prezzo" Type="Single" />
+    <Property Name="versione" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="CFG_OffertaQuadro">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codice" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="descrizione" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ordinamento" Type="Int32" />
+    <Property Name="abilitato" Type="Boolean" Nullable="false" />
+    <Property Name="visibile" Type="Boolean" Nullable="false" />
+    <Property Name="CFG_Quadro" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="isDefault" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="CFG_Portata">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codice" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="descrizione" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ordinamento" Type="Int32" />
+    <Property Name="abilitato" Type="Boolean" />
+    <Property Name="visibile" Type="Boolean" />
+    <Property Name="isDefault" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="CFG_Quadro">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codice" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="descrizione" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ordinamento" Type="Int32" />
+    <Property Name="abilitato" Type="Boolean" />
+    <Property Name="visibile" Type="Boolean" />
+    <Property Name="isDefault" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="CFG_RES40_ListaCampi">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codice" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="descrizione" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ordinamento" Type="Int32" />
+    <Property Name="abilitato" Type="Boolean" />
+    <Property Name="visibile" Type="Boolean" />
+    <Property Name="scheda" Type="Int32" />
+    <Property Name="testoTitolo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tipoCombo" Type="Boolean" />
+    <Property Name="tipoTesto" Type="Boolean" />
+    <Property Name="tipoCheckBox" Type="Boolean" />
+    <Property Name="isAccessorioSiNo" Type="Boolean" />
+    <Property Name="obbligatorio" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="CFG_Schede">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codice" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="descrizione" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ordinamento" Type="Int32" />
+    <Property Name="abilitato" Type="Boolean" />
+    <Property Name="visibile" Type="Boolean" />
+    <Property Name="scheda" Type="Int32" />
+    <Property Name="CFG_Quadro" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="CFG_ServiziLatoC">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codice" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="descrizione" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ordinamento" Type="Int32" />
+    <Property Name="abilitato" Type="Boolean" />
+    <Property Name="visibile" Type="Boolean" />
+    <Property Name="isDefault" Type="Boolean" />
+    <Property Name="CFG_AccessiCabina" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="CFG_Tensione">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codice" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="descrizione" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ordinamento" Type="Int32" />
+    <Property Name="abilitato" Type="Boolean" />
+    <Property Name="visibile" Type="Boolean" />
+    <Property Name="isDefault" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="CFG_TensioneFreno">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codice" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="descrizione" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ordinamento" Type="Int32" />
+    <Property Name="abilitato" Type="Boolean" />
+    <Property Name="visibile" Type="Boolean" />
+    <Property Name="isDefault" Type="Boolean" />
+    <Property Name="CFG_Corrente_MAX" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="CFG_Velocita">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codice" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="descrizione" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ordinamento" Type="Int32" />
+    <Property Name="abilitato" Type="Boolean" />
+    <Property Name="visibile" Type="Boolean" />
+    <Property Name="isDefault" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Configuratori">
+    <Key>
+      <PropertyRef Name="IDConfiguratori" />
+    </Key>
+    <Property Name="IDConfiguratori" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NomePacchetto" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Template" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Note" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="DataInizioValidita" Type="DateTime" Precision="3" />
+    <Property Name="DataFineValidita" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="CostiTrasporto">
+    <Key>
+      <PropertyRef Name="Provincia" />
+    </Key>
+    <Property Name="Provincia" Type="String" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="Costo" Type="Decimal" Precision="18" Scale="3" />
+  </EntityType>
+  <EntityType Name="dbRef_Dettaglio">
+    <Key>
+      <PropertyRef Name="IDContatore" />
+    </Key>
+    <Property Name="IDContatore" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDPrezzo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Descrizione" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="RiferimentoPadre" Type="Int32" />
+    <Property Name="Prezzo" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="NoteTecniche" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+    <Property Name="Famiglia" Type="Int32" />
+    <Property Name="FormulaExcel" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="FormulaFast" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="dbRef_Dettaglio_Storico">
+    <Key>
+      <PropertyRef Name="IdPubblicazione" />
+    </Key>
+    <Property Name="IdPubblicazione" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DataPubblicazione" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="KaiPubblicazione" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="IDContatore" Type="Int32" Nullable="false" />
+    <Property Name="IDPrezzo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Descrizione" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="RiferimentoPadre" Type="Int32" />
+    <Property Name="Prezzo" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="NoteTecniche" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+    <Property Name="Famiglia" Type="Int32" />
+  </EntityType>
+  <EntityType Name="dbRef_Listino">
+    <Key>
+      <PropertyRef Name="IDPrezzo" />
+    </Key>
+    <Property Name="IDPrezzo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDNamespace" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ExcelCella" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Valore" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="RefVarType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Note" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+    <Property Name="NoteTecniche" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+    <Property Name="DataModifica" Type="DateTime" Precision="3" />
+    <Property Name="Famiglia" Type="Int16" />
+    <Property Name="Operatore" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FormulaExcel" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="FormulaFast" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="dbRef_Listino_Storico">
+    <Key>
+      <PropertyRef Name="IdPubblicazione" />
+    </Key>
+    <Property Name="IdPubblicazione" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DataPubblicazione" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="KaiPubblicazione" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="IDPrezzo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDNamespace" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ExcelCella" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Valore" Type="Double" />
+    <Property Name="Valore_vecchio" Type="Single" />
+    <Property Name="RefVarType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Note" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+    <Property Name="NoteTecniche" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+    <Property Name="DataModifica" Type="DateTime" Precision="3" />
+    <Property Name="Famiglia" Type="Int16" />
+    <Property Name="Operatore" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Depliants">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Codice" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Revisione" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Descrizione" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Thumbnail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Immagine" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Ordinamento" Type="Int32" />
+    <Property Name="FuoriCorso" Type="Int16" />
+  </EntityType>
+  <EntityType Name="Depliants_Trace">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Depliant_Id" Type="Int32" Nullable="false" />
+    <Property Name="Qta" Type="Int32" Nullable="false" />
+    <Property Name="dataRichiesta" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="qtaElargita" Type="Int32" />
+    <Property Name="status" Type="Int16" />
+    <Property Name="id_Richiesta" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Depliants_Trace_Elenco">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="data" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Richiedente_Kai" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="numeroRichiesta" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DepliantsStatusElenco">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descrizione" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="DepliantsStatusRichieste">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descrizione" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="DescrizioniLavori">
+    <Key>
+      <PropertyRef Name="idLavoro" />
+    </Key>
+    <Property Name="idLavoro" Type="Int32" Nullable="false" />
+    <Property Name="Descrizione" Type="String" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Documenti">
+    <Key>
+      <PropertyRef Name="Classe" />
+      <PropertyRef Name="CodiceFAST" />
+    </Key>
+    <Property Name="Classe" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CodiceFAST" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PathName" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="Titolo" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="DTSEBTasks">
+    <Key>
+      <PropertyRef Name="idTask" />
+    </Key>
+    <Property Name="idTask" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idLavoro" Type="Int32" Nullable="false" />
+    <Property Name="idOfferta" Type="Int32" Nullable="false" />
+    <Property Name="equipment_number" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="kai_richiedente" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="nome_richiedente" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="descrizione" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="data_richiesta" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="data_completamento" Type="DateTime" Precision="3" />
+    <Property Name="kai_esecutore" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="nome_esecutore" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="annullato" Type="Int16" />
+    <Property Name="commenti" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="EDMSData">
+    <Key>
+      <PropertyRef Name="D_doc" />
+    </Key>
+    <Property Name="D_doc" Type="String" Nullable="false" MaxLength="16" FixedLength="true" Unicode="false" />
+    <Property Name="D_owner_org" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="D_current_state" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="D_create_time" Type="DateTime" Precision="3" />
+    <Property Name="D_create_user" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="D_attr_mod_user" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="D_current_versions" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="DV_version" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="DV_current_state" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="DV_elev_id" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="DV_elev_sap" Type="String" MaxLength="8" FixedLength="true" Unicode="false" />
+    <Property Name="DV_elev_custname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DV_elev_custref" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DV_elev_city" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DV_elev_street" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DV_elev_building" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DV_fl_branch" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="DV_report_date" Type="DateTime" Precision="3" />
+    <Property Name="DV_handled_by" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DV_serv_comp" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="DV_man_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DV_man_year" Type="Int16" />
+    <Property Name="DV_stops_nb" Type="Int16" />
+    <Property Name="DV_landing_doors" Type="Byte" />
+    <Property Name="DV_car_load" Type="Int16" />
+    <Property Name="DV_speed" Type="Decimal" Precision="4" Scale="0" />
+    <Property Name="DV_travhei" Type="Double" />
+    <Property Name="DV_subcategory" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="DV_persons_nb" Type="Int16" />
+    <Property Name="DV_scenic" Type="Byte" />
+    <Property Name="DV_group_size" Type="Byte" />
+    <Property Name="DV_ropediam" Type="Double" />
+    <Property Name="DV_ropepcs" Type="Int16" />
+    <Property Name="DV_ropelen" Type="Double" />
+    <Property Name="DV_capacity" Type="Double" />
+    <Property Name="DV_current" Type="Double" />
+    <Property Name="DV_supply_v" Type="Int16" />
+    <Property Name="DV_ropsusp" Type="Byte" />
+    <Property Name="DV_buildseg" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="DV_macmodel" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="DV_macmodyear" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_macrope" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="DV_macdefcon" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_piston_diameter" Type="Double" />
+    <Property Name="DV_pipe_size" Type="Double" />
+    <Property Name="DV_def_con" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_conmodel" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="DV_conmodyear" Type="Int16" />
+    <Property Name="DV_contype" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_drimodel" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_condefcon" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_ldomodel" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_ldomodyear" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_ldolocktype" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_dootype" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_dooclosys" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_ldodefcon" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_cdomodel" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_cdomodyear" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_cdotype" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_cdodefcon" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_lsibuttype" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_lsidefcon" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_csibuttype" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_csidefcon" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_cc_type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_acc_ldosigreq" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_acc_carsigreq" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_acc_handrail" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_acc_mirror" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_shaft_ww" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_shaft_wd" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_acc_carwidth" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_acc_cardepth" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_acc_doorpos" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_acc_doorwidtha" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_acc_doorwidthb" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_acc_doorwidthc" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_acc_doorwidthd" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_shaft_lphmm" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_shaft_lshmm" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_svc_concd" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_svc_concf" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_svc_concw" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_svc_conldm" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_svc_conldo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_svc_conill" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_cc_type_1" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_r1" Type="Byte" />
+    <Property Name="DV_r19" Type="Byte" />
+    <Property Name="DV_r20" Type="Byte" />
+    <Property Name="DV_r21" Type="Byte" />
+    <Property Name="DV_r22" Type="Byte" />
+    <Property Name="DV_r23" Type="Byte" />
+    <Property Name="DV_r24a" Type="Byte" />
+    <Property Name="DV_r47" Type="Byte" />
+    <Property Name="DV_r48" Type="Byte" />
+    <Property Name="DV_r49" Type="Byte" />
+    <Property Name="DV_r53a" Type="Byte" />
+    <Property Name="DV_r53b" Type="Byte" />
+    <Property Name="DV_r60a" Type="Byte" />
+    <Property Name="DV_r62" Type="Byte" />
+    <Property Name="DV_r64" Type="Byte" />
+    <Property Name="DV_r66a" Type="Byte" />
+    <Property Name="DV_r67" Type="Byte" />
+    <Property Name="DV_r68" Type="Byte" />
+    <Property Name="DV_r69" Type="Byte" />
+    <Property Name="DV_r72" Type="Byte" />
+    <Property Name="DV_r74" Type="Byte" />
+    <Property Name="DV_r60b" Type="Byte" />
+    <Property Name="DV_r61" Type="Byte" />
+    <Property Name="DV_r65a" Type="Byte" />
+    <Property Name="DV_r65b" Type="Byte" />
+    <Property Name="DV_r2" Type="Byte" />
+    <Property Name="DV_r3" Type="Byte" />
+    <Property Name="DV_r4" Type="Byte" />
+    <Property Name="DV_r5" Type="Byte" />
+    <Property Name="DV_r30a" Type="Byte" />
+    <Property Name="DV_r30b" Type="Byte" />
+    <Property Name="DV_r38" Type="Byte" />
+    <Property Name="DV_r39" Type="Byte" />
+    <Property Name="DV_r40" Type="Byte" />
+    <Property Name="DV_r44" Type="Byte" />
+    <Property Name="DV_r45" Type="Byte" />
+    <Property Name="DV_r46" Type="Byte" />
+    <Property Name="DV_r59" Type="Byte" />
+    <Property Name="DV_r71" Type="Byte" />
+    <Property Name="DV_r73" Type="Byte" />
+    <Property Name="DV_r41" Type="Byte" />
+    <Property Name="DV_r42" Type="Byte" />
+    <Property Name="DV_r43" Type="Byte" />
+    <Property Name="DV_r50a" Type="Byte" />
+    <Property Name="DV_r50b" Type="Byte" />
+    <Property Name="DV_r52" Type="Byte" />
+    <Property Name="DV_r57" Type="Byte" />
+    <Property Name="DV_r63" Type="Byte" />
+    <Property Name="DV_r70a" Type="Byte" />
+    <Property Name="DV_r70b" Type="Byte" />
+    <Property Name="DV_r54a" Type="Byte" />
+    <Property Name="DV_r54b" Type="Byte" />
+    <Property Name="DV_r8" Type="Byte" />
+    <Property Name="DV_r9" Type="Byte" />
+    <Property Name="DV_r25" Type="Byte" />
+    <Property Name="DV_r26" Type="Byte" />
+    <Property Name="DV_r27" Type="Byte" />
+    <Property Name="DV_r28" Type="Byte" />
+    <Property Name="DV_r29" Type="Byte" />
+    <Property Name="DV_r31" Type="Byte" />
+    <Property Name="DV_r32" Type="Byte" />
+    <Property Name="DV_r33" Type="Byte" />
+    <Property Name="DV_r34" Type="Byte" />
+    <Property Name="DV_r35" Type="Byte" />
+    <Property Name="DV_r36" Type="Byte" />
+    <Property Name="DV_r37" Type="Byte" />
+    <Property Name="DV_r66b" Type="Byte" />
+    <Property Name="DV_r6" Type="Byte" />
+    <Property Name="DV_r7" Type="Byte" />
+    <Property Name="DV_r10" Type="Byte" />
+    <Property Name="DV_r11" Type="Byte" />
+    <Property Name="DV_r12" Type="Byte" />
+    <Property Name="DV_r13" Type="Byte" />
+    <Property Name="DV_r14" Type="Byte" />
+    <Property Name="DV_r15" Type="Byte" />
+    <Property Name="DV_r16" Type="Byte" />
+    <Property Name="DV_r17" Type="Byte" />
+    <Property Name="DV_r18" Type="Byte" />
+    <Property Name="DV_r24b" Type="Byte" />
+    <Property Name="DV_r51" Type="Byte" />
+    <Property Name="DV_r55" Type="Byte" />
+    <Property Name="DV_r56" Type="Byte" />
+    <Property Name="DV_r58" Type="Byte" />
+  </EntityType>
+  <EntityType Name="extractKIT">
+    <Key>
+      <PropertyRef Name="D_doc" />
+    </Key>
+    <Property Name="D_doc" Type="String" Nullable="false" MaxLength="16" FixedLength="true" Unicode="false" />
+    <Property Name="D_owner_org" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="D_current_state" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="D_create_time" Type="Int64" />
+    <Property Name="D_create_time1" Type="DateTime" Precision="3" />
+    <Property Name="D_create_user" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="D_attr_mod_user" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="D_current_versions" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="DV_version" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="DV_current_state" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="DV_elev_id" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="DV_elev_sap" Type="String" MaxLength="8" FixedLength="true" Unicode="false" />
+    <Property Name="DV_elev_custname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DV_elev_custref" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DV_elev_city" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DV_elev_street" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DV_elev_building" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DV_fl_branch" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="DV_report_date" Type="Int64" />
+    <Property Name="DV_report_date1" Type="DateTime" Precision="3" />
+    <Property Name="DV_handled_by" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DV_serv_comp" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="DV_man_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DV_man_year" Type="Int16" />
+    <Property Name="DV_stops_nb" Type="Int16" />
+    <Property Name="DV_landing_doors" Type="Byte" />
+    <Property Name="DV_car_load" Type="Int16" />
+    <Property Name="DV_speed" Type="Decimal" Precision="4" Scale="0" />
+    <Property Name="DV_travhei" Type="Double" />
+    <Property Name="DV_subcategory" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="DV_persons_nb" Type="Int16" />
+    <Property Name="DV_scenic" Type="Byte" />
+    <Property Name="DV_group_size" Type="Byte" />
+    <Property Name="DV_ropediam" Type="Double" />
+    <Property Name="DV_ropepcs" Type="Int16" />
+    <Property Name="DV_ropelen" Type="Double" />
+    <Property Name="DV_capacity" Type="Double" />
+    <Property Name="DV_current" Type="Double" />
+    <Property Name="DV_supply_v" Type="Int16" />
+    <Property Name="DV_ropsusp" Type="Byte" />
+    <Property Name="DV_buildseg" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="DV_macmodel" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="DV_macmodyear" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_macrope" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="DV_macdefcon" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_piston_diameter" Type="Double" />
+    <Property Name="DV_pipe_size" Type="Double" />
+    <Property Name="DV_def_con" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_conmodel" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="DV_conmodyear" Type="Int16" />
+    <Property Name="DV_contype" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_drimodel" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_condefcon" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_ldomodel" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_ldomodyear" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_ldolocktype" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_dootype" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_dooclosys" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_ldodefcon" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_cdomodel" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_cdomodyear" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_cdotype" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_cdodefcon" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_lsibuttype" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_lsidefcon" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_csibuttype" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_csidefcon" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_cc_type" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_acc_ldosigreq" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_acc_carsigreq" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_acc_handrail" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_acc_mirror" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_shaft_ww" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_shaft_wd" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_acc_carwidth" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_acc_cardepth" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_acc_doorpos" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_acc_doorwidtha" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_acc_doorwidthb" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_acc_doorwidthc" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_acc_doorwidthd" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_shaft_lphmm" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_shaft_lshmm" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_svc_concd" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_svc_concf" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_svc_concw" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_svc_conldm" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_svc_conldo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_svc_conill" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_cc_type_1" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="DV_r1" Type="Byte" />
+    <Property Name="DV_r19" Type="Byte" />
+    <Property Name="DV_r20" Type="Byte" />
+    <Property Name="DV_r21" Type="Byte" />
+    <Property Name="DV_r22" Type="Byte" />
+    <Property Name="DV_r23" Type="Byte" />
+    <Property Name="DV_r24a" Type="Byte" />
+    <Property Name="DV_r47" Type="Byte" />
+    <Property Name="DV_r48" Type="Byte" />
+    <Property Name="DV_r49" Type="Byte" />
+    <Property Name="DV_r53a" Type="Byte" />
+    <Property Name="DV_r53b" Type="Byte" />
+    <Property Name="DV_r60a" Type="Byte" />
+    <Property Name="DV_r62" Type="Byte" />
+    <Property Name="DV_r64" Type="Byte" />
+    <Property Name="DV_r66a" Type="Byte" />
+    <Property Name="DV_r67" Type="Byte" />
+    <Property Name="DV_r68" Type="Byte" />
+    <Property Name="DV_r69" Type="Byte" />
+    <Property Name="DV_r72" Type="Byte" />
+    <Property Name="DV_r74" Type="Byte" />
+    <Property Name="DV_r60b" Type="Byte" />
+    <Property Name="DV_r61" Type="Byte" />
+    <Property Name="DV_r65a" Type="Byte" />
+    <Property Name="DV_r65b" Type="Byte" />
+    <Property Name="DV_r2" Type="Byte" />
+    <Property Name="DV_r3" Type="Byte" />
+    <Property Name="DV_r4" Type="Byte" />
+    <Property Name="DV_r5" Type="Byte" />
+    <Property Name="DV_r30a" Type="Byte" />
+    <Property Name="DV_r30b" Type="Byte" />
+    <Property Name="DV_r38" Type="Byte" />
+    <Property Name="DV_r39" Type="Byte" />
+    <Property Name="DV_r40" Type="Byte" />
+    <Property Name="DV_r44" Type="Byte" />
+    <Property Name="DV_r45" Type="Byte" />
+    <Property Name="DV_r46" Type="Byte" />
+    <Property Name="DV_r59" Type="Byte" />
+    <Property Name="DV_r71" Type="Byte" />
+    <Property Name="DV_r73" Type="Byte" />
+    <Property Name="DV_r41" Type="Byte" />
+    <Property Name="DV_r42" Type="Byte" />
+    <Property Name="DV_r43" Type="Byte" />
+    <Property Name="DV_r50a" Type="Byte" />
+    <Property Name="DV_r50b" Type="Byte" />
+    <Property Name="DV_r52" Type="Byte" />
+    <Property Name="DV_r57" Type="Byte" />
+    <Property Name="DV_r63" Type="Byte" />
+    <Property Name="DV_r70a" Type="Byte" />
+    <Property Name="DV_r70b" Type="Byte" />
+    <Property Name="DV_r54a" Type="Byte" />
+    <Property Name="DV_r54b" Type="Byte" />
+    <Property Name="DV_r8" Type="Byte" />
+    <Property Name="DV_r9" Type="Byte" />
+    <Property Name="DV_r25" Type="Byte" />
+    <Property Name="DV_r26" Type="Byte" />
+    <Property Name="DV_r27" Type="Byte" />
+    <Property Name="DV_r28" Type="Byte" />
+    <Property Name="DV_r29" Type="Byte" />
+    <Property Name="DV_r31" Type="Byte" />
+    <Property Name="DV_r32" Type="Byte" />
+    <Property Name="DV_r33" Type="Byte" />
+    <Property Name="DV_r34" Type="Byte" />
+    <Property Name="DV_r35" Type="Byte" />
+    <Property Name="DV_r36" Type="Byte" />
+    <Property Name="DV_r37" Type="Byte" />
+    <Property Name="DV_r66b" Type="Byte" />
+    <Property Name="DV_r6" Type="Byte" />
+    <Property Name="DV_r7" Type="Byte" />
+    <Property Name="DV_r10" Type="Byte" />
+    <Property Name="DV_r11" Type="Byte" />
+    <Property Name="DV_r12" Type="Byte" />
+    <Property Name="DV_r13" Type="Byte" />
+    <Property Name="DV_r14" Type="Byte" />
+    <Property Name="DV_r15" Type="Byte" />
+    <Property Name="DV_r16" Type="Byte" />
+    <Property Name="DV_r17" Type="Byte" />
+    <Property Name="DV_r18" Type="Byte" />
+    <Property Name="DV_r24b" Type="Byte" />
+    <Property Name="DV_r51" Type="Byte" />
+    <Property Name="DV_r55" Type="Byte" />
+    <Property Name="DV_r56" Type="Byte" />
+    <Property Name="DV_r58" Type="Byte" />
+    <Property Name="Col172" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="fastLog">
+    <Key>
+      <PropertyRef Name="logID" />
+    </Key>
+    <Property Name="logID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="logtTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="action" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+    <Property Name="details" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="idGenerator">
+    <Key>
+      <PropertyRef Name="idGen" />
+    </Key>
+    <Property Name="idGen" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pfx" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Impianti">
+    <Key>
+      <PropertyRef Name="EQUIPMENT_NUMBER" />
+    </Key>
+    <Property Name="EQUIPMENT_NUMBER" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="NumImpianto" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Tipo" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="PrefissoIndirizzo" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="Indirizzo" Type="String" MaxLength="35" FixedLength="false" Unicode="false" />
+    <Property Name="Civico" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CAP" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Localita" Type="String" MaxLength="35" FixedLength="false" Unicode="false" />
+    <Property Name="Paese" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="Provincia" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="Corsa" Type="Single" />
+    <Property Name="Fermate" Type="Int32" />
+    <Property Name="Portata" Type="Int32" />
+    <Property Name="Azionamento" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="Manovra" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="xmlDetails" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IDParty" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="IDVenditore" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="Distretto" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="DataRichiestaAllineamento" Type="DateTime" Precision="3" />
+    <Property Name="DataAllineamento" Type="DateTime" Precision="3" />
+    <Property Name="AccessiCabina" Type="Int16" />
+    <Property Name="Velocita" Type="Double" />
+    <Property Name="Sollevamento" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="Molteplicita" Type="Int32" />
+    <Property Name="TipoPortePiano" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="Esecuzione" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="GuideCTP" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="DataCollaudo" Type="DateTime" Precision="3" />
+    <Property Name="DataRichiestaCreazioneSAP" Type="DateTime" Precision="3" />
+    <Property Name="DataCreazioneSAP" Type="DateTime" Precision="3" />
+    <Property Name="CreatoSAPDa" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Parties" Relationship="FASTModel.FK_Impianti_Parties" FromRole="Impianti" ToRole="Parties" />
+    <NavigationProperty Name="ImpiantiInOfferte" Relationship="FASTModel.FK_ImpiantiInOfferte_Impianti" FromRole="Impianti" ToRole="ImpiantiInOfferte" />
+    <NavigationProperty Name="QUOTAZIONI" Relationship="FASTModel.FK_QUOTAZIONI_impianti" FromRole="Impianti" ToRole="QUOTAZIONI" />
+    <Property Name="DataLastUpd" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="ImpiantiInOfferte">
+    <Key>
+      <PropertyRef Name="IDOfferta" />
+      <PropertyRef Name="equipment_number" />
+    </Key>
+    <Property Name="IDOfferta" Type="Int32" Nullable="false" />
+    <Property Name="equipment_number" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="detLocalizzazione" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="note" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ubicazioneSpecifica" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="totRspDaJobFile" Type="Single" />
+    <NavigationProperty Name="Impianti" Relationship="FASTModel.FK_ImpiantiInOfferte_Impianti" FromRole="ImpiantiInOfferte" ToRole="Impianti" />
+    <NavigationProperty Name="Offerte" Relationship="FASTModel.FK_ImpiantiInOfferte_Offerte" FromRole="ImpiantiInOfferte" ToRole="Offerte" />
+    <NavigationProperty Name="LavoriInOfferte" Relationship="FASTModel.FK_LavoriInOfferte_ImpiantiInOfferte" FromRole="ImpiantiInOfferte" ToRole="LavoriInOfferte" />
+  </EntityType>
+  <EntityType Name="LavoriACaricoCliente">
+    <Key>
+      <PropertyRef Name="CodiceFast" />
+    </Key>
+    <Property Name="CodiceFast" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Titolo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Descrizione" Type="String" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="ApplyToCat" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="ApplyToSubCat" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="Inventore" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="LavoriInOfferte">
+    <Key>
+      <PropertyRef Name="idLavoro" />
+    </Key>
+    <Property Name="idLavoro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDOfferta" Type="Int32" Nullable="false" />
+    <Property Name="equipment_number" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="tpLavoro" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="CodiceFast" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CostoMaterialiInterCompany" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="CostoMaterialiIntraCompany" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="CostoMaterialiEsterni" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="OreManodopera" Type="Single" Nullable="false" />
+    <Property Name="OreManovalanza" Type="Single" Nullable="false" />
+    <Property Name="xmlDetails" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Prezzo" Type="Single" Nullable="false" />
+    <Property Name="Quantita" Type="Single" />
+    <Property Name="DataRichiestaQuotazione" Type="DateTime" Precision="3" />
+    <Property Name="DataQuotazione" Type="DateTime" Precision="3" />
+    <Property Name="CodiceSAP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="flgVariante" Type="Int32" />
+    <Property Name="LeadTime" Type="Int32" />
+    <Property Name="ExtraCosti" Type="Double" />
+    <Property Name="ExtraOre" Type="Double" />
+    <Property Name="categoria" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Name="processo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="cm2" Type="Single" />
+    <Property Name="flgACaricoKone" Type="Int32" />
+    <Property Name="PrezzoLibero" Type="Int32" />
+    <Property Name="revisione" Type="Int32" />
+    <Property Name="Descrizione" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="fhr" Type="Single" />
+    <Property Name="CM2DiPartenza" Type="Single" />
+    <Property Name="PrezzoAcq" Type="Single" />
+    <Property Name="cm2Acq" Type="Single" />
+    <Property Name="IDOrdine" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="ImpiantiInOfferte" Relationship="FASTModel.FK_LavoriInOfferte_ImpiantiInOfferte" FromRole="LavoriInOfferte" ToRole="ImpiantiInOfferte" />
+    <Property Name="PrezzoMateriali" Type="Single" />
+  </EntityType>
+  <EntityType Name="LavoriNonCOdificati">
+    <Key>
+      <PropertyRef Name="CodiceFast" />
+    </Key>
+    <Property Name="CodiceFast" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Titolo" Type="String" Nullable="false" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="Descrizione" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="OreManovalanza" Type="Single" />
+    <Property Name="OreManodopera" Type="Single" />
+    <Property Name="CostoMaterialiInterCompany" Type="Single" />
+    <Property Name="CostoMaterialiIntraCompany" Type="Single" />
+    <Property Name="CostoMaterialiExtraCompany" Type="Single" />
+    <Property Name="ApplyToCat" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="ApplyToSubCat" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="Inventore" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="categoria" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Name="LeadTime" Type="Int32" />
+    <Property Name="VerificaStraordinaria" Type="Int32" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Log">
+    <Key>
+      <PropertyRef Name="LogID" />
+    </Key>
+    <Property Name="LogID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EventID" Type="Int32" />
+    <Property Name="Priority" Type="Int32" Nullable="false" />
+    <Property Name="Severity" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Timestamp" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="MachineName" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="AppDomainName" Type="String" Nullable="false" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="ProcessID" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ProcessName" Type="String" Nullable="false" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="ThreadName" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="Win32ThreadId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Message" Type="String" MaxLength="1500" FixedLength="false" Unicode="true" />
+    <Property Name="FormattedMessage" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="CategoryLog" Relationship="FASTModel.FK_CategoryLog_Log" FromRole="Log" ToRole="CategoryLog" />
+  </EntityType>
+  <EntityType Name="LookupTables">
+    <Key>
+      <PropertyRef Name="tLookupGroup" />
+      <PropertyRef Name="tLookupSeed" />
+    </Key>
+    <Property Name="tLookupGroup" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="tLookupSeed" Type="String" Nullable="false" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="tLookupResult" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="sortKey" Type="Int16" />
+  </EntityType>
+  <EntityType Name="Mail">
+    <Key>
+      <PropertyRef Name="idMail" />
+    </Key>
+    <Property Name="idMail" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idOfferta" Type="Int32" Nullable="false" />
+    <Property Name="tipoMail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="inviataA" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="dataInvio" Type="DateTime" Precision="3" />
+    <Property Name="inviataDa" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="mailTo" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="mailCC" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="mailBCC" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="mailSubject" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="mailBody" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ricevutaIl" Type="DateTime" Precision="3" />
+    <Property Name="note" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="revisione" Type="Int32" />
+    <Property Name="kaiUtente" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="MilestonePianoFatt">
+    <Key>
+      <PropertyRef Name="CodicePianoFatturazione" />
+      <PropertyRef Name="CodiceMilestone" />
+    </Key>
+    <Property Name="CodicePianoFatturazione" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="CodiceMilestone" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Percentuale" Type="Int32" Nullable="false" />
+    <Property Name="ModPag" Type="String" Nullable="false" MaxLength="4" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="ModificaOrdine">
+    <Key>
+      <PropertyRef Name="IDModifica" />
+    </Key>
+    <Property Name="IDModifica" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idOfferta" Type="Int32" Nullable="false" />
+    <Property Name="Motivazione" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="DataInizioModifica" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IniziataDa" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="RSPPrecedente" Type="Double" />
+    <Property Name="CM2Precedente" Type="Double" />
+    <Property Name="MaterialiPrecedente" Type="Double" />
+    <Property Name="OrePrecedente" Type="Double" />
+    <Property Name="DataFineModifica" Type="DateTime" Precision="3" />
+    <Property Name="FinitaDa" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="RSPModifica" Type="Double" />
+    <Property Name="RSPAttuale" Type="Double" />
+    <Property Name="CM2Attuale" Type="Double" />
+    <Property Name="MaterialiAttuale" Type="Double" />
+    <Property Name="OreAttuale" Type="Double" />
+  </EntityType>
+  <EntityType Name="News">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="data" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="titolo" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="News1" Type="String" Nullable="false" MaxLength="8000" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Offerte">
+    <Key>
+      <PropertyRef Name="IDOfferta" />
+    </Key>
+    <Property Name="IDOfferta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NumeroOfferta" Type="String" Nullable="false" MaxLength="18" FixedLength="true" Unicode="false" />
+    <Property Name="PartyID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="BillTo_Party" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ShipTo_Party" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Payer_Party" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="DataCreazione" Type="DateTime" Precision="3" />
+    <Property Name="Validita" Type="Int32" Nullable="false" />
+    <Property Name="DataPrevistaChiusura" Type="DateTime" Precision="3" />
+    <Property Name="RSPValore" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="CM2Percento" Type="Single" />
+    <Property Name="StatusCorrente" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="CategoriaPrevalente" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Name="ProbabilitaAggiudicazione" Type="Single" />
+    <Property Name="DataEsitazione" Type="DateTime" Precision="3" />
+    <Property Name="AcquisitaDa" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ValoreAcquisizione" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="CM2PercentoAcquisizione" Type="Single" />
+    <Property Name="CodiceTerminiFatturazione" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="PenalePercento" Type="Single" />
+    <Property Name="RitenutaGaranziaPercento" Type="Single" />
+    <Property Name="FidejussionePercento" Type="Single" />
+    <Property Name="AliquotaIva" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="IDEnte" Type="String" Nullable="false" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="IDVenditore" Type="String" Nullable="false" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Name="progressivo" Type="Int32" Nullable="false" />
+    <Property Name="Revisione" Type="Int32" />
+    <Property Name="xmlDetails" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="DataRichiestaQuotazione" Type="DateTime" Precision="3" />
+    <Property Name="DataQuotazione" Type="DateTime" Precision="3" />
+    <Property Name="DataEmissioneOfferta" Type="DateTime" Precision="3" />
+    <Property Name="DataEsportazione" Type="DateTime" Precision="3" />
+    <Property Name="DataEmissioneCO" Type="DateTime" Precision="3" />
+    <Property Name="NumeroOrdineSAP" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="ModalitaPagamento" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="gara" Type="Int32" />
+    <Property Name="entepubblico" Type="Int32" />
+    <Property Name="CausaleEmissione" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="CausaleAnnullamento" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="listinoCliente" Type="Int32" />
+    <Property Name="Opportunity" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="DataAggPartyDaOpp" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="ImpiantiInOfferte" Relationship="FASTModel.FK_ImpiantiInOfferte_Offerte" FromRole="Offerte" ToRole="ImpiantiInOfferte" />
+    <NavigationProperty Name="AUTORIZZAZIONI" Relationship="FASTModel.FK_AUTORIZZAZIONI_Offerte" FromRole="Offerte" ToRole="AUTORIZZAZIONI" />
+    <NavigationProperty Name="Parties" Relationship="FASTModel.FK_Offerte_Parties" FromRole="Offerte" ToRole="Parties" />
+    <NavigationProperty Name="OneriOfferte" Relationship="FASTModel.FK_OneriOfferte_Offerte" FromRole="Offerte" ToRole="OneriOfferte" />
+    <NavigationProperty Name="PARERI" Relationship="FASTModel.FK_PARERI_Offerte" FromRole="Offerte" ToRole="PARERI" />
+    <NavigationProperty Name="PianoFatturazione" Relationship="FASTModel.FK_PianoFatturazione_Offerte" FromRole="Offerte" ToRole="PianoFatturazione" />
+    <NavigationProperty Name="QUOTAZIONI" Relationship="FASTModel.FK_QUOTAZIONI_Offerte" FromRole="Offerte" ToRole="QUOTAZIONI" />
+    <Property Name="Location_Party" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="OneriCompresiEsclusi">
+    <Key>
+      <PropertyRef Name="idOnere" />
+    </Key>
+    <Property Name="idOnere" Type="Int32" Nullable="false" />
+    <Property Name="Descrizione" Type="String" Nullable="false" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="defaultCOmpreso" Type="Int32" Nullable="false" />
+    <Property Name="visualizzaInOfferta" Type="Int32" Nullable="false" />
+    <Property Name="Categoria" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Name="Sequence" Type="Int16" Nullable="false" />
+    <Property Name="codiceSAP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="OneriOfferte">
+    <Key>
+      <PropertyRef Name="IDOfferta" />
+      <PropertyRef Name="IDOnere" />
+    </Key>
+    <Property Name="IDOfferta" Type="Int32" Nullable="false" />
+    <Property Name="IDOnere" Type="Int32" Nullable="false" />
+    <Property Name="flgCompreso" Type="Int16" Nullable="false" />
+    <Property Name="MaterialiIntraCompany" Type="Double" />
+    <Property Name="MaterialiExtraCompany" Type="Double" />
+    <Property Name="MaterialiInterCOmpany" Type="Double" />
+    <Property Name="OreManovalanza" Type="Double" />
+    <Property Name="OreManodopera" Type="Double" />
+    <Property Name="flgMostraInOfferta" Type="Int16" />
+    <Property Name="Titolo" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="Descrizione" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Offerte" Relationship="FASTModel.FK_OneriOfferte_Offerte" FromRole="OneriOfferte" ToRole="Offerte" />
+  </EntityType>
+  <EntityType Name="Pacchetti">
+    <Key>
+      <PropertyRef Name="CodiceFAST" />
+    </Key>
+    <Property Name="CodiceFAST" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Descrizione" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="leadTime" Type="Int32" />
+    <Property Name="flgPacchettoLocale" Type="Int32" />
+    <Property Name="applyToCat" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="applyToSubCat" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="flgVerificaStraordinaria" Type="Int32" />
+    <Property Name="extraMaterialiIntraCompany" Type="Single" />
+    <Property Name="extraMaterialiExtraCompany" Type="Single" />
+    <Property Name="extraMaterialiInterCompany" Type="Single" />
+    <Property Name="extraOreManodopera" Type="Single" />
+    <Property Name="moltiplicatoreMateriali" Type="Single" />
+    <Property Name="categoria" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Name="processo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="cm2" Type="Single" />
+    <Property Name="revisione" Type="Int32" />
+    <Property Name="dataFuoriCorso" Type="DateTime" Precision="3" />
+    <Property Name="tipologia" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Parametri">
+    <Key>
+      <PropertyRef Name="paramName" />
+    </Key>
+    <Property Name="paramName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="paramType" Type="String" Nullable="false" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="paramValue" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="descrizione" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Parties">
+    <Key>
+      <PropertyRef Name="IDParty" />
+    </Key>
+    <Property Name="IDParty" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="RagioneSociale" Type="String" Nullable="false" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="PrefissoIndirizzo" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="Indirizzo" Type="String" MaxLength="35" FixedLength="false" Unicode="false" />
+    <Property Name="Civico" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+    <Property Name="CAP" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="Localita" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Paese" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="Provincia" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="Fax" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="Contatto" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="PartitaIVA" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Name="CodiceFiscale" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="ABI" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="CAB" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="numeroCC" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="Classe" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="Categoria" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="xmlDetails" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IDVenditore" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="Distretto" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="DataRichiestaAllineamento" Type="DateTime" Precision="3" />
+    <Property Name="DataAllineamento" Type="DateTime" Precision="3" />
+    <Property Name="GruppoCliente" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="modalitaFatturazione" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="modalitaPagamento" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="ivaPagamento" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Impianti" Relationship="FASTModel.FK_Impianti_Parties" FromRole="Parties" ToRole="Impianti" />
+    <NavigationProperty Name="Offerte" Relationship="FASTModel.FK_Offerte_Parties" FromRole="Parties" ToRole="Offerte" />
+  </EntityType>
+  <EntityType Name="PianoFatturazione">
+    <Key>
+      <PropertyRef Name="idMilestone" />
+    </Key>
+    <Property Name="idOfferta" Type="Int32" Nullable="false" />
+    <Property Name="milestone" Type="String" Nullable="false" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="progressivo" Type="Int32" Nullable="false" />
+    <Property Name="data" Type="DateTime" Precision="3" />
+    <Property Name="percentuale" Type="Single" />
+    <Property Name="valore" Type="Double" />
+    <Property Name="termine" Type="String" Nullable="false" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="idMilestone" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Offerte" Relationship="FASTModel.FK_PianoFatturazione_Offerte" FromRole="PianoFatturazione" ToRole="Offerte" />
+  </EntityType>
+  <EntityType Name="Price">
+    <Key>
+      <PropertyRef Name="IDPrice" />
+    </Key>
+    <Property Name="IDPrice" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDConfiguratore" Type="Int32" Nullable="false" />
+    <Property Name="IDPriceGroup" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="Descr" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="ApplyTo" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="Debug" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Enabled" Type="Boolean" />
+    <Property Name="DefaultTag" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PriceGroup">
+    <Key>
+      <PropertyRef Name="IDPriceGroup" />
+    </Key>
+    <Property Name="IDPriceGroup" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDConfiguratore" Type="Int32" Nullable="false" />
+    <Property Name="Enabled" Type="Boolean" />
+    <Property Name="Descr" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="PriceItem">
+    <Key>
+      <PropertyRef Name="IDPriceItem" />
+    </Key>
+    <Property Name="IDPriceItem" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDConfiguratore" Type="Int32" Nullable="false" />
+    <Property Name="IDPriceGroup" Type="Int32" Nullable="false" />
+    <Property Name="IDPrice" Type="Int32" Nullable="false" />
+    <Property Name="Enabled" Type="Boolean" />
+    <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Kctref" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Tupla" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Formula" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="VersioneTupla" Type="Int32" />
+    <Property Name="FoglioListino" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CellaListino" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="NomeListino" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Provvigioni">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="sconto_min" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="sconto_MAX" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="provvigione" Type="Decimal" Precision="18" Scale="3" />
+  </EntityType>
+  <EntityType Name="Referenze">
+    <Key>
+      <PropertyRef Name="IDReferenza" />
+    </Key>
+    <Property Name="IDReferenza" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Template" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="categoria" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Name="MainPicture" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="TRPicture" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="BRPicture" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="Titolo" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="R1Sottotitolo" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="R2Sottotitolo" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="B1Titolo" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B1R1C1" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B1R1C2" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B1R2C1" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B1R2C2" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B1R3C1" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B1R3C2" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B1R4C1" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B1R4C2" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B1R5C1" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B1R5C2" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B1R6C1" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B1R6C2" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B2Titolo" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B2R1C1" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B2R1C2" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B2R2C1" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B2R2C2" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B2R3C1" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B2R3C2" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B2R4C1" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B2R4C2" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B2R5C1" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B2R5C2" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B2R6C1" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B2R6C2" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B3Titolo" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B3R1C1" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B3R1C2" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B3R2C1" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B3R2C2" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B3R3C1" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B3R3C2" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B3R4C1" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B3R4C2" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B3R5C1" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B3R5C2" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B3R6C1" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="B3R6C2" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ReportFinanziari">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NomeReport" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Livello" Type="Int16" Nullable="false" />
+    <Property Name="Area" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Distretto" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="Venditori" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Mese" Type="Int16" Nullable="false" />
+    <Property Name="Anno" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SAPCaratteristiche">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="NCSAP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CODPACCHETTO" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="XPATH" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="TLOOKUPGROUP" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="TerminiDiPagamento">
+    <Key>
+      <PropertyRef Name="CodiceTerminiPagamento" />
+    </Key>
+    <Property Name="CodiceTerminiPagamento" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="DescrizioneTerminiPagamento" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="TestoTerminiPagamento" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Abbuono" Type="Single" />
+  </EntityType>
+  <EntityType Name="Variabili">
+    <Key>
+      <PropertyRef Name="IDVariabili" />
+    </Key>
+    <Property Name="IDVariabili" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="XPath" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="IDConfiguratore" Type="Int32" />
+    <Property Name="NomeVariabile" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Quote" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="Rinominata" Type="Boolean" />
+    <Property Name="NomeVecchio" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="VariabiliPrice">
+    <Key>
+      <PropertyRef Name="IDVariabili" />
+      <PropertyRef Name="IDPrice" />
+    </Key>
+    <Property Name="IDVariabiliPrice" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDVariabili" Type="Int32" Nullable="false" />
+    <Property Name="IDPrice" Type="Int32" Nullable="false" />
+    <Property Name="Note" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="AUTORIZZAZIONI">
+    <Key>
+      <PropertyRef Name="idOfferta" />
+      <PropertyRef Name="tipoRichiesta" />
+    </Key>
+    <Property Name="idOfferta" Type="Int32" Nullable="false" />
+    <Property Name="tipoRichiesta" Type="String" Nullable="false" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Name="richiestaA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="dataRichiesta" Type="DateTime" Precision="3" />
+    <Property Name="AutorizzataDa" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="dataEsito" Type="DateTime" Precision="3" />
+    <Property Name="esito" Type="Int32" />
+    <Property Name="xmlDetails" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Offerte" Relationship="FASTModel.FK_AUTORIZZAZIONI_Offerte" FromRole="AUTORIZZAZIONI" ToRole="Offerte" />
+  </EntityType>
+  <EntityType Name="Cars_FURE">
+    <Key>
+      <PropertyRef Name="idCars" />
+    </Key>
+    <Property Name="idCars" Type="Int32" Nullable="false" />
+    <Property Name="Packet" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PacketVersion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Process" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Load" Type="Int32" />
+    <Property Name="Speed" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Entrance" Type="Int16" />
+    <Property Name="BB" Type="Int32" />
+    <Property Name="DD" Type="Int32" />
+    <Property Name="CTWSG" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Persons" Type="Int16" />
+    <Property Name="Door_Design" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Door_Model" Type="Int16" />
+    <Property Name="LL" Type="Int32" />
+    <Property Name="Gmin" Type="Int32" />
+    <Property Name="Gmax" Type="Int32" />
+    <Property Name="WWmin" Type="Int32" />
+    <Property Name="WWmax" Type="Int32" />
+    <Property Name="WDmin" Type="Int32" />
+    <Property Name="WDmax" Type="Int32" />
+    <Property Name="DO" Type="Int32" />
+    <Property Name="CXmin" Type="Int32" />
+    <Property Name="CXmax" Type="Int32" />
+    <Property Name="Machine_type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Guiderails_type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EN81_1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EN81_70" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EN81_72" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Pubel_92" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EN81_71" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Pubel_2003" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CW" Type="Int32" />
+    <Property Name="CW1" Type="Int32" />
+    <Property Name="DoorType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Cars_New">
+    <Key>
+      <PropertyRef Name="idCars" />
+    </Key>
+    <Property Name="idCars" Type="Int32" Nullable="false" />
+    <Property Name="Packet" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PacketVersion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Process" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Load" Type="Int32" />
+    <Property Name="Speed" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Entrance" Type="Int16" />
+    <Property Name="BB" Type="Int32" />
+    <Property Name="DD" Type="Int32" />
+    <Property Name="CTWSG" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Persons" Type="Int16" />
+    <Property Name="Door_Design" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Door_Model" Type="Int16" />
+    <Property Name="LL" Type="Int32" />
+    <Property Name="Gmin" Type="Int32" />
+    <Property Name="Gmax" Type="Int32" />
+    <Property Name="WWmin" Type="Int32" />
+    <Property Name="WWmax" Type="Int32" />
+    <Property Name="WDmin" Type="Int32" />
+    <Property Name="WDmax" Type="Int32" />
+    <Property Name="DO" Type="Int32" />
+    <Property Name="CXmin" Type="Int32" />
+    <Property Name="CXmax" Type="Int32" />
+    <Property Name="Machine_type" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Guiderails_type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EN81_1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EN81_70" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EN81_72" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Pubel_92" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EN81_71" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Pubel_2003" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CW" Type="Int32" />
+    <Property Name="CW1" Type="Int32" />
+    <Property Name="DoorType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="CFG_Servizi">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codice" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="descrizione" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ordinamento" Type="Int32" />
+    <Property Name="abilitato" Type="Boolean" />
+    <Property Name="visibile" Type="Boolean" />
+    <Property Name="isDefault" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="CFG_Versioni">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="abilitato" />
+      <PropertyRef Name="visibile" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="codice" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="descrizione" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ordinamento" Type="Int32" />
+    <Property Name="abilitato" Type="Boolean" Nullable="false" />
+    <Property Name="visibile" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DAT_SALES_GROUPS">
+    <Key>
+      <PropertyRef Name="Sales_group_code" />
+    </Key>
+    <Property Name="Sales_group_code" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="Sales_group_desc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Extr_date" Type="DateTime" Precision="3" />
+    <Property Name="Dt_upd_tab" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="DAT_SALES_OFFICE">
+    <Key>
+      <PropertyRef Name="sales_office_code" />
+    </Key>
+    <Property Name="sales_office_code" Type="String" Nullable="false" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="sales_office_desc" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="sales_office_area" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="sales_office_translation" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="sales_office_ubicazione" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="DAT_SALES_ORGANIZATION">
+    <Key>
+      <PropertyRef Name="sales_off_code" />
+      <PropertyRef Name="sales_group_code" />
+    </Key>
+    <Property Name="sales_off_code" Type="String" Nullable="false" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="sales_group_code" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="dbo_SAPCaratteristiche">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="NCSAP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CODPACCHETTO" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="XPATH" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TLOOKUPGROUP" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="id" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="dbRef_lookup_FamigliaCosto">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="Descrizione" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descrizione" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="dtproperties">
+    <Key>
+      <PropertyRef Name="property" />
+      <PropertyRef Name="version" />
+    </Key>
+    <Property Name="objectid" Type="Int32" />
+    <Property Name="property" Type="String" Nullable="false" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="value" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="uvalue" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="lvalue" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="version" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FastPorte_Lavori">
+    <Key>
+      <PropertyRef Name="CodiceFAST" />
+    </Key>
+    <Property Name="CodiceFAST" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Titolo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Descrizione" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="CodiceSAP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DataFineValidita" Type="DateTime" Precision="3" />
+    <Property Name="L1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="L2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="L3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="L4" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="materiali" Type="Double" />
+    <Property Name="ore" Type="Double" />
+    <Property Name="Documento" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="visibileDa" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="categoria" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="FastScaleTappeti_Lavori">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="CodiceFAST" />
+      <PropertyRef Name="Descrizione" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="CodiceFAST" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Titolo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Descrizione" Type="String" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="CodiceSAP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DataFineValidita" Type="DateTime" Precision="3" />
+    <Property Name="L1" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="L2" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="L3" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="L4" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="materiali" Type="Double" />
+    <Property Name="ore" Type="Double" />
+    <Property Name="Documento" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="visibileDa" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="categoria" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Name="unitaDiMisura" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="LavoriCodificati">
+    <Key>
+      <PropertyRef Name="CodiceFAST" />
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="CodiceFAST" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Titolo" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="CostoMateriali" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Ore" Type="Single" />
+    <Property Name="Efficienza" Type="Single" />
+    <Property Name="CodiceM2" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="Documento" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="ApplyToCat" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="ApplyToSubCat" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="leadTime" Type="Int32" />
+    <Property Name="CodiceSAP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="L1" Type="String" MaxLength="64" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="L2" Type="String" MaxLength="64" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="L3" Type="String" MaxLength="64" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="L4" Type="String" MaxLength="64" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="categoria" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Name="processo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="cm2" Type="Single" />
+    <Property Name="revisione" Type="Int32" />
+    <Property Name="dataFuoriCorso" Type="DateTime" Precision="3" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="LavoriCodificati2006">
+    <Key>
+      <PropertyRef Name="CodiceFAST" />
+    </Key>
+    <Property Name="CodiceFAST" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Titolo" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="CostoMateriali" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Ore" Type="Single" />
+    <Property Name="Efficienza" Type="Single" />
+    <Property Name="CodiceM2" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="Documento" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="ApplyToCat" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="ApplyToSubCat" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="leadTime" Type="Int32" />
+    <Property Name="CodiceSAP" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="L1" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="L2" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="L3" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="L4" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="categoria" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Name="processo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="cm2" Type="Single" />
+    <Property Name="revisione" Type="Int32" />
+    <Property Name="dataFuoriCorso" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="LavoriCodificati2012">
+    <Key>
+      <PropertyRef Name="CodiceFAST" />
+    </Key>
+    <Property Name="CodiceFAST" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Titolo" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="CostoMateriali" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Ore" Type="Single" />
+    <Property Name="Efficienza" Type="Single" />
+    <Property Name="CodiceM2" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="Documento" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="ApplyToCat" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="ApplyToSubCat" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="leadTime" Type="Int32" />
+    <Property Name="CodiceSAP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="L1" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="L2" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="L3" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="L4" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="categoria" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Name="processo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="cm2" Type="Single" />
+    <Property Name="revisione" Type="Int32" />
+    <Property Name="dataFuoriCorso" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="LavoriCodificatiPrezzoLibero">
+    <Key>
+      <PropertyRef Name="CodiceFast" />
+      <PropertyRef Name="Titolo" />
+      <PropertyRef Name="Descrizione" />
+      <PropertyRef Name="CodiceSAP" />
+      <PropertyRef Name="categoria" />
+      <PropertyRef Name="processo" />
+      <PropertyRef Name="leadTime" />
+      <PropertyRef Name="DescrizioneModificabile" />
+    </Key>
+    <Property Name="CodiceFast" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Titolo" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Descrizione" Type="String" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="CodiceSAP" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="categoria" Type="String" Nullable="false" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Name="processo" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="leadTime" Type="Int32" Nullable="false" />
+    <Property Name="DescrizioneModificabile" Type="Int16" Nullable="false" />
+    <Property Name="Tipologia" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="DataFineValidita" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="PARERI">
+    <Key>
+      <PropertyRef Name="idOfferta" />
+      <PropertyRef Name="tipoRichiesta" />
+    </Key>
+    <Property Name="idOfferta" Type="Int32" Nullable="false" />
+    <Property Name="tipoRichiesta" Type="String" Nullable="false" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Name="richiestaA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="dataRichiesta" Type="DateTime" Precision="3" />
+    <Property Name="InseritoDa" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="dataEsito" Type="DateTime" Precision="3" />
+    <Property Name="esito" Type="Int32" />
+    <Property Name="Note" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Offerte" Relationship="FASTModel.FK_PARERI_Offerte" FromRole="PARERI" ToRole="Offerte" />
+  </EntityType>
+  <EntityType Name="QUOTAZIONI">
+    <Key>
+      <PropertyRef Name="idOfferta" />
+      <PropertyRef Name="EQUIPMENT_NUMBER" />
+    </Key>
+    <Property Name="idOfferta" Type="Int32" Nullable="false" />
+    <Property Name="EQUIPMENT_NUMBER" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="richiestaA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="dataRichiesta" Type="DateTime" Precision="3" />
+    <Property Name="QuotataDa" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="dataQuotazione" Type="DateTime" Precision="3" />
+    <Property Name="esito" Type="Int32" />
+    <Property Name="xmlDetails" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Impianti" Relationship="FASTModel.FK_QUOTAZIONI_impianti" FromRole="QUOTAZIONI" ToRole="Impianti" />
+    <NavigationProperty Name="Offerte" Relationship="FASTModel.FK_QUOTAZIONI_Offerte" FromRole="QUOTAZIONI" ToRole="Offerte" />
+  </EntityType>
+  <EntityType Name="rpt_offerte_Manutenzione">
+    <Key>
+      <PropertyRef Name="IDOfferta" />
+      <PropertyRef Name="NumeroOfferta" />
+    </Key>
+    <Property Name="IDOfferta" Type="Int32" Nullable="false" />
+    <Property Name="IDlavoro" Type="Int32" />
+    <Property Name="IdEnte" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="IdVenditore" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="venditore" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NumeroOfferta" Type="String" Nullable="false" MaxLength="18" FixedLength="false" Unicode="true" />
+    <Property Name="SoldTo_Party_code" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="SoldTo_Party_RagSoc" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="SoldTo_Party_ind" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="SoldTo_Party_CAP" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="SoldTo_Party_loc" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="SoldTo_Party_prov" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="BillTo_Party_code" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="BillTo_Party_RagSoc" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="BillTo_Party_ind" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="BillTo_Party_CAP" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="BillTo_Party_loc" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="BillTo_Party_prov" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="NumImpianti" Type="Int32" />
+    <Property Name="Impianto_ind" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="Impianto_CAP" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="Impianto_loc" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="StatusCorrente" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="causale" Type="String" MaxLength="35" FixedLength="false" Unicode="true" />
+    <Property Name="opportunity" Type="String" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="TipoEdificio_Traffico" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TipoEdificio_Segmento" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DurataContratto" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ServSupp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Pagamento_Tipo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Pagamento_modo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Pagamento_Dilazione" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Canone_Offerto" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Canone_venduto" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Canone_Liv1" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Sconto_offerto" Type="Single" />
+    <Property Name="Sconto_venduto" Type="Single" />
+    <Property Name="TipoContratto" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AOC" Type="Boolean" />
+    <Property Name="PiRep" Type="Boolean" />
+    <Property Name="RipRep" Type="Boolean" />
+    <Property Name="KRMS" Type="Boolean" />
+    <Property Name="SIMCARD" Type="Boolean" />
+    <Property Name="EOPT" Type="Boolean" />
+    <Property Name="DataCreazione" Type="DateTime" Precision="3" />
+  </EntityType>
+  <Association Name="FK_CategoryLog_Category">
+    <End Type="FASTModel.Category" Role="Category" Multiplicity="1" />
+    <End Type="FASTModel.CategoryLog" Role="CategoryLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="CategoryID" />
+      </Principal>
+      <Dependent Role="CategoryLog">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CategoryLog_Log">
+    <End Type="FASTModel.Log" Role="Log" Multiplicity="1" />
+    <End Type="FASTModel.CategoryLog" Role="CategoryLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Log">
+        <PropertyRef Name="LogID" />
+      </Principal>
+      <Dependent Role="CategoryLog">
+        <PropertyRef Name="LogID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Impianti_Parties">
+    <End Type="FASTModel.Parties" Role="Parties" Multiplicity="1" />
+    <End Type="FASTModel.Impianti" Role="Impianti" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Parties">
+        <PropertyRef Name="IDParty" />
+      </Principal>
+      <Dependent Role="Impianti">
+        <PropertyRef Name="IDParty" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ImpiantiInOfferte_Impianti">
+    <End Type="FASTModel.Impianti" Role="Impianti" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="FASTModel.ImpiantiInOfferte" Role="ImpiantiInOfferte" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Impianti">
+        <PropertyRef Name="EQUIPMENT_NUMBER" />
+      </Principal>
+      <Dependent Role="ImpiantiInOfferte">
+        <PropertyRef Name="equipment_number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_QUOTAZIONI_impianti">
+    <End Type="FASTModel.Impianti" Role="Impianti" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="FASTModel.QUOTAZIONI" Role="QUOTAZIONI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Impianti">
+        <PropertyRef Name="EQUIPMENT_NUMBER" />
+      </Principal>
+      <Dependent Role="QUOTAZIONI">
+        <PropertyRef Name="EQUIPMENT_NUMBER" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ImpiantiInOfferte_Offerte">
+    <End Type="FASTModel.Offerte" Role="Offerte" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="FASTModel.ImpiantiInOfferte" Role="ImpiantiInOfferte" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Offerte">
+        <PropertyRef Name="IDOfferta" />
+      </Principal>
+      <Dependent Role="ImpiantiInOfferte">
+        <PropertyRef Name="IDOfferta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LavoriInOfferte_ImpiantiInOfferte">
+    <End Type="FASTModel.ImpiantiInOfferte" Role="ImpiantiInOfferte" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="FASTModel.LavoriInOfferte" Role="LavoriInOfferte" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ImpiantiInOfferte">
+        <PropertyRef Name="IDOfferta" />
+        <PropertyRef Name="equipment_number" />
+      </Principal>
+      <Dependent Role="LavoriInOfferte">
+        <PropertyRef Name="IDOfferta" />
+        <PropertyRef Name="equipment_number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AUTORIZZAZIONI_Offerte">
+    <End Type="FASTModel.Offerte" Role="Offerte" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="FASTModel.AUTORIZZAZIONI" Role="AUTORIZZAZIONI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Offerte">
+        <PropertyRef Name="IDOfferta" />
+      </Principal>
+      <Dependent Role="AUTORIZZAZIONI">
+        <PropertyRef Name="idOfferta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Offerte_Parties">
+    <End Type="FASTModel.Parties" Role="Parties" Multiplicity="0..1" />
+    <End Type="FASTModel.Offerte" Role="Offerte" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Parties">
+        <PropertyRef Name="IDParty" />
+      </Principal>
+      <Dependent Role="Offerte">
+        <PropertyRef Name="PartyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OneriOfferte_Offerte">
+    <End Type="FASTModel.Offerte" Role="Offerte" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="FASTModel.OneriOfferte" Role="OneriOfferte" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Offerte">
+        <PropertyRef Name="IDOfferta" />
+      </Principal>
+      <Dependent Role="OneriOfferte">
+        <PropertyRef Name="IDOfferta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PARERI_Offerte">
+    <End Type="FASTModel.Offerte" Role="Offerte" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="FASTModel.PARERI" Role="PARERI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Offerte">
+        <PropertyRef Name="IDOfferta" />
+      </Principal>
+      <Dependent Role="PARERI">
+        <PropertyRef Name="idOfferta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PianoFatturazione_Offerte">
+    <End Type="FASTModel.Offerte" Role="Offerte" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="FASTModel.PianoFatturazione" Role="PianoFatturazione" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Offerte">
+        <PropertyRef Name="IDOfferta" />
+      </Principal>
+      <Dependent Role="PianoFatturazione">
+        <PropertyRef Name="idOfferta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_QUOTAZIONI_Offerte">
+    <End Type="FASTModel.Offerte" Role="Offerte" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="FASTModel.QUOTAZIONI" Role="QUOTAZIONI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Offerte">
+        <PropertyRef Name="IDOfferta" />
+      </Principal>
+      <Dependent Role="QUOTAZIONI">
+        <PropertyRef Name="idOfferta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

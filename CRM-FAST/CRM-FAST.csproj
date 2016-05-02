@@ -1,0 +1,603 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DDFF6049-EE21-4509-B5A8-CCF7484D4476}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CRM_FAST</RootNamespace>
+    <AssemblyName>CRM-FAST</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>CRM_FAST.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TopLibrary">
+      <HintPath>..\packages\TopLibrary.1.0.1.0\lib\net40\TopLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aree.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AUTORIZZAZIONI.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cars.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cars_FURE.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cars_New.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CategorieLavori.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Category.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryLog.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CFG_AccessiCabina.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CFG_AccessoriSiNo.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CFG_Anello.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CFG_Azionamento.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CFG_Configuratori.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CFG_Corrente.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CFG_Fermate.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CFG_Listino_Accessori.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CFG_Listino_BasiQuadroDrive.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CFG_Listino_Prezzi.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CFG_OffertaQuadro.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CFG_Portata.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CFG_Quadro.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CFG_RES40_ListaCampi.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CFG_Schede.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CFG_Servizi.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CFG_ServiziLatoC.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CFG_Tensione.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CFG_TensioneFreno.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CFG_Velocita.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CFG_Versioni.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Configuratori.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CostiTrasporto.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CRM_FAST.cs" />
+    <Compile Include="DAT_SALES_GROUPS.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAT_SALES_OFFICE.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAT_SALES_ORGANIZATION.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAT_SF_opportunities.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAT_SF_owners.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dbo_SAPCaratteristiche.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dbRef_Dettaglio.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dbRef_Dettaglio_Storico.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dbRef_Listino.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dbRef_Listino_Storico.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dbRef_lookup_FamigliaCosto.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Depliants.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DepliantsStatusElenco.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DepliantsStatusRichieste.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Depliants_Trace.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Depliants_Trace_Elenco.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DescrizioniLavori.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Documenti.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dtproperties.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTSEBTasks.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDMSData.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="extractKIT.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="fastLog.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FastPorte_Lavori.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FastScaleTappeti_Lavori.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FAST_OP.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FAST_OP.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FAST_OP.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FAST_OP.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FAST_OP.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="idGenerator.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Impianti.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ImpiantiInOfferte.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LavoriACaricoCliente.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LavoriCodificati.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LavoriCodificati2006.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LavoriCodificati2012.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LavoriCodificatiPrezzoLibero.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LavoriInOfferte.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LavoriNonCOdificati.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Log.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LookupTables.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Mail.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MilestonePianoFatt.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModificaOrdine.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="News.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Offerte.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OneriCompresiEsclusi.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OneriOfferte.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Pacchetti.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Parametri.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PARERI.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Parties.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PianoFatturazione.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Price.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PriceGroup.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PriceItem.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Provvigioni.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QUOTAZIONI.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Referenze.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReportFinanziari.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="rpt_offerte_Manutenzione.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SAPCaratteristiche.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Session.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="TerminiDiPagamento.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Variabili.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VariabiliPrice.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Venditori.cs">
+      <DependentUpon>FAST_OP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\API\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="FAST_OP.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>FAST_OP.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="FAST_OP.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FAST_OP.edmx</DependentUpon>
+      <LastGenOutput>FAST_OP.Context.cs</LastGenOutput>
+    </None>
+    <None Include="FAST_OP.edmx.diagram">
+      <DependentUpon>FAST_OP.edmx</DependentUpon>
+    </None>
+    <None Include="FAST_OP.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FAST_OP.edmx</DependentUpon>
+      <LastGenOutput>FAST_OP.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\API\DeleteResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\DescribeAppMenuItem.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\DescribeApprovalLayout.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\DescribeAvailableQuickActionResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\DescribeCompactLayout.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\DescribeCompactLayoutsResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\DescribeDataCategoryGroupResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\DescribeDataCategoryGroupStructureResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\DescribeFlexiPageResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\DescribeGlobalResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\DescribeGlobalTheme.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\DescribeLayoutResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\DescribeQuickActionResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\DescribeSearchLayoutResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\DescribeSearchScopeOrderResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\DescribeSObjectResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\DescribeSoftphoneLayoutResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\DescribeTab.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\DescribeTabSetResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\DescribeThemeItem.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\EmptyRecycleBinResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\GetDeletedResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\GetServerTimestampResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\GetUpdatedResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\GetUserInfoResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\InvalidateSessionsResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\KnowledgeSettings.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\LeadConvertResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\LoginResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\MergeResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\PerformQuickActionResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\ProcessResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\QueryResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\QuickActionTemplateResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\API\ResetPasswordResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\salesforce-enterprise-31.wsdl" />
+    <None Include="Web References\API\SaveResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\SearchResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\SendEmailResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\SetPasswordResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\sObject.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\UndeleteResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\API\UpsertResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="E:\Documents\Visual Studio 2013\Projects\CRM-FAST\CRM-FAST\salesforce-enterprise-31.xml">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\API\</RelPath>
+      <UpdateFromURL>E:\Documents\Visual Studio 2013\Projects\CRM-FAST\CRM-FAST\salesforce-enterprise-31.xml</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CRM_FAST_API_SforceService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,158 @@
+2014-07-08 09:23:51,597 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteInformationToLog()] ** ASSEMBLY INFORMATION **
+Name: CRM-FAST
+Version: 1.0.0.0
+Path: E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug
+Culture: it-IT
+Machine: PC64-FRANCESCO
+Domain: TOPGRAFSRL
+Username: francesco
+**************************
+2014-07-08 09:23:51,607 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteConfigurationToLog()] No parameters set in appSettings section of configuration file.
+2014-07-08 09:23:51,609 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteConfigurationToLog()] *** CONNECTIONSTRINGS ***
+[System.Data.SqlClient] LocalSqlServer = data source=.\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|aspnetdb.mdf;User Instance=true
+[System.Data.EntityClient] FASTEntities = metadata=res://*/FAST_OP.csdl|res://*/FAST_OP.ssdl|res://*/FAST_OP.msl;provider=System.Data.SqlClient;provider connection string="data source=10.51.43.72,59549;initial catalog=FAST;user id=topgraf;password=atreiu;MultipleActiveResultSets=True;App=EntityFramework"
+*************************
+2014-07-08 09:23:51,610 INFO  root - [CRM_FAST.Program.Main()] ****START**** CRM-FAST v. 1.0.0.0
+2014-07-08 09:23:51,611 INFO  root - [CRM_FAST.Program.Main()] Establishing connection to SalesForce...
+2014-07-08 09:24:43,339 INFO  root - [CRM_FAST.CRM_FAST.Run()] Session ID is: 00D110000007qHx!ASAAQGaz9SRsPgZO5cNZY7Sdlk476UV18LCsZh1izZ_glLFoWdiwLzz3Nc6nYFhddesIcKhTlOwekZ4P55RuGImi3Y8AvJHF
+2014-07-08 09:25:52,031 INFO  root - [CRM_FAST.CRM_FAST.Run()] Opportunities never updated. Reading rows from 2013-01-01
+2014-07-08 09:27:31,542 INFO  root - [CRM_FAST.CRM_FAST.getOpportunity()] 
+Number of opportunities found: 139255
+2014-07-08 10:07:36,495 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteInformationToLog()] ** ASSEMBLY INFORMATION **
+Name: CRM-FAST
+Version: 1.0.0.0
+Path: E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug
+Culture: it-IT
+Machine: PC64-FRANCESCO
+Domain: TOPGRAFSRL
+Username: francesco
+**************************
+2014-07-08 10:07:36,503 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteConfigurationToLog()] No parameters set in appSettings section of configuration file.
+2014-07-08 10:07:36,507 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteConfigurationToLog()] *** CONNECTIONSTRINGS ***
+[System.Data.SqlClient] LocalSqlServer = data source=.\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|aspnetdb.mdf;User Instance=true
+[System.Data.EntityClient] FASTEntities = metadata=res://*/FAST_OP.csdl|res://*/FAST_OP.ssdl|res://*/FAST_OP.msl;provider=System.Data.SqlClient;provider connection string="data source=10.51.43.72,59549;initial catalog=FAST;user id=topgraf;password=atreiu;MultipleActiveResultSets=True;App=EntityFramework"
+*************************
+2014-07-08 10:07:36,508 INFO  root - [CRM_FAST.Program.Main()] ****START**** CRM-FAST v. 1.0.0.0
+2014-07-08 10:07:36,509 INFO  root - [CRM_FAST.Program.Main()] Establishing connection to SalesForce...
+2014-07-08 10:08:21,585 INFO  root - [CRM_FAST.CRM_FAST.Run()] Session ID is: 00D110000007qHx!ASAAQGaz9SRsPgZO5cNZY7Sdlk476UV18LCsZh1izZ_glLFoWdiwLzz3Nc6nYFhddesIcKhTlOwekZ4P55RuGImi3Y8AvJHF
+2014-07-08 10:08:43,447 FATAL root - [CRM_FAST.CRM_FAST.Run()] Fatal error retrieving last update date from FAST DB. Execution aborted.
+System.Data.Entity.Core.EntityException: È stata generata un'eccezione probabilmente causata da un errore temporaneo. Se si è connessi a un database SQL Azure, si consiglia di utilizzare SqlAzureExecutionStrategy. ---> System.Data.Entity.Core.EntityException: Errore del provider sottostante in Open. ---> System.Data.Entity.Core.EntityException: È stata generata un'eccezione probabilmente causata da un errore temporaneo. Se si è connessi a un database SQL Azure, si consiglia di utilizzare SqlAzureExecutionStrategy. ---> System.Data.SqlClient.SqlException: Si è verificato un errore di rete o specifico dell'istanza mentre si cercava di stabilire una connessione con SQL Server. Il server non è stato trovato o non è accessibile. Verificare che il nome dell'istanza sia corretto e che SQL Server sia configurato in modo da consentire connessioni remote. (provider: TCP Provider, error: 0 - Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato.) ---> System.ComponentModel.Win32Exception: Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato
+   --- Fine della traccia dello stack dell'eccezione interna ---
+   in System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   in System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   in System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover)
+   in System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   in System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   in System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   in System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData)
+   in System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   in System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   in System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   in System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   in System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   in System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   in System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   in System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   in System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   in System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   in System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   in System.Data.SqlClient.SqlConnection.Open()
+   in System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.<Open>b__36(DbConnection t, DbConnectionInterceptionContext c)
+   in System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   in System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   in System.Data.Entity.Core.EntityClient.EntityConnection.<Open>b__2()
+   in System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass1.<Execute>b__0()
+   in System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   --- Fine della traccia dello stack dell'eccezione interna ---
+   in System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   in System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute(Action operation)
+   in System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   --- Fine della traccia dello stack dell'eccezione interna ---
+   in System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   in System.Data.Entity.Core.Objects.ObjectContext.EnsureConnection(Boolean shouldMonitorTransactions)
+   in System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   in System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   in System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   --- Fine della traccia dello stack dell'eccezione interna ---
+   in System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   in System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   in System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   in System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   in System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   in System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   in System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   in System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   in System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   in System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   in CRM_FAST.CRM_FAST.Run() in e:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\CRM-FAST\CRM-FAST\CRM-FAST\CRM_FAST.cs:riga 32
+2014-07-08 10:08:43,466 FATAL root - [CRM_FAST.CRM_FAST.Run()] Fatal Error in main procedure, Aborting Execution.
+System.Data.Entity.Core.EntityException: È stata generata un'eccezione probabilmente causata da un errore temporaneo. Se si è connessi a un database SQL Azure, si consiglia di utilizzare SqlAzureExecutionStrategy. ---> System.Data.Entity.Core.EntityException: Errore del provider sottostante in Open. ---> System.Data.Entity.Core.EntityException: È stata generata un'eccezione probabilmente causata da un errore temporaneo. Se si è connessi a un database SQL Azure, si consiglia di utilizzare SqlAzureExecutionStrategy. ---> System.Data.SqlClient.SqlException: Si è verificato un errore di rete o specifico dell'istanza mentre si cercava di stabilire una connessione con SQL Server. Il server non è stato trovato o non è accessibile. Verificare che il nome dell'istanza sia corretto e che SQL Server sia configurato in modo da consentire connessioni remote. (provider: TCP Provider, error: 0 - Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato.) ---> System.ComponentModel.Win32Exception: Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato
+   --- Fine della traccia dello stack dell'eccezione interna ---
+   in System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   in System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   in System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover)
+   in System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   in System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   in System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   in System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData)
+   in System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   in System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   in System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   in System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   in System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   in System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   in System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   in System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   in System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   in System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   in System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   in System.Data.SqlClient.SqlConnection.Open()
+   in System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.<Open>b__36(DbConnection t, DbConnectionInterceptionContext c)
+   in System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   in System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   in System.Data.Entity.Core.EntityClient.EntityConnection.<Open>b__2()
+   in System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass1.<Execute>b__0()
+   in System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   --- Fine della traccia dello stack dell'eccezione interna ---
+   in System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   in System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute(Action operation)
+   in System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   --- Fine della traccia dello stack dell'eccezione interna ---
+   in System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   in System.Data.Entity.Core.Objects.ObjectContext.EnsureConnection(Boolean shouldMonitorTransactions)
+   in System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   in System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   in System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   --- Fine della traccia dello stack dell'eccezione interna ---
+   in System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   in System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   in System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   in System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   in System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   in System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   in System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   in System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   in System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   in System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   in CRM_FAST.CRM_FAST.Run() in e:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\CRM-FAST\CRM-FAST\CRM-FAST\CRM_FAST.cs:riga 38
+2014-07-08 10:09:23,839 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteInformationToLog()] ** ASSEMBLY INFORMATION **
+Name: CRM-FAST
+Version: 1.0.0.0
+Path: E:\Progetti\KONE\KONXXX - OPPORTUNITY CRM2FAST\CRM-FAST\CRM-FAST\CRM-FAST\bin\Debug
+Culture: it-IT
+Machine: PC64-FRANCESCO
+Domain: TOPGRAFSRL
+Username: francesco
+**************************
+2014-07-08 10:09:23,848 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteConfigurationToLog()] No parameters set in appSettings section of configuration file.
+2014-07-08 10:09:23,849 INFO  root - [Topgraf.Utilities.AssemblyManager.WriteConfigurationToLog()] *** CONNECTIONSTRINGS ***
+[System.Data.SqlClient] LocalSqlServer = data source=.\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|aspnetdb.mdf;User Instance=true
+[System.Data.EntityClient] FASTEntities = metadata=res://*/FAST_OP.csdl|res://*/FAST_OP.ssdl|res://*/FAST_OP.msl;provider=System.Data.SqlClient;provider connection string="data source=10.51.43.72,59549;initial catalog=FAST;user id=topgraf;password=atreiu;MultipleActiveResultSets=True;App=EntityFramework"
+*************************
+2014-07-08 10:09:23,851 INFO  root - [CRM_FAST.Program.Main()] ****START**** CRM-FAST v. 1.0.0.0
+2014-07-08 10:09:23,852 INFO  root - [CRM_FAST.Program.Main()] Establishing connection to SalesForce...
+2014-07-08 10:09:42,629 INFO  root - [CRM_FAST.CRM_FAST.Run()] Session ID is: 00D110000007qHx!ASAAQMwowsttFnsyMxtDu2cpAFIefGXLOvCaf1wVQ_BFfwTDZSPMHYHSij29tLmJGPAY9Tl5gnLYdZEMjSfBK9Bwq7awQHT4
+2014-07-08 10:10:09,514 INFO  root - [CRM_FAST.CRM_FAST.Run()] Opportunities never updated. Reading rows from 2013-01-01
+2014-07-08 10:10:42,486 INFO  root - [CRM_FAST.CRM_FAST.getOpportunity()] retrieving data from SFDC...
+2014-07-08 10:11:20,272 INFO  root - [CRM_FAST.CRM_FAST.getOpportunity()] 
+Number of opportunities found: 1
